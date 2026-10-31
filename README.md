@@ -71,3 +71,7 @@ A fonte secundária cita comunicados da Apple TV Press: episódios 1 e 2 em 30/1
 O calendário não significa que os dez episódios já foram exibidos ou resumidos. O dossiê detalhado do episódio 1 preserva o conteúdo do HTML fornecido; o resumo do episódio 2 não foi localizado e os episódios 3–10 estão programados para datas posteriores à pesquisa. Esses capítulos mostram essa situação explicitamente e permitem notas separadas. Nenhum acontecimento dos livros foi usado para inventar enredo da adaptação. A data da pesquisa fica explícita e não muda automaticamente o estado editorial do conteúdo.
 
 Validação no Chromium: dez opções e dez cartões, preservação do grafo e resumo originais, isolamento do conteúdo do episódio 1 nas cinco abas ao selecionar os outros episódios, notas persistentes por episódio, navegação do calendário, layout móvel de 390 px e regressão de A Casa do Dragão. Inclua `noturno-season.js` na publicação.
+
+### Atualização do episódio 2
+
+Título **For Such a Time as This** e lançamento informados pelo usuário. O episódio aparece no seletor, no calendário e no painel como já lançado; o resumo e as atualizações narrativas continuam pendentes de confirmação. As anotações existentes foram preservadas.

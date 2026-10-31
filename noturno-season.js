@@ -2,11 +2,11 @@
 (() => {
   const researchedOn = '2026-10-31';
   const schedule = [
-    ['2026-10-30', 'Lázaro, vem para fora!'], ['2026-10-30', null],
+    ['2026-10-30', 'Lázaro, vem para fora!'], ['2026-10-30', 'For Such a Time as This'],
     ['2026-11-06', null], ['2026-11-13', null], ['2026-11-20', null],
     ['2026-11-27', null], ['2026-12-04', null], ['2026-12-11', null],
     ['2026-12-18', null], ['2026-12-25', null]
-  ].map(([date, title], index) => ({ number: index + 1, date, title, dossier: index === 0 }));
+  ].map(([date, title], index) => ({ number: index + 1, date, title, dossier: index === 0, released: index === 1 }));
   const byId = id => document.getElementById(id);
   const create = (tag, className, text) => {
     const e = document.createElement(tag);
@@ -15,7 +15,7 @@
     return e;
   };
   const dateLabel = date => date.split('-').reverse().join('/');
-  const releaseLabel = ep => ep.date > researchedOn ? 'Programado' : 'Estreia informada pela fonte';
+  const releaseLabel = ep => ep.released ? 'Já lançado · resumo pendente' : ep.date > researchedOn ? 'Programado' : 'Estreia informada pela fonte';
   const tabs = ['graphview', 'recap', 'characters', 'places', 'mysteries'];
   const counts = ['nchars', 'nlinks', 'nplaces', 'nclues'];
   const originalCounts = counts.map(id => byId(id).textContent);
@@ -38,9 +38,9 @@
   for (const ep of schedule) {
     const b = create('button', 'episode-card');
     b.type = 'button';
-    b.append(create('strong', '', `EP ${String(ep.number).padStart(2, '0')}`), create('time', '', dateLabel(ep.date)), create('span', '', ep.dossier ? 'Dossiê disponível' : releaseLabel(ep)));
+    b.append(create('strong', '', `EP ${String(ep.number).padStart(2, '0')}`), create('time', '', dateLabel(ep.date)), create('span', '', ep.title || 'Título a confirmar'), create('span', '', ep.dossier ? 'Dossiê disponível' : releaseLabel(ep)));
     b.querySelector('time').dateTime = ep.date;
-    b.setAttribute('aria-label', `Episódio ${ep.number}, ${dateLabel(ep.date)}, ${ep.dossier ? 'dossiê disponível' : releaseLabel(ep)}`);
+    b.setAttribute('aria-label', `Episódio ${ep.number}${ep.title ? ', ' + ep.title : ''}, ${dateLabel(ep.date)}, ${ep.dossier ? 'dossiê disponível' : releaseLabel(ep)}`);
     b.onclick = () => { episodeSelect.value = ep.number; update(); };
     buttons.push(b);
     grid.append(b);
@@ -55,7 +55,7 @@
     ['Apple TV Press · anúncio do trailer', 'https://www.apple.com/tv-pr/news/2026/09/apple-tv-unveils-trailer-for-nocturne-the-gripping-new-drama-led-by-liev-schreiber-and-zazie-beetz-and-stars-stephen-graham/']
   ];
   for (const [label, href] of links) { const a = create('a', '', label); a.href = href; a.target = '_blank'; a.rel = 'noopener noreferrer'; sources.append(a); }
-  sources.append(create('p', '', 'Não foram confirmados títulos ou resumos dos episódios 2 a 10. O episódio 1 preserva o material fornecido originalmente. Informações dos livros não são tratadas como acontecimentos da adaptação.'));
+  sources.append(create('p', '', 'O título do episódio 2, For Such a Time as This, e seu lançamento foram informados pelo usuário. Seu resumo e os títulos e resumos dos episódios 3 a 10 ainda não foram confirmados. O episódio 1 preserva o material fornecido originalmente. Informações dos livros não são tratadas como acontecimentos da adaptação.'));
   season.append(sources);
   document.querySelector('.statrow').after(season);
   const pending = create('section', 'panel pending-episode');
@@ -75,10 +75,10 @@
     }
     tabs.forEach(id => byId(id).classList.add('hidden'));
     counts.forEach(id => { byId(id).textContent = '—'; });
-    byId('pageTitle').textContent = `Episódio ${ep.number} · ${ep.date > researchedOn ? 'programado' : 'resumo em apuração'}`;
-    byId('pageSubtitle').textContent = `Data informada: ${dateLabel(ep.date)}. Pesquisa em 31/10/2026. Sem perfil ou conexão posterior ao episódio 1 confirmados.`;
+    byId('pageTitle').textContent = `Episódio ${ep.number} · ${ep.title || (ep.date > researchedOn ? 'programado' : 'resumo em apuração')}`;
+    byId('pageSubtitle').textContent = `${ep.released ? 'Já lançado · resumo pendente. ' : ''}Data informada: ${dateLabel(ep.date)}. Pesquisa em 31/10/2026. Sem perfil ou conexão posterior ao episódio 1 confirmados.`;
     pending.replaceChildren();
-    pending.append(create('span', 'tag', `TEMPORADA 1 · EPISÓDIO ${ep.number}`), create('h2', '', ep.date > researchedOn ? 'Este capítulo ainda está programado' : 'O resumo deste capítulo ainda não foi confirmado'), create('p', 'muted', ep.date > researchedOn ? `Lançamento previsto para ${dateLabel(ep.date)}, conforme o calendário consultado. Os acontecimentos serão incluídos quando houver material publicado e conferido.` : 'A fonte informa a estreia em 30/10/2026, mas não fornece o enredo do episódio. Os personagens e conexões do episódio anterior não são apresentados como se fossem deste capítulo.'));
+    pending.append(create('span', 'tag', `TEMPORADA 1 · EPISÓDIO ${ep.number}`), create('h2', '', ep.title || (ep.date > researchedOn ? 'Este capítulo ainda está programado' : 'O resumo deste capítulo ainda não foi confirmado')), create('p', 'muted', ep.released ? 'Este episódio já foi lançado. O resumo dos acontecimentos e as atualizações de personagens e conexões ainda estão pendentes de confirmação.' : ep.date > researchedOn ? `Lançamento previsto para ${dateLabel(ep.date)}, conforme o calendário consultado. Os acontecimentos serão incluídos quando houver material publicado e conferido.` : 'A fonte informa a estreia em 30/10/2026, mas não fornece o enredo do episódio. Os personagens e conexões do episódio anterior não são apresentados como se fossem deste capítulo.'));
     const label = create('label', 'recap-note-label', `Suas anotações · episódio ${ep.number}`);
     const notes = create('textarea', 'notes');
     notes.id = 'seasonEpisodeNotes'; label.htmlFor = notes.id;
