@@ -59,3 +59,15 @@ Validação real no Chromium com toda a rede externa bloqueada confirmou fotos c
 A branch `gh-pages` contém o HTML e os arquivos estáticos prontos para publicação, sem build. No GitHub, abra **Settings → Pages → Build and deployment**, escolha **Deploy from a branch**, branch **gh-pages**, pasta **/(root)** e salve. O GitHub publica o site em `https://michelkovacs.github.io/series-journal/`. O dossiê A Casa do Dragão fica em `/series-journal/dragon.html`.
 
 A publicação requer que o GitHub Pages esteja habilitado nessa configuração. O envio por Git não habilita essa opção por si só.
+
+## Noturno — calendário da temporada pesquisado na internet
+
+`noturno-season.js` acrescenta o seletor e o calendário de dez episódios ao dossiê original. A pesquisa de 31/10/2026 encontrou um artigo de FreshCalendars, publicado em 29/10/2026, disponível em seu repositório público:
+
+https://github.com/mustafaozcaninfo/freshcalendars/blob/b8cd454ea4a6aad37e49622ba57d66c413f42e84/apps/news/src/content/articles/2026/10/nocturne-apple-tv-release-date-episode-schedule-october-30.md
+
+A fonte secundária cita comunicados da Apple TV Press: episódios 1 e 2 em 30/10/2026, seguidos de um episódio semanal até 25/12/2026. As datas intermediárias foram calculadas pela própria fonte a partir dessa periodicidade. Os comunicados da Apple estão vinculados no site; o acesso direto à Apple permaneceu bloqueado pela rede do ambiente durante a pesquisa.
+
+O calendário não significa que os dez episódios já foram exibidos ou resumidos. O dossiê detalhado do episódio 1 preserva o conteúdo do HTML fornecido; o resumo do episódio 2 não foi localizado e os episódios 3–10 estão programados para datas posteriores à pesquisa. Esses capítulos mostram essa situação explicitamente e permitem notas separadas. Nenhum acontecimento dos livros foi usado para inventar enredo da adaptação. A data da pesquisa fica explícita e não muda automaticamente o estado editorial do conteúdo.
+
+Validação no Chromium: dez opções e dez cartões, preservação do grafo e resumo originais, isolamento do conteúdo do episódio 1 nas cinco abas ao selecionar os outros episódios, notas persistentes por episódio, navegação do calendário, layout móvel de 390 px e regressão de A Casa do Dragão. Inclua `noturno-season.js` na publicação.
