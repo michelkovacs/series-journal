@@ -1,0 +1,146 @@
+[
+  {
+    "file": "viserys-1.jpg",
+    "source": "https://github.com/camilagx/HouseOfThe-Dragons/blob/HEAD/media/icons/viserys.jpg",
+    "character": "viserys",
+    "fromEpisode": 1
+  },
+  {
+    "file": "rhaenyra-1.jpg",
+    "source": "https://github.com/camilagx/HouseOfThe-Dragons/blob/HEAD/media/icons/rhaenyra.png",
+    "character": "rhaenyra",
+    "fromEpisode": 1
+  },
+  {
+    "file": "rhaenyra-6.jpg",
+    "source": "https://github.com/angel-zh/HouseOfTheDragon/blob/HEAD/images/House-of-the-Dragon-Rhaenyra.webp",
+    "character": "rhaenyra",
+    "fromEpisode": 6
+  },
+  {
+    "file": "alicent-1.jpg",
+    "source": "https://github.com/camilagx/HouseOfThe-Dragons/blob/HEAD/media/icons/alicent.jpeg",
+    "character": "alicent",
+    "fromEpisode": 1
+  },
+  {
+    "file": "alicent-6.jpg",
+    "source": "https://github.com/angel-zh/HouseOfTheDragon/blob/HEAD/images/alicent-hightower-evergreen-house-of-the-dragons-embed2.webp",
+    "character": "alicent",
+    "fromEpisode": 6
+  },
+  {
+    "file": "corlys-1.jpg",
+    "source": "https://github.com/camilagx/HouseOfThe-Dragons/blob/HEAD/media/icons/corlys.jpg",
+    "character": "corlys",
+    "fromEpisode": 1
+  },
+  {
+    "file": "rhaenys-1.jpg",
+    "source": "https://github.com/camilagx/HouseOfThe-Dragons/blob/HEAD/media/icons/rhaenys.jpg",
+    "character": "rhaenys",
+    "fromEpisode": 1
+  },
+  {
+    "file": "daemon-1.jpg",
+    "source": "https://github.com/camilagx/HouseOfThe-Dragons/blob/HEAD/media/icons/daemon.jpg",
+    "character": "daemon",
+    "fromEpisode": 1
+  },
+  {
+    "file": "criston-1.jpg",
+    "source": "https://github.com/camilagx/HouseOfThe-Dragons/blob/HEAD/media/icons/criston.jpg",
+    "character": "criston",
+    "fromEpisode": 1
+  },
+  {
+    "file": "lyonel-3.jpg",
+    "source": "https://github.com/camilagx/HouseOfThe-Dragons/blob/HEAD/media/icons/lyonel.jpg",
+    "character": "lyonel",
+    "fromEpisode": 3
+  },
+  {
+    "file": "laenor-3.jpg",
+    "source": "https://github.com/angel-zh/HouseOfTheDragon/blob/HEAD/images/436989960891.jpg",
+    "character": "laenor",
+    "fromEpisode": 3
+  },
+  {
+    "file": "laenor-6.jpg",
+    "source": "https://github.com/camilagx/HouseOfThe-Dragons/blob/HEAD/media/icons/laenor.jpg",
+    "character": "laenor",
+    "fromEpisode": 6
+  },
+  {
+    "file": "aegon-3.jpg",
+    "source": "https://github.com/camilagx/HouseOfThe-Dragons/blob/HEAD/media/icons/aegon.jpg",
+    "character": "aegon",
+    "fromEpisode": 3
+  },
+  {
+    "file": "aegon-8.jpg",
+    "source": "https://github.com/fljamie/hotd/blob/HEAD/images/aegon.jpg",
+    "character": "aegon",
+    "fromEpisode": 8
+  },
+  {
+    "file": "laena-6.jpg",
+    "source": "https://github.com/angel-zh/HouseOfTheDragon/blob/HEAD/images/house-of-dragons-s1ep6-nanna-blondell-1664292484.jpg",
+    "character": "laena",
+    "fromEpisode": 6
+  },
+  {
+    "file": "otto-1.jpg",
+    "source": "https://github.com/fljamie/hotd/blob/HEAD/images/otto.jpg",
+    "character": "otto",
+    "fromEpisode": 1
+  },
+  {
+    "file": "mysaria-1.jpg",
+    "source": "https://github.com/fljamie/hotd/blob/HEAD/images/mysaria.jpg",
+    "character": "mysaria",
+    "fromEpisode": 1
+  },
+  {
+    "file": "aemond-8.jpg",
+    "source": "https://github.com/fljamie/hotd/blob/HEAD/images/aemond.jpg",
+    "character": "aemond",
+    "fromEpisode": 8
+  },
+  {
+    "file": "helaena-8.jpg",
+    "source": "https://github.com/fljamie/hotd/blob/HEAD/images/helaena.jpg",
+    "character": "helaena",
+    "fromEpisode": 8
+  },
+  {
+    "file": "baela-8.jpg",
+    "source": "https://github.com/fljamie/hotd/blob/HEAD/images/baela.jpg",
+    "character": "baela",
+    "fromEpisode": 8
+  },
+  {
+    "file": "rhaena-8.jpg",
+    "source": "https://github.com/fljamie/hotd/blob/HEAD/images/rhaena.jpg",
+    "character": "rhaena",
+    "fromEpisode": 8
+  },
+  {
+    "file": "larys-3.jpg",
+    "source": "https://github.com/fljamie/hotd/blob/HEAD/images/larys.jpg",
+    "character": "larys",
+    "fromEpisode": 3
+  },
+  {
+    "file": "borros-10.jpg",
+    "source": "https://github.com/fljamie/hotd/blob/HEAD/images/borros.jpg",
+    "character": "borros",
+    "fromEpisode": 10
+  },
+  {
+    "file": "joffrey-son-8.jpg",
+    "source": "https://github.com/fljamie/hotd/blob/HEAD/images/joffrey.jpg",
+    "character": "joffrey-son",
+    "fromEpisode": 8
+  }
+]
