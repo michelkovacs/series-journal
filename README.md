@@ -80,7 +80,7 @@ Título **For Such a Time as This** e lançamento informados pelo usuário. O ep
 
 Os dois dossiês seguem a referência Calendly do `DESIGN.md` mais recente: canvas #f8f9fb, cartões brancos, texto azul-marinho #0b3558 e ações em #006bff. Painéis usam cantos de 24 px; cartões de produto, 16 px; botões e campos, 8 px. As sombras são azuladas e os detalhes ciano/magenta ficam atrás dos painéis do grafo, sem função de status ou ação.
 
-Manrope é a substituta aberta de Gilroy indicada pela referência. Ela é servida localmente, com Inter como fallback; arquivos e licenças ficam em `assets/fonts/`. Gilroy não é incluída. O tema anterior e sua borda animada foram substituídos. O cabeçalho permanece fixo em desktop e estático em telas menores para não obstruir os controles.
+Manrope é a substituta aberta de Gilroy indicada pela referência. Ela é servida localmente, com Inter como fallback; arquivos e licenças ficam em `assets/fonts/`. Gilroy não é incluída. O tema anterior e sua borda animada foram substituídos. O cabeçalho rola com a página em desktop e celular, sem fixação no topo.
 
 Fotos e conteúdo dos dossiês foram preservados. Validação em Chromium: carregamento das fontes locais, navegação nos dois dossiês, dez episódios de cada seletor, notas por episódio, filtros, zoom, controle de spoilers, fotos reais locais e responsividade nas abas em 390 e 1280 px.
 

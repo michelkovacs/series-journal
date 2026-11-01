@@ -72,7 +72,7 @@ main{max-width:var(--page-max-width);margin:auto;padding:0 24px 48px}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
 /* Calendly surface hierarchy: cool canvas, paper cards and blue-tinted elevation. */
-header{background:var(--color-cloud);position:sticky;top:0;z-index:5;padding-top:16px;gap:16px}
+header{background:var(--color-cloud);position:relative;top:auto;z-index:5;padding-top:16px;gap:16px}
 header h1{font-weight:700}header h1 span{font-weight:600;font-size:12px;color:var(--color-signal-blue)!important}
 header small{font-size:12px}.series-switch{font-size:12px;font-weight:500;text-transform:none}
 .series-switch select{border-radius:8px;background:white;font-family:var(--font-gilroy);font-size:14px}
@@ -131,7 +131,7 @@ nav{padding:8px 0 16px}nav button{border-radius:8px;font-weight:600;color:var(--
 body{--header-accent:#9de4eb;--header-end:#155a74}
 body[data-series="dragon"]{--header-accent:#ffd4a2;--header-end:#643d58}
 body[data-series="three-body"]{--header-accent:#a4e4ff;--header-end:#1a567e}
-header{position:sticky;top:8px;width:calc(100% - 32px);max-width:1200px;margin:16px auto 0;padding:24px 24px 0;border-radius:24px;overflow:hidden;background:linear-gradient(115deg,#0b3558 10%,#16496d 60%,var(--header-end));box-shadow:0 8px 24px rgba(71,103,136,.15);color:white;gap:24px}
+header{position:relative;top:auto;width:calc(100% - 32px);max-width:1200px;margin:16px auto 0;padding:24px 24px 0;border-radius:24px;overflow:hidden;background:linear-gradient(115deg,#0b3558 10%,#16496d 60%,var(--header-end));box-shadow:0 8px 24px rgba(71,103,136,.15);color:white;gap:24px}
 header:before{content:'';position:absolute;inset:0 0 auto;height:4px;background:linear-gradient(90deg,#5bc9f5,var(--header-accent),#b8abfa);pointer-events:none}
 header .series-brand{display:flex;align-items:center;gap:24px;min-width:0}
 header .series-art{display:block;flex:0 0 136px;width:136px;height:96px;object-fit:cover;object-position:center;border-radius:16px;border:2px solid #ffffff80;box-shadow:0 4px 12px #052c4933}
