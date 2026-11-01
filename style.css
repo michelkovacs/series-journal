@@ -270,20 +270,24 @@ body[data-series=noturno] header{background-position:center,center 35%}body[data
 }
 @media screen and (max-width:520px){main{padding-left:8px;padding-right:8px}.recap-event-content{padding:14px}.recap-copy{padding:16px}}
 
-/* Compact circular portraits in episode passages; cover images stay unchanged. */
-.recap-event-media.recap-adaptive-media[data-media-kind=characters]{height:auto;min-height:0;max-height:none;align-self:stretch;display:grid;grid-template-rows:auto minmax(0,1fr);background:#e9eef3}
-.recap-event-media[data-media-kind=characters] .recap-portrait-grid{flex:none;height:auto;min-height:0;grid-auto-rows:auto;align-content:center;gap:16px 10px;padding:16px;background:transparent}
-.recap-event-media[data-media-kind=characters] .recap-person{display:flex;flex-direction:column;align-items:center;gap:7px;min-height:0;background:transparent;overflow:visible}
-.recap-event-media[data-media-kind=characters] .recap-person-portrait-link{position:relative;flex:none;display:block;width:72px;height:72px;border-radius:50%;overflow:hidden;border:2px solid #fff;box-shadow:0 2px 7px #12355024}
+/* Portrait sizes follow the available column width, height and cast count. */
+.recap-event-media.recap-adaptive-media[data-media-kind=characters]{height:auto;min-height:0;max-height:none;align-self:stretch;display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(0,1fr);justify-content:stretch;background:#e9eef3}
+.recap-event-media[data-media-kind=characters] .recap-portrait-grid{container-type:size;align-self:stretch;flex:none;height:auto;min-height:0;grid-auto-rows:auto;align-content:center;gap:12px 10px;padding:16px;background:transparent}
+.recap-event-media[data-media-kind=characters] .recap-person{--portrait-size:max(24px,min(104px,42cqw,calc(100cqh - 45px)));display:flex;flex-direction:column;align-items:center;gap:7px;min-height:0;background:transparent;overflow:visible}
+.recap-event-media[data-media-kind=characters] .recap-person-portrait-link{position:relative;flex:none;display:block;width:var(--portrait-size);height:var(--portrait-size);border-radius:50%;overflow:hidden;border:2px solid #fff;box-shadow:0 2px 7px #12355024}
 .recap-event-media[data-media-kind=characters] .recap-person-photo,.recap-event-media[data-media-kind=characters] .recap-portrait-grid[data-count="1"] .recap-person-photo{position:static;display:block;width:100%;height:100%;min-height:0;max-height:none;object-fit:cover;object-position:center 24%}
 .recap-event-media[data-media-kind=characters] .recap-person-placeholder{width:100%;height:100%;min-height:0;border-radius:50%;font-size:21px}
-.recap-event-media[data-media-kind=characters] .recap-person figcaption{margin:0;padding:0 2px;width:100%;max-width:190px;background:transparent;text-align:center;font-size:11px;line-height:1.4}
-.recap-event-media[data-media-kind=characters] .recap-portrait-grid[data-count="3"] .recap-person-portrait-link,.recap-event-media[data-media-kind=characters] .recap-portrait-grid[data-count="4"] .recap-person-portrait-link{width:56px;height:56px}
-.recap-event-media[data-media-kind=characters] .recap-media-label{position:static;align-self:start;margin:0;padding:9px 12px;font-size:10px}
-@media(max-width:760px){.recap-event-media[data-media-kind=characters] .recap-portrait-grid{padding:12px;gap:12px 8px}.recap-event-media[data-media-kind=characters] .recap-person-portrait-link{width:64px;height:64px}.recap-event-media[data-media-kind=characters] .recap-portrait-grid[data-count="3"] .recap-person-portrait-link,.recap-event-media[data-media-kind=characters] .recap-portrait-grid[data-count="4"] .recap-person-portrait-link{width:52px;height:52px}}
-.recap-event-media[data-media-kind=characters] .recap-person figcaption{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
-.recap-event-media[data-media-kind=characters] .recap-portrait-grid:is([data-count="3"],[data-count="4"]){padding:12px;gap:12px 8px}
-@media(max-width:760px){.recap-event-media[data-media-kind=characters] .recap-portrait-grid:is([data-count="3"],[data-count="4"]){padding:8px;gap:10px 8px}.recap-event-media[data-media-kind=characters] .recap-portrait-grid:is([data-count="3"],[data-count="4"]) .recap-person-portrait-link{width:46px;height:46px}.recap-event-media[data-media-kind=characters] .recap-person figcaption{font-size:10.5px;line-height:1.35}}
+.recap-event-media[data-media-kind=characters] .recap-person figcaption{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;margin:0;padding:0 2px;width:100%;max-width:190px;background:transparent;text-align:center;font-size:11px;line-height:1.4}
+.recap-event-media[data-media-kind=characters] .recap-portrait-grid[data-count="1"] .recap-person{--portrait-size:max(24px,min(128px,60cqw,calc(100cqh - 45px)))}
+.recap-event-media[data-media-kind=characters] .recap-portrait-grid:is([data-count="3"],[data-count="4"]) .recap-person{--portrait-size:max(24px,min(80px,38cqw,calc((100cqh - 76px)/2)))}
+.recap-event-media[data-media-kind=characters] .recap-media-label{position:static;align-self:start;justify-self:stretch;width:100%;margin:0;padding:9px 12px;font-size:10px}
+@media(max-width:760px){
+ .recap-event-media[data-media-kind=characters] .recap-portrait-grid{container-type:inline-size;padding:12px;gap:12px 8px}
+ .recap-event-media[data-media-kind=characters] .recap-person{--portrait-size:min(88px,36cqw)}
+ .recap-event-media[data-media-kind=characters] .recap-portrait-grid[data-count="1"] .recap-person{--portrait-size:min(104px,50cqw)}
+ .recap-event-media[data-media-kind=characters] .recap-portrait-grid:is([data-count="3"],[data-count="4"]) .recap-person{--portrait-size:min(64px,30cqw)}
+ .recap-event-media[data-media-kind=characters] .recap-person figcaption{font-size:10.5px;line-height:1.35}
+}
 
 .episode-only-filter{display:flex!important;flex-direction:row!important;align-items:center;align-self:end;flex-wrap:wrap;gap:8px!important;font-size:13px;font-weight:600;cursor:pointer;padding:10px 0;max-width:100%}.episode-only-filter input[type=checkbox]{appearance:auto;width:18px;height:18px;min-width:18px;min-height:18px;margin:0;padding:0;accent-color:#176e86;cursor:pointer}.episode-only-filter small{flex-basis:100%;font-size:10px;font-weight:400;line-height:1.4;margin:0}.character-browse-controls>.episode-only-filter{grid-column:1/-1;justify-self:start}.toolbar>.episode-only-filter{flex:1 1 210px}.westeros-controls .episode-only-filter{width:auto;max-width:230px;margin-bottom:4px}.character-history-heading>.episode-only-filter{flex-basis:100%;margin:0}.westeros-panel:fullscreen .westeros-toolbar,.westeros-fullscreen .westeros-toolbar{flex-wrap:wrap}.westeros-panel:fullscreen .westeros-controls,.westeros-fullscreen .westeros-controls{flex-wrap:wrap}@media(max-width:600px){.westeros-panel:fullscreen .westeros-controls,.westeros-fullscreen .westeros-controls{flex-wrap:wrap}.westeros-panel:fullscreen .westeros-controls .episode-only-filter,.westeros-fullscreen .westeros-controls .episode-only-filter{flex:1 1 100%;max-width:none;order:3;padding:2px 0}.westeros-controls .episode-only-filter{max-width:none}.episode-only-filter{font-size:12px}}
 .episode-only-filter input[type=checkbox]{flex:0 0 18px!important}
@@ -291,3 +295,7 @@ body[data-series=noturno] header{background-position:center,center 35%}body[data
 /* Approved option 3: warm gold sequence markers and alternating story cards. */
 .recap-event-number{background:#e9c07b;color:#18384c;border-color:#d7ac64;font-weight:700;box-shadow:0 3px 8px #163c571c}
 .recap-event:nth-child(odd) .recap-event-card{background:#fff}.recap-event:nth-child(even) .recap-event-card{background:#f2f4f7}.recap-event-content{background:transparent}
+
+/* Connect adjacent markers, ending at the final circle. Hidden with the mobile markers. */
+.recap-timeline:before{display:none}
+@media(min-width:761px){.recap-event:not(:last-child):before{content:"";position:absolute;top:22px;bottom:-46px;left:21px;width:2px;background:#d7ac64;pointer-events:none}.recap-event-number{position:relative}}
