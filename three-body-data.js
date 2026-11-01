@@ -346,7 +346,11 @@ const THREE_BODY_DATA = {
             "ye",
             "ye-father"
           ],
-          "focus": "ye"
+          "focus": "ye",
+          "paragraphs": [
+            "Na China da Revolução Cultural, Ye Wenjie presencia a morte do pai. A perseguição política e as experiências que se seguem abalam sua confiança na humanidade.",
+            "A violência pública contra o pai dá ao início da história uma dimensão pessoal e política. O episódio apresenta a ferida a partir da qual Ye passa a desconfiar das instituições e da capacidade humana de corrigir os próprios abusos."
+          ]
         },
         {
           "title": "Experimentos sem resposta",
@@ -357,7 +361,11 @@ const THREE_BODY_DATA = {
             "jin",
             "shi"
           ],
-          "focus": "vera"
+          "focus": "vera",
+          "paragraphs": [
+            "Resultados incompatíveis entre si e mortes de pesquisadores inquietam o meio científico. A morte de Vera Ye reúne seus antigos colegas e coloca o grupo de Oxford sob observação.",
+            "O encontro dos amigos mistura o luto por Vera com o desconforto diante de resultados que já não se encaixam nos modelos conhecidos. A investigação acompanha pessoas e laboratórios, mas ainda não oferece uma explicação comum para as mortes e os experimentos."
+          ]
         },
         {
           "title": "Uma contagem que só Auggie vê",
@@ -366,7 +374,11 @@ const THREE_BODY_DATA = {
             "auggie",
             "tatiana"
           ],
-          "focus": "auggie"
+          "focus": "auggie",
+          "paragraphs": [
+            "A pesquisadora começa a enxergar números que ninguém mais vê. Tatiana manda que ela encerre seu projeto de nanofibras e anuncia um sinal no céu.",
+            "A contagem interrompe a rotina de Auggie e a isola, pois os outros não podem confirmar o que ela enxerga. Tatiana liga o fenômeno diretamente ao trabalho da pesquisadora, transformando uma experiência inexplicável em uma exigência concreta."
+          ]
         },
         {
           "title": "O universo parece piscar",
@@ -375,7 +387,11 @@ const THREE_BODY_DATA = {
             "auggie",
             "saul"
           ],
-          "focus": "auggie"
+          "focus": "auggie",
+          "paragraphs": [
+            "A observação do céu deixa de ser uma rotina científica. O fenômeno previsto por Tatiana transforma a ameaça particular a Auggie em algo muito maior.",
+            "A previsão funciona como uma demonstração de poder dirigida a quem recebeu o aviso. O episódio termina ampliando o alcance do mistério: a ameaça já não parece limitada à percepção de uma única pessoa ou a um único laboratório."
+          ]
         }
       ],
       "questions": [
@@ -396,7 +412,11 @@ const THREE_BODY_DATA = {
           "characters": [
             "auggie"
           ],
-          "focus": "auggie"
+          "focus": "auggie",
+          "paragraphs": [
+            "Auggie suspende o trabalho com nanofibras, e a contagem desaparece. A coincidência torna a ameaça concreta, sem esclarecer sua origem.",
+            "A suspensão oferece alívio imediato, mas cobra a interrupção de uma pesquisa importante. Auggie passa a enfrentar uma escolha em que a aparente segurança pessoal depende de obedecer a alguém que não explica como consegue exercer esse controle."
+          ]
         },
         {
           "title": "Um mundo que recomeça",
@@ -406,7 +426,11 @@ const THREE_BODY_DATA = {
             "jack",
             "sophon"
           ],
-          "focus": "jin"
+          "focus": "jin",
+          "paragraphs": [
+            "Jin experimenta o headset associado a Vera; Jack também entra no jogo. Eles encontram civilizações sujeitas a eras estáveis e caóticas e tentam entender as regras daquele ambiente.",
+            "O realismo do ambiente e a ausência de controles convencionais levam os participantes a tratar a experiência como um problema científico. Cada recomeço preserva perguntas sobre o destino daquela população, mesmo quando uma civilização inteira desaparece."
+          ]
         },
         {
           "title": "O Sol como amplificador",
@@ -415,7 +439,11 @@ const THREE_BODY_DATA = {
             "ye",
             "mike"
           ],
-          "focus": "ye"
+          "focus": "ye",
+          "paragraphs": [
+            "No passado, o trabalho de Ye Wenjie na base Costa Vermelha abre uma possibilidade de comunicação muito além da Terra. Seu encontro com Mike Evans reforça o debate sobre o futuro humano.",
+            "A possibilidade técnica surge dentro de uma estrutura militar e política que controla o acesso à comunicação. A ligação com Evans acrescenta outra forma de desilusão, aproximando a pesquisa de uma discussão moral sobre quem deve decidir o destino da Terra."
+          ]
         },
         {
           "title": "A resposta a um aviso",
@@ -423,7 +451,11 @@ const THREE_BODY_DATA = {
           "characters": [
             "ye"
           ],
-          "focus": "ye"
+          "focus": "ye",
+          "paragraphs": [
+            "Ye recebe um alerta de uma fonte extraterrestre que recomenda não responder. Desiludida com a humanidade, ela escolhe estabelecer contato mesmo assim.",
+            "O alerta deixa claro que responder é uma decisão com consequências, não apenas um teste de equipamento. Ye faz a escolha sabendo que a origem do contato não representa necessariamente uma promessa de ajuda ou de convivência pacífica."
+          ]
         }
       ],
       "questions": [
@@ -444,7 +476,11 @@ const THREE_BODY_DATA = {
           "characters": [
             "auggie"
           ],
-          "focus": "auggie"
+          "focus": "auggie",
+          "paragraphs": [
+            "A tentativa de retomar as nanofibras traz de volta a contagem. A pressão sobre Auggie impede que o avanço técnico siga seu curso normal.",
+            "O reaparecimento dos números relaciona novamente a ameaça ao funcionamento da pesquisa. A situação mostra que interromper o projeto não resolve o problema: apenas mantém Auggie em uma posição de dependência diante de uma força desconhecida."
+          ]
         },
         {
           "title": "Três sóis, um destino instável",
@@ -454,7 +490,11 @@ const THREE_BODY_DATA = {
             "jack",
             "sophon"
           ],
-          "focus": "jin"
+          "focus": "jin",
+          "paragraphs": [
+            "Jin e Jack atravessam novos desafios do jogo. A combinação de três estrelas explica a alternância imprevisível de condições e a repetição de catástrofes.",
+            "Os participantes deixam de buscar uma causa isolada para cada desastre e passam a considerar a estrutura do sistema. O desafio também muda a relação deles com os habitantes do jogo, cuja sobrevivência importa para além de uma simples pontuação."
+          ]
         },
         {
           "title": "Salvar a população, não a equação",
@@ -464,7 +504,11 @@ const THREE_BODY_DATA = {
             "jack",
             "sophon"
           ],
-          "focus": "jin"
+          "focus": "jin",
+          "paragraphs": [
+            "A experiência exige que os participantes pensem na sobrevivência dos habitantes. O jogo começa a funcionar como um convite para uma causa real, ligada aos San-Ti.",
+            "A passagem para o recrutamento redefine a experiência virtual como um processo de seleção. Compreender o sofrimento daquela população torna-se um argumento para pedir adesão, mas aceitar a explicação do jogo e aceitar a organização são decisões diferentes."
+          ]
         },
         {
           "title": "Uma recusa fatal",
@@ -474,7 +518,11 @@ const THREE_BODY_DATA = {
             "tatiana",
             "shi"
           ],
-          "focus": "jack"
+          "focus": "jack",
+          "paragraphs": [
+            "Jack rejeita o recrutamento. Tatiana o mata em sua casa; os recursos de vigilância ao redor não conseguem impedir nem esclarecer o ataque.",
+            "A morte de Jack dá uma consequência material à recusa de participar. A dificuldade dos sistemas de segurança em registrar o que ocorreu reforça o alcance da ameaça e deixa os amigos sem a proteção que esperariam de sua própria tecnologia."
+          ]
         }
       ],
       "questions": [
@@ -496,7 +544,11 @@ const THREE_BODY_DATA = {
             "ye",
             "mike"
           ],
-          "focus": "ye"
+          "focus": "ye",
+          "paragraphs": [
+            "O passado de Ye e Evans se conecta às comunicações com os San-Ti. O navio Judgment Day integra a infraestrutura desse vínculo.",
+            "A ligação entre crença, recursos materiais e comunicação extraterrestre foi construída ao longo de muitos anos. O navio mostra que a organização possui uma estrutura física e financeira, e não apenas contatos dispersos dentro do meio científico."
+          ]
         },
         {
           "title": "Jin aceita uma missão perigosa",
@@ -506,7 +558,11 @@ const THREE_BODY_DATA = {
             "shi",
             "wade"
           ],
-          "focus": "jin"
+          "focus": "jin",
+          "paragraphs": [
+            "Depois da morte de Jack, Wade e Shi propõem que Jin ajude a identificar a rede que a recrutou. Ela participa de um encontro da organização.",
+            "Jin precisa sustentar o papel de uma pessoa interessada na proposta enquanto carrega a notícia da morte do amigo. A operação depende de obter acesso à organização sem que seus integrantes percebam os objetivos da investigação."
+          ]
         },
         {
           "title": "A líder e a operação policial",
@@ -517,7 +573,11 @@ const THREE_BODY_DATA = {
             "tatiana",
             "shi"
           ],
-          "focus": "ye"
+          "focus": "ye",
+          "paragraphs": [
+            "Ye Wenjie aparece como figura central do movimento. A reunião é invadida, Ye é presa e Tatiana escapa após ameaçar Jin.",
+            "A prisão transforma o que parecia uma experiência reservada a poucos recrutados em um caso de alcance muito maior. A fuga de Tatiana mantém um risco imediato para Jin, mesmo quando a polícia consegue atingir parte da liderança humana."
+          ]
         },
         {
           "title": "O problema da mentira",
@@ -525,7 +585,11 @@ const THREE_BODY_DATA = {
           "characters": [
             "mike"
           ],
-          "focus": "mike"
+          "focus": "mike",
+          "paragraphs": [
+            "Em conversa com Evans, os San-Ti descobrem a distância entre pensamento, palavra e ficção entre os humanos. A confiança que sustentava o contato se desfaz.",
+            "Evans tenta explicar uma prática comum da linguagem humana, mas a explicação altera a forma como seus interlocutores o percebem. O problema deixa de ser apenas transmitir informações: passa a ser saber se o que é dito corresponde ao que se pensa."
+          ]
         }
       ],
       "questions": [
@@ -548,7 +612,11 @@ const THREE_BODY_DATA = {
             "shi",
             "wade"
           ],
-          "focus": "ye"
+          "focus": "ye",
+          "paragraphs": [
+            "Ye é interrogada sobre o contato e a organização. Sua posição mostra que os antigos aliados humanos podem ter deixado de ser necessários aos San-Ti.",
+            "O interrogatório procura esclarecer tanto o início do contato quanto os objetivos da rede humana. A distância entre a fé de Ye e a atitude de seus interlocutores evidencia que devoção e utilidade estratégica não são a mesma coisa."
+          ]
         },
         {
           "title": "A travessia do navio",
@@ -559,7 +627,11 @@ const THREE_BODY_DATA = {
             "auggie",
             "mike"
           ],
-          "focus": "wade"
+          "focus": "wade",
+          "paragraphs": [
+            "Wade organiza uma operação no Canal do Panamá. Com a participação de Raj e a tecnologia de Auggie, nanofibras destroem o Judgment Day para permitir a recuperação dos dados.",
+            "A operação busca preservar a possibilidade de recuperar os registros, mas envolve pessoas a bordo e um custo humano extremo. Para Auggie, ver sua pesquisa aplicada dessa maneira torna impossível separar a solução técnica de suas consequências."
+          ]
         },
         {
           "title": "A explicação dos sophons",
@@ -569,7 +641,11 @@ const THREE_BODY_DATA = {
             "wade",
             "sophon"
           ],
-          "focus": "jin"
+          "focus": "jin",
+          "paragraphs": [
+            "Jin e Wade acessam os registros. A interface virtual explica que supercomputadores construídos a partir de prótons podem observar a humanidade e sabotar experimentos científicos.",
+            "A revelação conecta a vigilância e os resultados científicos alterados a um mesmo mecanismo. A capacidade de observar os preparativos humanos torna a defesa especialmente difícil: desenvolver uma resposta também significa trabalhar sob observação."
+          ]
         },
         {
           "title": "Uma ameaça para todos",
@@ -579,7 +655,11 @@ const THREE_BODY_DATA = {
             "wade",
             "auggie"
           ],
-          "focus": "jin"
+          "focus": "jin",
+          "paragraphs": [
+            "A interferência deixa de ser um segredo restrito aos investigadores. Mensagens e manifestações em escala global tornam pública a vulnerabilidade humana diante dos San-Ti.",
+            "A divulgação muda a posição dos investigadores, que já não lidam com um problema que pode permanecer isolado. A sociedade precisa encarar a possibilidade de uma ameaça real e duradoura sem dispor de uma proteção imediata contra ela."
+          ]
         }
       ],
       "questions": [
@@ -601,7 +681,11 @@ const THREE_BODY_DATA = {
             "wade",
             "jin"
           ],
-          "focus": "wade"
+          "focus": "wade",
+          "paragraphs": [
+            "A exposição da ameaça força uma resposta internacional. Wade procura transformar o tempo até a chegada da frota em uma vantagem estratégica.",
+            "O horizonte distante da chegada não elimina a urgência de agir. A preparação exige projetos que ultrapassam governos e vidas individuais, ao mesmo tempo que a vigilância adversária limita o segredo necessário para desenvolvê-los."
+          ]
         },
         {
           "title": "O Projeto Escada",
@@ -611,7 +695,11 @@ const THREE_BODY_DATA = {
             "wade",
             "raj"
           ],
-          "focus": "jin"
+          "focus": "jin",
+          "paragraphs": [
+            "Jin trabalha na proposta de acelerar uma pequena sonda com uma vela impulsionada por explosões nucleares. O objetivo é alcançar a frota em viagem, muito antes de sua chegada à Terra.",
+            "A proposta usa sucessivos impulsos para contornar os limites de uma missão convencional. Cada decisão envolve massa, velocidade e distância, de modo que o desenho da sonda depende tanto das restrições físicas quanto da vontade política de executar o projeto."
+          ]
         },
         {
           "title": "As consequências do Panamá",
@@ -621,7 +709,11 @@ const THREE_BODY_DATA = {
             "jin",
             "raj"
           ],
-          "focus": "auggie"
+          "focus": "auggie",
+          "paragraphs": [
+            "Auggie confronta o uso de sua tecnologia e o custo humano da operação. A prioridade militar da defesa afeta também o relacionamento de Jin com Raj.",
+            "O conflito não se limita a uma discordância sobre eficiência: envolve responsabilidade por mortes e a forma como cada um entende sua participação. As respostas de Raj e dos cientistas também revelam diferenças sobre o que uma emergência pode justificar."
+          ]
         },
         {
           "title": "Uma estrela para Jin",
@@ -631,7 +723,11 @@ const THREE_BODY_DATA = {
             "jin",
             "jack"
           ],
-          "focus": "will"
+          "focus": "will",
+          "paragraphs": [
+            "Com câncer terminal, Will decide usar parte da herança de Jack para comprar um certificado de uma estrela para Jin. O presente expressa sentimentos que ele tem dificuldade de dizer.",
+            "O gesto é pensado como uma maneira de oferecer algo a Jin sem exigir uma resposta direta. A doença e a herança aproximam a decisão de questões que o avanço científico não resolve: o tempo que resta e aquilo que Will consegue comunicar."
+          ]
         }
       ],
       "questions": [
@@ -653,7 +749,11 @@ const THREE_BODY_DATA = {
             "wade",
             "jin"
           ],
-          "focus": "wade"
+          "focus": "wade",
+          "paragraphs": [
+            "Wade demonstra os avanços em hibernação e considera acompanhar a defesa por séculos. As limitações da propulsão reduzem radicalmente a carga possível da sonda.",
+            "A hibernação permite pensar na continuidade de uma pessoa dentro de um projeto de longa duração. Já a limitação da sonda impõe o movimento oposto: reduzir o que pode ser enviado até que a missão exija uma solução muito diferente da inicialmente imaginada."
+          ]
         },
         {
           "title": "Uma conversa com Saul",
@@ -662,7 +762,11 @@ const THREE_BODY_DATA = {
             "ye",
             "saul"
           ],
-          "focus": "ye"
+          "focus": "ye",
+          "paragraphs": [
+            "Ye Wenjie encontra Saul e lhe conta uma história sobre Einstein e Deus. O sentido da conversa permanece indireto, mas suas palavras chamam atenção para algo que não pode ser dito abertamente.",
+            "A história é apresentada em forma de humor e aparente desvio de assunto. Saul não recebe uma explicação pronta, e o episódio preserva a incerteza sobre o que Ye deseja comunicar e por que escolhe fazê-lo dessa maneira."
+          ]
         },
         {
           "title": "A escolha de Will",
@@ -673,7 +777,11 @@ const THREE_BODY_DATA = {
             "jin",
             "wade"
           ],
-          "focus": "will"
+          "focus": "will",
+          "paragraphs": [
+            "A proposta passa a envolver o envio de um cérebro preservado. Will aceita participar, Saul acompanha seu fim de vida e Jin chega tarde demais para se despedir como gostaria.",
+            "A decisão transforma um problema de carga útil em uma questão profundamente pessoal. Para os amigos, a despedida não pode ser reduzida ao projeto: envolve o sofrimento de Will, sua autonomia e a impossibilidade de recuperar o tempo perdido."
+          ]
         },
         {
           "title": "Uma tecnologia aberta",
@@ -681,7 +789,11 @@ const THREE_BODY_DATA = {
           "characters": [
             "auggie"
           ],
-          "focus": "auggie"
+          "focus": "auggie",
+          "paragraphs": [
+            "Auggie disponibiliza sua pesquisa, retirando do controle exclusivo de uma empresa o conhecimento das nanofibras. Sua decisão segue um caminho diferente da concentração militar da tecnologia.",
+            "A abertura da pesquisa é uma ação concreta sobre quem poderá usar o conhecimento desenvolvido. Em vez de oferecer uma resposta única à crise, Auggie procura ampliar o acesso e reduzir a dependência de decisões concentradas em poucos agentes."
+          ]
         },
         {
           "title": "O retorno à Costa Vermelha",
@@ -690,7 +802,11 @@ const THREE_BODY_DATA = {
             "ye",
             "tatiana"
           ],
-          "focus": "ye"
+          "focus": "ye",
+          "paragraphs": [
+            "Ye volta ao local associado à sua decisão original. Tatiana a encontra, e as duas compartilham o pôr do sol em uma despedida que encerra sua trajetória.",
+            "O lugar reúne a origem do contato e o encerramento da história pessoal de Ye nesta temporada. A conversa com Tatiana acontece sob a consciência de que suas escolhas já produziram consequências que ela não pode desfazer."
+          ]
         }
       ],
       "questions": [
@@ -712,7 +828,11 @@ const THREE_BODY_DATA = {
             "saul",
             "shi"
           ],
-          "focus": "saul"
+          "focus": "saul",
+          "paragraphs": [
+            "Uma morte em um atropelamento e novas ameaças revelam que Saul está sendo visado. Shi o coloca sob proteção e o leva às Nações Unidas.",
+            "A proteção reorganiza a vida de Saul antes que ele compreenda por que passou a ser importante. Os episódios de violência deixam claro que a ameaça não depende de uma declaração pública de intenção ou de sua vontade de participar da defesa."
+          ]
         },
         {
           "title": "A mente como refúgio",
@@ -722,7 +842,11 @@ const THREE_BODY_DATA = {
             "lilian",
             "shi"
           ],
-          "focus": "saul"
+          "focus": "saul",
+          "paragraphs": [
+            "Lilian Joseph apresenta o Projeto Wallfacer. Saul é um dos escolhidos para formular planos que podem permanecer apenas no pensamento, fora da leitura dos sophons; sua recusa não o retira do programa.",
+            "O programa parte de uma limitação específica da vigilância: observar ações e comunicações não equivale a conhecer diretamente um pensamento. A dificuldade de distinguir uma recusa sincera de uma estratégia também faz parte do problema imposto aos escolhidos."
+          ]
         },
         {
           "title": "A trajetória se perde",
@@ -732,7 +856,11 @@ const THREE_BODY_DATA = {
             "will",
             "wade"
           ],
-          "focus": "jin"
+          "focus": "jin",
+          "paragraphs": [
+            "A sonda do Projeto Escada parte com o cérebro de Will. Uma falha no sistema da vela a desvia da rota planejada, frustrando Jin e a equipe.",
+            "A falha ocorre depois do esforço coletivo para tornar o lançamento possível, sem anular a realidade do que foi enviado. O resultado separa a execução técnica do plano de seu objetivo estratégico e deixa Jin diante de uma perda que é também pessoal."
+          ]
         },
         {
           "title": "A ameaça continua próxima",
@@ -741,7 +869,11 @@ const THREE_BODY_DATA = {
             "wade",
             "sophon"
           ],
-          "focus": "wade"
+          "focus": "wade",
+          "paragraphs": [
+            "Mesmo com iniciativas de defesa em andamento, os San-Ti demonstram a Wade que continuam capazes de interferir em sua percepção. A vigilância segue condicionando a resposta humana.",
+            "A demonstração dirigida a Wade impede que os preparativos sejam confundidos com segurança já conquistada. Mesmo com novos projetos, a humanidade continua precisando decidir como agir diante de um adversário que acompanha seus movimentos."
+          ]
         },
         {
           "title": "Uma razão para continuar",
@@ -751,7 +883,11 @@ const THREE_BODY_DATA = {
             "jin",
             "saul"
           ],
-          "focus": "shi"
+          "focus": "shi",
+          "paragraphs": [
+            "Shi leva Jin e Saul a observar insetos que persistem apesar das tentativas humanas de eliminá-los. A imagem oferece uma resposta ao desprezo dos San-Ti e um motivo para retomar o trabalho.",
+            "A comparação não promete uma vitória fácil nem elimina o sofrimento anterior. Ela muda a perspectiva dos dois cientistas: a persistência pode sobreviver à enorme diferença de poder, e reconhecer isso oferece um ponto de partida para continuar."
+          ]
         }
       ],
       "questions": [

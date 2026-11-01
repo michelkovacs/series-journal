@@ -26,15 +26,16 @@ window.RecapMedia = (() => {
         const placeholder = element('div', 'recap-person-placeholder', person.name.split(' ').map(x => x[0]).slice(0, 2).join(''));
         placeholder.setAttribute('role', 'img');
         placeholder.setAttribute('aria-label', `Foto indisponível de ${person.name}`);
+        const portraitLink=element(person.href?'a':'div','recap-person-portrait-link');if(person.href){portraitLink.href=person.href;portraitLink.setAttribute('aria-label',`Ver ficha de ${person.name}`)}
         if (person.src) {
           const image = element('img', 'recap-person-photo');
           image.alt = person.name;
           image.referrerPolicy = 'no-referrer';
           image.onerror = () => { image.replaceWith(placeholder); updatePortraitState(); };
           image.src = person.src;
-          figure.append(image);
-        } else figure.append(placeholder);
-        figure.append(element('figcaption', '', person.name));
+          portraitLink.append(image);
+        } else portraitLink.append(placeholder);
+        const caption=element('figcaption');const name=element(person.href?'a':'span','',person.name);if(person.href)name.href=person.href;caption.append(name);figure.append(portraitLink,caption);
         grid.append(figure);
       }
       if (people.length) host.append(grid, element('span', 'recap-media-label', 'Personagens envolvidos · retratos ilustrativos do trecho'));

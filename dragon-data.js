@@ -1284,6 +1284,10 @@ const DRAGON_DATA = {
           "characters": [
             "rhaenys",
             "viserys"
+          ],
+          "paragraphs": [
+            "O Grande Conselho escolhe Viserys em vez de Rhaenys, estabelecendo o peso do costume masculino na sucessão.",
+            "A decisão evita uma disputa imediata entre os pretendentes, mas não estabelece uma regra escrita e incontestável. A exclusão de Rhaenys passa a ser um precedente político que pesa sobre a família de Viserys."
           ]
         },
         {
@@ -1293,6 +1297,10 @@ const DRAGON_DATA = {
           "characters": [
             "daemon",
             "otto"
+          ],
+          "paragraphs": [
+            "Daemon impõe uma repressão brutal em Porto Real. Otto questiona sua conduta e sua proximidade com o trono.",
+            "A ação da Patrulha da Cidade expõe a distância entre o modo de governar de Daemon e a prudência defendida pelo conselho. A discussão também mostra como a sucessão interfere na avaliação de cada gesto do príncipe."
           ]
         },
         {
@@ -1302,6 +1310,10 @@ const DRAGON_DATA = {
           "characters": [
             "aemma",
             "viserys"
+          ],
+          "paragraphs": [
+            "Enquanto cavaleiros disputam o torneio, Aemma morre em uma cesárea ordenada por Viserys. Baelon morre pouco depois.",
+            "O espetáculo público e a tragédia nos aposentos reais acontecem em paralelo. Viserys perde a esposa e o filho que esperava tornar seu herdeiro, enquanto Rhaenyra precisa lidar com o luto e com sua posição na família."
           ]
         },
         {
@@ -1311,6 +1323,10 @@ const DRAGON_DATA = {
           "characters": [
             "rhaenyra",
             "viserys"
+          ],
+          "paragraphs": [
+            "Após a provocação atribuída a Daemon sobre o bebê morto, Viserys afasta o irmão e nomeia Rhaenyra. Revela à filha o sonho de Aegon, o Conquistador.",
+            "A cerimônia de juramento dos senhores transforma a escolha em um compromisso público. Em particular, Viserys também transmite uma responsabilidade que vai além do trono: preservar o conhecimento do sonho e a continuidade da dinastia."
           ]
         }
       ],
@@ -1333,6 +1349,10 @@ const DRAGON_DATA = {
           "characters": [
             "corlys",
             "viserys"
+          ],
+          "paragraphs": [
+            "Corlys denuncia os ataques da Triarquia às rotas marítimas. Viserys evita precipitar uma guerra.",
+            "O controle das ilhas afeta o comércio e o poder naval dos Velaryon. Para Corlys, a cautela da Coroa significa aceitar prejuízos crescentes; para o rei, uma intervenção pode transformar o problema em uma guerra de maiores proporções."
           ]
         },
         {
@@ -1342,6 +1362,10 @@ const DRAGON_DATA = {
           "characters": [
             "rhaenyra",
             "daemon"
+          ],
+          "paragraphs": [
+            "Daemon toma um ovo de dragão e anuncia um casamento com Mysaria. Rhaenyra chega em Syrax e recupera o ovo sem combate.",
+            "O confronto reúne reivindicações pessoais e símbolos da dinastia. Ao agir diretamente, Rhaenyra demonstra que pode resolver a provocação do tio, enquanto Mysaria percebe que seu nome foi usado em uma manobra que não controlava."
           ]
         },
         {
@@ -1352,6 +1376,10 @@ const DRAGON_DATA = {
             "alicent",
             "rhaenyra",
             "laena"
+          ],
+          "paragraphs": [
+            "Corlys e Rhaenys oferecem Laena como noiva do rei. Viserys anuncia que se casará com Alicent, surpreendendo Rhaenyra.",
+            "A união com Laena fortaleceria os laços com os Velaryon, mas Viserys faz uma escolha diferente. O anúncio atinge Rhaenyra tanto como filha quanto como amiga de Alicent, cuja aproximação com o rei ela não acompanhou."
           ]
         },
         {
@@ -1361,6 +1389,10 @@ const DRAGON_DATA = {
           "characters": [
             "corlys",
             "daemon"
+          ],
+          "paragraphs": [
+            "Descontente com o rei, Corlys procura Daemon para agir nos Degraus.",
+            "Os dois encontram um interesse comum apesar de suas diferenças: Corlys quer proteger suas rotas, e Daemon busca espaço para agir longe da autoridade do irmão. A iniciativa deixa de depender de uma decisão imediata do conselho."
           ]
         }
       ],
@@ -1383,6 +1415,10 @@ const DRAGON_DATA = {
             "aegon",
             "alicent",
             "viserys"
+          ],
+          "paragraphs": [
+            "A corte celebra o segundo aniversário do filho de Alicent. Muitos já tratam o menino como futuro rei, apesar da nomeação de Rhaenyra.",
+            "A comemoração coloca Rhaenyra diante de uma corte cada vez mais interessada em seu meio-irmão. As propostas de casamento dirigidas a ela misturam conveniência familiar, posição social e expectativas sobre quem realmente herdará a Coroa."
           ]
         },
         {
@@ -1392,6 +1428,10 @@ const DRAGON_DATA = {
           "characters": [
             "rhaenyra",
             "criston"
+          ],
+          "paragraphs": [
+            "Rhaenyra se afasta da comitiva com Criston. Os dois enfrentam um javali; depois, ela poupa um cervo branco.",
+            "O encontro com o javali exige uma reação concreta, distante das cerimônias da caçada real. O cervo branco, visto longe da comitiva do rei, cria um contraste entre os sinais de legitimidade celebrados pela corte e a experiência da princesa."
           ]
         },
         {
@@ -1401,6 +1441,10 @@ const DRAGON_DATA = {
           "characters": [
             "viserys",
             "rhaenyra"
+          ],
+          "paragraphs": [
+            "Viserys reafirma à filha que não pretende substituí-la. Ainda assim, exige que ela considere um casamento político.",
+            "A conversa separa duas questões que a corte vinha confundindo: a escolha da herdeira e a necessidade de fortalecer alianças. A reafirmação de Viserys não elimina a pressão para que a vida pessoal de Rhaenyra sirva à estabilidade do reino."
           ]
         },
         {
@@ -1411,6 +1455,10 @@ const DRAGON_DATA = {
             "daemon",
             "corlys",
             "laenor"
+          ],
+          "paragraphs": [
+            "Daemon usa a si mesmo como isca para atrair os inimigos. As forças de Corlys e Laenor vencem, e Daemon mata o Alimentador de Caranguejos.",
+            "A mensagem de que Viserys enviará ajuda aumenta a urgência pessoal de Daemon em obter uma vitória. Sua investida exposta obriga os inimigos a sair das posições protegidas e permite a entrada das forças que aguardavam uma abertura."
           ]
         }
       ],
@@ -1432,6 +1480,10 @@ const DRAGON_DATA = {
           "characters": [
             "daemon",
             "viserys"
+          ],
+          "paragraphs": [
+            "Daemon retorna com uma coroa conquistada nos Degraus e a entrega a Viserys. A reconciliação parece possível.",
+            "A entrega da coroa é apresentada como um gesto de submissão ao irmão, e Viserys o recebe de volta. A aproximação familiar, porém, não resolve as questões de casamento e sucessão que continuam cercando os dois."
           ]
         },
         {
@@ -1442,6 +1494,10 @@ const DRAGON_DATA = {
             "rhaenyra",
             "daemon",
             "criston"
+          ],
+          "paragraphs": [
+            "Daemon leva Rhaenyra às ruas e a uma casa de prazer. Após ele deixá-la, ela retorna ao castelo e passa a noite com Criston.",
+            "Fora da proteção habitual, Rhaenyra observa como a cidade fala da família real e da sucessão. A excursão termina em situações íntimas distintas com Daemon e Criston, diferença que importa para compreender as acusações posteriores."
           ]
         },
         {
@@ -1452,6 +1508,10 @@ const DRAGON_DATA = {
             "otto",
             "alicent",
             "rhaenyra"
+          ],
+          "paragraphs": [
+            "Otto relata a presença de Rhaenyra e Daemon na casa de prazer. Alicent interroga a amiga, que nega ter se deitado com o tio.",
+            "A informação chega pela rede de observação da cidade e rapidamente se torna uma questão de Estado. Para Alicent, a conversa envolve também a confiança pessoal na amiga; para Otto, o relato diz respeito à posição da herdeira."
           ]
         },
         {
@@ -1462,6 +1522,10 @@ const DRAGON_DATA = {
             "viserys",
             "rhaenyra",
             "otto"
+          ],
+          "paragraphs": [
+            "Viserys determina o casamento de Rhaenyra com Laenor. Otto perde o cargo de Mão, e o rei manda levar um chá à filha.",
+            "O casamento aparece como forma de conter o dano político, enquanto a demissão de Otto revela a suspeita de que seus conselhos favorecem a própria família. O chá enviado a Rhaenyra mostra a preocupação do rei com as consequências da noite."
           ]
         }
       ],
@@ -1482,6 +1546,10 @@ const DRAGON_DATA = {
           "focus": "daemon",
           "characters": [
             "daemon"
+          ],
+          "paragraphs": [
+            "Daemon encontra sua esposa Rhea Royce e provoca sua queda. Ao perceber que ela sobreviveu, aproxima-se com uma pedra.",
+            "A cena dá um desfecho violento a um casamento já descrito como hostil. Na corte, a morte de Rhea se transforma também em uma disputa por reputação e patrimônio, especialmente quando Gerold Royce questiona Daemon."
           ]
         },
         {
@@ -1493,6 +1561,10 @@ const DRAGON_DATA = {
             "laenor",
             "corlys",
             "viserys"
+          ],
+          "paragraphs": [
+            "Rhaenyra e Laenor aceitam o dever dinástico e combinam preservar suas vidas íntimas. Viserys negocia com Corlys a futura sucessão.",
+            "O pacto distingue o casamento público dos afetos privados de cada um. A negociação entre as casas inclui nomes, herança e continuidade dinástica, deixando claro que a cerimônia tem efeitos muito maiores que a união do casal."
           ]
         },
         {
@@ -1502,6 +1574,10 @@ const DRAGON_DATA = {
           "characters": [
             "criston",
             "alicent"
+          ],
+          "paragraphs": [
+            "Criston propõe fugir com Rhaenyra. Rejeitado, confessa a Alicent que quebrou seu voto de castidade.",
+            "Criston vê na fuga uma maneira de reconstruir a própria vida após romper seus votos; Rhaenyra não aceita abandonar sua posição. Ao procurar Alicent, ele revela uma informação diferente daquela que a rainha inicialmente investigava."
           ]
         },
         {
@@ -1513,6 +1589,10 @@ const DRAGON_DATA = {
             "criston",
             "joffrey",
             "laenor"
+          ],
+          "paragraphs": [
+            "Alicent chega à celebração vestindo a cor de guerra dos Hightower. Durante o banquete, Criston mata Joffrey Lonmouth. Rhaenyra e Laenor casam-se em uma cerimônia apressada.",
+            "A entrada de Alicent torna visível uma mudança que antes se desenhava em conversas privadas. A violência do banquete destrói o clima da celebração, e o casamento é concluído sob o peso imediato da morte de Joffrey e do luto de Laenor."
           ]
         }
       ],
@@ -1536,6 +1616,10 @@ const DRAGON_DATA = {
             "alicent",
             "joffrey-son",
             "harwin"
+          ],
+          "paragraphs": [
+            "Rhaenyra acaba de dar à luz Joffrey quando Alicent exige ver a criança. Os traços dos filhos da princesa alimentam suspeitas sobre Harwin Strong.",
+            "A exigência faz a disputa política invadir um momento de recuperação física. Rhaenyra leva o bebê acompanhada por Laenor, mas a inspeção da criança funciona como mais uma oportunidade para alimentar os comentários sobre a paternidade."
           ]
         },
         {
@@ -1547,6 +1631,10 @@ const DRAGON_DATA = {
             "harwin",
             "jacaerys",
             "aemond"
+          ],
+          "paragraphs": [
+            "No treino dos príncipes, Criston provoca Harwin, que o agride. Alicent rejeita a proposta de casamento entre Jacaerys e Helaena.",
+            "O treino reúne as crianças sob o olhar dos adultos, que projetam suas rivalidades sobre elas. A reação de Harwin torna as suspeitas ainda mais perigosas, enquanto a recusa ao casamento impede uma tentativa de aproximar os ramos da família."
           ]
         },
         {
@@ -1558,6 +1646,10 @@ const DRAGON_DATA = {
             "daemon",
             "baela",
             "rhaena"
+          ],
+          "paragraphs": [
+            "Laena, casada com Daemon e mãe de Baela e Rhaena, enfrenta um parto sem saída. Escolhe morrer pelo fogo de Vhagar.",
+            "A vida de Daemon e Laena fora de Westeros parece afastada das intrigas da corte, mas o parto expõe os limites dessa distância. A decisão de Laena envolve o vínculo com sua dragão e a recusa de um fim imposto pelos homens ao redor."
           ]
         },
         {
@@ -1569,6 +1661,10 @@ const DRAGON_DATA = {
             "lyonel",
             "harwin",
             "alicent"
+          ],
+          "paragraphs": [
+            "Larys organiza o incêndio de Harrenhal que mata Lyonel e Harwin. Alicent fica horrorizada; Rhaenyra leva sua família para Pedra do Dragão.",
+            "O favor não solicitado compromete Alicent com um aliado capaz de agir além do que ela pediu. A morte dos Strong altera o equilíbrio da corte, e a partida de Rhaenyra mostra o quanto a convivência em Porto Real se tornou insustentável."
           ]
         }
       ],
@@ -1593,6 +1689,10 @@ const DRAGON_DATA = {
             "daemon",
             "rhaenys",
             "corlys"
+          ],
+          "paragraphs": [
+            "As famílias se reúnem em Derivamarca. Rhaenyra e Daemon se aproximam, enquanto antigas tensões permanecem à vista.",
+            "O funeral reúne pessoas separadas por perdas, ressentimentos e alianças frágeis. As cerimônias públicas não impedem conversas privadas que aproximam Rhaenyra de Daemon e deixam à vista a desconfiança entre os diferentes núcleos da família."
           ]
         },
         {
@@ -1604,6 +1704,10 @@ const DRAGON_DATA = {
             "lucerys",
             "jacaerys",
             "baela"
+          ],
+          "paragraphs": [
+            "Aemond reivindica Vhagar. Na briga com os outros jovens, Lucerys o fere, e ele perde um olho.",
+            "Para Aemond, o primeiro voo encerra a humilhação de não possuir dragão. Para as filhas de Laena, a aproximação ocorre durante o luto pela mãe; o confronto entre as crianças mistura essa perda com as acusações sobre a origem dos filhos de Rhaenyra."
           ]
         },
         {
@@ -1614,6 +1718,10 @@ const DRAGON_DATA = {
             "alicent",
             "rhaenyra",
             "viserys"
+          ],
+          "paragraphs": [
+            "Alicent exige reparação pela mutilação do filho. Tenta atingir Lucerys com a adaga de Viserys e fere o braço de Rhaenyra durante o confronto.",
+            "O rei tenta encerrar a crise sem transformar a rivalidade familiar em uma punição irreparável. Alicent interpreta a resposta como falta de proteção ao filho e toma a adaga, expondo diante de todos uma hostilidade que já não consegue conter."
           ]
         },
         {
@@ -1624,6 +1732,10 @@ const DRAGON_DATA = {
             "laenor",
             "rhaenyra",
             "daemon"
+          ],
+          "paragraphs": [
+            "Rhaenyra e Daemon planejam a saída de Laenor. Um corpo substituto faz parecer que ele morreu, mas Laenor foge com Qarl. Rhaenyra e Daemon se casam.",
+            "O plano depende de testemunhas enganadas e de um corpo que sustente a versão pública. A fuga preserva a vida de Laenor, mas impõe sofrimento à família que acredita na morte; o casamento de Rhaenyra e Daemon acontece sob essa versão dos fatos."
           ]
         }
       ],
@@ -1648,6 +1760,10 @@ const DRAGON_DATA = {
             "rhaenyra",
             "rhaenys",
             "lucerys"
+          ],
+          "paragraphs": [
+            "Com Corlys gravemente ferido, Vaemond contesta a posição de Lucerys. Rhaenyra procura o apoio de Rhaenys e propõe uniões entre seus filhos e as netas dela.",
+            "A questão envolve tanto a herança naval dos Velaryon quanto a legitimidade dos filhos de Rhaenyra. Os noivados oferecidos a Baela e Rhaena procuram alinhar esses interesses, ligando a proteção de Lucerys ao futuro das netas de Rhaenys."
           ]
         },
         {
@@ -1658,6 +1774,10 @@ const DRAGON_DATA = {
             "viserys",
             "daemon",
             "vaemond"
+          ],
+          "paragraphs": [
+            "Muito debilitado, Viserys comparece ao salão para sustentar o direito de Lucerys. Daemon mata Vaemond após seus insultos a Rhaenyra e aos filhos.",
+            "A presença de Viserys impede que a discussão seja decidida apenas pelos conselheiros que o substituem. O esforço físico do rei e o auxílio de Daemon contrastam com a ruptura provocada pelos insultos de Vaemond no mesmo salão."
           ]
         },
         {
@@ -1669,6 +1789,10 @@ const DRAGON_DATA = {
             "rhaenyra",
             "alicent",
             "aemond"
+          ],
+          "paragraphs": [
+            "Viserys pede conciliação. Rhaenyra e Alicent trocam palavras de respeito, mas uma provocação de Aemond reabre a hostilidade entre os jovens.",
+            "Por alguns momentos, o apelo do rei produz gestos concretos de aproximação entre as duas mulheres. A convivência dos mais jovens, porém, revela que as ofensas sobre nascimento e herança continuam prontas para desfazer essa trégua."
           ]
         },
         {
@@ -1678,6 +1802,10 @@ const DRAGON_DATA = {
           "characters": [
             "alicent",
             "viserys"
+          ],
+          "paragraphs": [
+            "Alicent ouve o rei falar do sonho de Aegon e entende que ele se refere ao filho dos dois. Viserys morre sem perceber a confusão.",
+            "A conversa ocorre em um contexto de dor, medicação e confusão sobre quem está ao lado do rei. Alicent não conhece a explicação privada transmitida a Rhaenyra e atribui às palavras um sentido diferente, decisivo para sua compreensão da sucessão."
           ]
         }
       ],
@@ -1700,6 +1828,10 @@ const DRAGON_DATA = {
             "alicent",
             "otto",
             "criston"
+          ],
+          "paragraphs": [
+            "Alicent anuncia o que acredita ser a vontade de Viserys. Descobre que parte do conselho já planejava coroar Aegon. Criston mata Lorde Beesbury quando ele protesta.",
+            "A reunião mostra que a disputa não começa com a interpretação das últimas palavras do rei: já havia preparativos sem o conhecimento de Alicent. A morte de Beesbury e a recusa de Harrold Westerling expõem a coerção necessária para impor o plano."
           ]
         },
         {
@@ -1711,6 +1843,10 @@ const DRAGON_DATA = {
             "aemond",
             "criston",
             "otto"
+          ],
+          "paragraphs": [
+            "Otto e Alicent enviam grupos para encontrar Aegon. O futuro rei é localizado por Aemond e Criston, que o levam à mãe.",
+            "Os grupos não procuram apenas garantir a presença do príncipe; também disputam quem poderá influenciá-lo primeiro. Aegon resiste à responsabilidade que querem lhe entregar, enquanto mãe e avô apresentam caminhos diferentes para consolidar sua posição."
           ]
         },
         {
@@ -1720,6 +1856,10 @@ const DRAGON_DATA = {
           "characters": [
             "rhaenys",
             "alicent"
+          ],
+          "paragraphs": [
+            "Confinada na Fortaleza Vermelha, Rhaenys rejeita o pedido de apoio de Alicent. Erryk Cargyll ajuda-a a sair.",
+            "A conversa entre as duas mulheres contrapõe sobrevivência, lealdade e poder pessoal. A fuga de Rhaenys retira dos verdes uma possível aliada e permite que ela procure sua dragão em meio aos preparativos para a cerimônia pública."
           ]
         },
         {
@@ -1730,6 +1870,10 @@ const DRAGON_DATA = {
             "aegon",
             "rhaenys",
             "alicent"
+          ],
+          "paragraphs": [
+            "Aegon é coroado no Fosso dos Dragões. Rhaenys emerge montada em Meleys, rompendo o piso e matando pessoas na multidão; encara os verdes e parte sem queimá-los.",
+            "A coroação procura transformar uma decisão de bastidores em aclamação popular. A irrupção de Meleys rompe essa encenação com violência; ao poupar a família real diante dela, Rhaenys faz uma escolha cujo sentido não se reduz à capacidade de atacar."
           ]
         }
       ],
@@ -1753,6 +1897,10 @@ const DRAGON_DATA = {
             "rhaenyra",
             "rhaenys",
             "daemon"
+          ],
+          "paragraphs": [
+            "Rhaenys informa Rhaenyra sobre a morte de Viserys e a coroação de Aegon. Em meio à crise, Rhaenyra entra em trabalho de parto e perde a filha Visenya.",
+            "A notícia coloca a perda familiar e a disputa pelo trono no mesmo instante. Enquanto Rhaenyra enfrenta o parto, os que a cercam precisam decidir como reagir; sua ausência momentânea também abre espaço para a impaciência de Daemon."
           ]
         },
         {
@@ -1763,6 +1911,10 @@ const DRAGON_DATA = {
             "rhaenyra",
             "corlys",
             "daemon"
+          ],
+          "paragraphs": [
+            "Erryk entrega a coroa de Viserys. Rhaenyra é coroada em Pedra do Dragão; Corlys declara apoio, e os negros calculam suas forças e alianças.",
+            "A chegada da coroa dá forma pública à reivindicação de Rhaenyra. O apoio de Corlys acrescenta uma força naval importante, mas o conselho ainda precisa distinguir os recursos de que dispõe das alianças que apenas espera conquistar."
           ]
         },
         {
@@ -1774,6 +1926,10 @@ const DRAGON_DATA = {
             "otto",
             "jacaerys",
             "lucerys"
+          ],
+          "paragraphs": [
+            "Otto apresenta condições de rendição. Rhaenyra evita uma resposta imediata e envia os filhos como emissários: Jacaerys ao norte e Lucerys a Ponta Tempestade.",
+            "Rhaenyra considera a responsabilidade de governar antes de aceitar uma escalada imediata. As missões dos filhos devem levar mensagens e obter compromissos de apoio; os dois partem como emissários, não com a tarefa de iniciar um combate."
           ]
         },
         {
@@ -1785,6 +1941,10 @@ const DRAGON_DATA = {
             "aemond",
             "borros",
             "rhaenyra"
+          ],
+          "paragraphs": [
+            "Lucerys encontra Aemond na corte de Borros Baratheon. Ao partir, é perseguido por Vhagar. Arrax lança fogo e os jovens perdem o controle dos dragões; Vhagar mata Lucerys e Arrax. Daemon leva a notícia a Rhaenyra.",
+            "Em Ponta Tempestade, Lucerys encontra uma negociação em que os juramentos antigos competem com ofertas presentes. A perseguição termina quando os dragões deixam de obedecer aos cavaleiros; o episódio se encerra com a notícia da perda chegando à mãe."
           ]
         }
       ],

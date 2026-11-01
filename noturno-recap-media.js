@@ -7,7 +7,7 @@
   const seriesArt = "https://m.media-amazon.com/images/S/pv-target-images/ef9425e1792b320dd0da4498623cbc24d749ee7081701b64263515291f6bcb41.jpg";
   function people(ids) {
     return ids.map(id => chars.find(c => c.id === id)).filter(Boolean).map(c => ({
-      id:c.id,name:c.name,src:photos[c.id] || null
+      id:c.id,name:c.name,href:CharacterPages.url(c.id,1),src:photos[c.id] || null
     }));
   }
   function refresh() {
