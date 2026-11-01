@@ -17,7 +17,7 @@ window.RecapMedia = (() => {
         const hasPhotos = !!grid.querySelector('img');
         host.dataset.hasPortraits = String(hasPhotos);
         const label = host.querySelector('.recap-media-label');
-        if (label) label.textContent = hasPhotos ? 'Personagens envolvidos · retratos ilustrativos do trecho' : 'Personagens envolvidos · fotos indisponíveis';
+        if (label) label.textContent = 'Personagens envolvidos · retratos ilustrativos do trecho';
       }
       grid.dataset.count = Math.min(people.length, 4);
       for (const person of people.slice(0, 4)) {
@@ -38,7 +38,7 @@ window.RecapMedia = (() => {
         const caption=element('figcaption');const name=element(person.href?'a':'span','',person.name);if(person.href)name.href=person.href;caption.append(name);figure.append(portraitLink,caption);
         grid.append(figure);
       }
-      if (people.length) host.append(grid, element('span', 'recap-media-label', 'Personagens envolvidos · retratos ilustrativos do trecho'));
+      if (people.length) host.append(element('span', 'recap-media-label', 'Personagens envolvidos · retratos ilustrativos do trecho'),grid);
       else host.append(element('div', 'recap-series-title', options.seriesTitle), element('span', 'recap-media-label', 'Imagem indisponível'));
       updatePortraitState();
     }
