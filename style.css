@@ -301,7 +301,7 @@ body[data-series=noturno] header{background-position:center,center 35%}body[data
 @media(min-width:761px){.recap-event:not(:last-child):before{content:"";position:absolute;top:22px;bottom:-46px;left:21px;width:2px;background:#d7ac64;pointer-events:none}.recap-event-number{position:relative}}
 
 /* For All Mankind: lunar palette and season selection. */
-body[data-series=for-all-mankind]{--series-header-art:url('assets/for-all-mankind/cover.jpg');--header-left:#070f1bed;--header-middle:#19334ae8;--header-right:#726b58ca;--header-accent:#e9c07b}
+body[data-series=for-all-mankind]{--series-header-art:url('assets/for-all-mankind/cover-blue.jpg');--header-left:#031329f2;--header-middle:#073758e8;--header-right:#0a416dcc;--header-accent:#b4edff}
 .season-episode-controls{display:flex;gap:16px;flex-wrap:wrap;align-items:end}.season-episode-controls label{display:grid;gap:8px;font-size:13px;min-width:0}.season-episode-controls select{max-width:100%}.character-history-season{margin:24px 0}.character-history-season>h3{font-size:24px;color:var(--color-ink-navy)}
 @media(max-width:760px){.season-episode-controls{width:100%;gap:12px}.season-episode-controls label{width:100%}.season-episode-controls select{width:100%}}
 @media print{

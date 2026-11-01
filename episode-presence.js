@@ -737,6 +737,7 @@ const EPISODE_PRESENCE = {
         1,
         7,
         8,
+        11,
         13,
         43
       ],
@@ -832,6 +833,7 @@ const EPISODE_PRESENCE = {
         10,
         12,
         13,
+        15,
         16,
         17,
         18,
@@ -876,6 +878,7 @@ const EPISODE_PRESENCE = {
         1
       ],
       "paine": [
+        15,
         17
       ],
       "molly": [
@@ -1064,7 +1067,8 @@ const EPISODE_PRESENCE = {
         40,
         41,
         42,
-        43
+        43,
+        45
       ],
       "alex": [
         35,
@@ -1111,6 +1115,7 @@ const EPISODE_PRESENCE = {
       "ilya": [
         32,
         33,
+        34,
         36,
         40
       ],
@@ -1183,6 +1188,7 @@ const EPISODE_PRESENCE = {
       ],
       "sam": [
         11,
+        17,
         21,
         22
       ],

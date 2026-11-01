@@ -109,7 +109,7 @@ for key,s in series.items():
         options=''.join(f'<option value="{e["number"]}"'+(' selected' if e['number']==maxep else '')+f'>{e["number"]:02d} — {esc(e["title"])}</option>' for e in record['episodes'])
         schema={'@context':'https://schema.org','@type':'ProfilePage','url':canonical,'name':c['name']+' — '+s['title'],'mainEntity':{'@type':'Thing' if c.get('kind')=='dragon' else 'Person','name':c['name'],'description':c['desc'],'url':canonical}}
         if photo:schema['mainEntity']['image']=photo if photo.startswith('https://') else SITE+photo
-        asset_version='heraldry-2' if key=='dragon' else 'labels-cleanup-1'
+        asset_version='journal-pwa-1'
         document=f'''<!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(c['name'])} — {esc(s['title'])} | Series Journal</title><meta name="description" content="{esc(meta)}"><link rel="canonical" href="{canonical}">
@@ -147,3 +147,7 @@ print(f'Generated {count} static character pages and sitemap with {len(urls)+4} 
 if (ROOT/"for-all-mankind-data.js").exists():
     import runpy
     runpy.run_path(str(ROOT/"scripts/generate-for-all-mankind.py"))
+
+if (ROOT/"scripts/build-pwa.py").exists():
+    import runpy
+    runpy.run_path(str(ROOT/"scripts/build-pwa.py"))

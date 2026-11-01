@@ -1,8 +1,11 @@
 {
   "researchedOn": "2026-11-01",
   "cover": {
-    "url": "https://static.tvmaze.com/uploads/images/original_untouched/211/528639.jpg",
-    "source": "https://api.tvmaze.com/shows/41414/images"
+    "file": "assets/for-all-mankind/cover-blue.jpg",
+    "url": "https://static.tvmaze.com/uploads/images/original_untouched/293/732961.jpg",
+    "source": "https://api.tvmaze.com/shows/41414/images",
+    "description": "Arte azul com astronautas e base lunar, correspondente à composição enviada pelo usuário, em versão promocional de alta resolução.",
+    "downloadedOn": "2026-11-01"
   },
   "characters": [
     {

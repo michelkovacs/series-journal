@@ -1,0 +1,25 @@
+{
+  "id": "/series-journal/",
+  "name": "Series Journal",
+  "short_name": "Series Journal",
+  "description": "Personagens, conexões e resumos por episódio das suas séries.",
+  "lang": "pt-BR",
+  "start_url": "./index.html?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f9fc",
+  "theme_color": "#0b3558",
+  "categories": ["entertainment", "books"],
+  "prefer_related_applications": false,
+  "icons": [
+    {"src": "assets/pwa/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "assets/pwa/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "assets/pwa/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ],
+  "shortcuts": [
+    {"name": "For All Mankind", "url": "./for-all-mankind.html"},
+    {"name": "A Casa do Dragão", "url": "./dragon.html"},
+    {"name": "O Problema dos 3 Corpos", "url": "./three-body.html"},
+    {"name": "Noturno", "url": "./index.html"}
+  ]
+}
