@@ -18,7 +18,7 @@
   const tabs = ['graphview', 'recap', 'season-summary', 'characters', 'places', 'mysteries'];
   const counts = ['nchars', 'nlinks', 'nplaces', 'nclues'];
   const originalCounts = counts.map(id => byId(id).textContent);
-  let currentTab = 'graphview';
+  let currentTab = 'characters';
   const episodeSelect = byId('episode');
   episodeSelect.replaceChildren();
   episodeSelect.setAttribute('aria-label', 'Selecionar episódio de Noturno');

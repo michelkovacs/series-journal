@@ -269,3 +269,18 @@ body[data-series=noturno] header{background-position:center,center 35%}body[data
  .item,.character-profile{padding:16px}.listgrid{gap:12px}.character-browse-controls{gap:12px}
 }
 @media screen and (max-width:520px){main{padding-left:8px;padding-right:8px}.recap-event-content{padding:14px}.recap-copy{padding:16px}}
+
+/* Compact circular portraits in episode passages; cover images stay unchanged. */
+.recap-event-media.recap-adaptive-media[data-media-kind=characters]{height:auto;min-height:0;max-height:none;justify-content:flex-start}
+.recap-event-media[data-media-kind=characters] .recap-portrait-grid{flex:none;height:auto;min-height:0;grid-auto-rows:auto;gap:16px 10px;padding:16px;background:transparent}
+.recap-event-media[data-media-kind=characters] .recap-person{display:flex;flex-direction:column;align-items:center;gap:7px;min-height:0;background:transparent;overflow:visible}
+.recap-event-media[data-media-kind=characters] .recap-person-portrait-link{position:relative;flex:none;display:block;width:72px;height:72px;border-radius:50%;overflow:hidden;border:2px solid #fff;box-shadow:0 2px 7px #12355024}
+.recap-event-media[data-media-kind=characters] .recap-person-photo,.recap-event-media[data-media-kind=characters] .recap-portrait-grid[data-count="1"] .recap-person-photo{position:static;display:block;width:100%;height:100%;min-height:0;max-height:none;object-fit:cover;object-position:center 24%}
+.recap-event-media[data-media-kind=characters] .recap-person-placeholder{width:100%;height:100%;min-height:0;border-radius:50%;font-size:21px}
+.recap-event-media[data-media-kind=characters] .recap-person figcaption{margin:0;padding:0 2px;width:100%;max-width:190px;background:transparent;text-align:center;font-size:11px;line-height:1.4}
+.recap-event-media[data-media-kind=characters] .recap-portrait-grid[data-count="3"] .recap-person-portrait-link,.recap-event-media[data-media-kind=characters] .recap-portrait-grid[data-count="4"] .recap-person-portrait-link{width:56px;height:56px}
+.recap-event-media[data-media-kind=characters] .recap-media-label{padding:9px 12px;font-size:10px}
+@media(max-width:760px){.recap-event-media[data-media-kind=characters] .recap-portrait-grid{padding:12px;gap:12px 8px}.recap-event-media[data-media-kind=characters] .recap-person-portrait-link{width:64px;height:64px}.recap-event-media[data-media-kind=characters] .recap-portrait-grid[data-count="3"] .recap-person-portrait-link,.recap-event-media[data-media-kind=characters] .recap-portrait-grid[data-count="4"] .recap-person-portrait-link{width:52px;height:52px}}
+.recap-event-media[data-media-kind=characters] .recap-person figcaption{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+.recap-event-media[data-media-kind=characters] .recap-portrait-grid:is([data-count="3"],[data-count="4"]){padding:12px;gap:12px 8px}
+@media(max-width:760px){.recap-event-media[data-media-kind=characters] .recap-portrait-grid:is([data-count="3"],[data-count="4"]){padding:8px;gap:10px 8px}.recap-event-media[data-media-kind=characters] .recap-portrait-grid:is([data-count="3"],[data-count="4"]) .recap-person-portrait-link{width:46px;height:46px}.recap-event-media[data-media-kind=characters] .recap-person figcaption{font-size:10.5px;line-height:1.35}}

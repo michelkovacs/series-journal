@@ -1,7 +1,7 @@
 'use strict';
 const $=id=>document.getElementById(id), ns='http://www.w3.org/2000/svg';
 const groups={coroa:['Núcleo Targaryen','#b26970'],hightower:['Núcleo Hightower','#629584'],velaryon:['Núcleo Velaryon','#6099c3'],corte:['Corte e aliados','#a88ac3'],dragoes:['Dragões','#bc8b30']};
-let episode=1, selected=null, scale=1,tx=0,ty=0,drag=null,chars=[],links=[],positions={},activeTab='graphview';
+let episode=1, selected=null, scale=1,tx=0,ty=0,drag=null,chars=[],links=[],positions={},activeTab='characters';
 const titles={'season-summary':'Resumo da Temporada',graphview:'Mapa de conexões',recap:'Resumo por Episódio',characters:'Arquivo de personagens',places:'Locais da temporada',mysteries:'Disputas e questões em aberto'};
 function node(tag,cls,text){const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n}
 function svgNode(tag,attrs,text){const n=document.createElementNS(ns,tag);for(const [k,v]of Object.entries(attrs))n.setAttribute(k,v);if(text)n.textContent=text;return n}
