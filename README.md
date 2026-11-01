@@ -23,7 +23,7 @@ Há 142 fichas individuais em `personagens/`, com HTML real e endereços própri
 
 As fichas são separadas do mapa e contêm apresentação do personagem, histórico agrupado por temporada, filtro de episódio, personagens relacionados e link para o Mapa de Conexões. A URL preserva a seleção, como `?temporada=1&episodio=4`. A troca de episódio atualiza o endereço e funciona com voltar/avançar do navegador. O histórico e as relações exibidos são limitados ao episódio escolhido; registros posteriores ficam ocultos. Os três dossiês originais mantêm a temporada 1; For All Mankind inclui as temporadas 1 a 5.
 
-As listas de personagens e o índice têm filtro por categoria. As categorias usam cores consistentes, com seis tons disponíveis; as fichas individuais também identificam a categoria. Em A Casa do Dragão, emblemas vetoriais simplificados aparecem ao lado dos retratos e nas fichas, seguindo a casa do personagem, independentemente do núcleo narrativo.
+As listas de personagens e o índice têm filtro por categoria. As categorias usam cores consistentes, com seis tons disponíveis; as fichas individuais também identificam a categoria. Em A Casa do Dragão, brasões detalhados locais aparecem ao lado dos retratos e nas fichas, seguindo a casa do personagem, independentemente do núcleo narrativo.
 
 Cada HTML tem título e descrição próprios, URL canônica e dados estruturados ProfilePage/Person. O índice `personagens/index.html` oferece links estáticos para todas as fichas; `sitemap.xml` lista 147 URLs. A configuração de URLs usa o endereço público atual `https://michelkovacs.github.io/series-journal/`.
 
@@ -113,3 +113,5 @@ Há fotos locais de 28 personagens (29 retratos, incluindo as versões jovem e a
 Execute `python3 scripts/generate-character-pages.py` para regenerar tudo. Esse comando também chama `scripts/generate-for-all-mankind.py` e preserva a quarta série nos índices, no sitemap e nos filtros. O conjunto passa a ter 142 fichas e 147 URLs no sitemap. A validação específica é `python3 scripts/validate-for-all-mankind.py`.
 
 A publicação mantém as branches `main` e `gh-pages` sincronizadas.
+
+Os oito brasões de A Casa do Dragão usam imagens detalhadas locais em `assets/houses/detailed/`, incluindo a referência Targaryen fornecida pelo usuário. Cards, fichas e pins resolvem os mesmos arquivos por `HOUSE_DATA.images`. Autoria, licenças e origem: `assets/houses/README.md` e `assets/houses/sources.json`. A geração das fichas mantém os caminhos corretos e o controle de domínio no mapa continua limitado ao episódio.

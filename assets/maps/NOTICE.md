@@ -12,3 +12,7 @@ Modificações: projeção vetorial local, remoção de nomes e domínio políti
 Os dados narrativos originais da base, relativos a Game of Thrones, não são distribuídos nem usados pelo site. Nomes, informações e casas aparecem apenas na camada interativa filtrada pelo episódio de A Casa do Dragão.
 
 Para regenerar a ilustração sem acesso à rede: `python3 scripts/generate-westeros-map.py`.
+
+## Brasões interativos
+
+Os brasões têm fontes e licenças próprias, separadas da base cartográfica. Consulte [autoria e licenças dos brasões](../houses/README.md).

@@ -317,3 +317,8 @@ body[data-series=for-all-mankind]{--series-header-art:url('assets/for-all-mankin
 }
 
 .category-tag[data-tone=teal]{background:#def2f3;color:#23616a}
+
+/* Detailed house shields keep their complete shape beside portraits. */
+.house-emblem{width:56px;height:62px;object-fit:contain}
+.character-profile-photo img.house-emblem{width:76px;height:84px}
+.westeros-detail .house-emblem{width:72px;height:80px}

@@ -86,7 +86,7 @@
       if(['Fortaleza Vermelha','Fosso dos Dragões'].includes(place.name))byId('westerosLeaders').append(svg('path',{d:`M572 1081  ${x} ${y}`,class:'westeros-city-line'}));
       pin.append(svg('circle',{cx:x,cy:y,r:24,class:'westeros-pin-hit'}),svg('path',{d:`M${x} ${y+17}c-6-8-18-17-18-29a18 18 0 0 1 36 0c0 12-12 21-18 29Z`,class:'westeros-pin-marker'}));
       const house=controllingHouse(place.name);
-      if(house){pin.dataset.house=house;pin.append(svg('image',{href:CharacterFamilies.url(house),x:x-16,y:y-33,width:32,height:36,'aria-hidden':'true',class:'westeros-pin-crest'}))}else pin.append(svg('circle',{cx:x,cy:y-12,r:5,fill:'#fff'}));
+      if(house){pin.dataset.house=house;pin.append(svg('image',{href:CharacterFamilies.url(house),x:x-18,y:y-34,width:36,height:40,'aria-hidden':'true',class:'westeros-pin-crest'}))}else pin.append(svg('circle',{cx:x,cy:y-12,r:5,fill:'#fff'}));
       pin.append(svg('text',{x:x+dx,y:y+dy,'text-anchor':anchor,class:'westeros-pin-label'},place.name));
       pin.addEventListener('click',()=>selectPlace(place.name,false,true));pin.addEventListener('keydown',e=>{if(['Enter',' '].includes(e.key)){e.preventDefault();selectPlace(place.name,true,true)}});byId('westerosPins').append(pin);
       const button=document.createElement('button');button.type='button';button.textContent=place.name;button.onclick=()=>selectPlace(place.name,false,true);byId('westerosList').append(button);

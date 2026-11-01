@@ -80,7 +80,7 @@ for key,s in series.items():
         info=manifest[key]['characters'][c['id']];path=info['path'];canonical=SITE+path
         category=dict(id=c['cat'],label=categories[key][c['cat']],tone=tones[list(categories[key]).index(c['cat'])])
         house=house_data['characters'].get(c['id']) if key=='dragon' else None
-        crest=f'<img class="house-emblem" src="../../../assets/houses/{house}.svg" alt="Emblema da Casa {house_data["houses"][house]}" width="48" height="52">' if house else ''
+        crest=f'<img class="house-emblem" src="../../../{house_data["images"][house]}" alt="Emblema da Casa {house_data["houses"][house]}" width="48" height="52">' if house else ''
         history=[];desc=c['desc']
         for ep in d['episodes']:
             n=ep['number'];update=d['updates'].get(str(n),{}).get(c['id'])
@@ -109,7 +109,7 @@ for key,s in series.items():
         options=''.join(f'<option value="{e["number"]}"'+(' selected' if e['number']==maxep else '')+f'>{e["number"]:02d} — {esc(e["title"])}</option>' for e in record['episodes'])
         schema={'@context':'https://schema.org','@type':'ProfilePage','url':canonical,'name':c['name']+' — '+s['title'],'mainEntity':{'@type':'Thing' if c.get('kind')=='dragon' else 'Person','name':c['name'],'description':c['desc'],'url':canonical}}
         if photo:schema['mainEntity']['image']=photo if photo.startswith('https://') else SITE+photo
-        asset_version='labels-cleanup-1'
+        asset_version='heraldry-2' if key=='dragon' else 'labels-cleanup-1'
         document=f'''<!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(c['name'])} — {esc(s['title'])} | Series Journal</title><meta name="description" content="{esc(meta)}"><link rel="canonical" href="{canonical}">

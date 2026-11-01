@@ -1,0 +1,76 @@
+{
+  "researchedOn": "2026-11-01",
+  "houses": {
+    "targaryen": {
+      "file": "assets/houses/detailed/targaryen.png",
+      "source": "https://commons.wikimedia.org/wiki/File:House_Targaryen.png",
+      "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/House_Targaryen.png/960px-House_Targaryen.png",
+      "artist": "Abjiklam",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "modifications": "PNG disponibilizado pela fonte, sem alterações locais."
+    },
+    "hightower": {
+      "file": "assets/houses/detailed/hightower.png",
+      "source": "https://commons.wikimedia.org/wiki/File:House_Hightower.png",
+      "download": "https://upload.wikimedia.org/wikipedia/commons/7/7c/House_Hightower.png",
+      "artist": "GRRM",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "modifications": "PNG disponibilizado pela fonte, sem alterações locais."
+    },
+    "velaryon": {
+      "file": "assets/houses/detailed/velaryon.png",
+      "source": "https://commons.wikimedia.org/wiki/File:House_Velaryon.svg",
+      "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/House_Velaryon.svg/960px-House_Velaryon.svg.png",
+      "artist": "Autor não identificado (conforme a fonte)",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "modifications": "PNG disponibilizado pela fonte, sem alterações locais."
+    },
+    "arryn": {
+      "file": "assets/houses/detailed/arryn.png",
+      "source": "https://awoiaf.westeros.org/index.php/File:House_Arryn.svg",
+      "download": "https://awoiaf.westeros.org/thumb.php?f=House_Arryn.svg&width=545",
+      "artist": "Abjiklam",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "modifications": "Prévia PNG disponibilizada pela fonte, sem alterações locais."
+    },
+    "strong": {
+      "file": "assets/houses/detailed/strong.png",
+      "source": "https://commons.wikimedia.org/wiki/File:House_Strong.svg",
+      "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/House_Strong.svg/960px-House_Strong.svg.png",
+      "artist": "https://awoiaf.westeros.org/index.php/User:Lord_Evermore",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "modifications": "PNG disponibilizado pela fonte, sem alterações locais."
+    },
+    "baratheon": {
+      "file": "assets/houses/detailed/baratheon.png",
+      "source": "https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_House_Baratheon_of_Storm%27s_End.svg",
+      "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Coat_of_arms_of_House_Baratheon_of_Storm%27s_End.svg/960px-Coat_of_arms_of_House_Baratheon_of_Storm%27s_End.svg.png",
+      "artist": "FDRMRZUSA",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "modifications": "PNG disponibilizado pela fonte, sem alterações locais."
+    },
+    "cole": {
+      "file": "assets/houses/detailed/cole.svg",
+      "source": "https://awoiaf.westeros.org/index.php/File:House_Cole.svg",
+      "artist": "Lord Evermore / Abjiklam",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "modifications": "Arquivo SVG original, sem alterações."
+    },
+    "lonmouth": {
+      "file": "assets/houses/detailed/lonmouth.png",
+      "source": "https://awoiaf.westeros.org/index.php/File:House_Lonmouth.svg",
+      "artist": "Lord Evermore",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "modifications": "Prévia PNG disponibilizada pela fonte, sem alterações locais; preserva as caveiras e os lábios na renderização dos navegadores.",
+      "download": "https://awoiaf.westeros.org/images/thumb/2/29/House_Lonmouth.svg/545px-House_Lonmouth.svg.png?_=20160728113858"
+    }
+  }
+}
