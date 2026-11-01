@@ -42,7 +42,7 @@
   pending.id = 'pendingEpisode';
   pending.hidden = true;
   pending.setAttribute('aria-live', 'polite');
-  document.querySelector('.statrow').after(pending);
+  byId('graphview').before(pending);
   function update() {
     const ep = schedule[Number(episodeSelect.value) - 1];
     document.querySelector('.intro small').textContent = `ARQUIVO ${String(ep.number).padStart(3, '0')} / EPISÓDIO ${ep.number}`;
