@@ -23,6 +23,8 @@ Há 55 fichas individuais em `personagens/`, com HTML real e endereços próprio
 
 As fichas são separadas do mapa e contêm apresentação do personagem, histórico agrupado por temporada, filtro de episódio, personagens relacionados e link para o Mapa de Conexões. A URL preserva a seleção, como `?temporada=1&episodio=4`. A troca de episódio atualiza o endereço e funciona com voltar/avançar do navegador. O histórico e as relações exibidos são limitados ao episódio escolhido; registros posteriores ficam ocultos. Apenas a temporada 1 está cadastrada.
 
+As listas de personagens e o índice têm filtro por categoria. As categorias usam quatro cores consistentes; as fichas individuais também identificam a categoria. Em A Casa do Dragão, emblemas vetoriais simplificados aparecem ao lado dos retratos e nas fichas, seguindo a casa do personagem, independentemente do núcleo narrativo.
+
 Cada HTML tem título e descrição próprios, URL canônica e dados estruturados ProfilePage/Person. O índice `personagens/index.html` oferece links estáticos para todas as fichas; `sitemap.xml` lista 59 URLs. A configuração de URLs usa o endereço público atual `https://michelkovacs.github.io/series-journal/`.
 
 ## Regenerar as fichas
@@ -53,7 +55,7 @@ O Resumo da Temporada mantém a diagramação de jornal em duas páginas A4 e av
 
 ## Mapa de Westeros
 
-A aba Locais de A Casa do Dragão usa `westeros-map.js` e o mapa vetorial original `assets/maps/westeros.svg`. É uma representação esquemática de posições aproximadas, incluindo o Mar Estreito e Pentos. Os 11 locais são liberados por `from_` em `dragon-data.js`; os acontecimentos do painel são filtrados pelo episódio. Ao voltar para um capítulo anterior, pins, nomes e detalhes posteriores são removidos. O seletor da tela cheia acompanha o seletor principal. Há navegação por teclado e modo ampliado alternativo quando a API Fullscreen não está disponível.
+A aba Locais de A Casa do Dragão usa `westeros-map.js` e o mapa vetorial original `assets/maps/westeros.svg`. O litoral de Westeros usa 3.674 vértices de contornos da base Atlas of Thrones; a costa de Essos e o relevo são ilustrativos. A origem e a licença da adaptação ficam em `assets/maps/NOTICE.md`. A arte sem rótulos pode ser regenerada com `python3 scripts/generate-westeros-map.py`. Os 11 locais são liberados por `from_` em `dragon-data.js`; os acontecimentos do painel são filtrados pelo episódio. Ao voltar para um capítulo anterior, pins, nomes e detalhes posteriores são removidos. O seletor da tela cheia acompanha o seletor principal. Há navegação por teclado, arraste e zoom. Os pins usam emblemas somente quando um domínio familiar é conhecido até o episódio selecionado; Pentos e os Degraus não recebem uma casa arbitrária. Na tela cheia, o mapa ocupa 100% da largura e da altura da tela, sem margens laterais; as informações ficam em uma seção abaixo, com ação para voltar ao mapa. O modo ampliado também funciona quando a API Fullscreen não está disponível.
 
 ## Publicação
 
