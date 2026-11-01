@@ -3481,6 +3481,10 @@ const FOR_ALL_MANKIND_DATA = {
     ],
     "aleida": [
       [
+        1,
+        "assets/for-all-mankind/characters/aleida-young.jpg"
+      ],
+      [
         13,
         "assets/for-all-mankind/characters/aleida.jpg"
       ]

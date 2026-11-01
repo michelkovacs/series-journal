@@ -1285,6 +1285,10 @@ const CHARACTER_DIRECTORY = {
         "fromEpisode": 1,
         "photos": [
           [
+            1,
+            "assets/for-all-mankind/characters/aleida-young.jpg"
+          ],
+          [
             13,
             "assets/for-all-mankind/characters/aleida.jpg"
           ]

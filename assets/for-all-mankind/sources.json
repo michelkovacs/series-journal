@@ -6,6 +6,15 @@
   },
   "characters": [
     {
+      "id": "aleida",
+      "fromEpisode": 1,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/218/547070.jpg",
+      "source": "https://www.tvmaze.com/characters/671536/for-all-mankind-aleida-rosales/gallery",
+      "kind": "character",
+      "stage": "young",
+      "file": "assets/for-all-mankind/characters/aleida-young.jpg"
+    },
+    {
       "id": "ed",
       "fromEpisode": 1,
       "url": "https://static.tvmaze.com/uploads/images/original_untouched/220/551914.jpg",
