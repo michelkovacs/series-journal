@@ -166,5 +166,54 @@
     "file": "jaehaerys-elder-1.png",
     "fromEpisode": 1,
     "source": "https://github.com/Abims18/house_of_the_dragon_fan_app/blob/HEAD/assets/characters/jaehaerys.png"
+  },
+  {
+    "character": "aemma",
+    "file": "aemma-1.webp",
+    "fromEpisode": 1,
+    "source": "https://github.com/Success1308/house-of-the-dragon-api/blob/HEAD/public/images/Aemma_Arryn.webp",
+    "verified": "Imagem do personagem em cena, conferida visualmente; não é retrato do ator fora do papel."
+  },
+  {
+    "character": "arryk",
+    "file": "arryk-9.webp",
+    "fromEpisode": 9,
+    "source": "https://github.com/Success1308/house-of-the-dragon-api/blob/HEAD/public/images/Arryk_Cargy.webp",
+    "verified": "Imagem do personagem em cena, conferida visualmente; não é retrato do ator fora do papel."
+  },
+  {
+    "character": "erryk",
+    "file": "erryk-9.webp",
+    "fromEpisode": 9,
+    "source": "https://github.com/Success1308/house-of-the-dragon-api/blob/HEAD/public/images/Erryk_Cargyll.webp",
+    "verified": "Imagem do personagem em cena, conferida visualmente; não é retrato do ator fora do papel."
+  },
+  {
+    "character": "jacaerys",
+    "file": "jacaerys-8.webp",
+    "fromEpisode": 8,
+    "source": "https://github.com/Success1308/house-of-the-dragon-api/blob/HEAD/public/images/Jacaerys_Velaryon.webp",
+    "verified": "Imagem do personagem em cena, conferida visualmente; não é retrato do ator fora do papel."
+  },
+  {
+    "character": "lucerys",
+    "file": "lucerys-8.webp",
+    "fromEpisode": 8,
+    "source": "https://github.com/Success1308/house-of-the-dragon-api/blob/HEAD/public/images/Lucerys_Velaryon.webp",
+    "verified": "Imagem do personagem em cena, conferida visualmente; não é retrato do ator fora do papel."
+  },
+  {
+    "character": "harwin",
+    "file": "harwin-3.webp",
+    "fromEpisode": 3,
+    "source": "https://github.com/Abims18/house_of_the_dragon_fan_app/blob/HEAD/assets/characters/harwin.webp",
+    "verified": "Cena dos Degraus para Vaemond (à esquerda); Harwin durante a caçada."
+  },
+  {
+    "character": "vaemond",
+    "file": "vaemond-3.webp",
+    "fromEpisode": 3,
+    "source": "https://github.com/Abims18/house_of_the_dragon_fan_app/blob/HEAD/assets/characters/vaemond.webp",
+    "verified": "Cena dos Degraus para Vaemond (à esquerda); Harwin durante a caçada."
   }
 ]

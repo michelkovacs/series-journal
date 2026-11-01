@@ -108,5 +108,29 @@
     "source": "https://github.com/JpaxMedia/blood-of-the-dragon/blob/HEAD/assets/dragons/silverwing.jpg",
     "kind": "illustration",
     "description": "Arte ilustrativa identificada na fonte com o nome do dragão. Não é uma fotografia nem um registro da adaptação televisiva; a aparência não é uma referência oficial."
+  },
+  {
+    "character": "meleys",
+    "file": "meleys.webp",
+    "fromEpisode": 7,
+    "kind": "scene",
+    "source": "https://github.com/Success1308/house-of-the-dragon-api/blob/HEAD/public/images/Meleys.webp",
+    "verified": "Retrato do dragão em cena, sem acontecimentos de episódios posteriores."
+  },
+  {
+    "character": "arrax",
+    "file": "arrax.webp",
+    "fromEpisode": 10,
+    "kind": "scene",
+    "source": "https://github.com/Success1308/house-of-the-dragon-api/blob/HEAD/public/images/Arrax.webp",
+    "verified": "Retrato do dragão em cena, sem acontecimentos de episódios posteriores."
+  },
+  {
+    "character": "vermax",
+    "file": "vermax.webp",
+    "fromEpisode": 6,
+    "kind": "scene",
+    "source": "https://github.com/Success1308/house-of-the-dragon-api/blob/HEAD/public/images/Vermax.webp",
+    "verified": "Retrato do dragão em cena, sem acontecimentos de episódios posteriores."
   }
 ]

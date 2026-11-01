@@ -178,7 +178,7 @@ const DRAGON_LOCAL_PHOTOS = {
   "vermax": [
     [
       6,
-      "assets/dragons/vermax.jpg"
+      "assets/dragons/vermax.webp"
     ]
   ],
   "dreamfyre": [
@@ -190,13 +190,13 @@ const DRAGON_LOCAL_PHOTOS = {
   "meleys": [
     [
       7,
-      "assets/dragons/meleys.jpg"
+      "assets/dragons/meleys.webp"
     ]
   ],
   "arrax": [
     [
       10,
-      "assets/dragons/arrax.jpg"
+      "assets/dragons/arrax.webp"
     ]
   ],
   "vermithor": [
@@ -246,6 +246,48 @@ const DRAGON_LOCAL_PHOTOS = {
       1,
       "assets/characters/jaehaerys-elder-1.png"
     ]
+  ],
+  "aemma": [
+    [
+      1,
+      "assets/characters/aemma-1.webp"
+    ]
+  ],
+  "arryk": [
+    [
+      9,
+      "assets/characters/arryk-9.webp"
+    ]
+  ],
+  "erryk": [
+    [
+      9,
+      "assets/characters/erryk-9.webp"
+    ]
+  ],
+  "jacaerys": [
+    [
+      8,
+      "assets/characters/jacaerys-8.webp"
+    ]
+  ],
+  "lucerys": [
+    [
+      8,
+      "assets/characters/lucerys-8.webp"
+    ]
+  ],
+  "harwin": [
+    [
+      3,
+      "assets/characters/harwin-3.webp"
+    ]
+  ],
+  "vaemond": [
+    [
+      3,
+      "assets/characters/vaemond-3.webp"
+    ]
   ]
 };
 const DRAGON_IMAGE_INFO = {
@@ -266,24 +308,24 @@ const DRAGON_IMAGE_INFO = {
     "caption": "Imagem do dragão na série"
   },
   "vermax": {
-    "kind": "illustration",
-    "caption": "Ilustração de referência · não é uma cena da série"
+    "kind": "scene",
+    "caption": "Imagem do dragão na série"
   },
   "dreamfyre": {
     "kind": "illustration",
     "caption": "Ilustração de referência · não é uma cena da série"
   },
   "meleys": {
-    "kind": "illustration",
-    "caption": "Ilustração de referência · não é uma cena da série"
+    "kind": "scene",
+    "caption": "Imagem do dragão na série"
   },
   "sunfyre": {
     "kind": "scene",
     "caption": "Imagem do dragão na série"
   },
   "arrax": {
-    "kind": "illustration",
-    "caption": "Ilustração de referência · não é uma cena da série"
+    "kind": "scene",
+    "caption": "Imagem do dragão na série"
   },
   "vermithor": {
     "kind": "illustration",

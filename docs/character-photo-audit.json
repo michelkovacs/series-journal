@@ -1,0 +1,159 @@
+{
+  "status": "incomplete_network_access_pending",
+  "networkDraft": "saved_requires_user_review_and_publish",
+  "newLocalImages": 10,
+  "dragon": {
+    "total": 62,
+    "withImages": 45,
+    "missing": [
+      {
+        "id": "joffrey",
+        "name": "Joffrey Lonmouth",
+        "fromEpisode": 5
+      },
+      {
+        "id": "beesbury",
+        "name": "Lyman Beesbury",
+        "fromEpisode": 1
+      },
+      {
+        "id": "orwyle",
+        "name": "Orwyle",
+        "fromEpisode": 5
+      },
+      {
+        "id": "jasper",
+        "name": "Jasper Wylde",
+        "fromEpisode": 6
+      },
+      {
+        "id": "rhea",
+        "name": "Rhea Royce",
+        "fromEpisode": 5
+      },
+      {
+        "id": "gerold",
+        "name": "Gerold Royce",
+        "fromEpisode": 5
+      },
+      {
+        "id": "qarl",
+        "name": "Qarl Correy",
+        "fromEpisode": 6
+      },
+      {
+        "id": "craghas",
+        "name": "Craghas Drahar",
+        "fromEpisode": 2
+      },
+      {
+        "id": "talya",
+        "name": "Talya",
+        "fromEpisode": 6
+      },
+      {
+        "id": "dyana",
+        "name": "Dyana",
+        "fromEpisode": 8
+      },
+      {
+        "id": "aegon-younger",
+        "name": "Aegon Targaryen (filho de Rhaenyra)",
+        "fromEpisode": 8
+      },
+      {
+        "id": "viserys-younger",
+        "name": "Viserys Targaryen (filho de Rhaenyra)",
+        "fromEpisode": 8
+      },
+      {
+        "id": "visenya",
+        "name": "Visenya Targaryen",
+        "fromEpisode": 10
+      },
+      {
+        "id": "baelon",
+        "name": "Baelon Targaryen",
+        "fromEpisode": 1
+      },
+      {
+        "id": "jaehaerys-younger",
+        "name": "Jaehaerys Targaryen (filho de Aegon)",
+        "fromEpisode": 9
+      },
+      {
+        "id": "jaehaera",
+        "name": "Jaehaera Targaryen",
+        "fromEpisode": 9
+      },
+      {
+        "id": "boremund",
+        "name": "Boremund Baratheon",
+        "fromEpisode": 4
+      }
+    ]
+  },
+  "noturno": {
+    "total": 14,
+    "externalSourcesNotVerified": [
+      {
+        "id": "jonah",
+        "name": "Jonah Lynn"
+      },
+      {
+        "id": "saga",
+        "name": "Saga Bauer"
+      },
+      {
+        "id": "jurek",
+        "name": "Jurek Walter"
+      }
+    ],
+    "missing": [
+      {
+        "id": "dave",
+        "name": "Dave Ellison"
+      },
+      {
+        "id": "nathan",
+        "name": "Nathan Pollock"
+      },
+      {
+        "id": "alex",
+        "name": "Alexandra Quinn"
+      },
+      {
+        "id": "karl",
+        "name": "Karl Anders"
+      },
+      {
+        "id": "michael",
+        "name": "Michael Frost"
+      },
+      {
+        "id": "felicia",
+        "name": "Felicia Frost"
+      },
+      {
+        "id": "ida",
+        "name": "Ida Frost"
+      },
+      {
+        "id": "sam",
+        "name": "Sam Mendel"
+      },
+      {
+        "id": "rebecca",
+        "name": "Rebecca Mendel"
+      },
+      {
+        "id": "wife",
+        "name": "Esposa de Jonah"
+      },
+      {
+        "id": "daughter",
+        "name": "Filha de Jonah"
+      }
+    ]
+  }
+}

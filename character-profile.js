@@ -16,7 +16,7 @@
     const label=document.createElement('p');label.className='character-photo-note';
     photoFrame.replaceChildren();
     if(candidates.length){
-      const img=document.createElement('img');img.id='characterPhoto';img.alt=`${data.name} — ${data.imageCaption||"personagem na série"}`;img.width=320;img.height=400;img.referrerPolicy='no-referrer';let index=0;
+      const img=document.createElement('img');img.id='characterPhoto';img.alt=`${data.name} — ${data.imageCaption||"personagem na série"}`;img.width=320;img.height=400;img.referrerPolicy='no-referrer';if(data.series==='dragon'&&data.id==='vaemond')img.style.objectPosition='15% center';let index=0;
       function next(){if(index>=candidates.length){img.replaceWith(fallback);label.textContent='Foto do personagem ainda não disponível';return}img.src=new URL(candidates[index++],root).href}
       img.onerror=next;photoFrame.append(img);label.textContent=custom?'Foto do personagem enviada neste navegador':data.imageCaption||'Foto do personagem na série';next();
     }else{photoFrame.append(fallback);label.textContent='Foto do personagem ainda não disponível'}

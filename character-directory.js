@@ -212,7 +212,12 @@ const CHARACTER_DIRECTORY = {
         "name": "Aemma Arryn",
         "path": "personagens/casa-do-dragao/aemma-arryn/",
         "fromEpisode": 1,
-        "photos": []
+        "photos": [
+          [
+            1,
+            "assets/characters/aemma-1.webp"
+          ]
+        ]
       },
       "mysaria": {
         "name": "Mysaria",
@@ -285,7 +290,12 @@ const CHARACTER_DIRECTORY = {
         "name": "Harwin Strong",
         "path": "personagens/casa-do-dragao/harwin-strong/",
         "fromEpisode": 3,
-        "photos": []
+        "photos": [
+          [
+            3,
+            "assets/characters/harwin-3.webp"
+          ]
+        ]
       },
       "larys": {
         "name": "Larys Strong",
@@ -308,13 +318,23 @@ const CHARACTER_DIRECTORY = {
         "name": "Jacaerys Velaryon",
         "path": "personagens/casa-do-dragao/jacaerys-velaryon/",
         "fromEpisode": 6,
-        "photos": []
+        "photos": [
+          [
+            8,
+            "assets/characters/jacaerys-8.webp"
+          ]
+        ]
       },
       "lucerys": {
         "name": "Lucerys Velaryon",
         "path": "personagens/casa-do-dragao/lucerys-velaryon/",
         "fromEpisode": 6,
-        "photos": []
+        "photos": [
+          [
+            8,
+            "assets/characters/lucerys-8.webp"
+          ]
+        ]
       },
       "joffrey-son": {
         "name": "Joffrey Velaryon",
@@ -375,7 +395,12 @@ const CHARACTER_DIRECTORY = {
         "name": "Vaemond Velaryon",
         "path": "personagens/casa-do-dragao/vaemond-velaryon/",
         "fromEpisode": 3,
-        "photos": []
+        "photos": [
+          [
+            3,
+            "assets/characters/vaemond-3.webp"
+          ]
+        ]
       },
       "borros": {
         "name": "Borros Baratheon",
@@ -439,7 +464,7 @@ const CHARACTER_DIRECTORY = {
         "photos": [
           [
             6,
-            "assets/dragons/vermax.jpg"
+            "assets/dragons/vermax.webp"
           ]
         ]
       },
@@ -461,7 +486,7 @@ const CHARACTER_DIRECTORY = {
         "photos": [
           [
             7,
-            "assets/dragons/meleys.jpg"
+            "assets/dragons/meleys.webp"
           ]
         ]
       },
@@ -483,7 +508,7 @@ const CHARACTER_DIRECTORY = {
         "photos": [
           [
             10,
-            "assets/dragons/arrax.jpg"
+            "assets/dragons/arrax.webp"
           ]
         ]
       },
@@ -557,13 +582,23 @@ const CHARACTER_DIRECTORY = {
         "name": "Erryk Cargyll",
         "path": "personagens/casa-do-dragao/erryk-cargyll/",
         "fromEpisode": 9,
-        "photos": []
+        "photos": [
+          [
+            9,
+            "assets/characters/erryk-9.webp"
+          ]
+        ]
       },
       "arryk": {
         "name": "Arryk Cargyll",
         "path": "personagens/casa-do-dragao/arryk-cargyll/",
         "fromEpisode": 9,
-        "photos": []
+        "photos": [
+          [
+            9,
+            "assets/characters/arryk-9.webp"
+          ]
+        ]
       },
       "beesbury": {
         "name": "Lyman Beesbury",
