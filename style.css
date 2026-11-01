@@ -114,3 +114,15 @@ nav{padding:8px 0 16px}nav button{border-radius:8px;font-weight:600;color:var(--
 @media(max-width:760px){.recap-adaptive-media,.recap-event-card>.recap-adaptive-media{max-height:none;min-height:240px}.recap-hero-visual.recap-adaptive-media{min-height:280px}.recap-portrait-grid{min-height:200px}.recap-portrait-grid[data-count="1"] .recap-person-photo{height:240px;max-height:280px}}
 .recap-portrait-grid[data-count="3"]>.recap-person:last-child{grid-column:1/-1}
 .recap-adaptive-media[data-has-portraits="false"]{min-height:160px}.recap-adaptive-media[data-has-portraits="false"] .recap-portrait-grid{min-height:160px}.recap-adaptive-media[data-has-portraits="false"] .recap-person-placeholder{min-height:96px}
+
+/* Keep the image quadrant fixed; extra characters share its existing height. */
+.recap-event-media.recap-adaptive-media{height:280px;min-height:280px;max-height:280px;align-self:start;justify-content:flex-start}
+.recap-event-media.recap-adaptive-media .recap-portrait-grid{flex:1 1 0;min-height:0;height:auto;grid-auto-rows:minmax(0,1fr)}
+.recap-event-media.recap-adaptive-media .recap-person{display:grid;grid-template-rows:minmax(0,1fr) auto;min-height:0}
+.recap-event-media.recap-adaptive-media .recap-person-photo,.recap-event-media.recap-adaptive-media .recap-portrait-grid[data-count="1"] .recap-person-photo{position:static;display:block;min-height:0;height:100%;max-height:none;width:100%;object-fit:cover}
+.recap-event-media.recap-adaptive-media .recap-person-placeholder{min-height:0;height:100%;font-size:24px}
+.recap-event-media.recap-adaptive-media .recap-media-label{flex-shrink:0;margin-top:0}
+.episode-pagination .next-episode{background:#087f5b;border-color:#087f5b;color:white;font-weight:700;box-shadow:0 4px 10px rgba(8,127,91,.16)}
+.episode-pagination .next-episode:hover:not(:disabled){background:#066649;border-color:#066649}
+.episode-pagination .next-episode:disabled{background:var(--color-pebble);border-color:var(--color-hairline);color:var(--color-slate-gray);opacity:.6;box-shadow:none}
+@media(max-width:760px){.recap-event-media.recap-adaptive-media{height:240px;min-height:240px;max-height:240px}}
