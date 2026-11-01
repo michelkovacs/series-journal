@@ -9,13 +9,23 @@ const CHARACTER_DIRECTORY = {
         "name": "Jonah Lynn",
         "path": "personagens/noturno/jonah-lynn/",
         "fromEpisode": 1,
-        "photos": []
+        "photos": [
+          [
+            1,
+            "https://www.apple.com/tv-pr/shows-and-films/n/nocturne/images/season-01/video-posters/poster-0102/Nocturne_Poster_0101.jpg"
+          ]
+        ]
       },
       "saga": {
         "name": "Saga Bauer",
         "path": "personagens/noturno/saga-bauer/",
         "fromEpisode": 1,
-        "photos": []
+        "photos": [
+          [
+            1,
+            "https://www.iclarified.com/images/news/101401/101401/101401-1280.jpg"
+          ]
+        ]
       },
       "dave": {
         "name": "Dave Ellison",
@@ -39,7 +49,12 @@ const CHARACTER_DIRECTORY = {
         "name": "Jurek Walter",
         "path": "personagens/noturno/jurek-walter/",
         "fromEpisode": 1,
-        "photos": []
+        "photos": [
+          [
+            1,
+            "https://d2a0gza273xfgz.cloudfront.net/818655/assets/07db4109-5a6d-40cb-aa63-dc7a80cb797f.jpg"
+          ]
+        ]
       },
       "karl": {
         "name": "Karl Anders",

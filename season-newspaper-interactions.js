@@ -9,7 +9,7 @@
   const finalEpisode = series === 'dragon' ? 10 : series === 'three-body' ? 8 : 1;
   function el(tag, cls, text) { const n = document.createElement(tag); if (cls) n.className = cls; if (text !== undefined) n.textContent = text; return n; }
   function source(id) {
-    if (series === 'noturno') return customPhotos[id] || photos[id] || null;
+    if (series === 'noturno') return photos[id] || null;
     return portraits[id] || local[id]?.filter(([,src])=>src).at(-1)?.[1] || null;
   }
   function previewImage(c, cls) {

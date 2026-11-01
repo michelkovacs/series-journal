@@ -19,20 +19,29 @@ const places=[['Hospital Psiquiátrico Riverside','Local de internação de Jure
 const mysteries=['Onde está Felicia?','Como Michael conseguiu escapar?','Jurek tem alguém agindo fora do hospital?','Qual é o papel de Karl?','Qual a ligação entre os crimes anteriores e os desaparecimentos?','O que Jurek sabe sobre Felicia?'];
 const colors={investigacao:'#5b9bce',suspeito:'#cf7e78',familia:'#d9a34e',passado:'#9986c7'};
 
-const PHOTO_LIBRARY={};
+const PHOTO_LIBRARY=NOTURNO_PHOTOS;
 // Só arquivos enviados pelo usuário têm prioridade. URLs antigas, que estavam quebradas,
 // não são reimportadas do armazenamento anterior.
 const STORAGE_PHOTOS='noturno-fotos-v3';
 let customPhotos={};
 try{customPhotos=JSON.parse(localStorage.getItem(STORAGE_PHOTOS)||'{}')}catch{}
 try{const old=JSON.parse(localStorage.getItem('noturno-photos')||'{}');for(const [id,value] of Object.entries(old)){if(typeof value==='string'&&value.startsWith('data:image/')&&!customPhotos[id])customPhotos[id]=value}}catch{}
-let photos={...customPhotos};
+const failedPhotos=new Set();
+const defaultPhotos=Object.fromEntries(Object.entries(PHOTO_LIBRARY).map(([id,record])=>[id,record.sources[0]]));
+let photos={...defaultPhotos,...customPhotos};
+function nextPhoto(id,failed){
+ if(photos[id]!==failed)return;
+ failedPhotos.add(failed);
+ const next=(PHOTO_LIBRARY[id]?.sources||[]).find(src=>!failedPhotos.has(src));
+ photos[id]=next||null;
+ updatePhotoViews();
+}
 function initials(c){return c.name.split(' ').map(x=>x[0]).join('').slice(0,2)}
 function savePhoto(id,data){customPhotos[id]=data;try{localStorage.setItem(STORAGE_PHOTOS,JSON.stringify(customPhotos))}catch(e){alert('A imagem é muito grande para salvar neste navegador.');return}photos[id]=data;updatePhotoViews()}
 function updatePhotoViews(){render();refreshCards();if(selected)select(selected);window.dispatchEvent(new Event('noturno-portraits-updated'))}
 function imageOrFallback(c,extra=''){
   const av=document.createElement(photos[c.id]?'img':'div');av.className='avatar '+extra;
-  if(photos[c.id]){av.src=photos[c.id];av.alt='Foto de '+c.name;av.loading='lazy';av.referrerPolicy='no-referrer';av.onerror=()=>{photos[c.id]=null;av.replaceWith(imageOrFallback(c,extra))}}
+  if(photos[c.id]){av.src=photos[c.id];av.alt='Foto de '+c.name;av.loading='lazy';av.referrerPolicy='no-referrer';av.onerror=()=>nextPhoto(c.id,av.src)}
   else {av.classList.add('photo-empty');av.textContent=initials(c);av.setAttribute('role','img');av.setAttribute('aria-label','Sem foto: '+c.name)}
   return av;
 }
@@ -44,14 +53,14 @@ function photoEditor(c,host){
   let f=file.files[0];if(!f)return;let reader=new FileReader();reader.onload=()=>{let pic=new Image();pic.onload=()=>{
    let cv=document.createElement('canvas');cv.width=240;cv.height=240;let ctx=cv.getContext('2d');let side=Math.min(pic.width,pic.height),sx=(pic.width-side)/2,sy=(pic.height-side)/2;ctx.drawImage(pic,sx,sy,side,side,0,0,240,240);savePhoto(c.id,cv.toDataURL('image/jpeg',.81))};pic.src=reader.result};reader.readAsDataURL(f)
  };controls.append(upload,file);
- if(customPhotos[c.id]){let remove=document.createElement('button');remove.textContent='Remover foto enviada';remove.onclick=()=>{delete customPhotos[c.id];delete photos[c.id];localStorage.setItem(STORAGE_PHOTOS,JSON.stringify(customPhotos));updatePhotoViews()};controls.append(remove)}
+ if(customPhotos[c.id]){let remove=document.createElement('button');remove.textContent='Remover foto enviada';remove.onclick=()=>{delete customPhotos[c.id];photos[c.id]=(PHOTO_LIBRARY[c.id]?.sources||[]).find(src=>!failedPhotos.has(src))||null;localStorage.setItem(STORAGE_PHOTOS,JSON.stringify(customPhotos));updatePhotoViews()};controls.append(remove)}
  host.append(controls);
  let note=document.createElement('div');note.className='photo-note';
- note.textContent='Adicione uma foto do personagem na série.';
+ note.textContent=customPhotos[c.id]?'Foto do personagem enviada neste navegador.':PHOTO_LIBRARY[c.id]&&photos[c.id]?PHOTO_LIBRARY[c.id].credit:'Foto do personagem ainda não disponível. Você pode enviar uma imagem da série.';
  host.append(note)
 }
 let selected=null,scale=1,tx=0,ty=0,drag=null,moved=false;const svg=document.getElementById('graph'),viewport=document.getElementById('viewport'),edges=document.getElementById('edges'),nodes=document.getElementById('nodes');const ns='http://www.w3.org/2000/svg';function el(tag,attrs,txt){let e=document.createElementNS(ns,tag);Object.entries(attrs||{}).forEach(([k,v])=>e.setAttribute(k,v));if(txt)e.textContent=txt;return e}function transform(){viewport.setAttribute('transform',`translate(${tx} ${ty}) scale(${scale})`)}function render(){edges.replaceChildren();nodes.replaceChildren();let filter=document.getElementById('category').value,q=document.getElementById('search').value.toLowerCase();let visible=chars.filter(c=>(filter==='all'||c.cat===filter)&&c.name.toLowerCase().includes(q));let ids=new Set(visible.map(c=>c.id));links.forEach(([a,b,label])=>{if(!ids.has(a)||!ids.has(b))return;let u=chars.find(c=>c.id===a),v=chars.find(c=>c.id===b);let line=el('line',{x1:u.x,y1:u.y,x2:v.x,y2:v.y,stroke:selected&&(selected===a||selected===b)?'#477aa9':'#a9b9ca','stroke-width':selected&&(selected===a||selected===b)?2.8:1.5,'stroke-opacity':selected&&selected!==a&&selected!==b?.18:.7});edges.append(line);let t=el('title',{},label);line.append(t)});visible.forEach(c=>{let g=el('g',{'data-id':c.id,style:'cursor:pointer'}),highlight=!selected||selected===c.id||links.some(([a,b])=>(a===selected&&b===c.id)||(b===selected&&a===c.id));let radius=selected===c.id?48:42;g.append(el('circle',{cx:c.x,cy:c.y,r:radius+3,fill:'#fff',stroke:colors[c.cat],'stroke-width':selected===c.id?5:3,opacity:highlight?1:.3}));if(photos[c.id]){const defs=el('defs'),clip=el('clipPath',{id:'clip-'+c.id});clip.append(el('circle',{cx:c.x,cy:c.y,r:radius-2}));defs.append(clip);g.append(defs);
- let pic=el('image',{x:c.x-radius+2,y:c.y-radius+2,width:(radius-2)*2,height:(radius-2)*2,href:photos[c.id],preserveAspectRatio:'xMidYMid slice','clip-path':'url(#clip-'+c.id+')',opacity:highlight?1:.30});g.append(pic)
+ let pic=el('image',{x:c.x-radius+2,y:c.y-radius+2,width:(radius-2)*2,height:(radius-2)*2,href:photos[c.id],preserveAspectRatio:'xMidYMid slice','clip-path':'url(#clip-'+c.id+')',opacity:highlight?1:.30});pic.addEventListener('error',()=>nextPhoto(c.id,pic.getAttribute('href')));g.append(pic)
 }else{g.append(el('circle',{cx:c.x,cy:c.y,r:radius-2,fill:'#e8eef6',opacity:highlight?1:.30}));g.append(el('text',{x:c.x,y:c.y+6,'text-anchor':'middle','font-size':17,'font-weight':700,fill:'#385777',opacity:highlight?1:.30},initials(c)))}
 g.append(el('text',{x:c.x,y:c.y+radius+21,'text-anchor':'middle','font-size':13,'font-weight':600,fill:'#263f5c',opacity:highlight?1:.3},c.name));g.addEventListener('pointerdown',e=>{e.stopPropagation();drag={type:'node',id:c.id,x:e.clientX,y:e.clientY,ox:c.x,oy:c.y};moved=false;svg.setPointerCapture(e.pointerId)});g.addEventListener('click',()=>select(c.id));nodes.append(g)});transform()}
 function refreshCards(){document.querySelectorAll('#characterCards .item').forEach((d,i)=>{const c=chars[i],a=d.querySelector('.avatar');if(a)a.replaceWith(imageOrFallback(c))})}

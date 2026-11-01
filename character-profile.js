@@ -7,7 +7,22 @@
   const photoFrame=document.getElementById('photoFrame');
   const titleBase=`${data.name} — ${data.seriesTitle} | Series Journal`;
   function current(){const v=new URLSearchParams(location.search).get('episodio');return v&&/^\d+$/.test(v)?Math.max(1,Math.min(data.maxEpisode,Number(v))):data.maxEpisode}
-  function photo(limit){const entry=data.photos.filter(([first])=>first<=limit).at(-1);const src=entry?.[1];const fallback=document.createElement('div');fallback.id='characterPhoto';fallback.className='character-photo-missing';fallback.setAttribute('role','img');fallback.setAttribute('aria-label','Foto do personagem ainda não disponível');fallback.textContent=data.name.split(' ').slice(0,2).map(s=>s[0]).join('');photoFrame.replaceChildren();if(src&&limit>=data.fromEpisode){const img=document.createElement('img');img.id='characterPhoto';img.src=new URL(src,root).href;img.alt=`${data.name} na série`;img.width=320;img.height=400;img.onerror=()=>img.replaceWith(fallback);photoFrame.append(img)}else photoFrame.append(fallback);const label=document.createElement('p');label.className='character-photo-note';label.textContent=src&&limit>=data.fromEpisode?'Foto do personagem na série':'Foto do personagem ainda não disponível';photoFrame.append(label);if(limit>=data.fromEpisode&&data.house)photoFrame.append(CharacterFamilies.icon(data.house));document.getElementById('profileCategory').hidden=limit<data.fromEpisode}
+  function photo(limit){
+    const entry=data.photos.filter(([first])=>first<=limit).at(-1);
+    let custom=null;
+    if(data.series==='noturno'){try{const saved=JSON.parse(localStorage.getItem('noturno-fotos-v3')||'{}');const old=JSON.parse(localStorage.getItem('noturno-photos')||'{}');const candidate=saved[data.id]||old[data.id];if(typeof candidate==='string'&&candidate.startsWith('data:image/'))custom=candidate}catch{}}
+    const candidates=limit>=data.fromEpisode?[...new Set([custom,entry?.[1],...(data.photoCandidates||[])].filter(Boolean))]:[];
+    const fallback=document.createElement('div');fallback.id='characterPhoto';fallback.className='character-photo-missing';fallback.setAttribute('role','img');fallback.setAttribute('aria-label','Foto do personagem ainda não disponível');fallback.textContent=data.name.split(' ').slice(0,2).map(s=>s[0]).join('');
+    const label=document.createElement('p');label.className='character-photo-note';
+    photoFrame.replaceChildren();
+    if(candidates.length){
+      const img=document.createElement('img');img.id='characterPhoto';img.alt=`${data.name} na série`;img.width=320;img.height=400;img.referrerPolicy='no-referrer';let index=0;
+      function next(){if(index>=candidates.length){img.replaceWith(fallback);label.textContent='Foto do personagem ainda não disponível';return}img.src=new URL(candidates[index++],root).href}
+      img.onerror=next;photoFrame.append(img);label.textContent=custom?'Foto do personagem enviada neste navegador':'Foto do personagem na série';next();
+    }else{photoFrame.append(fallback);label.textContent='Foto do personagem ainda não disponível'}
+    photoFrame.append(label);if(limit>=data.fromEpisode&&data.house)photoFrame.append(CharacterFamilies.icon(data.house));document.getElementById('profileCategory').hidden=limit<data.fromEpisode;
+  }
+
   function render(){
     const limit=current();selector.value=String(limit);photo(limit);
     const available=limit>=data.fromEpisode;
