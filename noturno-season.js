@@ -15,7 +15,7 @@
     return e;
   };
   const dateLabel = date => date.split('-').reverse().join('/');
-  const tabs = ['graphview', 'recap', 'characters', 'places', 'mysteries'];
+  const tabs = ['graphview', 'recap', 'season-summary', 'characters', 'places', 'mysteries'];
   const counts = ['nchars', 'nlinks', 'nplaces', 'nclues'];
   const originalCounts = counts.map(id => byId(id).textContent);
   let currentTab = 'graphview';
@@ -44,6 +44,16 @@
   pending.setAttribute('aria-live', 'polite');
   byId('graphview').before(pending);
   function update() {
+    if (currentTab === 'season-summary') {
+      pending.hidden = true;
+      tabs.forEach(id => byId(id).classList.toggle('hidden', id !== currentTab));
+      byId('pageTitle').textContent = 'Resumo da Temporada';
+      byId('pageSubtitle').textContent = 'Edição parcial em duas páginas · conteúdo narrativo disponível até o episódio 1.';
+      document.querySelector('.intro small').textContent = 'EDIÇÃO PARCIAL / TEMPORADA 1';
+      episodeSelect.closest('label').hidden = true;
+      return;
+    }
+    episodeSelect.closest('label').hidden = false;
     const ep = schedule[Number(episodeSelect.value) - 1];
     document.querySelector('.intro small').textContent = `ARQUIVO ${String(ep.number).padStart(3, '0')} / EPISÓDIO ${ep.number}`;
     pending.hidden = ep.dossier;

@@ -117,3 +117,13 @@ Validação no Chromium: oito episódios, 34 trechos, limites de aparição, gra
 ### Identidade do cabeçalho
 
 Os três dossiês mostram uma imagem local representativa ao lado do título no topo. O cabeçalho usa azul-marinho com detalhes coloridos por série: ciano para Noturno, tons quentes para A Casa do Dragão e azul-claro para O Problema dos 3 Corpos. A imagem de Noturno é identificada no texto alternativo como retrato de Stephen Graham, do elenco, e não como pôster oficial. A aba de navegação passa a se chamar **Mapa de Conexões**. A seleção de série e as demais funcionalidades permanecem disponíveis no cabeçalho responsivo.
+
+## Resumo da Temporada — jornal em duas páginas
+
+A nova aba aparece nos três dossiês e tem navegação própria, independente do episódio selecionado. A Casa do Dragão e O Problema dos 3 Corpos têm sínteses completas da primeira temporada; Noturno tem uma edição explicitamente parcial, baseada apenas no material do episódio 1. Nenhum desfecho dos capítulos ainda não apurados foi inventado.
+
+A leitura é apresentada como duas páginas de jornal: cabeçalho editorial, manchetes, abertura com imagem, colunas, notas breves, personagens e perguntas finais. A revelação do texto é precedida de aviso de spoilers. O botão “Imprimir / salvar PDF” revela a edição e abre a impressão do navegador; o CSS isola o jornal e formata exatamente duas folhas A4, sem cabeçalho do site ou conteúdo das outras abas. No celular, o conteúdo usa uma coluna para legibilidade.
+
+Arquivos compartilhados adicionais: `season-newspaper-data.js` (conteúdo editorial) e `season-newspaper.js` (montagem e controles). Devem acompanhar a publicação junto a `style.css` e às imagens locais.
+
+Validação no Chromium e pypdf: três abas novas, dois artigos de página por jornal, aviso de spoilers e controles, retorno ao episódio, tratamento de Noturno quando o episódio 2 está selecionado, imagens locais, ausência de transbordamento horizontal em 390/1280 px, três PDFs com exatamente duas páginas A4 e presença do final de todas as matérias nos PDFs, sem corte de texto.
