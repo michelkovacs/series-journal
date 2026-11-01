@@ -2040,57 +2040,114 @@ const DRAGON_DATA = {
     {
       "name": "Porto Real",
       "from_": 1,
-      "desc": "Capital dos Sete Reinos e centro da disputa pela sucessão."
+      "desc": "Capital dos Sete Reinos e centro da disputa pela sucessão.",
+      "episodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9
+      ]
     },
     {
       "name": "Fortaleza Vermelha",
       "from_": 1,
-      "desc": "Residência da família real, sede do conselho e palco das decisões da Coroa."
+      "desc": "Residência da família real, sede do conselho e palco das decisões da Coroa.",
+      "episodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9
+      ]
     },
     {
       "name": "Harrenhal",
       "from_": 1,
-      "desc": "Local do Grande Conselho que escolhe Viserys; sede da Casa Strong."
+      "desc": "Local do Grande Conselho que escolhe Viserys; sede da Casa Strong.",
+      "episodes": [
+        1,
+        6
+      ]
     },
     {
       "name": "Pedra do Dragão",
       "from_": 2,
-      "desc": "Fortaleza ancestral dos Targaryen, ocupada por Daemon durante seu desafio ao rei."
+      "desc": "Fortaleza ancestral dos Targaryen, ocupada por Daemon durante seu desafio ao rei.",
+      "episodes": [
+        2,
+        6,
+        7,
+        8,
+        10
+      ]
     },
     {
       "name": "Degraus",
       "from_": 2,
-      "desc": "Arquipélago estratégico em que a Triarquia ameaça as rotas de Corlys."
+      "desc": "Arquipélago estratégico em que a Triarquia ameaça as rotas de Corlys.",
+      "episodes": [
+        2,
+        3
+      ]
     },
     {
       "name": "Mata do Rei",
       "from_": 3,
-      "desc": "Floresta da caçada de aniversário de Aegon e do encontro de Rhaenyra com o cervo branco."
+      "desc": "Floresta da caçada de aniversário de Aegon e do encontro de Rhaenyra com o cervo branco.",
+      "episodes": [
+        3
+      ]
     },
     {
       "name": "Derivamarca",
       "from_": 5,
-      "desc": "Sede dos Velaryon, onde são negociadas alianças e sucessões."
+      "desc": "Sede dos Velaryon, onde são negociadas alianças e sucessões.",
+      "episodes": [
+        5,
+        7,
+        8
+      ]
     },
     {
       "name": "Vale de Arryn",
       "from_": 5,
-      "desc": "Região de origem de Rhea Royce, esposa de Daemon."
+      "desc": "Região de origem de Rhea Royce, esposa de Daemon.",
+      "episodes": [
+        5
+      ]
     },
     {
       "name": "Pentos",
       "from_": 6,
-      "desc": "Cidade livre onde vivem Daemon, Laena e suas filhas."
+      "desc": "Cidade livre onde vivem Daemon, Laena e suas filhas.",
+      "episodes": [
+        6
+      ]
     },
     {
       "name": "Fosso dos Dragões",
       "from_": 6,
-      "desc": "Local de abrigo e treinamento dos dragões em Porto Real."
+      "desc": "Local de abrigo e treinamento dos dragões em Porto Real.",
+      "episodes": [
+        6,
+        9
+      ]
     },
     {
       "name": "Ponta Tempestade",
-      "from_": 10,
-      "desc": "Sede dos Baratheon, visitada por Lucerys em busca de apoio."
+      "from_": 4,
+      "desc": "Sede da Casa Baratheon. Rhaenyra recebe propostas de casamento durante sua visita à fortaleza.",
+      "episodes": [
+        4,
+        10
+      ]
     }
   ]
 };

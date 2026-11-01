@@ -50,6 +50,25 @@ categories={
 tones=['rose','green','blue','violet','amber']
 for series_id,art in {'dragon':'house-of-the-dragon.webp','three-body':'three-body.webp','noturno':'noturno-mark.svg'}.items():series[series_id]['art']='assets/series/'+art
 series['noturno']['art']="https://m.media-amazon.com/images/S/pv-target-images/ef9425e1792b320dd0da4498623cbc24d749ee7081701b64263515291f6bcb41.jpg"
+# Presence is an editorial index of the episode recap, including explicit mentions.
+presence={}
+for series_id,item in series.items():
+    data=item['data'];first_counts={}
+    for character in data['characters']:
+        first=character['name'].split()[0];first_counts[first]=first_counts.get(first,0)+1
+    indexed={c['id']:[] for c in data['characters']}
+    for ep in data['episodes']:
+        epno=ep['number'];ids={cid for event in ep.get('events',[]) for cid in event.get('characters',[])}
+        text=' '.join([ep.get('lead','')]+[part for event in ep.get('events',[]) for part in [event.get('text','')]+event.get('paragraphs',[])])
+        for character in data['characters']:
+            names=[character['name']]
+            if first_counts[character['name'].split()[0]]==1 and character['name'].split()[0] not in ['Grande','Ser','Lorde']:names.append(character['name'].split()[0])
+            if character['id']=='mellos':names.append('Mellos')
+            if character['id']=='craghas':names.append('Alimentador de Caranguejos')
+            mentioned=any(re.search(r'(?<!\w)'+re.escape(name)+r'(?!\w)',text,re.IGNORECASE) for name in names)
+            if character['from']<=epno and (character['id'] in ids or mentioned or (character['id']=='jaehaerys-elder' and epno==1)):indexed[character['id']].append(epno)
+    presence[series_id]=dict(maxEpisode=len(data['episodes']),knownUntil=item['knownUntil'],characters=indexed)
+(ROOT/'episode-presence.js').write_text('const EPISODE_PRESENCE = '+json.dumps(presence,ensure_ascii=False,indent=2)+';\n')
 manifest={};count=0;urls=[]
 for key,s in series.items():
     d=s['data'];maxep=len(d['episodes']);characters={c['id']:c for c in d['characters']}
@@ -90,7 +109,7 @@ for key,s in series.items():
         options=''.join(f'<option value="{e["number"]}"'+(' selected' if e['number']==maxep else '')+f'>{e["number"]:02d} — {esc(e["title"])}</option>' for e in record['episodes'])
         schema={'@context':'https://schema.org','@type':'ProfilePage','url':canonical,'name':c['name']+' — '+s['title'],'mainEntity':{'@type':'Thing' if c.get('kind')=='dragon' else 'Person','name':c['name'],'description':c['desc'],'url':canonical}}
         if photo:schema['mainEntity']['image']=photo if photo.startswith('https://') else SITE+photo
-        asset_version='photo-completion-1' if key=='noturno' else 'photo-completion-1' if key=='dragon' else 'multi-categories-1'
+        asset_version='episode-filter-1'
         document=f'''<!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(c['name'])} — {esc(s['title'])} | Series Journal</title><meta name="description" content="{esc(meta)}"><link rel="canonical" href="{canonical}">
@@ -99,21 +118,21 @@ for key,s in series.items():
 <link rel="stylesheet" href="../../../style.css?v={asset_version}"><script>document.documentElement.classList.add('js')</script>
 <script type="application/ld+json">{encoded(schema)}</script>
 <script type="application/json" id="characterRecord">{encoded(record)}</script>
-<script src="../../../character-families.js?v={asset_version}" defer></script><script src="../../../character-profile.js?v={asset_version}" defer></script></head>
+<script src="../../../character-families.js?v={asset_version}" defer></script><script src="../../../episode-presence.js?v=episode-filter-1" defer></script><script src="../../../episode-filter.js?v=episode-filter-1" defer></script><script src="../../../character-profile.js?v={asset_version}" defer></script></head>
 <body data-series="{key}" class="character-document"><header><div class="series-brand"><img class="series-art" src="{header_art}" alt="Imagem representativa de {esc(s['title'])}" width="288" height="180"><div class="series-brand-copy"><div class="character-series-name">{esc(s['title'])} <span>/ PERSONAGENS</span></div><small>Ficha individual · Temporada 1</small></div></div><nav aria-label="Navegação da ficha"><a id="allCharactersLink" href="../../../{s['page']}?episodio={mapep}&amp;tab=characters">Todos os personagens</a><a id="headerMapLink" href="../../../{s['page']}?episodio={mapep}&amp;personagem={c['id']}&amp;tab=graphview">Ver Mapa de Conexões</a></nav></header>
 <main><nav class="character-breadcrumbs" aria-label="Localização"><a href="../../../{s['page']}">{esc(s['title'])}</a><span aria-hidden="true">/</span><span>{esc(c['name'])}</span></nav>
 <article class="character-profile" id="characterProfile"><div class="character-profile-hero"><div class="character-profile-photo" id="photoFrame">{photo_html}{crest}</div><div class="character-profile-copy"><span class="tag category-tag" id="profileCategory" data-tone="{category["tone"]}">{esc(category["label"])}</span><h1>{esc(c['name'])}</h1><p id="characterDescription">{esc(desc)}</p><p id="characterScope" class="character-scope">Conteúdo até a temporada 1, episódio {maxep}.</p><a class="character-map-link" id="mapLink" href="../../../{s['page']}?episodio={mapep}&amp;personagem={c['id']}&amp;tab=graphview">Ver Mapa de Conexões →</a></div></div>
 <section class="character-history"><div class="character-history-heading"><div><span class="tag">HISTÓRICO DO PERSONAGEM</span><h2>Temporada 1</h2></div><form id="characterFilter"><label>Temporada<select id="profileSeason" name="temporada"><option value="1">Temporada 1</option></select></label><label>Até o episódio<select id="profileEpisode" name="episodio">{options}</select></label><noscript><p>Sem JavaScript, esta página mostra todo o histórico disponível da temporada 1.</p></noscript></form></div><p class="character-history-note" id="historyNote">Acompanhe os acontecimentos registrados até o episódio escolhido.</p><ol class="character-history-list" id="characterHistory">{entries}</ol></section>
 <section class="character-relations"><h2>Personagens relacionados</h2><ul id="characterRelations">{related}</ul></section></article></main></body></html>'''
         target=ROOT/path/'index.html';target.parent.mkdir(parents=True,exist_ok=True);target.write_text(document);count+=1
-index_parts=['<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Personagens das séries | Series Journal</title><meta name="description" content="Índice de personagens de Noturno, A Casa do Dragão e O Problema dos 3 Corpos, com fichas e histórico por episódio."><link rel="canonical" href="'+SITE+'personagens/"><link rel="stylesheet" href="../style.css?v=character-recaps-1"><script src="../character-browser.js?v=character-recaps-1" defer></script></head><body><header><div class="series-brand"><div class="series-brand-copy"><h1>PERSONAGENS <span>/ SERIES JOURNAL</span></h1><small>Fichas individuais e histórico por episódio</small></div></div><nav><a href="../index.html">Noturno</a><a href="../dragon.html">A Casa do Dragão</a><a href="../three-body.html">O Problema dos 3 Corpos</a></nav></header><main class="character-directory"><p>Índice das primeiras temporadas. As fichas permitem escolher até qual episódio exibir o histórico.</p>']
+index_parts=['<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Personagens das séries | Series Journal</title><meta name="description" content="Índice de personagens de Noturno, A Casa do Dragão e O Problema dos 3 Corpos, com fichas e histórico por episódio."><link rel="canonical" href="'+SITE+'personagens/"><link rel="stylesheet" href="../style.css?v=episode-filter-1"><script src="../episode-presence.js?v=episode-filter-1" defer></script><script src="../episode-filter.js?v=episode-filter-1" defer></script><script src="../character-browser.js?v=episode-filter-1" defer></script></head><body><header><div class="series-brand"><div class="series-brand-copy"><h1>PERSONAGENS <span>/ SERIES JOURNAL</span></h1><small>Fichas individuais e histórico por episódio</small></div></div><nav><a href="../index.html">Noturno</a><a href="../dragon.html">A Casa do Dragão</a><a href="../three-body.html">O Problema dos 3 Corpos</a></nav></header><main class="character-directory"><p>Índice das primeiras temporadas. As fichas permitem escolher até qual episódio exibir o histórico.</p>']
 for series_key,series_info in manifest.items():
     options='<option value="all">Todas as categorias</option>'+''.join('<option value="'+k+'">'+esc(label)+'</option>' for k,label in categories[series_key].items())
-    index_parts.append('<section><h2>'+esc(series_info['title'])+'</h2><label class="character-category-filter">Filtrar por categoria<select data-directory-filter aria-label="Categoria de '+esc(series_info['title'])+'">'+options+'</select></label><ul>')
+    index_parts.append('<section data-series="'+series_key+'"><h2>'+esc(series_info['title'])+'</h2><label class="character-category-filter">Filtrar por categoria<select data-directory-filter aria-label="Categoria de '+esc(series_info['title'])+'">'+options+'</select></label><ul>')
     for cid,item in sorted(series_info['characters'].items(),key=lambda pair:unicodedata.normalize('NFKD',pair[1]['name']).casefold()):
         character=next(c for c in series[series_key]['data']['characters'] if c['id']==cid)
         cat=character['cat'];tone=tones[list(categories[series_key]).index(cat)]
-        index_parts.append('<li data-category="'+cat+'"><a href="../'+item['path']+'">'+esc(item['name'])+'</a><span class="tag category-tag" data-tone="'+tone+'">'+esc(categories[series_key][cat])+'</span></li>')
+        index_parts.append('<li data-character="'+cid+'" data-from="'+str(character['from'])+'" data-category="'+cat+'"><a href="../'+item['path']+'">'+esc(item['name'])+'</a><span class="tag category-tag" data-tone="'+tone+'">'+esc(categories[series_key][cat])+'</span></li>')
     index_parts.append('</ul></section>')
 index_parts.append('</main></body></html>')
 (ROOT/'personagens/index.html').write_text(''.join(index_parts))

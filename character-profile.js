@@ -5,6 +5,7 @@
   const profile=document.getElementById('characterProfile');
   const selector=document.getElementById('profileEpisode');
   const photoFrame=document.getElementById('photoFrame');
+  const only=EpisodeFilter.checkbox('profileOnlyEpisode','Mostrar apenas o histórico deste episódio',render);document.getElementById('characterFilter').after(only.label);
   const titleBase=`${data.name} — ${data.seriesTitle} | Series Journal`;
   function current(){const v=new URLSearchParams(location.search).get('episodio');return v&&/^\d+$/.test(v)?Math.max(1,Math.min(data.maxEpisode,Number(v))):data.maxEpisode}
   function photo(limit){
@@ -28,10 +29,10 @@
     const available=limit>=data.fromEpisode;
     document.getElementById('characterDescription').textContent=available?data.baseDescription:'Ainda não há informações deste personagem até o episódio escolhido.';
     document.getElementById('characterScope').textContent=`Conteúdo até a temporada 1, episódio ${limit}. Contém revelações até esse ponto.`;
-    document.querySelectorAll('.character-history-entry').forEach(item=>item.hidden=Number(item.dataset.episode)>limit);
-    const shown=data.history.filter(h=>h.episode<=limit);
-    document.getElementById('historyNote').textContent=!available?'Este personagem é apresentado a partir de um episódio posterior.':data.knownUntil<limit?`O histórico apurado está disponível até o episódio ${data.knownUntil}. Os capítulos seguintes ainda não foram incorporados ao dossiê.`:shown.length?'Acontecimentos registrados até o episódio escolhido. Não há registros novos em todos os capítulos.':'Ainda não há acontecimentos registrados até este episódio.';
-    document.querySelectorAll('#characterRelations>li').forEach((item,i)=>{const r=data.relations[i];item.hidden=!available||limit<r.start||limit>r.end;const link=item.querySelector('a');const out=new URL(r.path,root);out.searchParams.set('temporada','1');out.searchParams.set('episodio',String(limit));link.href=out.href});
+    document.querySelectorAll('.character-history-entry').forEach(item=>item.hidden=Number(item.dataset.episode)>limit||(only.input.checked&&Number(item.dataset.episode)!==limit));
+    const shown=data.history.filter(h=>h.episode<=limit&&(!only.input.checked||h.episode===limit));
+    document.getElementById('historyNote').textContent=!available?'Este personagem é apresentado a partir de um episódio posterior.':data.knownUntil<limit?`O histórico apurado está disponível até o episódio ${data.knownUntil}. Os capítulos seguintes ainda não foram incorporados ao dossiê.`:shown.length?(only.input.checked?'Acontecimentos registrados neste episódio.':'Acontecimentos registrados até o episódio escolhido. Não há registros novos em todos os capítulos.'):'Ainda não há acontecimentos registrados até este episódio.';
+    document.querySelectorAll('#characterRelations>li').forEach((item,i)=>{const r=data.relations[i];item.hidden=!available||limit<r.start||limit>r.end||(only.input.checked&&!EpisodeFilter.has(data.series,r.id,limit));const link=item.querySelector('a');const out=new URL(r.path,root);out.searchParams.set('temporada','1');out.searchParams.set('episodio',String(limit));link.href=out.href});
     const mapEpisode=Math.min(limit,data.knownUntil);const map=new URL(data.seriesPage,root);map.searchParams.set('episodio',String(mapEpisode));map.searchParams.set('personagem',data.id);map.searchParams.set('tab','graphview');
     for(const id of ['mapLink','headerMapLink']){const a=document.getElementById(id);a.href=map.href;if(id==='mapLink')a.textContent=mapEpisode===limit?'Ver Mapa de Conexões →':`Ver Mapa de Conexões até o episódio ${mapEpisode} →`}
     const all=document.getElementById('allCharactersLink');if(all){const out=new URL(data.seriesPage,root);out.searchParams.set('episodio',String(mapEpisode));out.searchParams.set('tab','characters');all.href=out.href}

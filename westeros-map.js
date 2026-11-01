@@ -36,7 +36,7 @@
   };
   host.replaceChildren();
   const panel=document.createElement('div');panel.className='westeros-panel';panel.id='westerosPanel';
-  panel.innerHTML=`<div class="westeros-toolbar"><div><span class="tag">ATLAS DA TEMPORADA 1</span><h2>Westeros e o Mar Estreito</h2><p id="westerosScope"></p></div><div class="westeros-controls"><label>Até o episódio <select id="westerosEpisode" aria-label="Episódio do mapa"></select></label><button type="button" id="westerosFullscreen">Ver em tela cheia</button></div></div><p class="muted westeros-help">Arraste para explorar, use os controles para aproximar e clique nos emblemas para conhecer os locais. Os nomes e os domínios acompanham o episódio escolhido. Pontos dentro de Porto Real são deslocados com linhas de referência para facilitar a leitura.</p><div class="westeros-layout"><div class="westeros-map-stage"><div class="westeros-viewport" tabindex="0" aria-label="Mapa de Westeros. Use os botões de zoom e as setas para explorar."><svg id="westerosSvg" viewBox="0 0 1200 1650" role="group" aria-labelledby="westerosTitle westerosDescription"><title id="westerosTitle">Locais conhecidos de Westeros</title><desc id="westerosDescription">Litoral detalhado, nomes e pins com emblemas das casas, limitados ao episódio escolhido.</desc><image href="assets/maps/westeros.svg?v=heraldry-1" x="-2000" y="-2000" width="5200" height="5650"/><g id="westerosLeaders" aria-hidden="true"></g><g id="westerosPins"></g></svg></div><div class="westeros-navigation" aria-label="Controles do mapa"><button type="button" id="westerosZoomIn" aria-label="Aproximar mapa">＋</button><button type="button" id="westerosZoomOut" aria-label="Afastar mapa">−</button><button type="button" id="westerosFit">Enquadrar locais</button><button type="button" id="westerosWhole">Westeros inteiro</button></div><a class="westeros-attribution" href="assets/maps/NOTICE.md" target="_blank" rel="noopener">Base: Atlas of Thrones · CC BY-NC-SA 3.0</a></div><section class="westeros-detail" id="westerosDetail" aria-live="polite" aria-atomic="true" aria-label="Informações do local"></section></div><div class="westeros-list" id="westerosList" aria-label="Locais disponíveis no mapa"></div>`;
+  panel.innerHTML=`<div class="westeros-toolbar"><div><span class="tag">ATLAS DA TEMPORADA 1</span><h2>Westeros e o Mar Estreito</h2><p id="westerosScope"></p></div><div class="westeros-controls"><label>Até o episódio <select id="westerosEpisode" aria-label="Episódio do mapa"></select></label><label class="episode-only-filter"><input type="checkbox" id="westerosOnlyEpisode">Somente neste episódio</label><button type="button" id="westerosFullscreen">Ver em tela cheia</button></div></div><p class="muted westeros-help">Arraste para explorar, use os controles para aproximar e clique nos emblemas para conhecer os locais. Os nomes e os domínios acompanham o episódio escolhido. Pontos dentro de Porto Real são deslocados com linhas de referência para facilitar a leitura.</p><div class="westeros-layout"><div class="westeros-map-stage"><div class="westeros-viewport" tabindex="0" aria-label="Mapa de Westeros. Use os botões de zoom e as setas para explorar."><svg id="westerosSvg" viewBox="0 0 1200 1650" role="group" aria-labelledby="westerosTitle westerosDescription"><title id="westerosTitle">Locais conhecidos de Westeros</title><desc id="westerosDescription">Litoral detalhado, nomes e pins com emblemas das casas, limitados ao episódio escolhido.</desc><image href="assets/maps/westeros.svg?v=heraldry-1" x="-2000" y="-2000" width="5200" height="5650"/><g id="westerosLeaders" aria-hidden="true"></g><g id="westerosPins"></g></svg></div><div class="westeros-navigation" aria-label="Controles do mapa"><button type="button" id="westerosZoomIn" aria-label="Aproximar mapa">＋</button><button type="button" id="westerosZoomOut" aria-label="Afastar mapa">−</button><button type="button" id="westerosFit">Enquadrar locais</button><button type="button" id="westerosWhole">Westeros inteiro</button></div><a class="westeros-attribution" href="assets/maps/NOTICE.md" target="_blank" rel="noopener">Base: Atlas of Thrones · CC BY-NC-SA 3.0</a></div><section class="westeros-detail" id="westerosDetail" aria-live="polite" aria-atomic="true" aria-label="Informações do local"></section></div><div class="westeros-list" id="westerosList" aria-label="Locais disponíveis no mapa"></div>`;
   host.append(panel);
   const byId=id=>document.getElementById(id);
   const selector=byId('westerosEpisode');
@@ -47,7 +47,8 @@
   function full(){return document.fullscreenElement===panel||fallback}
   function ratio(){return stage.clientWidth/Math.max(stage.clientHeight,1)}
   function draw(){viewport.setAttribute('viewBox',`${camera.x-camera.w/2} ${camera.y-camera.h/2} ${camera.w} ${camera.h}`)}
-  function fit(whole=false){const pts=DRAGON_DATA.places.filter(p=>p.from_<=limit).map(p=>coordinates[p.name]);const xs=pts.map(p=>p[0]),ys=pts.map(p=>p[1]);const left=whole?0:Math.min(...xs)-270,right=whole?1200:Math.max(...xs)+270,top=whole?0:Math.min(...ys)-140,bottom=whole?1650:Math.max(...ys)+140;const r=ratio();let w=Math.max(650,right-left),h=Math.max(420,bottom-top);if(w/h<r)w=h*r;else h=w/r;camera={x:(left+right)/2,y:(top+bottom)/2,w,h};draw()}
+  function visiblePlaces(){return DRAGON_DATA.places.filter(p=>p.from_<=limit&&(!byId('westerosOnlyEpisode').checked||p.episodes.includes(limit)))}
+  function fit(whole=false){const pts=visiblePlaces().map(p=>coordinates[p.name]);if(!pts.length){camera={x:600,y:1100,w:1200,h:1200/ratio()};draw();return}const xs=pts.map(p=>p[0]),ys=pts.map(p=>p[1]);const left=whole?0:Math.min(...xs)-270,right=whole?1200:Math.max(...xs)+270,top=whole?0:Math.min(...ys)-140,bottom=whole?1650:Math.max(...ys)+140;const r=ratio();let w=Math.max(650,right-left),h=Math.max(420,bottom-top);if(w/h<r)w=h*r;else h=w/r;camera={x:(left+right)/2,y:(top+bottom)/2,w,h};draw()}
   function zoom(factor){const w=Math.max(350,Math.min(2600,camera.w*factor));camera.w=w;camera.h=w/ratio();draw()}
   byId('westerosZoomIn').onclick=()=>zoom(.8);byId('westerosZoomOut').onclick=()=>zoom(1.25);byId('westerosFit').onclick=()=>fit();byId('westerosWhole').onclick=()=>fit(true);
   stage.addEventListener('pointerdown',e=>{if(e.target.closest('.westeros-pin')||e.button!==0)return;drag={x:e.clientX,y:e.clientY,cx:camera.x,cy:camera.y};stage.setPointerCapture(e.pointerId)});
@@ -58,7 +59,7 @@
   new ResizeObserver(()=>{if(stage.clientWidth&&stage.clientHeight&&(stage.clientWidth!==previousWidth||stage.clientHeight!==previousHeight)){previousWidth=stage.clientWidth;previousHeight=stage.clientHeight;fit()}}).observe(stage);
   function svg(tag,attrs,text){const el=document.createElementNS(ns,tag);for(const [key,value] of Object.entries(attrs))el.setAttribute(key,value);if(text)el.textContent=text;return el}
   function selectPlace(name,focus=false,reveal=false){
-    const place=DRAGON_DATA.places.find(p=>p.name===name&&p.from_<=limit);if(!place)return;
+    const place=visiblePlaces().find(p=>p.name===name);if(!place)return;
     selected=name;
     const detail=byId('westerosDetail');detail.replaceChildren();
     const tag=document.createElement('span');tag.className='tag';tag.textContent=`CONHECIDO DESDE O EPISÓDIO ${place.from_}`;
@@ -76,8 +77,8 @@
     if(focus)title.focus({preventScroll:true});
   }
   function render(ep){
-    limit=ep;selector.value=String(ep);const places=DRAGON_DATA.places.filter(p=>p.from_<=ep);
-    byId('westerosScope').textContent=`Locais e informações até o episódio ${ep}, inclusive. Nenhum local de episódios posteriores é exibido.`;
+    limit=ep;selector.value=String(ep);const places=visiblePlaces();
+    byId('westerosScope').textContent=byId('westerosOnlyEpisode').checked?`Locais que aparecem no episódio ${ep}. As informações continuam limitadas a esse capítulo.`:`Locais e informações até o episódio ${ep}, inclusive. Nenhum local de episódios posteriores é exibido.`;
     byId('westerosPins').replaceChildren();byId('westerosLeaders').replaceChildren();byId('westerosList').replaceChildren();
     for(const place of places){
       const [x,y,dx,dy,anchor]=coordinates[place.name];
@@ -90,8 +91,9 @@
       pin.addEventListener('click',()=>selectPlace(place.name,false,true));pin.addEventListener('keydown',e=>{if(['Enter',' '].includes(e.key)){e.preventDefault();selectPlace(place.name,true,true)}});byId('westerosPins').append(pin);
       const button=document.createElement('button');button.type='button';button.textContent=place.name;button.onclick=()=>selectPlace(place.name,false,true);byId('westerosList').append(button);
     }
-    selectPlace(places.some(p=>p.name===selected)?selected:places[0].name);if(stage.clientWidth)fit();
+    if(places.length)selectPlace(places.some(p=>p.name===selected)?selected:places[0].name);else{selected=null;byId('westerosDetail').textContent='Nenhum local registrado neste episódio.'}if(stage.clientWidth)fit();
   }
+  byId('westerosOnlyEpisode').onchange=()=>render(limit);
   selector.onchange=()=>{const main=document.getElementById('episode');main.value=selector.value;main.dispatchEvent(new Event('change'))};
   function syncFullscreen(){const full=document.fullscreenElement===panel||fallback;byId('westerosFullscreen').textContent=full?'Sair da tela cheia':'Ver em tela cheia';byId('westerosFullscreen').setAttribute('aria-expanded',String(full));requestAnimationFrame(()=>{if(stage.clientWidth)fit()})}
   async function toggleFullscreen(){
@@ -103,6 +105,6 @@
   function closeFallback(){fallback=false;panel.classList.remove('westeros-fullscreen');document.body.classList.remove('westeros-fullscreen-open');panel.removeAttribute('role');panel.removeAttribute('aria-modal');panel.removeAttribute('aria-label');syncFullscreen();returnFocus?.focus()}
   byId('westerosFullscreen').onclick=toggleFullscreen;
   document.addEventListener('fullscreenchange',syncFullscreen);
-  panel.addEventListener('keydown',e=>{if(!fallback)return;if(e.key==='Escape'){e.preventDefault();closeFallback()}if(e.key==='Tab'){const focusable=[...panel.querySelectorAll('button,select,[tabindex="0"]')];const first=focusable[0],last=focusable.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}});
+  panel.addEventListener('keydown',e=>{if(!fallback)return;if(e.key==='Escape'){e.preventDefault();closeFallback()}if(e.key==='Tab'){const focusable=[...panel.querySelectorAll('button,select,input,[tabindex="0"]')];const first=focusable[0],last=focusable.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}});
   window.WesterosMap={render};render(Number(document.getElementById('episode').value));syncFullscreen();
 })();
