@@ -19,7 +19,7 @@ function castFor(id){return DRAGON_CAST[id]?.filter(([first])=>first<=episode).a
 function localPortrait(c){const src=DRAGON_LOCAL_PHOTOS[c.id]?.filter(([first])=>first<=episode).at(-1)?.[1];return src&&!failedLocalPhotos.has(src)?src:null}
 function portraitSource(c){return portraits[c.id]||localPortrait(c)||castImages.get(castFor(c.id))||null}
 function portraitDescription(c){if(portraits[c.id])return 'Retrato enviado por você';if(localPortrait(c))return 'Foto do personagem · incluída no site';const actor=castFor(c.id);return actor?`Retrato de ${actor} · intérprete de ${c.name} · TVmaze`:'Fase infantil · retrato automático não disponível para este episódio'}
-function refreshPortraits(){graph();cards();if(selected)select(selected)}
+function refreshPortraits(){graph();cards();if(selected)select(selected);refreshRecapImages()}
 async function loadCastPortraits(){
  const actors=[...new Set(chars.filter(c=>!localPortrait(c)&&!portraits[c.id]).map(c=>castFor(c.id)).filter(Boolean))];
  let cursor=0;

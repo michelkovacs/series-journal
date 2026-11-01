@@ -98,3 +98,19 @@ nav{padding:8px 0 16px}nav button{border-radius:8px;font-weight:600;color:var(--
 @media(max-width:1000px){.intro h2{font-size:50px}.season-overview h2{font-size:38px}.stat{padding:24px 16px!important}.stat strong{font-size:44px}}
 @media(max-width:760px){header{position:static}.intro{padding:40px 0 32px}.intro h2{font-size:38px}.intro>label{width:100%}.statrow{gap:16px}.stat strong{font-size:38px}.stat small{font-size:12px}.layout:before,.layout:after{width:80px;height:120px;left:0;right:auto}.layout:after{left:auto;right:0}.recap-copy{padding:24px}.recap-event h4{font-size:24px}.recap-event p{font-size:14px}.season-overview h2{font-size:32px}.pending-episode h2{font-size:32px}}
 @media(max-width:520px){.statrow{row-gap:16px}.stat{padding:16px!important}.stat strong{font-size:38px}.season-grid{gap:8px}.season-overview{padding:24px 16px}.season-overview h2{font-size:28px}.episode-card{padding:12px}.intro h2{font-size:38px}.recap-copy h2{font-size:38px}.pending-episode{padding:24px}.pending-episode h2{font-size:28px}.recap-focus{font-size:12px;padding:8px 12px}nav button{font-size:12px;padding:8px 12px}.listgrid{gap:16px}}
+
+/* Recap imagery: episode/scene photo, then relevant characters or series artwork. */
+.recap-adaptive-media{position:relative;min-height:280px;background:var(--color-pebble);overflow:hidden;display:flex;flex-direction:column;justify-content:center}
+.recap-adaptive-media>img.recap-specific-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0}
+.recap-hero-visual.recap-adaptive-media{min-height:360px}.recap-hero-visual.recap-adaptive-media>img{object-position:center}
+.recap-media-label{position:relative;z-index:1;margin-top:auto;padding:12px 16px;background:var(--color-ink-navy);color:white;font-size:11px;line-height:1.6;width:100%}
+.recap-adaptive-media[data-media-kind=series]>.recap-media-label,.recap-adaptive-media[data-media-kind=specific]>.recap-media-label{position:absolute;bottom:0;left:0;background:#0b3558ed}
+.recap-portrait-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;flex:1;min-height:240px;background:var(--color-hairline)}
+.recap-portrait-grid[data-count="1"]{grid-template-columns:1fr}.recap-person{position:relative;margin:0;min-width:0;min-height:140px;background:var(--color-pebble);display:flex;flex-direction:column;overflow:hidden}
+.recap-person>img.recap-person-photo{position:relative;inset:auto;width:100%;height:100%;min-height:160px;object-fit:cover;object-position:center 24%;flex:1}
+.recap-person-placeholder{display:grid;place-items:center;flex:1;min-height:140px;font-size:32px;font-weight:600;color:var(--color-slate-gray)}
+.recap-person figcaption{position:relative;z-index:1;margin-top:auto;background:white;color:var(--color-ink-navy);padding:8px;font-size:11px;line-height:1.4}
+.recap-portrait-grid[data-count="1"] .recap-person-photo{height:240px;max-height:400px}.recap-series-title{padding:32px;font-size:32px;font-weight:700;color:var(--color-ink-navy)}
+@media(max-width:760px){.recap-adaptive-media,.recap-event-card>.recap-adaptive-media{max-height:none;min-height:240px}.recap-hero-visual.recap-adaptive-media{min-height:280px}.recap-portrait-grid{min-height:200px}.recap-portrait-grid[data-count="1"] .recap-person-photo{height:240px;max-height:280px}}
+.recap-portrait-grid[data-count="3"]>.recap-person:last-child{grid-column:1/-1}
+.recap-adaptive-media[data-has-portraits="false"]{min-height:160px}.recap-adaptive-media[data-has-portraits="false"] .recap-portrait-grid{min-height:160px}.recap-adaptive-media[data-has-portraits="false"] .recap-person-placeholder{min-height:96px}

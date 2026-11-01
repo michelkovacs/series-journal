@@ -87,3 +87,11 @@ Fotos e conteúdo dos dossiês foram preservados. Validação em Chromium: carre
 ### Navegação compacta
 
 O calendário em cartões foi removido. A seleção dos dez episódios continua no campo do cabeçalho, com títulos e datas disponíveis, mantendo as notas existentes e os estados de conteúdo pendente.
+
+## Imagens dos resumos
+
+Os cards priorizam uma imagem específica do acontecimento, quando cadastrada em `event.image`. Se ela não existir ou falhar, mostram retratos dos personagens envolvidos no trecho; a lista fica em `event.characters` e respeita os personagens disponíveis no episódio. Sem foto cadastrada, o personagem é identificado pelo nome e pelas iniciais. Retratos complementares carregados posteriormente e uploads também atualizam os cards sem recriar notas nem o estado do controle de spoilers.
+
+A imagem principal prioriza `episode.image`, depois a imagem representativa da série. A Casa do Dragão tem uma imagem de divulgação local; Noturno tenta a arte da série e, se indisponível, usa uma foto local de Stephen Graham com legenda explícita de imagem representativa do elenco. Essa fotografia é de Raph_PH / Wikimedia Commons, CC BY 4.0, recortada e editada pela fonte. A imagem não é apresentada como cena do episódio. Procedência e licença estão em `assets/series/sources.json` e `assets/series/noturno-photo-source.json`, vinculados nos rodapés.
+
+Novos arquivos necessários à publicação: `recap-media.js`, `noturno-recap-media.js` e `assets/series/`.

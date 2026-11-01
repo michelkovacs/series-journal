@@ -1,0 +1,17 @@
+[
+  {
+    "file": "house-of-the-dragon.webp",
+    "description": "Imagem representativa de divulgação de A Casa do Dragão",
+    "source": "https://github.com/angel-zh/HouseOfTheDragon/blob/HEAD/images/house-of-the-dragon-ka-1920.webp"
+  },
+  {
+    "file": "noturno-cast.webp",
+    "description": "Foto de Stephen Graham, intérprete de Jurek Walter, usada como imagem representativa do elenco quando a arte da série está indisponível",
+    "source": "https://github.com/mustafaozcaninfo/freshcalendars/blob/b8cd454ea4a6aad37e49622ba57d66c413f42e84/apps/news/src/assets/news/nocturne-apple-tv-release-date-episode-schedule-october-30/nocturne-apple-tv-release-date-episode-schedule-october-30.source.webp",
+    "originalSource": "https://commons.wikimedia.org/wiki/File:Stephen_Graham.jpg",
+    "author": "Raph_PH",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "modifications": "Recortada e editada pela fonte FreshCalendars; arquivo reproduzido sem nova edição."
+  }
+]

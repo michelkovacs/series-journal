@@ -30,7 +30,7 @@ let photos={...customPhotos};
 const loadingPhotos=new Set();
 function initials(c){return c.name.split(' ').map(x=>x[0]).join('').slice(0,2)}
 function savePhoto(id,data){customPhotos[id]=data;try{localStorage.setItem(STORAGE_PHOTOS,JSON.stringify(customPhotos))}catch(e){alert('A imagem é muito grande para salvar neste navegador.');return}photos[id]=data;updatePhotoViews()}
-function updatePhotoViews(){render();refreshCards();if(selected)select(selected)}
+function updatePhotoViews(){render();refreshCards();if(selected)select(selected);window.dispatchEvent(new Event('noturno-portraits-updated'))}
 function loadPortrait(id,index=0){
   if(customPhotos[id])return;
   const record=PHOTO_LIBRARY[id];if(!record)return;
