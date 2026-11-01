@@ -2,7 +2,7 @@
 const $=id=>document.getElementById(id), ns='http://www.w3.org/2000/svg';
 const groups={cientistas:['Grupo de Oxford','#528db8'],passado:['Passado e Costa Vermelha','#b48a56'],defesa:['Investigação e defesa','#689c89'],contatos:['Contatos e jogo','#a88ac3']};
 let episode=1, selected=null, scale=1,tx=0,ty=0,drag=null,chars=[],links=[],positions={},activeTab='graphview';
-const titles={'season-summary':'Resumo da Temporada',graphview:'Mapa de conexões',recap:'Resumo do episódio',characters:'Arquivo de personagens',places:'Locais da temporada',mysteries:'Mistérios e questões em aberto'};
+const titles={'season-summary':'Resumo da Temporada',graphview:'Mapa de conexões',recap:'Resumo por Episódio',characters:'Arquivo de personagens',places:'Locais da temporada',mysteries:'Mistérios e questões em aberto'};
 function node(tag,cls,text){const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n}
 function svgNode(tag,attrs,text){const n=document.createElementNS(ns,tag);for(const [k,v]of Object.entries(attrs))n.setAttribute(k,v);if(text)n.textContent=text;return n}
 function read(key,fallback){try{const v=JSON.parse(localStorage.getItem(key));return v&&typeof v==='object'?v:fallback}catch{return fallback}}
