@@ -5,7 +5,7 @@ function castFor(id){return THREE_BODY_CAST[id]?.filter(([first])=>first<=episod
 function localPortrait(c){const src=THREE_BODY_LOCAL_PHOTOS[c.id]?.filter(([first])=>first<=episode).at(-1)?.[1];return src&&!failedLocalPhotos.has(src)?src:null}
 function portraitSource(c){return portraits[c.id]||localPortrait(c)||castImages.get(castFor(c.id))||null}
 function portraitDescription(c){if(portraits[c.id])return 'Retrato enviado por você';if(localPortrait(c))return 'Foto do personagem · incluída no site';const actor=castFor(c.id);return actor?`Retrato de ${actor} · intérprete de ${c.name} · TVmaze`:'Retrato não disponível para este episódio'}
-function refreshPortraits(){graph();cards();if(selected)select(selected);refreshRecapImages()}
+function refreshPortraits(){graph();cards();if(selected)select(selected);refreshRecapImages();window.dispatchEvent(new Event('paper-portraits-updated'))}
 async function loadCastPortraits(){
  const actors=[...new Set(chars.filter(c=>!localPortrait(c)&&!portraits[c.id]).map(c=>castFor(c.id)).filter(Boolean))];
  let cursor=0;

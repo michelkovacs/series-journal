@@ -181,3 +181,33 @@ header button:focus-visible,header select:focus-visible{outline-color:white;outl
 body:has(#season-summary:not(.hidden)) main>.foot,body:has(#season-summary:not(.hidden)) main>.season-sources{display:none}
 .newspaper-credit{max-width:1040px;margin:24px auto;font-size:12px;color:var(--color-slate-gray)}
 @media print{.newspaper-credit{display:none!important}}
+
+/* Newspaper character references and scene illustrations. */
+.paper-page .paper-character-link{font:inherit;letter-spacing:inherit;color:#125f87;text-decoration:none;border-bottom:1px dotted #7c9cae;cursor:pointer}
+.paper-page .paper-character-link:hover{color:#006bff;border-bottom-style:solid;background:#e6f0ff}
+.paper-page .paper-character-link:focus-visible{outline:2px solid #006bff;outline-offset:2px}
+.paper-event-figure{margin:12px 0 14px;break-inside:avoid;border:1px solid #d9d6cc;background:white}
+.paper-event-portraits{display:flex;gap:1px;background:#d9d6cc}.paper-character-photo-link{display:block;min-width:0;flex:1;overflow:hidden}
+.paper-event-photo{display:block;width:100%;height:144px;object-fit:cover;object-position:center 24%}
+.paper-event-figure figcaption{font:400 10px/1.5 var(--font-gilroy);padding:8px;color:#53616a}.paper-no-photo{display:grid;place-items:center;background:var(--color-pebble);color:var(--color-slate-gray)}
+.paper-character-dialog{position:fixed;width:min(380px,calc(100vw - 32px));max-height:calc(100dvh - 32px);padding:28px;border:1px solid var(--color-hairline);border-radius:24px;box-shadow:var(--shadow-card);background:white;color:var(--color-ink-navy);text-align:center;overflow:auto}
+.paper-character-dialog::backdrop{background:#0b355899}.paper-preview-close{position:absolute;right:12px;top:12px;font-size:24px;line-height:1;padding:6px 10px;border:0;background:var(--color-pebble)}
+.paper-preview-photo{display:block;width:148px;height:168px;object-fit:cover;object-position:center 24%;border-radius:16px;margin:12px auto 20px}.paper-preview-photo.paper-no-photo{display:grid;font-size:36px}
+.paper-character-dialog h2{font-size:28px;line-height:1.3;margin:0 0 12px}.paper-character-dialog .photo-note{margin:12px 0;font-size:12px}.paper-profile-link{display:block;padding:12px 16px;border-radius:8px;color:white;background:var(--color-signal-blue);text-decoration:none;font-weight:600;font-size:14px}.paper-profile-link:hover{background:#0056cc;color:white}
+@media print{
+ .paper-character-dialog{display:none!important}
+ #season-summary .paper-character-link{color:inherit;border:0;text-decoration:none}
+ #season-summary .paper-event-figure{margin:2mm 0 3mm}
+ #season-summary .paper-event-photo{height:18mm}
+ #season-summary .paper-event-figure figcaption{font-size:6.5pt;line-height:1.3;padding:1.5mm}
+}
+@media print{
+ #season-summary .paper-page{font-size:9.5pt}
+ #season-summary .paper-article p{line-height:1.35}
+ #season-summary .paper-event-photo{height:16mm}
+}
+@media print{
+ #season-summary .paper-page:last-child .paper-article{margin-bottom:3mm}
+ #season-summary .paper-page:last-child .paper-people{padding-top:3mm}
+ #season-summary .paper-page:last-child .paper-questions{padding-top:2mm;padding-bottom:2mm}
+}

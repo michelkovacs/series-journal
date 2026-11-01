@@ -127,3 +127,11 @@ A leitura é apresentada como duas páginas de jornal: cabeçalho editorial, man
 Arquivos compartilhados adicionais: `season-newspaper-data.js` (conteúdo editorial) e `season-newspaper.js` (montagem e controles). Devem acompanhar a publicação junto a `style.css` e às imagens locais.
 
 Validação no Chromium e pypdf: três abas novas, dois artigos de página por jornal, aviso de spoilers e controles, retorno ao episódio, tratamento de Noturno quando o episódio 2 está selecionado, imagens locais, ausência de transbordamento horizontal em 390/1280 px, três PDFs com exatamente duas páginas A4 e presença do final de todas as matérias nos PDFs, sem corte de texto.
+
+### Personagens e imagens no jornal
+
+Os nomes dos personagens com ficha cadastrada são links que abrem uma prévia acessível com foto, nome e acesso à ficha no Mapa de Conexões. A ficha é aberta no último episódio coberto pela edição (10, 8 ou 1), com essa abrangência indicada antes de navegar. Retratos locais e fotos enviadas pelo usuário têm prioridade; sem imagem disponível, a prévia identifica o personagem e informa a ausência. Escape fecha a janela.
+
+As matérias também incluem figuras dos personagens envolvidos nos acontecimentos, além da imagem de divulgação da série na abertura. As legendas distinguem retratos ilustrativos de registros exatos das cenas. Fotos atualizadas por upload ou carregadas depois também atualizam as figuras e a prévia. Os créditos das imagens seguem disponíveis no rodapé.
+
+Inclua `season-newspaper-interactions.js` na publicação. Validação em Chromium: links e fotos reais de prévia nos três jornais com a rede externa bloqueada, fechamento por Escape, retorno à leitura e acesso à ficha correta; layout móvel sem transbordamento; três PDFs com duas páginas A4, sem janela modal e com o final de todas as matérias preservado após a inclusão das figuras.

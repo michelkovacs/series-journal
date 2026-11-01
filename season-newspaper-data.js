@@ -17,6 +17,10 @@ const SEASON_NEWSPAPERS = {
         "title": "A escolha que desafia o costume",
         "paragraphs": [
           "O Grande Conselho que favoreceu Viserys em relação a Rhaenys estabelece o precedente que assombra Rhaenyra. Após perder Aemma e o bebê Baelon, o rei afasta Daemon da sucessão e escolhe a filha. A decisão é pública, mas depende de alianças capazes de sobreviver ao próprio monarca."
+        ],
+        "illustrationCharacters": [
+          "rhaenyra",
+          "viserys"
         ]
       },
       {
@@ -29,6 +33,10 @@ const SEASON_NEWSPAPERS = {
         "title": "O mar também decide a política",
         "paragraphs": [
           "A campanha de Corlys e Daemon nos Degraus mostra como prestígio militar e interesses comerciais interferem na corte. O casamento entre Rhaenyra e Laenor aproxima os Velaryon da linha sucessória. A violência de Criston na celebração e o vestido verde de Alicent anunciam uma divisão duradoura."
+        ],
+        "illustrationCharacters": [
+          "corlys",
+          "daemon"
         ]
       }
     ],
@@ -53,6 +61,10 @@ const SEASON_NEWSPAPERS = {
         "title": "Os filhos recebem a herança do conflito",
         "paragraphs": [
           "Depois dos saltos no tempo, os rumores sobre os filhos de Rhaenyra entram na política. A morte de Laena aproxima novamente Rhaenyra e Daemon; a fuga encenada de Laenor abre caminho ao casamento dos dois. Em Derivamarca, Aemond conquista Vhagar e perde um olho na luta com os sobrinhos."
+        ],
+        "illustrationCharacters": [
+          "aemond",
+          "lucerys"
         ]
       },
       {
@@ -65,6 +77,10 @@ const SEASON_NEWSPAPERS = {
         "title": "O poder toma a dianteira",
         "paragraphs": [
           "Com o rei morto, o conselho promove a coroação de Aegon em Porto Real. Alicent descobre que o plano vinha sendo preparado antes de sua interpretação das últimas palavras de Viserys. Rhaenys escapa em Meleys e leva a notícia a Pedra do Dragão. Ali, Rhaenyra perde a filha Visenya e depois recebe a coroa do pai."
+        ],
+        "illustrationCharacters": [
+          "aegon",
+          "rhaenyra"
         ]
       },
       {
@@ -117,12 +133,20 @@ const SEASON_NEWSPAPERS = {
         "title": "Uma mensagem que não deveria ter resposta",
         "paragraphs": [
           "Na Costa Vermelha, Ye usa o Sol como amplificador de transmissão. Um interlocutor extraterrestre alerta que a resposta permitiria localizar a Terra. Ela responde mesmo assim. Seu encontro com Mike Evans aproxima esse gesto de uma organização humana disposta a acolher os visitantes."
+        ],
+        "illustrationCharacters": [
+          "ye",
+          "mike"
         ]
       },
       {
         "title": "O jogo é uma porta de entrada",
         "paragraphs": [
           "Jin e Jack atravessam no headset um mundo submetido a três sóis, com eras estáveis e caóticas. O objetivo deixa de ser apenas resolver uma equação: trata-se de salvar uma população. A experiência seleciona apoiadores dos San-Ti. Jack recusa o convite e é morto por Tatiana, que escapa da vigilância."
+        ],
+        "illustrationCharacters": [
+          "jin",
+          "jack"
         ]
       },
       {
@@ -153,12 +177,20 @@ const SEASON_NEWSPAPERS = {
         "title": "A vitória que revela a desvantagem",
         "paragraphs": [
           "A operação no Canal do Panamá usa as nanofibras de Auggie para destruir o Judgment Day e recuperar seus dados, com enorme custo humano. Os registros revelam os sophons: supercomputadores associados a prótons que interferem na física experimental e observam a humanidade. A mensagem global dos San-Ti transforma o segredo em crise pública."
+        ],
+        "illustrationCharacters": [
+          "auggie",
+          "wade"
         ]
       },
       {
         "title": "Uma escada até a frota",
         "paragraphs": [
           "Jin trabalha numa sonda acelerada por explosões nucleares. As limitações de carga levam à proposta de enviar um cérebro preservado. Com câncer terminal, Will aceita participar. Seu presente de uma estrela para Jin ganha novo sentido quando ela compreende quem o enviou; ele morre antes que ela consiga se despedir."
+        ],
+        "illustrationCharacters": [
+          "will",
+          "jin"
         ]
       },
       {
@@ -217,12 +249,19 @@ const SEASON_NEWSPAPERS = {
         "title": "O controle que atravessa as paredes",
         "paragraphs": [
           "O prólogo apresenta Jurek influenciando outro paciente por uma tubulação. A morte que se segue estabelece o poder psicológico do prisioneiro e a fragilidade de uma contenção apenas física. Não se trata ainda de uma prova sobre o paradeiro de Felicia."
+        ],
+        "illustrationCharacters": [
+          "jurek"
         ]
       },
       {
         "title": "Um enfermeiro na linha de contato",
         "paragraphs": [
           "Karl Anders chega à unidade restrita e participa de uma revista. A ação o aproxima de Jurek, que o convence a levar uma mensagem para fora do hospital. A função de Karl nessa circulação de informações permanece como uma das questões do dossiê."
+        ],
+        "illustrationCharacters": [
+          "karl",
+          "jurek"
         ]
       },
       {
@@ -265,6 +304,10 @@ const SEASON_NEWSPAPERS = {
         "title": "Informação em troca de uma admissão",
         "paragraphs": [
           "Jonah e Quinn interrogam Jurek sobre Felicia. O prisioneiro exige que Jonah reconheça uma mentira em seu julgamento antes de oferecer o que diz saber. A negociação acrescenta pressão ao caso, sem comprovar a versão do interrogado."
+        ],
+        "illustrationCharacters": [
+          "jurek",
+          "jonah"
         ]
       },
       {
