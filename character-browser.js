@@ -1,6 +1,6 @@
 'use strict';
 (() => {
- const palettes=['rose','green','blue','violet'];
+ const palettes=['rose','green','blue','violet','amber'];
  function tag(el,index){el.classList.add('category-tag');el.dataset.tone=palettes[index%palettes.length]}
  function cards(host,chars,groups){
   const keys=Object.keys(groups);let control=document.getElementById('characterCategory');

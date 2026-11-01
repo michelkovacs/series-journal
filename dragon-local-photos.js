@@ -138,5 +138,17 @@ const DRAGON_LOCAL_PHOTOS = {
       8,
       "assets/characters/joffrey-son-8.jpg"
     ]
+  ],
+  "caraxes": [
+    [
+      1,
+      "assets/dragons/caraxes.jpg"
+    ]
+  ],
+  "vhagar": [
+    [
+      6,
+      "assets/dragons/vhagar.jpg"
+    ]
   ]
 };

@@ -1,0 +1,16 @@
+[
+  {
+    "character": "caraxes",
+    "file": "caraxes.jpg",
+    "fromEpisode": 1,
+    "source": "https://github.com/usamafayaz/fire-and-blood-nextjs/blob/HEAD/public/dragons/caraxes.jpg",
+    "description": "Retrato do dragão na adaptação televisiva. Imagem verificada visualmente; sem acontecimentos de temporadas posteriores no enquadramento."
+  },
+  {
+    "character": "vhagar",
+    "file": "vhagar.jpg",
+    "fromEpisode": 6,
+    "source": "https://github.com/usamafayaz/fire-and-blood-nextjs/blob/HEAD/public/dragons/vhagar.jpg",
+    "description": "Retrato do dragão na adaptação televisiva. Imagem verificada visualmente; sem acontecimentos de temporadas posteriores no enquadramento."
+  }
+]

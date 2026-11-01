@@ -15,7 +15,7 @@ A abertura é `index.html`; os outros dossiês estão em `dragon.html` e `three-
 
 ## Páginas dos personagens
 
-Há 55 fichas individuais em `personagens/`, com HTML real e endereços próprios, por exemplo:
+Há 69 fichas individuais em `personagens/`, com HTML real e endereços próprios, por exemplo:
 
 - `personagens/casa-do-dragao/rhaenyra-targaryen/`
 - `personagens/o-problema-dos-3-corpos/jin-cheng/`
@@ -23,9 +23,9 @@ Há 55 fichas individuais em `personagens/`, com HTML real e endereços próprio
 
 As fichas são separadas do mapa e contêm apresentação do personagem, histórico agrupado por temporada, filtro de episódio, personagens relacionados e link para o Mapa de Conexões. A URL preserva a seleção, como `?temporada=1&episodio=4`. A troca de episódio atualiza o endereço e funciona com voltar/avançar do navegador. O histórico e as relações exibidos são limitados ao episódio escolhido; registros posteriores ficam ocultos. Apenas a temporada 1 está cadastrada.
 
-As listas de personagens e o índice têm filtro por categoria. As categorias usam quatro cores consistentes; as fichas individuais também identificam a categoria. Em A Casa do Dragão, emblemas vetoriais simplificados aparecem ao lado dos retratos e nas fichas, seguindo a casa do personagem, independentemente do núcleo narrativo.
+As listas de personagens e o índice têm filtro por categoria. As categorias usam cinco cores consistentes; as fichas individuais também identificam a categoria. Em A Casa do Dragão, emblemas vetoriais simplificados aparecem ao lado dos retratos e nas fichas, seguindo a casa do personagem, independentemente do núcleo narrativo.
 
-Cada HTML tem título e descrição próprios, URL canônica e dados estruturados ProfilePage/Person. O índice `personagens/index.html` oferece links estáticos para todas as fichas; `sitemap.xml` lista 59 URLs. A configuração de URLs usa o endereço público atual `https://michelkovacs.github.io/series-journal/`.
+Cada HTML tem título e descrição próprios, URL canônica e dados estruturados ProfilePage/Person. O índice `personagens/index.html` oferece links estáticos para todas as fichas; `sitemap.xml` lista 73 URLs. A configuração de URLs usa o endereço público atual `https://michelkovacs.github.io/series-journal/`.
 
 ## Regenerar as fichas
 
@@ -39,7 +39,7 @@ O gerador usa Python 3 e Node.js para ler os dados locais e grava as fichas, o �
 
 ## Conteúdo e imagens
 
-- **A Casa do Dragão:** dez episódios, 26 personagens e histórico da primeira temporada.
+- **A Casa do Dragão:** dez episódios, 40 personagens (26 pessoas e 14 dragões) e histórico da primeira temporada.
 - **O Problema dos 3 Corpos:** oito episódios da adaptação Netflix de 2024, 15 personagens e histórico da primeira temporada.
 - **Noturno:** 14 personagens e material narrativo apurado até o episódio 1. O episódio 2, *For Such a Time as This*, consta como lançado, mas o seu resumo ainda não foi confirmado. As fichas deixam essa limitação explícita.
 
@@ -49,9 +49,13 @@ Rodapés, campos de anotações e checkboxes foram removidos. Não são feitas n
 
 ## Interface
 
-O estilo compartilhado segue a referência Calendly de `DESIGN.md`, com Manrope local, texto azul-marinho e ações azuis. Os cabeçalhos rolam com a página. Os contadores ficam apenas no mapa. As imagens dos trechos têm altura fixa mesmo com vários personagens; o botão de próximo episódio tem destaque verde.
+O estilo compartilhado segue a referência Calendly de `DESIGN.md`, com Manrope local, texto azul-marinho e ações azuis. Os cabeçalhos ocupam toda a largura e rolam com a página. Usam imagem da série ampliada, a mesma arte no fundo e degradê horizontal com paleta própria: tons de fogo para A Casa do Dragão, azuis para O Problema dos 3 Corpos e tons escuros para Noturno. As fichas individuais usam o mesmo tratamento. O botão Atualizar fotos foi removido; o envio de fotos na ficha lateral do mapa permanece. Os contadores ficam apenas no mapa. As imagens dos trechos têm altura fixa mesmo com vários personagens; o botão de próximo episódio tem destaque verde.
 
 O Resumo da Temporada mantém a diagramação de jornal em duas páginas A4 e aviso de spoilers. As matérias têm nomes clicáveis e prévias de personagens; o link de ficha abre a página individual. A edição de Noturno é parcial. O jornal não inclui rodapé.
+
+## Dragões de A Casa do Dragão
+
+A categoria Dragões inclui Syrax, Caraxes, Vhagar, Seasmoke, Vermax, Dreamfyre, Meleys, Sunfyre, Arrax, Vermithor, Moondancer, Tyraxes, Silverwing e Balerion (histórico). Todos têm fichas estáticas, filtro dedicado, histórico e relações com cavaleiros conhecidos até o episódio. A troca de cavaleiro de Vhagar só ocorre a partir do episódio 7; o destino de Arrax só aparece no episódio 10. Dragões apenas mencionados no conselho final são liberados no episódio 10. Imagens verificadas de Caraxes e Vhagar estão em `assets/dragons/`, com procedência em `sources.json`; os demais usam indicação de foto indisponível, sem imagens genéricas atribuídas ao dragão.
 
 ## Mapa de Westeros
 

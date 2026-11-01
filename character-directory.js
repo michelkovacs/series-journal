@@ -387,6 +387,100 @@ const CHARACTER_DIRECTORY = {
             "assets/characters/borros-10.jpg"
           ]
         ]
+      },
+      "syrax": {
+        "name": "Syrax",
+        "path": "personagens/casa-do-dragao/syrax/",
+        "fromEpisode": 1,
+        "photos": []
+      },
+      "caraxes": {
+        "name": "Caraxes",
+        "path": "personagens/casa-do-dragao/caraxes/",
+        "fromEpisode": 1,
+        "photos": [
+          [
+            1,
+            "assets/dragons/caraxes.jpg"
+          ]
+        ]
+      },
+      "vhagar": {
+        "name": "Vhagar",
+        "path": "personagens/casa-do-dragao/vhagar/",
+        "fromEpisode": 2,
+        "photos": [
+          [
+            6,
+            "assets/dragons/vhagar.jpg"
+          ]
+        ]
+      },
+      "seasmoke": {
+        "name": "Seasmoke",
+        "path": "personagens/casa-do-dragao/seasmoke/",
+        "fromEpisode": 3,
+        "photos": []
+      },
+      "vermax": {
+        "name": "Vermax",
+        "path": "personagens/casa-do-dragao/vermax/",
+        "fromEpisode": 6,
+        "photos": []
+      },
+      "dreamfyre": {
+        "name": "Dreamfyre",
+        "path": "personagens/casa-do-dragao/dreamfyre/",
+        "fromEpisode": 6,
+        "photos": []
+      },
+      "meleys": {
+        "name": "Meleys",
+        "path": "personagens/casa-do-dragao/meleys/",
+        "fromEpisode": 7,
+        "photos": []
+      },
+      "sunfyre": {
+        "name": "Sunfyre",
+        "path": "personagens/casa-do-dragao/sunfyre/",
+        "fromEpisode": 7,
+        "photos": []
+      },
+      "arrax": {
+        "name": "Arrax",
+        "path": "personagens/casa-do-dragao/arrax/",
+        "fromEpisode": 10,
+        "photos": []
+      },
+      "vermithor": {
+        "name": "Vermithor",
+        "path": "personagens/casa-do-dragao/vermithor/",
+        "fromEpisode": 10,
+        "photos": []
+      },
+      "moondancer": {
+        "name": "Moondancer",
+        "path": "personagens/casa-do-dragao/moondancer/",
+        "fromEpisode": 10,
+        "photos": []
+      },
+      "tyraxes": {
+        "name": "Tyraxes",
+        "path": "personagens/casa-do-dragao/tyraxes/",
+        "fromEpisode": 10,
+        "photos": []
+      },
+      "silverwing": {
+        "name": "Silverwing",
+        "path": "personagens/casa-do-dragao/silverwing/",
+        "fromEpisode": 10,
+        "photos": []
+      },
+      "balerion": {
+        "name": "Balerion",
+        "path": "personagens/casa-do-dragao/balerion/",
+        "fromEpisode": 1,
+        "photos": []
       }
     }
   },

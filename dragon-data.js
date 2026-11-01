@@ -181,6 +181,118 @@ const DRAGON_DATA = {
       "cat": "corte",
       "from": 10,
       "desc": "Senhor de Ponta Tempestade. Avalia as propostas dos dois lados a partir dos interesses de sua casa."
+    },
+    {
+      "id": "syrax",
+      "name": "Syrax",
+      "cat": "dragoes",
+      "kind": "dragon",
+      "desc": "Dragão de escamas douradas e montaria de Rhaenyra Targaryen. Acompanha a princesa desde jovem.",
+      "from": 1
+    },
+    {
+      "id": "caraxes",
+      "name": "Caraxes",
+      "cat": "dragoes",
+      "kind": "dragon",
+      "desc": "Conhecido como o Anfíptero Sanguinário, é o dragão vermelho de pescoço alongado montado por Daemon Targaryen.",
+      "from": 1
+    },
+    {
+      "id": "vhagar",
+      "name": "Vhagar",
+      "cat": "dragoes",
+      "kind": "dragon",
+      "desc": "Dragão da época da Conquista, antigo companheiro de Visenya Targaryen. Seu paradeiro atual é desconhecido na conversa entre Laena e Viserys.",
+      "from": 2
+    },
+    {
+      "id": "seasmoke",
+      "name": "Seasmoke",
+      "cat": "dragoes",
+      "kind": "dragon",
+      "desc": "Dragão montado por Laenor Velaryon. Participa do conflito nos Degraus, dando apoio aéreo às forças de Corlys e Daemon.",
+      "from": 3
+    },
+    {
+      "id": "vermax",
+      "name": "Vermax",
+      "cat": "dragoes",
+      "kind": "dragon",
+      "desc": "Jovem dragão de Jacaerys Velaryon. É treinado no Fosso dos Dragões sob a supervisão dos tratadores.",
+      "from": 6
+    },
+    {
+      "id": "dreamfyre",
+      "name": "Dreamfyre",
+      "cat": "dragoes",
+      "kind": "dragon",
+      "desc": "Dragão adulto abrigado no Fosso dos Dragões. Aemond entra na área dos dragões sem autorização e é repelido por uma criatura adulta.",
+      "from": 6
+    },
+    {
+      "id": "meleys",
+      "name": "Meleys",
+      "cat": "dragoes",
+      "kind": "dragon",
+      "desc": "Conhecida como a Rainha Vermelha, é a dragão montada por Rhaenys Targaryen.",
+      "from": 7
+    },
+    {
+      "id": "sunfyre",
+      "name": "Sunfyre",
+      "cat": "dragoes",
+      "kind": "dragon",
+      "desc": "Dragão dourado de Aegon Targaryen, também conhecido como Fogo Solar.",
+      "from": 7
+    },
+    {
+      "id": "arrax",
+      "name": "Arrax",
+      "cat": "dragoes",
+      "kind": "dragon",
+      "desc": "Jovem dragão de Lucerys Velaryon. Leva o príncipe em sua missão como emissário a Ponta Tempestade.",
+      "from": 10
+    },
+    {
+      "id": "vermithor",
+      "name": "Vermithor",
+      "cat": "dragoes",
+      "kind": "dragon",
+      "desc": "Grande dragão conhecido como Fúria de Bronze, ligado ao antigo rei Jaehaerys. Vive nas cavernas de Pedra do Dragão.",
+      "from": 10
+    },
+    {
+      "id": "moondancer",
+      "name": "Moondancer",
+      "cat": "dragoes",
+      "kind": "dragon",
+      "desc": "Dragão de Baela Targaryen, citado por Daemon ao avaliar os dragões disponíveis para a causa de Rhaenyra.",
+      "from": 10
+    },
+    {
+      "id": "tyraxes",
+      "name": "Tyraxes",
+      "cat": "dragoes",
+      "kind": "dragon",
+      "desc": "Jovem dragão associado a Joffrey Velaryon. É citado entre os dragões dos filhos de Rhaenyra durante o conselho em Pedra do Dragão.",
+      "from": 10
+    },
+    {
+      "id": "silverwing",
+      "name": "Silverwing",
+      "cat": "dragoes",
+      "kind": "dragon",
+      "desc": "Dragão sem cavaleiro mencionado no levantamento de forças de Daemon em Pedra do Dragão. Também é conhecido como Asaprata.",
+      "from": 10
+    },
+    {
+      "id": "balerion",
+      "name": "Balerion",
+      "cat": "dragoes",
+      "kind": "dragon",
+      "desc": "Conhecido como o Terror Negro, foi o dragão de Aegon, o Conquistador, e mais tarde de Viserys. Já morreu antes da história atual; seu crânio é preservado em Porto Real.",
+      "from": 1
     }
   ],
   "links": [
@@ -512,6 +624,97 @@ const DRAGON_DATA = {
       "label": "Mãe e filha",
       "start": 6,
       "end": 10
+    },
+    {
+      "a": "rhaenyra",
+      "b": "syrax",
+      "label": "Cavaleira / dragão",
+      "start": 1,
+      "end": 10
+    },
+    {
+      "a": "daemon",
+      "b": "caraxes",
+      "label": "Cavaleiro / dragão",
+      "start": 1,
+      "end": 10
+    },
+    {
+      "a": "laenor",
+      "b": "seasmoke",
+      "label": "Cavaleiro / dragão",
+      "start": 3,
+      "end": 6
+    },
+    {
+      "a": "laena",
+      "b": "vhagar",
+      "label": "Cavaleira / dragão",
+      "start": 6,
+      "end": 6
+    },
+    {
+      "a": "aemond",
+      "b": "vhagar",
+      "label": "Cavaleiro / dragão",
+      "start": 7,
+      "end": 10
+    },
+    {
+      "a": "rhaenys",
+      "b": "meleys",
+      "label": "Cavaleira / dragão",
+      "start": 7,
+      "end": 10
+    },
+    {
+      "a": "jacaerys",
+      "b": "vermax",
+      "label": "Cavaleiro / dragão",
+      "start": 6,
+      "end": 10
+    },
+    {
+      "a": "aegon",
+      "b": "sunfyre",
+      "label": "Cavaleiro / dragão",
+      "start": 7,
+      "end": 10
+    },
+    {
+      "a": "lucerys",
+      "b": "arrax",
+      "label": "Cavaleiro / dragão",
+      "start": 10,
+      "end": 10
+    },
+    {
+      "a": "baela",
+      "b": "moondancer",
+      "label": "Cavaleira / dragão",
+      "start": 10,
+      "end": 10
+    },
+    {
+      "a": "joffrey-son",
+      "b": "tyraxes",
+      "label": "Vínculo com o dragão",
+      "start": 10,
+      "end": 10
+    },
+    {
+      "a": "daemon",
+      "b": "vermithor",
+      "label": "Aproximação nas cavernas",
+      "start": 10,
+      "end": 10
+    },
+    {
+      "a": "viserys",
+      "b": "balerion",
+      "start": 1,
+      "end": 10,
+      "label": "Último cavaleiro, no passado"
     }
   ],
   "episodes": [
@@ -1041,11 +1244,15 @@ const DRAGON_DATA = {
   ],
   "updates": {
     "2": {
-      "alicent": "Viserys anuncia seu casamento com Alicent. A escolha abala a amizade dela com Rhaenyra."
+      "alicent": "Viserys anuncia seu casamento com Alicent. A escolha abala a amizade dela com Rhaenyra.",
+      "caraxes": "Daemon ocupa Pedra do Dragão com Caraxes. A presença de Syrax e Rhaenyra muda o equilíbrio do confronto pela devolução do ovo.",
+      "syrax": "Rhaenyra chega a Pedra do Dragão montada em Syrax e recupera o ovo tomado por Daemon."
     },
     "3": {
       "daemon": "Vence a campanha dos Degraus ao lado de Corlys e Laenor, matando o Alimentador de Caranguejos.",
-      "alicent": "Rainha e mãe de Aegon, vê crescer a pressão para que o filho seja declarado herdeiro."
+      "alicent": "Rainha e mãe de Aegon, vê crescer a pressão para que o filho seja declarado herdeiro.",
+      "caraxes": "Participa da guerra nos Degraus ao lado de Daemon, enfrentando as posições da Triarquia.",
+      "seasmoke": "Laenor monta Seasmoke durante o ataque decisivo nos Degraus, apoiando Daemon e as tropas Velaryon."
     },
     "4": {
       "otto": "É destituído do cargo de Mão após a denúncia sobre Rhaenyra e Daemon.",
@@ -1065,14 +1272,16 @@ const DRAGON_DATA = {
       "lyonel": "Mão do Rei, morto com Harwin no incêndio de Harrenhal.",
       "larys": "Organiza a morte do pai e do irmão e apresenta o crime a Alicent como um favor.",
       "aegon": "Adolescente, participa das provocações a Aemond. Alicent insiste que ele representa um desafio à sucessão de Rhaenyra.",
-      "otto": "Retorna ao cargo de Mão do Rei após a morte de Lyonel."
+      "otto": "Retorna ao cargo de Mão do Rei após a morte de Lyonel.",
+      "vhagar": "É a montaria de Laena Velaryon em Pentos. Durante o parto fatal de Laena, ela atende ao pedido de sua cavaleira e a queima."
     },
     "7": {
       "aemond": "Reivindica Vhagar e perde um olho na luta com os sobrinhos. Sua força militar cresce junto com o ressentimento.",
       "laenor": "Sua morte é encenada. Foge de Westeros com Qarl Correy; a família acredita que ele morreu.",
       "rhaenyra": "Casa-se com Daemon depois da fuga secreta de Laenor.",
       "daemon": "Casa-se com Rhaenyra após ajudá-la a encenar a morte de Laenor.",
-      "lucerys": "Fere Aemond na luta em Derivamarca, causando a perda do olho do tio."
+      "lucerys": "Fere Aemond na luta em Derivamarca, causando a perda do olho do tio.",
+      "vhagar": "Após a morte de Laena, Aemond reivindica Vhagar em Derivamarca e realiza seu primeiro voo com ela."
     },
     "8": {
       "viserys": "Defende Lucerys no salão e tenta reunir a família no jantar. Morre naquela noite.",
@@ -1084,14 +1293,18 @@ const DRAGON_DATA = {
     "9": {
       "aegon": "É coroado Aegon II no Fosso dos Dragões, com a coroa de Aegon, o Conquistador.",
       "rhaenys": "Escapa de Porto Real montada em Meleys após confrontar os verdes durante a coroação.",
-      "mysaria": "Conhecida como Verme Branco, negocia informações sobre Aegon e exige proteção para crianças exploradas na cidade."
+      "mysaria": "Conhecida como Verme Branco, negocia informações sobre Aegon e exige proteção para crianças exploradas na cidade.",
+      "meleys": "Rhaenys escapa no dorso de Meleys durante a coroação de Aegon no Fosso dos Dragões e deixa Porto Real."
     },
     "10": {
       "rhaenyra": "Perde a filha Visenya, é coroada em Pedra do Dragão e recebe a notícia da morte de Lucerys.",
       "lucerys": "Vai como emissário a Ponta Tempestade. Morre com Arrax após a perseguição de Aemond e Vhagar.",
       "aemond": "Persegue Lucerys montado em Vhagar. Perde o controle da dragão, que mata o sobrinho e Arrax.",
       "corlys": "Recupera-se dos ferimentos e declara sua frota e sua casa a favor de Rhaenyra.",
-      "jacaerys": "É enviado como emissário ao Vale e ao Norte para buscar alianças para Rhaenyra."
+      "jacaerys": "É enviado como emissário ao Vale e ao Norte para buscar alianças para Rhaenyra.",
+      "arrax": "Leva Lucerys a Ponta Tempestade. Na fuga, ataca Vhagar com fogo apesar das ordens do cavaleiro e é morto por ela durante a perseguição.",
+      "vhagar": "Persegue Arrax e Lucerys nos céus de Ponta Tempestade. Após ser atingida pelo fogo de Arrax, ignora as ordens de Aemond e mata o jovem dragão e seu cavaleiro.",
+      "vermithor": "Daemon entra nas cavernas de Pedra do Dragão, canta em alto valiriano e se aproxima de Vermithor, que permanece sem cavaleiro."
     }
   },
   "places": [
