@@ -95,3 +95,21 @@ Os cards priorizam uma imagem específica do acontecimento, quando cadastrada em
 A imagem principal prioriza `episode.image`, depois a imagem representativa da série. A Casa do Dragão tem uma imagem de divulgação local; Noturno tenta a arte da série e, se indisponível, usa uma foto local de Stephen Graham com legenda explícita de imagem representativa do elenco. Essa fotografia é de Raph_PH / Wikimedia Commons, CC BY 4.0, recortada e editada pela fonte. A imagem não é apresentada como cena do episódio. Procedência e licença estão em `assets/series/sources.json` e `assets/series/noturno-photo-source.json`, vinculados nos rodapés.
 
 Novos arquivos necessários à publicação: `recap-media.js`, `noturno-recap-media.js` e `assets/series/`.
+
+## O Problema dos 3 Corpos — temporada 1 (Netflix, 2024)
+
+Abra `three-body.html` ou escolha a série no seletor dos três dossiês. A adaptação é a Netflix de 2024, com oito episódios disponibilizados em 21/03/2024, de Countdown a Wallfacer. Os resumos foram escritos em português para este site, com 34 acontecimentos, 15 perfis principais, 32 vínculos e dez locais ao final da temporada. Não incluem a adaptação chinesa ou acontecimentos posteriores à primeira temporada.
+
+O conteúdo é cumulativo até o episódio escolhido. Perfis, relações e personagens dos trechos respeitam esse limite. Contadores permanecem apenas no grafo; o calendário em cartões não é usado. A altura dos blocos de imagens continua fixa mesmo com três ou quatro personagens, e o próximo episódio tem o destaque verde existente. Notas, questões e fotos enviadas usam armazenamento separado das outras séries.
+
+O pôster da série e 14 fotos identificadas dos personagens são arquivos locais. A secretária-geral Lilian Joseph fica sem retrato local confirmado, com consulta complementar por intérprete e opção de upload. Os créditos estão em `assets/series/sources.json` e `assets/three-body-characters/sources.json`.
+
+Fontes de referência:
+
+- Netflix: https://www.netflix.com/title/81024821
+- Análise secundária da temporada consultada: https://github.com/42jerrykim/42jerrykim.github.io/blob/172ad9029472fc1e5628e8f7b862c52ae60bb37f/content/collection/TV-Show/2025/2025-09-08-3-body-problem-season-1-first-contact/index.md
+- Fotos nomeadas da adaptação: https://github.com/alsosee/media/tree/10176780b2db9fbca6e2b368756bda80364851a6/Series/2024/3%20Body%20Problem/Characters
+
+Inclua na publicação `three-body.html`, `three-body.js`, `three-body-data.js`, `three-body-photos.js`, `three-body-local-photos.js`, `assets/series/three-body.webp` e `assets/three-body-characters/`, além dos recursos compartilhados. Sem novas dependências ou build.
+
+Validação no Chromium: oito episódios, 34 trechos, limites de aparição, grafo e atalhos, busca e categorias, teclado, notas persistentes isoladas por série/episódio, próximo/anterior com limite no episódio 8, fotos locais com rede externa bloqueada, contadores só no grafo, altura fixa das imagens, cinco abas em 390/1280 px e retorno aos dois dossiês existentes sem erros de JavaScript.
