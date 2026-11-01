@@ -150,5 +150,135 @@ const DRAGON_LOCAL_PHOTOS = {
       6,
       "assets/dragons/vhagar.jpg"
     ]
+  ],
+  "syrax": [
+    [
+      1,
+      "assets/dragons/syrax.jpg"
+    ]
+  ],
+  "seasmoke": [
+    [
+      3,
+      "assets/dragons/seasmoke.jpg"
+    ]
+  ],
+  "balerion": [
+    [
+      1,
+      "assets/dragons/balerion.jpg"
+    ]
+  ],
+  "sunfyre": [
+    [
+      7,
+      "assets/dragons/sunfyre.jpg"
+    ]
+  ],
+  "vermax": [
+    [
+      6,
+      "assets/dragons/vermax.jpg"
+    ]
+  ],
+  "dreamfyre": [
+    [
+      6,
+      "assets/dragons/dreamfyre.jpg"
+    ]
+  ],
+  "meleys": [
+    [
+      7,
+      "assets/dragons/meleys.jpg"
+    ]
+  ],
+  "arrax": [
+    [
+      10,
+      "assets/dragons/arrax.jpg"
+    ]
+  ],
+  "vermithor": [
+    [
+      10,
+      "assets/dragons/vermithor.jpg"
+    ]
+  ],
+  "moondancer": [
+    [
+      10,
+      "assets/dragons/moondancer.jpg"
+    ]
+  ],
+  "tyraxes": [
+    [
+      10,
+      "assets/dragons/tyraxes.jpg"
+    ]
+  ],
+  "silverwing": [
+    [
+      10,
+      "assets/dragons/silverwing.jpg"
+    ]
   ]
+};
+const DRAGON_IMAGE_INFO = {
+  "syrax": {
+    "kind": "scene",
+    "caption": "Imagem do dragão na série"
+  },
+  "caraxes": {
+    "kind": "scene",
+    "caption": "Imagem do dragão na série"
+  },
+  "vhagar": {
+    "kind": "scene",
+    "caption": "Imagem do dragão na série"
+  },
+  "seasmoke": {
+    "kind": "scene",
+    "caption": "Imagem do dragão na série"
+  },
+  "vermax": {
+    "kind": "illustration",
+    "caption": "Ilustração de referência · não é uma cena da série"
+  },
+  "dreamfyre": {
+    "kind": "illustration",
+    "caption": "Ilustração de referência · não é uma cena da série"
+  },
+  "meleys": {
+    "kind": "illustration",
+    "caption": "Ilustração de referência · não é uma cena da série"
+  },
+  "sunfyre": {
+    "kind": "scene",
+    "caption": "Imagem do dragão na série"
+  },
+  "arrax": {
+    "kind": "illustration",
+    "caption": "Ilustração de referência · não é uma cena da série"
+  },
+  "vermithor": {
+    "kind": "illustration",
+    "caption": "Ilustração de referência · não é uma cena da série"
+  },
+  "moondancer": {
+    "kind": "illustration",
+    "caption": "Ilustração de referência · não é uma cena da série"
+  },
+  "tyraxes": {
+    "kind": "illustration",
+    "caption": "Ilustração de referência · não é uma cena da série"
+  },
+  "silverwing": {
+    "kind": "illustration",
+    "caption": "Ilustração de referência · não é uma cena da série"
+  },
+  "balerion": {
+    "kind": "scene",
+    "caption": "Crânio de Balerion preservado na série"
+  }
 };

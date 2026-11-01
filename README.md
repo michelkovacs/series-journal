@@ -53,9 +53,11 @@ O estilo compartilhado segue a referência Calendly de `DESIGN.md`, com Manrope 
 
 O Resumo da Temporada mantém a diagramação de jornal em duas páginas A4 e aviso de spoilers. As matérias têm nomes clicáveis e prévias de personagens; o link de ficha abre a página individual. A edição de Noturno é parcial. O jornal não inclui rodapé.
 
+O Mapa de Conexões dos três dossiês permite combinar várias categorias em um menu de botões com estado selecionado (sem checkboxes). A seleção combina os personagens das categorias escolhidas, funciona junto com a busca e permanece ao trocar de episódio; Centralizar ou Todas as categorias restaura a visualização completa.
+
 ## Dragões de A Casa do Dragão
 
-A categoria Dragões inclui Syrax, Caraxes, Vhagar, Seasmoke, Vermax, Dreamfyre, Meleys, Sunfyre, Arrax, Vermithor, Moondancer, Tyraxes, Silverwing e Balerion (histórico). Todos têm fichas estáticas, filtro dedicado, histórico e relações com cavaleiros conhecidos até o episódio. A troca de cavaleiro de Vhagar só ocorre a partir do episódio 7; o destino de Arrax só aparece no episódio 10. Dragões apenas mencionados no conselho final são liberados no episódio 10. Imagens verificadas de Caraxes e Vhagar estão em `assets/dragons/`, com procedência em `sources.json`; os demais usam indicação de foto indisponível, sem imagens genéricas atribuídas ao dragão.
+A categoria Dragões inclui Syrax, Caraxes, Vhagar, Seasmoke, Vermax, Dreamfyre, Meleys, Sunfyre, Arrax, Vermithor, Moondancer, Tyraxes, Silverwing e Balerion (histórico). Todos têm fichas estáticas, filtro dedicado, histórico e relações com cavaleiros conhecidos até o episódio. A troca de cavaleiro de Vhagar só ocorre a partir do episódio 7; o destino de Arrax só aparece no episódio 10. Dragões apenas mencionados no conselho final são liberados no episódio 10. Todos os 14 dragões têm imagens locais em `assets/dragons/`, com procedência em `sources.json`. Há seis imagens de cena (Caraxes, Vhagar, Syrax, Seasmoke, Sunfyre e o crânio de Balerion); os oito restantes usam ilustrações de referência identificadas na interface, conforme a preferência do usuário. `DRAGON_IMAGE_INFO` diferencia cenas e ilustrações em cards, fichas e prévias.
 
 ## Mapa de Westeros
 
@@ -70,3 +72,5 @@ Não é necessário executar o gerador no GitHub Pages: os HTMLs ficam versionad
 ## Verificação
 
 Verifique a sintaxe dos JavaScripts com `node --check`. A validação no Chromium cobre navegação entre os três dossiês, ausência de rodapés/anotações/checkboxes, URLs individuais, histórico e fotos limitados ao episódio, estado de voltar/avançar, retorno ao mapa com personagem selecionado, links do jornal e telas de 320, 390 e 1280 px. A validação estática confere metadados, integridade do sitemap e existência dos arquivos vinculados nas fichas.
+
+A capa nova de Noturno foi recebida como imagem na conversa, mas ainda não como arquivo acessível ao workspace. A paleta verde-oliva/areia está preparada; a substituição da capa depende do JPG/PNG em ZIP ou de um link de download. Nenhuma imagem gerada a partir da referência errada foi incorporada ao site.

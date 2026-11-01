@@ -392,7 +392,12 @@ const CHARACTER_DIRECTORY = {
         "name": "Syrax",
         "path": "personagens/casa-do-dragao/syrax/",
         "fromEpisode": 1,
-        "photos": []
+        "photos": [
+          [
+            1,
+            "assets/dragons/syrax.jpg"
+          ]
+        ]
       },
       "caraxes": {
         "name": "Caraxes",
@@ -420,67 +425,122 @@ const CHARACTER_DIRECTORY = {
         "name": "Seasmoke",
         "path": "personagens/casa-do-dragao/seasmoke/",
         "fromEpisode": 3,
-        "photos": []
+        "photos": [
+          [
+            3,
+            "assets/dragons/seasmoke.jpg"
+          ]
+        ]
       },
       "vermax": {
         "name": "Vermax",
         "path": "personagens/casa-do-dragao/vermax/",
         "fromEpisode": 6,
-        "photos": []
+        "photos": [
+          [
+            6,
+            "assets/dragons/vermax.jpg"
+          ]
+        ]
       },
       "dreamfyre": {
         "name": "Dreamfyre",
         "path": "personagens/casa-do-dragao/dreamfyre/",
         "fromEpisode": 6,
-        "photos": []
+        "photos": [
+          [
+            6,
+            "assets/dragons/dreamfyre.jpg"
+          ]
+        ]
       },
       "meleys": {
         "name": "Meleys",
         "path": "personagens/casa-do-dragao/meleys/",
         "fromEpisode": 7,
-        "photos": []
+        "photos": [
+          [
+            7,
+            "assets/dragons/meleys.jpg"
+          ]
+        ]
       },
       "sunfyre": {
         "name": "Sunfyre",
         "path": "personagens/casa-do-dragao/sunfyre/",
         "fromEpisode": 7,
-        "photos": []
+        "photos": [
+          [
+            7,
+            "assets/dragons/sunfyre.jpg"
+          ]
+        ]
       },
       "arrax": {
         "name": "Arrax",
         "path": "personagens/casa-do-dragao/arrax/",
         "fromEpisode": 10,
-        "photos": []
+        "photos": [
+          [
+            10,
+            "assets/dragons/arrax.jpg"
+          ]
+        ]
       },
       "vermithor": {
         "name": "Vermithor",
         "path": "personagens/casa-do-dragao/vermithor/",
         "fromEpisode": 10,
-        "photos": []
+        "photos": [
+          [
+            10,
+            "assets/dragons/vermithor.jpg"
+          ]
+        ]
       },
       "moondancer": {
         "name": "Moondancer",
         "path": "personagens/casa-do-dragao/moondancer/",
         "fromEpisode": 10,
-        "photos": []
+        "photos": [
+          [
+            10,
+            "assets/dragons/moondancer.jpg"
+          ]
+        ]
       },
       "tyraxes": {
         "name": "Tyraxes",
         "path": "personagens/casa-do-dragao/tyraxes/",
         "fromEpisode": 10,
-        "photos": []
+        "photos": [
+          [
+            10,
+            "assets/dragons/tyraxes.jpg"
+          ]
+        ]
       },
       "silverwing": {
         "name": "Silverwing",
         "path": "personagens/casa-do-dragao/silverwing/",
         "fromEpisode": 10,
-        "photos": []
+        "photos": [
+          [
+            10,
+            "assets/dragons/silverwing.jpg"
+          ]
+        ]
       },
       "balerion": {
         "name": "Balerion",
         "path": "personagens/casa-do-dragao/balerion/",
         "fromEpisode": 1,
-        "photos": []
+        "photos": [
+          [
+            1,
+            "assets/dragons/balerion.jpg"
+          ]
+        ]
       }
     }
   },

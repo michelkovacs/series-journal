@@ -12,5 +12,101 @@
     "fromEpisode": 6,
     "source": "https://github.com/usamafayaz/fire-and-blood-nextjs/blob/HEAD/public/dragons/vhagar.jpg",
     "description": "Retrato do dragão na adaptação televisiva. Imagem verificada visualmente; sem acontecimentos de temporadas posteriores no enquadramento."
+  },
+  {
+    "character": "syrax",
+    "file": "syrax.jpg",
+    "fromEpisode": 1,
+    "source": "https://github.com/Abims18/house_of_the_dragon_fan_app/blob/HEAD/assets/dragons/syrax.jpg",
+    "kind": "scene",
+    "description": "Imagem do dragão na adaptação televisiva; Balerion é representado pelo crânio preservado."
+  },
+  {
+    "character": "seasmoke",
+    "file": "seasmoke.jpg",
+    "fromEpisode": 3,
+    "source": "https://github.com/Abims18/house_of_the_dragon_fan_app/blob/HEAD/assets/dragons/seasmoke.jpg",
+    "kind": "scene",
+    "description": "Imagem do dragão na adaptação televisiva; Balerion é representado pelo crânio preservado."
+  },
+  {
+    "character": "balerion",
+    "file": "balerion.jpg",
+    "fromEpisode": 1,
+    "source": "https://github.com/Abims18/house_of_the_dragon_fan_app/blob/HEAD/assets/dragons/balerion.jpg",
+    "kind": "scene",
+    "description": "Imagem do dragão na adaptação televisiva; Balerion é representado pelo crânio preservado."
+  },
+  {
+    "character": "sunfyre",
+    "file": "sunfyre.jpg",
+    "fromEpisode": 7,
+    "source": "https://github.com/usamafayaz/fire-and-blood-nextjs/blob/HEAD/public/dragons/sunfyre.jpg",
+    "kind": "scene",
+    "description": "Imagem do dragão na adaptação televisiva; Balerion é representado pelo crânio preservado."
+  },
+  {
+    "character": "vermax",
+    "file": "vermax.jpg",
+    "fromEpisode": 6,
+    "source": "https://github.com/JpaxMedia/blood-of-the-dragon/blob/HEAD/assets/dragons/vermax.jpg",
+    "kind": "illustration",
+    "description": "Arte ilustrativa identificada na fonte com o nome do dragão. Não é uma fotografia nem um registro da adaptação televisiva; a aparência não é uma referência oficial."
+  },
+  {
+    "character": "dreamfyre",
+    "file": "dreamfyre.jpg",
+    "fromEpisode": 6,
+    "source": "https://github.com/JpaxMedia/blood-of-the-dragon/blob/HEAD/assets/dragons/dreamfyre.jpg",
+    "kind": "illustration",
+    "description": "Arte ilustrativa identificada na fonte com o nome do dragão. Não é uma fotografia nem um registro da adaptação televisiva; a aparência não é uma referência oficial."
+  },
+  {
+    "character": "meleys",
+    "file": "meleys.jpg",
+    "fromEpisode": 7,
+    "source": "https://github.com/JpaxMedia/blood-of-the-dragon/blob/HEAD/assets/dragons/meleys.jpg",
+    "kind": "illustration",
+    "description": "Arte ilustrativa identificada na fonte com o nome do dragão. Não é uma fotografia nem um registro da adaptação televisiva; a aparência não é uma referência oficial."
+  },
+  {
+    "character": "arrax",
+    "file": "arrax.jpg",
+    "fromEpisode": 10,
+    "source": "https://github.com/JpaxMedia/blood-of-the-dragon/blob/HEAD/assets/dragons/arrax.jpg",
+    "kind": "illustration",
+    "description": "Arte ilustrativa identificada na fonte com o nome do dragão. Não é uma fotografia nem um registro da adaptação televisiva; a aparência não é uma referência oficial."
+  },
+  {
+    "character": "vermithor",
+    "file": "vermithor.jpg",
+    "fromEpisode": 10,
+    "source": "https://github.com/JpaxMedia/blood-of-the-dragon/blob/HEAD/assets/dragons/vermithor.jpg",
+    "kind": "illustration",
+    "description": "Arte ilustrativa identificada na fonte com o nome do dragão. Não é uma fotografia nem um registro da adaptação televisiva; a aparência não é uma referência oficial."
+  },
+  {
+    "character": "moondancer",
+    "file": "moondancer.jpg",
+    "fromEpisode": 10,
+    "source": "https://github.com/JpaxMedia/blood-of-the-dragon/blob/HEAD/assets/dragons/moondancer.jpg",
+    "kind": "illustration",
+    "description": "Arte ilustrativa identificada na fonte com o nome do dragão. Não é uma fotografia nem um registro da adaptação televisiva; a aparência não é uma referência oficial."
+  },
+  {
+    "character": "tyraxes",
+    "file": "tyraxes.jpg",
+    "fromEpisode": 10,
+    "source": "https://github.com/JpaxMedia/blood-of-the-dragon/blob/HEAD/assets/dragons/tyraxes.jpg",
+    "kind": "illustration",
+    "description": "Arte ilustrativa identificada na fonte com o nome do dragão. Não é uma fotografia nem um registro da adaptação televisiva; a aparência não é uma referência oficial."
+  },
+  {
+    "character": "silverwing",
+    "file": "silverwing.jpg",
+    "fromEpisode": 10,
+    "source": "https://github.com/JpaxMedia/blood-of-the-dragon/blob/HEAD/assets/dragons/silverwing.jpg",
+    "kind": "illustration",
+    "description": "Arte ilustrativa identificada na fonte com o nome do dragão. Não é uma fotografia nem um registro da adaptação televisiva; a aparência não é uma referência oficial."
   }
 ]

@@ -77,6 +77,7 @@
     const profile=el('a','paper-profile-link','Ver ficha do personagem →');profile.href='#graphview';
     profile.href=CharacterPages.url(id,finalEpisode);
     dialog.append(close,previewImage(c,'paper-preview-photo'),name,el('p','photo-note',`Ficha com informações até o episódio ${finalEpisode}.`),profile);
+    if(series==='dragon'&&DRAGON_IMAGE_INFO[id]?.kind==='illustration')dialog.append(el('p','photo-note',DRAGON_IMAGE_INFO[id].caption));
     if(!source(id))dialog.append(el('p','photo-note','Foto ainda não disponível. A ficha permite enviar um retrato.'));
   }
   host.addEventListener('click',e=>{const link=e.target.closest('[data-paper-character]');if(!link)return;e.preventDefault();renderPreview(link.dataset.paperCharacter);dialog.showModal();});
