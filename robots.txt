@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://michelkovacs.github.io/series-journal/sitemap.xml

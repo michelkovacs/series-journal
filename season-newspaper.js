@@ -15,9 +15,6 @@
     const a = el('article', 'paper-article'); a.append(el('h3', '', item.title));
     item.paragraphs.forEach(text => a.append(el('p', '', text))); return a;
   }
-  function footer(number) {
-    const foot = el('div', 'paper-footer'); foot.append(el('span', '', data.source), el('strong', 'paper-folio', `${number} / 2`)); return foot;
-  }
   const toolbar = el('div', 'newspaper-tools');
   const note = el('div'); note.append(el('span', 'tag', data.edition), el('p', '', data.coverage));
   const actions = el('div', 'newspaper-actions');
@@ -39,16 +36,13 @@
   figure.append(image, el('figcaption', '', data.imageCaption)); lead.append(copy, figure); first.append(lead);
   const columns = el('div', 'paper-columns'); data.page1.forEach(item => columns.append(article(item))); first.append(columns);
   const strip = el('div', 'paper-briefs'); data.strip.forEach(([label, text]) => { const item = el('div'); item.append(el('strong', '', label), el('p', '', text)); strip.append(item); });
-  first.append(strip, footer(1)); spread.append(first);
+  first.append(strip); spread.append(first);
   const second = el('article', 'paper-page'); second.setAttribute('aria-label', 'Página 2 de 2: desfecho e questões em aberto');
   second.append(masthead(2), el('h2', 'paper-headline paper-headline-secondary', data.page2Headline), el('p', 'paper-deck', data.page2Deck));
   const continuation = el('div', 'paper-columns'); data.page2.forEach(item => continuation.append(article(item))); second.append(continuation);
   const people = el('section', 'paper-people'); people.append(el('h3', 'paper-section-title', 'Quem move a história'));
   const cast = el('div', 'paper-cast'); data.cast.forEach(([name, role]) => { const c = el('div'); c.append(el('strong', '', name), el('p', '', role)); cast.append(c); }); people.append(cast); second.append(people);
   const questions = el('section', 'paper-questions'); questions.append(el('h3', 'paper-section-title', 'As perguntas que ficam'));
-  const list = el('ol'); data.questions.forEach(q => list.append(el('li', '', q))); questions.append(list); second.append(questions, footer(2));
+  const list = el('ol'); data.questions.forEach(q => list.append(el('li', '', q))); questions.append(list); second.append(questions);
   spread.append(second); host.append(spread);
-  const credits = el('p', 'newspaper-credit');
-  const creditLink = el('a', '', 'Créditos das imagens desta edição');
-  creditLink.href = 'assets/series/sources.json'; credits.append(creditLink); host.append(credits);
 })();

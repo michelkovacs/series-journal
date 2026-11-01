@@ -27,17 +27,6 @@
     option.value = ep.number;
     episodeSelect.append(option);
   }
-  const sources = create('details', 'season-sources');
-  sources.append(create('summary', '', 'Fontes e limites desta atualização'));
-  sources.append(create('p', '', 'Calendário consultado em uma fonte secundária pública, FreshCalendars (29/10/2026), que cita Apple TV Press. As datas dos episódios 3 a 10 foram calculadas pela fonte a partir da periodicidade semanal anunciada. Os comunicados da Apple estão vinculados abaixo; o acesso direto a eles está bloqueado neste ambiente.'));
-  const links = [
-    ['Calendário consultado · FreshCalendars (texto-fonte público)', 'https://github.com/mustafaozcaninfo/freshcalendars/blob/b8cd454ea4a6aad37e49622ba57d66c413f42e84/apps/news/src/content/articles/2026/10/nocturne-apple-tv-release-date-episode-schedule-october-30.md'],
-    ['Apple TV Press · anúncio de estreia', 'https://www.apple.com/tv-pr/news/2026/07/apple-tvs-thrilling-new-crime-drama-nocturne-starring-liev-schreiber-zazie-beetz-and-stephen-graham-to-make-global-debut-on-friday-october-30/'],
-    ['Apple TV Press · anúncio do trailer', 'https://www.apple.com/tv-pr/news/2026/09/apple-tv-unveils-trailer-for-nocturne-the-gripping-new-drama-led-by-liev-schreiber-and-zazie-beetz-and-stars-stephen-graham/']
-  ];
-  for (const [label, href] of links) { const a = create('a', '', label); a.href = href; a.target = '_blank'; a.rel = 'noopener noreferrer'; sources.append(a); }
-  sources.append(create('p', '', 'O título do episódio 2, For Such a Time as This, e seu lançamento foram informados pelo usuário. Seu resumo e os títulos e resumos dos episódios 3 a 10 ainda não foram confirmados. O episódio 1 preserva o material fornecido originalmente. Informações dos livros não são tratadas como acontecimentos da adaptação.'));
-  document.querySelector('main').append(sources);
   const pending = create('section', 'panel pending-episode');
   pending.id = 'pendingEpisode';
   pending.hidden = true;
@@ -68,15 +57,6 @@
     byId('pageSubtitle').textContent = `${ep.released ? 'Já lançado · resumo pendente. ' : ''}Data informada: ${dateLabel(ep.date)}. Pesquisa em 31/10/2026. Sem perfil ou conexão posterior ao episódio 1 confirmados.`;
     pending.replaceChildren();
     pending.append(create('span', 'tag', `TEMPORADA 1 · EPISÓDIO ${ep.number}`), create('h2', '', ep.title || (ep.date > researchedOn ? 'Este capítulo ainda está programado' : 'O resumo deste capítulo ainda não foi confirmado')), create('p', 'muted', ep.released ? 'Este episódio já foi lançado. O resumo dos acontecimentos e as atualizações de personagens e conexões ainda estão pendentes de confirmação.' : ep.date > researchedOn ? `Lançamento previsto para ${dateLabel(ep.date)}, conforme o calendário consultado. Os acontecimentos serão incluídos quando houver material publicado e conferido.` : 'A fonte informa a estreia em 30/10/2026, mas não fornece o enredo do episódio. Os personagens e conexões do episódio anterior não são apresentados como se fossem deste capítulo.'));
-    const label = create('label', 'recap-note-label', `Suas anotações · episódio ${ep.number}`);
-    const notes = create('textarea', 'notes');
-    notes.id = 'seasonEpisodeNotes'; label.htmlFor = notes.id;
-    notes.placeholder = 'Registre suas impressões e hipóteses sobre este episódio…';
-    const key = `noturno-season-notes-ep${ep.number}`;
-    const status = create('p', 'photo-status'); status.setAttribute('role', 'status');
-    try { notes.value = localStorage.getItem(key) || ''; } catch { status.textContent = 'Armazenamento indisponível.'; }
-    notes.oninput = () => { try { localStorage.setItem(key, notes.value); status.textContent = 'Anotações salvas neste navegador.'; } catch { status.textContent = 'Não foi possível salvar neste navegador.'; } };
-    pending.append(label, notes, status);
     const back = create('button', '', 'Abrir dossiê do episódio 1');
     back.onclick = () => { episodeSelect.value = '1'; update(); };
     pending.append(back);

@@ -6,12 +6,11 @@
   if (!host || !data) return;
   const records = series === 'dragon' ? DRAGON_DATA.characters : series === 'three-body' ? THREE_BODY_DATA.characters : chars;
   const local = series === 'dragon' ? DRAGON_LOCAL_PHOTOS : series === 'three-body' ? THREE_BODY_LOCAL_PHOTOS : {};
-  const cast = series === 'dragon' ? DRAGON_CAST : series === 'three-body' ? THREE_BODY_CAST : {};
   const finalEpisode = series === 'dragon' ? 10 : series === 'three-body' ? 8 : 1;
   function el(tag, cls, text) { const n = document.createElement(tag); if (cls) n.className = cls; if (text !== undefined) n.textContent = text; return n; }
   function source(id) {
-    if (series === 'noturno') return customPhotos[id] || (id === 'jurek' ? 'assets/series/noturno-cast.webp' : photos[id]) || null;
-    return portraits[id] || local[id]?.filter(([,src])=>src).at(-1)?.[1] || castImages.get(cast[id]?.at(-1)?.[1]) || null;
+    if (series === 'noturno') return customPhotos[id] || photos[id] || null;
+    return portraits[id] || local[id]?.filter(([,src])=>src).at(-1)?.[1] || null;
   }
   function previewImage(c, cls) {
     const fallback = el('div', cls + ' paper-no-photo', c.name.split(' ').map(s=>s[0]).slice(0,2).join(''));
@@ -76,7 +75,7 @@
     const close=el('button','paper-preview-close','×');close.type='button';close.setAttribute('aria-label','Fechar prévia do personagem');close.onclick=()=>dialog.close();
     const name=el('h2','',c.name);name.id='paper-preview-name';
     const profile=el('a','paper-profile-link','Ver ficha do personagem →');profile.href='#graphview';
-    profile.onclick=e=>{e.preventDefault();dialog.close();document.querySelector('[data-tab="graphview"]').click();const selector=document.getElementById('episode');selector.value=finalEpisode;selector.dispatchEvent(new Event('change'));select(id);const detail=document.getElementById('detail');const heading=detail.querySelector('h3');if(heading){heading.tabIndex=-1;heading.focus({preventScroll:true})}detail.scrollIntoView({block:'center',behavior:'smooth'});};
+    profile.href=CharacterPages.url(id,finalEpisode);
     dialog.append(close,previewImage(c,'paper-preview-photo'),name,el('p','photo-note',`Ficha com informações até o episódio ${finalEpisode}.`),profile);
     if(!source(id))dialog.append(el('p','photo-note','Foto ainda não disponível. A ficha permite enviar um retrato.'));
   }

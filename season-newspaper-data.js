@@ -235,9 +235,9 @@ const SEASON_NEWSPAPERS = {
     "title": "Noturno",
     "edition": "TEMPORADA 1 · EDIÇÃO PARCIAL",
     "coverage": "Edição parcial: material narrativo disponível apenas até o episódio 1. O episódio 2 já foi lançado, mas seu resumo ainda está em apuração.",
-    "image": "assets/series/noturno-cast.webp",
-    "imageAlt": "Stephen Graham, intérprete de Jurek Walter em Noturno",
-    "imageCaption": "Imagem representativa do elenco. Foto: Raph_PH / Wikimedia Commons, CC BY 4.0; recortada pela fonte.",
+    "image": "assets/series/noturno-mark.svg",
+    "imageAlt": "Identidade visual do dossiê Noturno",
+    "imageCaption": "Identidade visual do dossiê; fotografia da série não disponível.",
     "headline": "O retorno de Michael reabre o caso Frost",
     "deck": "Um adolescente desaparecido volta à cena e coloca uma antiga investigação em movimento. Esta edição cobre somente o material disponível do primeiro episódio.",
     "lead": [

@@ -1,137 +1,62 @@
-# NOTURNO / DOSSIÊ
+# Series Journal
 
-Site baseado no HTML fornecido, preservando conteúdo, cores, grafo e ilustrações do anexo. HTML, estilos e JavaScript foram separados em `index.html`, `style.css` e `app.js`.
+Site estático em português com dossiês de **Noturno**, **A Casa do Dragão — T1** e **O Problema dos 3 Corpos — Netflix, T1**.
 
 ## Executar
 
-Sem dependências de build. Na pasta `/workspace/series-journal`:
+Sem dependências de instalação ou compilação:
 
 ```sh
+cd /workspace/series-journal
 python3 -m http.server 3000 --bind 0.0.0.0
 ```
 
-Sirva os três arquivos juntos em qualquer hospedagem estática HTTPS para publicar.
+A abertura é `index.html`; os outros dossiês estão em `dragon.html` e `three-body.html`.
 
-## Funcionalidades
+## Páginas dos personagens
 
-- Grafo com 14 personagens e 18 conexões, seleção, busca, categorias, arraste e zoom.
-- Abas de personagens, sete locais e seis mistérios.
-- Resumo ilustrado do episódio, controle de spoilers e atalhos para personagens.
-- Anotações e resolução de mistérios persistentes neste navegador via localStorage.
-- Upload local de retratos, com recorte e armazenamento no navegador.
+Há 55 fichas individuais em `personagens/`, com HTML real e endereços próprios, por exemplo:
 
-O conteúdo narrativo foi mantido conforme o anexo, sem verificação editorial. Fotos automáticas dependem de sites externos e da API TVmaze; iniciais e ilustrações incorporadas são os fallbacks quando as fontes não estão disponíveis. As anotações e fotos locais não sincronizam entre dispositivos.
+- `personagens/casa-do-dragao/rhaenyra-targaryen/`
+- `personagens/o-problema-dos-3-corpos/jin-cheng/`
+- `personagens/noturno/jurek-walter/`
 
-## Validação
+As fichas são separadas do mapa e contêm apresentação do personagem, histórico agrupado por temporada, filtro de episódio, personagens relacionados e link para o Mapa de Conexões. A URL preserva a seleção, como `?temporada=1&episodio=4`. A troca de episódio atualiza o endereço e funciona com voltar/avançar do navegador. O histórico e as relações exibidos são limitados ao episódio escolhido; registros posteriores ficam ocultos. Apenas a temporada 1 está cadastrada.
 
-`node --check app.js` verifica a sintaxe. Testes com Chromium validaram busca, filtros, seleção, zoom, navegação, perfis, locais, mistérios, controle de spoilers e persistência após recarregar. As cinco abas foram verificadas em largura de 390 px sem transbordamento horizontal, inclusive com as requisições de imagens externas bloqueadas.
+Cada HTML tem título e descrição próprios, URL canônica e dados estruturados ProfilePage/Person. O índice `personagens/index.html` oferece links estáticos para todas as fichas; `sitemap.xml` lista 59 URLs. A configuração de URLs usa o endereço público atual `https://michelkovacs.github.io/series-journal/`.
 
-## A Casa do Dragão — temporada 1
+## Regenerar as fichas
 
-Escolha **A Casa do Dragão · T1** no seletor do cabeçalho ou abra `dragon.html` no mesmo servidor. O dossiê de Noturno permanece em `index.html`.
+Depois de atualizar os dados dos dossiês:
 
-A expansão inclui os dez episódios, 40 acontecimentos resumidos em texto original, 26 perfis principais, 47 vínculos e 11 locais ao final da temporada. O seletor de episódio limita personagens, relações e atualizações dos perfis ao ponto escolhido. Os núcleos são agrupamentos narrativos, não uma indicação de sobrenome ou fidelidade definitiva. Perfis históricos permanecem consultáveis após a morte dos personagens.
+```sh
+python3 scripts/generate-character-pages.py
+```
 
-Resumos e questões são específicos do episódio; perfis, relações e locais são cumulativos. Notas do resumo e dos mistérios são isoladas por episódio e série. É possível enviar e remover retratos próprios, armazenados localmente. As ilustrações são simbólicas e não dependem de fontes externas.
+O gerador usa Python 3 e Node.js para ler os dados locais e grava as fichas, o índice, `character-directory.js`, `sitemap.xml` e `robots.txt`. Não consulta serviços externos. Os arquivos gerados devem ser enviados ao GitHub junto com os dados atualizados.
 
-Os títulos dos episódios estão em inglês para evitar diferenças regionais. A referência da HBO está no rodapé; os resumos foram redigidos para este projeto, não transcritos. Não há conteúdo dos livros nem das temporadas posteriores.
+## Conteúdo e imagens
 
-Para publicar, inclua também `dragon.html`, `dragon.js` e `dragon-data.js`. Não há instalação ou compilação. Verifique a sintaxe com `node --check dragon.js` e `node --check dragon-data.js`.
+- **A Casa do Dragão:** dez episódios, 26 personagens e histórico da primeira temporada.
+- **O Problema dos 3 Corpos:** oito episódios da adaptação Netflix de 2024, 15 personagens e histórico da primeira temporada.
+- **Noturno:** 14 personagens e material narrativo apurado até o episódio 1. O episódio 2, *For Such a Time as This*, consta como lançado, mas o seu resumo ainda não foi confirmado. As fichas deixam essa limitação explícita.
 
-Validação em Chromium: os dez episódios e as cinco abas, limites de aparição de personagens, atalhos do resumo para o grafo, busca/categorias, teclado, zoom/reset, ocultação de acontecimentos, isolamento e persistência de notas, larguras de 390 e 1280 px e retorno ao dossiê de Noturno, sem erros de JavaScript.
+As fotos automáticas vêm exclusivamente dos arquivos locais identificados como personagens na série. A busca por retratos de atores foi removida. Onde não há foto confirmada, a interface informa a ausência, em vez de usar o rosto de outro personagem ou um retrato do ator fora do papel. A antiga foto de Stephen Graham usada como imagem de Noturno foi retirada; o dossiê usa uma identidade tipográfica enquanto não houver uma imagem da série confirmada. Procedência das fotos está em `assets/characters/sources.json`, `assets/three-body-characters/sources.json` e `assets/series/sources.json`.
 
-### Fotos do elenco
+Rodapés, campos de anotações e checkboxes foram removidos. Não são feitas novas gravações de anotações. A opção de enviar fotos pelo mapa permanece; essas imagens ficam no navegador do usuário. As fichas estáticas usam as fotos locais confirmadas.
 
-Inclua também `dragon-photos.js` na hospedagem. O site consulta o TVmaze para obter retratos identificados dos intérpretes e exibe a mesma foto no grafo, nos cartões e no perfil. As versões jovens/adultas são selecionadas conforme o episódio. Fotos enviadas pelo usuário têm prioridade; o botão “Restaurar foto do elenco” remove essa substituição. Bebês sem intérprete identificado ficam com iniciais até a fase com elenco identificado.
+## Interface
 
-A consulta usa `api.tvmaze.com` e as imagens usam `static.tvmaze.com`. Falhas de rede preservam o funcionamento do dossiê e mostram um aviso na aba Personagens, com botão para tentar novamente. Fotos são retratos do elenco, não necessariamente caracterizações ou cenas da série.
+O estilo compartilhado segue a referência Calendly de `DESIGN.md`, com Manrope local, texto azul-marinho e ações azuis. Os cabeçalhos rolam com a página. Os contadores ficam apenas no mapa. As imagens dos trechos têm altura fixa mesmo com vários personagens; o botão de próximo episódio tem destaque verde.
 
-A integração foi testada com respostas simuladas para os retratos, incluindo os 26 perfis no episódio 10, troca de elenco, prioridade de upload e restauração. A consulta real retornou HTTP 403 no proxy do ambiente; os dois domínios foram adicionados ao rascunho de rede e precisam ser aplicados nas configurações antes da validação real.
+O Resumo da Temporada mantém a diagramação de jornal em duas páginas A4 e aviso de spoilers. As matérias têm nomes clicáveis e prévias de personagens; o link de ficha abre a página individual. A edição de Noturno é parcial. O jornal não inclui rodapé.
 
-### Fotos locais — atualização
+## Publicação
 
-O site agora inclui 24 fotografias reais em `assets/characters/`, cobrindo 20 personagens no episódio 10, com procedência em `assets/characters/sources.json`. Elas têm prioridade sobre a consulta externa e funcionam sem acesso ao TVmaze. Inclua a pasta `assets` e `dragon-local-photos.js` na publicação. As fotos de fases jovens/adultas são usadas quando disponíveis; a foto infantil de Aegon não é reutilizada na adolescência.
+Sirva todos os arquivos estáticos e a pasta `personagens/`. As branches `main` e `gh-pages` são mantidas em conjunto. Para o GitHub Pages, use **Deploy from a branch → gh-pages → /(root)** em Settings → Pages.
 
-Validação real no Chromium com toda a rede externa bloqueada confirmou fotos carregadas (`naturalWidth > 0`) nos cartões, no grafo e nos perfis. Ainda faltam fotos locais confirmadas de Aemma, Harwin, Joffrey Lonmouth, Jacaerys, Lucerys e Vaemond; para esses personagens a consulta externa e o upload continuam disponíveis. Imagens de procedência incerta ou ilustrações não foram apresentadas como fotos reais.
+Não é necessário executar o gerador no GitHub Pages: os HTMLs ficam versionados. Fontes locais e licenças estão em `assets/fonts/`.
 
-## Publicação no GitHub Pages
+## Verificação
 
-A branch `gh-pages` contém o HTML e os arquivos estáticos prontos para publicação, sem build. No GitHub, abra **Settings → Pages → Build and deployment**, escolha **Deploy from a branch**, branch **gh-pages**, pasta **/(root)** e salve. O GitHub publica o site em `https://michelkovacs.github.io/series-journal/`. O dossiê A Casa do Dragão fica em `/series-journal/dragon.html`.
-
-A publicação requer que o GitHub Pages esteja habilitado nessa configuração. O envio por Git não habilita essa opção por si só.
-
-## Noturno — calendário da temporada pesquisado na internet
-
-`noturno-season.js` acrescenta um seletor compacto de dez episódios ao dossiê original. O calendário em cartões foi removido para liberar espaço; as fontes ficam recolhidas no rodapé. A pesquisa de 31/10/2026 encontrou um artigo de FreshCalendars, publicado em 29/10/2026, disponível em seu repositório público:
-
-https://github.com/mustafaozcaninfo/freshcalendars/blob/b8cd454ea4a6aad37e49622ba57d66c413f42e84/apps/news/src/content/articles/2026/10/nocturne-apple-tv-release-date-episode-schedule-october-30.md
-
-A fonte secundária cita comunicados da Apple TV Press: episódios 1 e 2 em 30/10/2026, seguidos de um episódio semanal até 25/12/2026. As datas intermediárias foram calculadas pela própria fonte a partir dessa periodicidade. Os comunicados da Apple estão vinculados no site; o acesso direto à Apple permaneceu bloqueado pela rede do ambiente durante a pesquisa.
-
-O calendário não significa que os dez episódios já foram exibidos ou resumidos. O dossiê detalhado do episódio 1 preserva o conteúdo do HTML fornecido; o resumo do episódio 2 não foi localizado e os episódios 3–10 estão programados para datas posteriores à pesquisa. Esses capítulos mostram essa situação explicitamente e permitem notas separadas. Nenhum acontecimento dos livros foi usado para inventar enredo da adaptação. A data da pesquisa fica explícita e não muda automaticamente o estado editorial do conteúdo.
-
-Validação no Chromium: dez opções e dez cartões, preservação do grafo e resumo originais, isolamento do conteúdo do episódio 1 nas cinco abas ao selecionar os outros episódios, notas persistentes por episódio, navegação do calendário, layout móvel de 390 px e regressão de A Casa do Dragão. Inclua `noturno-season.js` na publicação.
-
-### Atualização do episódio 2
-
-Título **For Such a Time as This** e lançamento informados pelo usuário. O episódio aparece no seletor, no calendário e no painel como já lançado; o resumo e as atualizações narrativas continuam pendentes de confirmação. As anotações existentes foram preservadas.
-
-## Sistema visual
-
-Os dois dossiês seguem a referência Calendly do `DESIGN.md` mais recente: canvas #f8f9fb, cartões brancos, texto azul-marinho #0b3558 e ações em #006bff. Painéis usam cantos de 24 px; cartões de produto, 16 px; botões e campos, 8 px. As sombras são azuladas e os detalhes ciano/magenta ficam atrás dos painéis do grafo, sem função de status ou ação.
-
-Manrope é a substituta aberta de Gilroy indicada pela referência. Ela é servida localmente, com Inter como fallback; arquivos e licenças ficam em `assets/fonts/`. Gilroy não é incluída. O tema anterior e sua borda animada foram substituídos. O cabeçalho rola com a página em desktop e celular, sem fixação no topo.
-
-Fotos e conteúdo dos dossiês foram preservados. Validação em Chromium: carregamento das fontes locais, navegação nos dois dossiês, dez episódios de cada seletor, notas por episódio, filtros, zoom, controle de spoilers, fotos reais locais e responsividade nas abas em 390 e 1280 px.
-
-### Navegação compacta
-
-O calendário em cartões foi removido. A seleção dos dez episódios continua no campo do cabeçalho, com títulos e datas disponíveis, mantendo as notas existentes e os estados de conteúdo pendente.
-
-## Imagens dos resumos
-
-Os cards priorizam uma imagem específica do acontecimento, quando cadastrada em `event.image`. Se ela não existir ou falhar, mostram retratos dos personagens envolvidos no trecho; a lista fica em `event.characters` e respeita os personagens disponíveis no episódio. Sem foto cadastrada, o personagem é identificado pelo nome e pelas iniciais. Retratos complementares carregados posteriormente e uploads também atualizam os cards sem recriar notas nem o estado do controle de spoilers.
-
-A imagem principal prioriza `episode.image`, depois a imagem representativa da série. A Casa do Dragão tem uma imagem de divulgação local; Noturno tenta a arte da série e, se indisponível, usa uma foto local de Stephen Graham com legenda explícita de imagem representativa do elenco. Essa fotografia é de Raph_PH / Wikimedia Commons, CC BY 4.0, recortada e editada pela fonte. A imagem não é apresentada como cena do episódio. Procedência e licença estão em `assets/series/sources.json` e `assets/series/noturno-photo-source.json`, vinculados nos rodapés.
-
-Novos arquivos necessários à publicação: `recap-media.js`, `noturno-recap-media.js` e `assets/series/`.
-
-## O Problema dos 3 Corpos — temporada 1 (Netflix, 2024)
-
-Abra `three-body.html` ou escolha a série no seletor dos três dossiês. A adaptação é a Netflix de 2024, com oito episódios disponibilizados em 21/03/2024, de Countdown a Wallfacer. Os resumos foram escritos em português para este site, com 34 acontecimentos, 15 perfis principais, 32 vínculos e dez locais ao final da temporada. Não incluem a adaptação chinesa ou acontecimentos posteriores à primeira temporada.
-
-O conteúdo é cumulativo até o episódio escolhido. Perfis, relações e personagens dos trechos respeitam esse limite. Contadores permanecem apenas no grafo; o calendário em cartões não é usado. A altura dos blocos de imagens continua fixa mesmo com três ou quatro personagens, e o próximo episódio tem o destaque verde existente. Notas, questões e fotos enviadas usam armazenamento separado das outras séries.
-
-O pôster da série e 14 fotos identificadas dos personagens são arquivos locais. A secretária-geral Lilian Joseph fica sem retrato local confirmado, com consulta complementar por intérprete e opção de upload. Os créditos estão em `assets/series/sources.json` e `assets/three-body-characters/sources.json`.
-
-Fontes de referência:
-
-- Netflix: https://www.netflix.com/title/81024821
-- Análise secundária da temporada consultada: https://github.com/42jerrykim/42jerrykim.github.io/blob/172ad9029472fc1e5628e8f7b862c52ae60bb37f/content/collection/TV-Show/2025/2025-09-08-3-body-problem-season-1-first-contact/index.md
-- Fotos nomeadas da adaptação: https://github.com/alsosee/media/tree/10176780b2db9fbca6e2b368756bda80364851a6/Series/2024/3%20Body%20Problem/Characters
-
-Inclua na publicação `three-body.html`, `three-body.js`, `three-body-data.js`, `three-body-photos.js`, `three-body-local-photos.js`, `assets/series/three-body.webp` e `assets/three-body-characters/`, além dos recursos compartilhados. Sem novas dependências ou build.
-
-Validação no Chromium: oito episódios, 34 trechos, limites de aparição, grafo e atalhos, busca e categorias, teclado, notas persistentes isoladas por série/episódio, próximo/anterior com limite no episódio 8, fotos locais com rede externa bloqueada, contadores só no grafo, altura fixa das imagens, cinco abas em 390/1280 px e retorno aos dois dossiês existentes sem erros de JavaScript.
-
-### Identidade do cabeçalho
-
-Os três dossiês mostram uma imagem local representativa ao lado do título no topo. O cabeçalho usa azul-marinho com detalhes coloridos por série: ciano para Noturno, tons quentes para A Casa do Dragão e azul-claro para O Problema dos 3 Corpos. A imagem de Noturno é identificada no texto alternativo como retrato de Stephen Graham, do elenco, e não como pôster oficial. A aba de navegação passa a se chamar **Mapa de Conexões**. A seleção de série e as demais funcionalidades permanecem disponíveis no cabeçalho responsivo.
-
-## Resumo da Temporada — jornal em duas páginas
-
-A nova aba aparece nos três dossiês e tem navegação própria, independente do episódio selecionado. A Casa do Dragão e O Problema dos 3 Corpos têm sínteses completas da primeira temporada; Noturno tem uma edição explicitamente parcial, baseada apenas no material do episódio 1. Nenhum desfecho dos capítulos ainda não apurados foi inventado.
-
-A leitura é apresentada como duas páginas de jornal: cabeçalho editorial, manchetes, abertura com imagem, colunas, notas breves, personagens e perguntas finais. A revelação do texto é precedida de aviso de spoilers. O botão “Imprimir / salvar PDF” revela a edição e abre a impressão do navegador; o CSS isola o jornal e formata exatamente duas folhas A4, sem cabeçalho do site ou conteúdo das outras abas. No celular, o conteúdo usa uma coluna para legibilidade.
-
-Arquivos compartilhados adicionais: `season-newspaper-data.js` (conteúdo editorial) e `season-newspaper.js` (montagem e controles). Devem acompanhar a publicação junto a `style.css` e às imagens locais.
-
-Validação no Chromium e pypdf: três abas novas, dois artigos de página por jornal, aviso de spoilers e controles, retorno ao episódio, tratamento de Noturno quando o episódio 2 está selecionado, imagens locais, ausência de transbordamento horizontal em 390/1280 px, três PDFs com exatamente duas páginas A4 e presença do final de todas as matérias nos PDFs, sem corte de texto.
-
-### Personagens e imagens no jornal
-
-Os nomes dos personagens com ficha cadastrada são links que abrem uma prévia acessível com foto, nome e acesso à ficha no Mapa de Conexões. A ficha é aberta no último episódio coberto pela edição (10, 8 ou 1), com essa abrangência indicada antes de navegar. Retratos locais e fotos enviadas pelo usuário têm prioridade; sem imagem disponível, a prévia identifica o personagem e informa a ausência. Escape fecha a janela.
-
-As matérias também incluem figuras dos personagens envolvidos nos acontecimentos, além da imagem de divulgação da série na abertura. As legendas distinguem retratos ilustrativos de registros exatos das cenas. Fotos atualizadas por upload ou carregadas depois também atualizam as figuras e a prévia. Os créditos das imagens seguem disponíveis no rodapé.
-
-Inclua `season-newspaper-interactions.js` na publicação. Validação em Chromium: links e fotos reais de prévia nos três jornais com a rede externa bloqueada, fechamento por Escape, retorno à leitura e acesso à ficha correta; layout móvel sem transbordamento; três PDFs com duas páginas A4, sem janela modal e com o final de todas as matérias preservado após a inclusão das figuras.
+Verifique a sintaxe dos JavaScripts com `node --check`. A validação no Chromium cobre navegação entre os três dossiês, ausência de rodapés/anotações/checkboxes, URLs individuais, histórico e fotos limitados ao episódio, estado de voltar/avançar, retorno ao mapa com personagem selecionado, links do jornal e telas de 320, 390 e 1280 px. A validação estática confere metadados, integridade do sitemap e existência dos arquivos vinculados nas fichas.

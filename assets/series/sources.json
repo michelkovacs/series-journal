@@ -5,18 +5,12 @@
     "source": "https://github.com/angel-zh/HouseOfTheDragon/blob/HEAD/images/house-of-the-dragon-ka-1920.webp"
   },
   {
-    "file": "noturno-cast.webp",
-    "description": "Foto de Stephen Graham, intérprete de Jurek Walter, usada como imagem representativa do elenco quando a arte da série está indisponível",
-    "source": "https://github.com/mustafaozcaninfo/freshcalendars/blob/b8cd454ea4a6aad37e49622ba57d66c413f42e84/apps/news/src/assets/news/nocturne-apple-tv-release-date-episode-schedule-october-30/nocturne-apple-tv-release-date-episode-schedule-october-30.source.webp",
-    "originalSource": "https://commons.wikimedia.org/wiki/File:Stephen_Graham.jpg",
-    "author": "Raph_PH",
-    "license": "CC BY 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-    "modifications": "Recortada e editada pela fonte FreshCalendars; arquivo reproduzido sem nova edição."
-  },
-  {
     "file": "three-body.webp",
     "description": "Pôster da adaptação Netflix de 2024, versão coreana de divulgação; usado como imagem representativa da série",
     "source": "https://github.com/42jerrykim/42jerrykim.github.io/blob/172ad9029472fc1e5628e8f7b862c52ae60bb37f/content/collection/TV-Show/2025/2025-09-08-3-body-problem-season-1-first-contact/netflix-3-boby-problem-poster.webp"
+  },
+  {
+    "file": "noturno-mark.svg",
+    "description": "Identidade tipográfica do dossiê Noturno, sem foto de ator e sem alegação de ser uma imagem oficial da série."
   }
 ]
