@@ -15,7 +15,6 @@
     return e;
   };
   const dateLabel = date => date.split('-').reverse().join('/');
-  const releaseLabel = ep => ep.released ? 'Já lançado · resumo pendente' : ep.date > researchedOn ? 'Programado' : 'Estreia informada pela fonte';
   const tabs = ['graphview', 'recap', 'characters', 'places', 'mysteries'];
   const counts = ['nchars', 'nlinks', 'nplaces', 'nclues'];
   const originalCounts = counts.map(id => byId(id).textContent);
@@ -28,24 +27,6 @@
     option.value = ep.number;
     episodeSelect.append(option);
   }
-  const season = create('section', 'panel season-overview');
-  season.setAttribute('aria-labelledby', 'season-title');
-  const heading = create('h2', '', 'Temporada 1 · calendário dos 10 episódios');
-  heading.id = 'season-title';
-  season.append(heading, create('p', 'muted', 'Pesquisa em 31/10/2026: dois episódios na estreia; os demais, semanalmente até 25/12. O dossiê narrativo disponível é o do episódio 1.'));
-  const grid = create('div', 'season-grid');
-  const buttons = [];
-  for (const ep of schedule) {
-    const b = create('button', 'episode-card');
-    b.type = 'button';
-    b.append(create('strong', '', `EP ${String(ep.number).padStart(2, '0')}`), create('time', '', dateLabel(ep.date)), create('span', '', ep.title || 'Título a confirmar'), create('span', '', ep.dossier ? 'Dossiê disponível' : releaseLabel(ep)));
-    b.querySelector('time').dateTime = ep.date;
-    b.setAttribute('aria-label', `Episódio ${ep.number}${ep.title ? ', ' + ep.title : ''}, ${dateLabel(ep.date)}, ${ep.dossier ? 'dossiê disponível' : releaseLabel(ep)}`);
-    b.onclick = () => { episodeSelect.value = ep.number; update(); };
-    buttons.push(b);
-    grid.append(b);
-  }
-  season.append(grid);
   const sources = create('details', 'season-sources');
   sources.append(create('summary', '', 'Fontes e limites desta atualização'));
   sources.append(create('p', '', 'Calendário consultado em uma fonte secundária pública, FreshCalendars (29/10/2026), que cita Apple TV Press. As datas dos episódios 3 a 10 foram calculadas pela fonte a partir da periodicidade semanal anunciada. Os comunicados da Apple estão vinculados abaixo; o acesso direto a eles está bloqueado neste ambiente.'));
@@ -56,16 +37,14 @@
   ];
   for (const [label, href] of links) { const a = create('a', '', label); a.href = href; a.target = '_blank'; a.rel = 'noopener noreferrer'; sources.append(a); }
   sources.append(create('p', '', 'O título do episódio 2, For Such a Time as This, e seu lançamento foram informados pelo usuário. Seu resumo e os títulos e resumos dos episódios 3 a 10 ainda não foram confirmados. O episódio 1 preserva o material fornecido originalmente. Informações dos livros não são tratadas como acontecimentos da adaptação.'));
-  season.append(sources);
-  document.querySelector('.statrow').after(season);
+  document.querySelector('main').append(sources);
   const pending = create('section', 'panel pending-episode');
   pending.id = 'pendingEpisode';
   pending.hidden = true;
   pending.setAttribute('aria-live', 'polite');
-  season.after(pending);
+  document.querySelector('.statrow').after(pending);
   function update() {
     const ep = schedule[Number(episodeSelect.value) - 1];
-    buttons.forEach((b, i) => { b.classList.toggle('active', i === ep.number - 1); b.setAttribute('aria-pressed', String(i === ep.number - 1)); });
     document.querySelector('.intro small').textContent = `ARQUIVO ${String(ep.number).padStart(3, '0')} / EPISÓDIO ${ep.number}`;
     pending.hidden = ep.dossier;
     if (ep.dossier) {

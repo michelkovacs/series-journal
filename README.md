@@ -62,7 +62,7 @@ A publicação requer que o GitHub Pages esteja habilitado nessa configuração.
 
 ## Noturno — calendário da temporada pesquisado na internet
 
-`noturno-season.js` acrescenta o seletor e o calendário de dez episódios ao dossiê original. A pesquisa de 31/10/2026 encontrou um artigo de FreshCalendars, publicado em 29/10/2026, disponível em seu repositório público:
+`noturno-season.js` acrescenta um seletor compacto de dez episódios ao dossiê original. O calendário em cartões foi removido para liberar espaço; as fontes ficam recolhidas no rodapé. A pesquisa de 31/10/2026 encontrou um artigo de FreshCalendars, publicado em 29/10/2026, disponível em seu repositório público:
 
 https://github.com/mustafaozcaninfo/freshcalendars/blob/b8cd454ea4a6aad37e49622ba57d66c413f42e84/apps/news/src/content/articles/2026/10/nocturne-apple-tv-release-date-episode-schedule-october-30.md
 
@@ -83,3 +83,7 @@ Os dois dossiês seguem a referência Calendly do `DESIGN.md` mais recente: canv
 Manrope é a substituta aberta de Gilroy indicada pela referência. Ela é servida localmente, com Inter como fallback; arquivos e licenças ficam em `assets/fonts/`. Gilroy não é incluída. O tema anterior e sua borda animada foram substituídos. O cabeçalho permanece fixo em desktop e estático em telas menores para não obstruir os controles.
 
 Fotos e conteúdo dos dossiês foram preservados. Validação em Chromium: carregamento das fontes locais, navegação nos dois dossiês, dez episódios de cada seletor, notas por episódio, filtros, zoom, controle de spoilers, fotos reais locais e responsividade nas abas em 390 e 1280 px.
+
+### Navegação compacta
+
+O calendário em cartões foi removido. A seleção dos dez episódios continua no campo do cabeçalho, com títulos e datas disponíveis, mantendo as notas existentes e os estados de conteúdo pendente.
