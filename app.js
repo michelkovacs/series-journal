@@ -71,6 +71,5 @@ const TAB_CONTEXT={'season-summary':['Resumo da Temporada','Edição parcial em 
 document.querySelectorAll('[data-tab]').forEach(button=>button.addEventListener('click',()=>{const [title,subtitle]=TAB_CONTEXT[button.dataset.tab];document.getElementById('pageTitle').textContent=title;document.getElementById('pageSubtitle').textContent=subtitle;document.querySelector('.intro>label').hidden=button.dataset.tab==='season-summary'}));
 // Resumo: foco no personagem, alternância de spoilers e controle de spoilers.
 document.querySelectorAll('[data-focus-character]').forEach(button=>button.remove());
-let recapVisible=true;document.getElementById('toggleRecap').onclick=()=>{recapVisible=!recapVisible;document.getElementById('recapDetails').hidden=!recapVisible;document.getElementById('toggleRecap').textContent=recapVisible?'Ocultar acontecimentos':'Mostrar acontecimentos'};
 
 GraphCategories.mount(document.getElementById('category'),render);
