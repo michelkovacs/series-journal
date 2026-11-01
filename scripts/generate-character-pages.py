@@ -109,7 +109,7 @@ for key,s in series.items():
         options=''.join(f'<option value="{e["number"]}"'+(' selected' if e['number']==maxep else '')+f'>{e["number"]:02d} — {esc(e["title"])}</option>' for e in record['episodes'])
         schema={'@context':'https://schema.org','@type':'ProfilePage','url':canonical,'name':c['name']+' — '+s['title'],'mainEntity':{'@type':'Thing' if c.get('kind')=='dragon' else 'Person','name':c['name'],'description':c['desc'],'url':canonical}}
         if photo:schema['mainEntity']['image']=photo if photo.startswith('https://') else SITE+photo
-        asset_version='episode-filter-1'
+        asset_version='labels-cleanup-1'
         document=f'''<!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(c['name'])} — {esc(s['title'])} | Series Journal</title><meta name="description" content="{esc(meta)}"><link rel="canonical" href="{canonical}">
