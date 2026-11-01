@@ -1,6 +1,6 @@
 # Series Journal
 
-Site estático em português com dossiês de **Noturno**, **A Casa do Dragão — T1** e **O Problema dos 3 Corpos — Netflix, T1**.
+Site estático em português com dossiês de **Noturno**, **A Casa do Dragão — T1**, **O Problema dos 3 Corpos — Netflix, T1** e **For All Mankind — T1 a T5**.
 
 ## Executar
 
@@ -11,21 +11,21 @@ cd /workspace/series-journal
 python3 -m http.server 3000 --bind 0.0.0.0
 ```
 
-A abertura é `index.html`; os outros dossiês estão em `dragon.html` e `three-body.html`.
+A abertura é `index.html`; os outros dossiês estão em `dragon.html`, `three-body.html` e `for-all-mankind.html`.
 
 ## Páginas dos personagens
 
-Há 91 fichas individuais em `personagens/`, com HTML real e endereços próprios, por exemplo:
+Há 142 fichas individuais em `personagens/`, com HTML real e endereços próprios, por exemplo:
 
 - `personagens/casa-do-dragao/rhaenyra-targaryen/`
 - `personagens/o-problema-dos-3-corpos/jin-cheng/`
 - `personagens/noturno/jurek-walter/`
 
-As fichas são separadas do mapa e contêm apresentação do personagem, histórico agrupado por temporada, filtro de episódio, personagens relacionados e link para o Mapa de Conexões. A URL preserva a seleção, como `?temporada=1&episodio=4`. A troca de episódio atualiza o endereço e funciona com voltar/avançar do navegador. O histórico e as relações exibidos são limitados ao episódio escolhido; registros posteriores ficam ocultos. Apenas a temporada 1 está cadastrada.
+As fichas são separadas do mapa e contêm apresentação do personagem, histórico agrupado por temporada, filtro de episódio, personagens relacionados e link para o Mapa de Conexões. A URL preserva a seleção, como `?temporada=1&episodio=4`. A troca de episódio atualiza o endereço e funciona com voltar/avançar do navegador. O histórico e as relações exibidos são limitados ao episódio escolhido; registros posteriores ficam ocultos. Os três dossiês originais mantêm a temporada 1; For All Mankind inclui as temporadas 1 a 5.
 
-As listas de personagens e o índice têm filtro por categoria. As categorias usam cinco cores consistentes; as fichas individuais também identificam a categoria. Em A Casa do Dragão, emblemas vetoriais simplificados aparecem ao lado dos retratos e nas fichas, seguindo a casa do personagem, independentemente do núcleo narrativo.
+As listas de personagens e o índice têm filtro por categoria. As categorias usam cores consistentes, com seis tons disponíveis; as fichas individuais também identificam a categoria. Em A Casa do Dragão, emblemas vetoriais simplificados aparecem ao lado dos retratos e nas fichas, seguindo a casa do personagem, independentemente do núcleo narrativo.
 
-Cada HTML tem título e descrição próprios, URL canônica e dados estruturados ProfilePage/Person. O índice `personagens/index.html` oferece links estáticos para todas as fichas; `sitemap.xml` lista 95 URLs. A configuração de URLs usa o endereço público atual `https://michelkovacs.github.io/series-journal/`.
+Cada HTML tem título e descrição próprios, URL canônica e dados estruturados ProfilePage/Person. O índice `personagens/index.html` oferece links estáticos para todas as fichas; `sitemap.xml` lista 147 URLs. A configuração de URLs usa o endereço público atual `https://michelkovacs.github.io/series-journal/`.
 
 ## Regenerar as fichas
 
@@ -38,6 +38,8 @@ python3 scripts/generate-character-pages.py
 O gerador usa Python 3 e Node.js para ler os dados locais e grava as fichas, o índice, `character-directory.js`, `sitemap.xml` e `robots.txt`. Não consulta serviços externos. Os arquivos gerados devem ser enviados ao GitHub junto com os dados atualizados.
 
 ## Conteúdo e imagens
+
+- **For All Mankind:** cinco temporadas, 50 episódios, 51 personagens e histórico agrupado por temporada.
 
 - **A Casa do Dragão:** dez episódios, 62 personagens (48 pessoas e 14 dragões) e histórico da primeira temporada.
 - **O Problema dos 3 Corpos:** oito episódios da adaptação Netflix de 2024, 15 personagens e histórico da primeira temporada.
@@ -95,6 +97,19 @@ Os resumos disponíveis contêm 80 trechos com dois parágrafos cada: 40 em A Ca
 
 A abertura padrão dos três dossiês continua em Personagens; links diretos com `tab` ou `personagem` preservam seu destino. O checkbox Somente neste episódio está disponível nas listas, no índice e no Mapa de Conexões. Conforme a escolha do usuário, a participação dos personagens inclui presenças e menções nos trechos do resumo, não pretende reproduzir os créditos completos em cena. O gerador reconstrói `episode-presence.js` a partir dos participantes identificados e dos nomes nos textos, respeitando o episódio de liberação de cada pessoa. Execute `python3 scripts/generate-character-pages.py` após alterações nos resumos. Busca, categoria e ordenação continuam combináveis com o filtro.
 
-No índice, cada série tem seu próprio seletor de episódio; os links carregam esse episódio para evitar abrir uma ficha com revelações posteriores à seleção. Nas 91 fichas individuais, o checkbox limita o histórico ao capítulo escolhido e os relacionados aos participantes e citados nesse capítulo. Quando não há registros, a página informa isso sem inventar acontecimentos. Noturno só tem conteúdo narrativo confirmado no primeiro episódio.
+No índice, cada série tem seu próprio seletor de episódio; os links carregam esse episódio para evitar abrir uma ficha com revelações posteriores à seleção. Nas 142 fichas individuais, o checkbox limita o histórico ao capítulo escolhido e os relacionados aos participantes e citados nesse capítulo. Quando não há registros, a página informa isso sem inventar acontecimentos. Noturno só tem conteúdo narrativo confirmado no primeiro episódio.
 
 No mapa de Westeros, o checkbox filtra pins, nomes, lista e enquadramento usando `places[].episodes`. Funciona na tela cheia e conserva as informações apenas até o capítulo selecionado. Ponta Tempestade é conhecida desde a visita de Rhaenyra no episódio 4; a missão de Lucerys permanece restrita ao episódio 10. O estado do checkbox é mantido ao trocar de episódio.
+
+
+## For All Mankind · cinco temporadas
+
+`for-all-mankind.html` inclui as cinco temporadas lançadas até 1º de novembro de 2026: 50 episódios, 150 acontecimentos em português, 51 fichas individuais e cinco edições de jornal em duas páginas. O cadastro de episódios foi conferido com o TVmaze e a quinta temporada, com a página oficial Apple TV Press. Títulos originais e datas constam em `docs/for-all-mankind-episode-catalog.json`; a apuração e as limitações de imagens estão em `docs/for-all-mankind-sources.md`.
+
+A seleção inicial abre Personagens, temporada 1, episódio 1. Os links públicos usam `?temporada=3&episodio=7`; internamente, os índices de 1 a 50 permitem acumular histórico sem revelar temporadas posteriores. O diretório também oferece seleção de temporada. Busca por nome, ordenação por nome/categoria, categorias combináveis no mapa e o checkbox de participantes/citados nos acontecimentos funcionam com esse índice. As fichas mantêm URL única por personagem e agrupam o histórico por temporada. Voltar/avançar restaura a seleção.
+
+Há 28 retratos locais identificados como personagens na série, 50 imagens locais de episódios e uma capa representativa sem antecipar temporadas posteriores. Os demais 23 personagens usam iniciais e identificação de imagem indisponível; não são preenchidos com fotos dos atores fora do papel. As fotos adultas de Aleida e Danny têm liberação própria para não aparecerem durante sua infância. Fontes das imagens: `assets/for-all-mankind/sources.json`.
+
+Execute `python3 scripts/generate-character-pages.py` para regenerar tudo. Esse comando também chama `scripts/generate-for-all-mankind.py` e preserva a quarta série nos índices, no sitemap e nos filtros. O conjunto passa a ter 142 fichas e 147 URLs no sitemap. A validação específica é `python3 scripts/validate-for-all-mankind.py`.
+
+A publicação mantém as branches `main` e `gh-pages` sincronizadas.

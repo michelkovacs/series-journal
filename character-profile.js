@@ -7,7 +7,11 @@
   const photoFrame=document.getElementById('photoFrame');
   const only=EpisodeFilter.checkbox('profileOnlyEpisode','Mostrar apenas o histórico deste episódio',render);document.getElementById('characterFilter').after(only.label);
   const titleBase=`${data.name} — ${data.seriesTitle} | Series Journal`;
-  function current(){const v=new URLSearchParams(location.search).get('episodio');return v&&/^\d+$/.test(v)?Math.max(1,Math.min(data.maxEpisode,Number(v))):data.maxEpisode}
+  const multi=data.episodes.some(e=>e.season>1);
+  const seasonSelector=document.getElementById('profileSeason');
+  function publicEpisode(n){const e=data.episodes.find(e=>e.number===n);return {season:e?.season||1,episode:e?.seasonEpisode||n}}
+  function scopeURL(url,n){const e=publicEpisode(n);url.searchParams.set('temporada',String(e.season));url.searchParams.set('episodio',String(e.episode));return url}
+  function current(){const q=new URLSearchParams(location.search),v=q.get('episodio');if(multi){if(!v&&!q.has('temporada'))return data.fromEpisode;const season=Number(q.get('temporada')||1);return (data.episodes.find(e=>e.season===season&&e.seasonEpisode===Number(v||1))||data.episodes.find(e=>e.season===season)||data.episodes[0]).number}return v&&/^\d+$/.test(v)?Math.max(1,Math.min(data.maxEpisode,Number(v))):data.maxEpisode}
   function photo(limit){
     const entry=data.photos.filter(([first])=>first<=limit).at(-1);
     let custom=null;
@@ -25,19 +29,22 @@
   }
 
   function render(){
-    const limit=current();selector.value=String(limit);photo(limit);
+    const limit=current(),scope=publicEpisode(limit);if(multi){seasonSelector.value=String(scope.season);selector.replaceChildren(...data.episodes.filter(e=>e.season===scope.season).map(e=>new Option(`${String(e.seasonEpisode).padStart(2,'0')} — ${e.title}`,String(e.number))))}selector.value=String(limit);photo(limit);
     const available=limit>=data.fromEpisode;
     document.getElementById('characterDescription').textContent=available?data.baseDescription:'Ainda não há informações deste personagem até o episódio escolhido.';
-    document.getElementById('characterScope').textContent=`Conteúdo até a temporada 1, episódio ${limit}. Contém revelações até esse ponto.`;
+    document.getElementById('characterScope').textContent=`Conteúdo até a temporada ${scope.season}, episódio ${scope.episode}. Contém revelações até esse ponto.`;
     document.querySelectorAll('.character-history-entry').forEach(item=>item.hidden=Number(item.dataset.episode)>limit||(only.input.checked&&Number(item.dataset.episode)!==limit));
+    document.querySelectorAll('.character-history-season').forEach(group=>{group.hidden=![...group.querySelectorAll('.character-history-entry')].some(e=>!e.hidden)});
     const shown=data.history.filter(h=>h.episode<=limit&&(!only.input.checked||h.episode===limit));
     document.getElementById('historyNote').textContent=!available?'Este personagem é apresentado a partir de um episódio posterior.':data.knownUntil<limit?`O histórico apurado está disponível até o episódio ${data.knownUntil}. Os capítulos seguintes ainda não foram incorporados ao dossiê.`:shown.length?(only.input.checked?'Acontecimentos registrados neste episódio.':'Acontecimentos registrados até o episódio escolhido. Não há registros novos em todos os capítulos.'):'Ainda não há acontecimentos registrados até este episódio.';
-    document.querySelectorAll('#characterRelations>li').forEach((item,i)=>{const r=data.relations[i];item.hidden=!available||limit<r.start||limit>r.end||(only.input.checked&&!EpisodeFilter.has(data.series,r.id,limit));const link=item.querySelector('a');const out=new URL(r.path,root);out.searchParams.set('temporada','1');out.searchParams.set('episodio',String(limit));link.href=out.href});
-    const mapEpisode=Math.min(limit,data.knownUntil);const map=new URL(data.seriesPage,root);map.searchParams.set('episodio',String(mapEpisode));map.searchParams.set('personagem',data.id);map.searchParams.set('tab','graphview');
+    document.querySelectorAll('#characterRelations>li').forEach((item,i)=>{const r=data.relations[i];item.hidden=!available||limit<r.start||limit>r.end||(only.input.checked&&!EpisodeFilter.has(data.series,r.id,limit));const link=item.querySelector('a');const out=new URL(r.path,root);scopeURL(out,limit);link.href=out.href});
+    const mapEpisode=Math.min(limit,data.knownUntil);const map=new URL(data.seriesPage,root);scopeURL(map,mapEpisode);map.searchParams.set('personagem',data.id);map.searchParams.set('tab','graphview');
     for(const id of ['mapLink','headerMapLink']){const a=document.getElementById(id);a.href=map.href;if(id==='mapLink')a.textContent=mapEpisode===limit?'Ver Mapa de Conexões →':`Ver Mapa de Conexões até o episódio ${mapEpisode} →`}
-    const all=document.getElementById('allCharactersLink');if(all){const out=new URL(data.seriesPage,root);out.searchParams.set('episodio',String(mapEpisode));out.searchParams.set('tab','characters');all.href=out.href}
+    const all=document.getElementById('allCharactersLink');if(all){const out=new URL(data.seriesPage,root);scopeURL(out,mapEpisode);out.searchParams.set('tab','characters');all.href=out.href}
     document.title=titleBase;profile.dataset.ready='true';
   }
-  function change(){const url=new URL(location.href);url.searchParams.set('temporada','1');url.searchParams.set('episodio',selector.value);history.pushState({},'',url);render()}
+  function navigate(limit){const url=scopeURL(new URL(location.href),limit);history.pushState({},'',url);render()}
+  function change(){navigate(Number(selector.value))}
+  if(multi)seasonSelector.addEventListener('change',()=>navigate(data.episodes.find(e=>e.season===Number(seasonSelector.value)).number));
   selector.addEventListener('change',change);document.getElementById('characterFilter').addEventListener('submit',e=>{e.preventDefault();change()});window.addEventListener('popstate',render);render();
 })();

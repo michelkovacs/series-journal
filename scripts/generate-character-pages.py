@@ -142,3 +142,8 @@ for url in [SITE,SITE+'dragon.html',SITE+'three-body.html',SITE+'personagens/']+
 sitemap.append('</urlset>');(ROOT/'sitemap.xml').write_text('\n'.join(sitemap)+'\n')
 (ROOT/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+SITE+'sitemap.xml\n')
 print(f'Generated {count} static character pages and sitemap with {len(urls)+4} URLs.')
+
+# Keep the multi-season dossier in the shared indexes when regenerating.
+if (ROOT/"for-all-mankind-data.js").exists():
+    import runpy
+    runpy.run_path(str(ROOT/"scripts/generate-for-all-mankind.py"))

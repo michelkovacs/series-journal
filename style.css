@@ -299,3 +299,21 @@ body[data-series=noturno] header{background-position:center,center 35%}body[data
 /* Connect adjacent markers, ending at the final circle. Hidden with the mobile markers. */
 .recap-timeline:before{display:none}
 @media(min-width:761px){.recap-event:not(:last-child):before{content:"";position:absolute;top:22px;bottom:-46px;left:21px;width:2px;background:#d7ac64;pointer-events:none}.recap-event-number{position:relative}}
+
+/* For All Mankind: lunar palette and season selection. */
+body[data-series=for-all-mankind]{--series-header-art:url('assets/for-all-mankind/cover.jpg');--header-left:#070f1bed;--header-middle:#19334ae8;--header-right:#726b58ca;--header-accent:#e9c07b}
+.season-episode-controls{display:flex;gap:16px;flex-wrap:wrap;align-items:end}.season-episode-controls label{display:grid;gap:8px;font-size:13px;min-width:0}.season-episode-controls select{max-width:100%}.character-history-season{margin:24px 0}.character-history-season>h3{font-size:24px;color:var(--color-ink-navy)}
+@media(max-width:760px){.season-episode-controls{width:100%;gap:12px}.season-episode-controls label{width:100%}.season-episode-controls select{width:100%}}
+@media print{
+ body[data-series=for-all-mankind] #season-summary .paper-page{font-size:8.5pt;gap:3mm}
+ body[data-series=for-all-mankind] #season-summary .paper-headline{font-size:25pt!important}
+ body[data-series=for-all-mankind] #season-summary .paper-headline-secondary{font-size:23pt!important}
+ body[data-series=for-all-mankind] #season-summary .paper-deck{font-size:10pt}
+ body[data-series=for-all-mankind] #season-summary .paper-article h3{font-size:12pt}
+ body[data-series=for-all-mankind] #season-summary .paper-event-photo{height:13mm}
+ body[data-series=for-all-mankind] #season-summary .paper-cast{grid-template-columns:repeat(3,minmax(0,1fr));gap:2mm 4mm}
+ body[data-series=for-all-mankind] #season-summary .paper-cast p{font-size:8pt}
+ body[data-series=for-all-mankind] #season-summary .paper-questions li{font-size:8.5pt}
+}
+
+.category-tag[data-tone=teal]{background:#def2f3;color:#23616a}

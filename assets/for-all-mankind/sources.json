@@ -1,0 +1,535 @@
+{
+  "researchedOn": "2026-11-01",
+  "cover": {
+    "url": "https://static.tvmaze.com/uploads/images/original_untouched/211/528639.jpg",
+    "source": "https://api.tvmaze.com/shows/41414/images"
+  },
+  "characters": [
+    {
+      "id": "ed",
+      "fromEpisode": 1,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/220/551914.jpg",
+      "source": "https://www.tvmaze.com/characters/610718/for-all-mankind-edward-baldwin",
+      "kind": "character",
+      "file": "assets/for-all-mankind/characters/ed.jpg"
+    },
+    {
+      "id": "karen",
+      "fromEpisode": 1,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/220/551918.jpg",
+      "source": "https://www.tvmaze.com/characters/610721/for-all-mankind-karen-baldwin",
+      "kind": "character",
+      "file": "assets/for-all-mankind/characters/karen.jpg"
+    },
+    {
+      "id": "shane",
+      "fromEpisode": 1,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/227/568401.jpg",
+      "source": "https://www.tvmaze.com/characters/676943/for-all-mankind-shane-baldwin",
+      "kind": "character",
+      "file": "assets/for-all-mankind/characters/shane.jpg"
+    },
+    {
+      "id": "gordo",
+      "fromEpisode": 1,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/220/551920.jpg",
+      "source": "https://www.tvmaze.com/characters/610719/for-all-mankind-gordo-stevens",
+      "kind": "character",
+      "file": "assets/for-all-mankind/characters/gordo.jpg"
+    },
+    {
+      "id": "tracy",
+      "fromEpisode": 1,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/220/551915.jpg",
+      "source": "https://www.tvmaze.com/characters/610720/for-all-mankind-tracy-stevens",
+      "kind": "character",
+      "file": "assets/for-all-mankind/characters/tracy.jpg"
+    },
+    {
+      "id": "danny",
+      "fromEpisode": 12,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/629/1573307.jpg",
+      "source": "https://www.tvmaze.com/characters/808346/for-all-mankind-daniel-stevens",
+      "kind": "character",
+      "file": "assets/for-all-mankind/characters/danny.jpg"
+    },
+    {
+      "id": "aleida",
+      "fromEpisode": 13,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/629/1573308.jpg",
+      "source": "https://www.tvmaze.com/characters/671536/for-all-mankind-aleida-rosales",
+      "kind": "character",
+      "file": "assets/for-all-mankind/characters/aleida.jpg"
+    },
+    {
+      "id": "octavio",
+      "fromEpisode": 1,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/218/547071.jpg",
+      "source": "https://www.tvmaze.com/characters/671535/for-all-mankind-octavio-rosales",
+      "kind": "character",
+      "file": "assets/for-all-mankind/characters/octavio.jpg"
+    },
+    {
+      "id": "margo",
+      "fromEpisode": 1,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/220/551917.jpg",
+      "source": "https://www.tvmaze.com/characters/610722/for-all-mankind-margo-madison",
+      "kind": "character",
+      "file": "assets/for-all-mankind/characters/margo.jpg"
+    },
+    {
+      "id": "gene",
+      "fromEpisode": 1,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/218/546437.jpg",
+      "source": "https://www.tvmaze.com/characters/671532/for-all-mankind-gene-kranz",
+      "kind": "character",
+      "file": "assets/for-all-mankind/characters/gene.jpg"
+    },
+    {
+      "id": "deke",
+      "fromEpisode": 1,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/218/546438.jpg",
+      "source": "https://www.tvmaze.com/characters/671530/for-all-mankind-deke-slayton",
+      "kind": "character",
+      "file": "assets/for-all-mankind/characters/deke.jpg"
+    },
+    {
+      "id": "von-braun",
+      "fromEpisode": 1,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/218/546431.jpg",
+      "source": "https://www.tvmaze.com/characters/671531/for-all-mankind-wernher-von-braun",
+      "kind": "character",
+      "file": "assets/for-all-mankind/characters/von-braun.jpg"
+    },
+    {
+      "id": "neil",
+      "fromEpisode": 1,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/218/546433.jpg",
+      "source": "https://www.tvmaze.com/characters/671540/for-all-mankind-neil-armstrong",
+      "kind": "character",
+      "file": "assets/for-all-mankind/characters/neil.jpg"
+    },
+    {
+      "id": "buzz",
+      "fromEpisode": 1,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/218/546435.jpg",
+      "source": "https://www.tvmaze.com/characters/671541/for-all-mankind-buzz-aldrin",
+      "kind": "character",
+      "file": "assets/for-all-mankind/characters/buzz.jpg"
+    },
+    {
+      "id": "paine",
+      "fromEpisode": 2,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/218/547066.jpg",
+      "source": "https://www.tvmaze.com/characters/671534/for-all-mankind-thomas-paine",
+      "kind": "character",
+      "file": "assets/for-all-mankind/characters/paine.jpg"
+    },
+    {
+      "id": "molly",
+      "fromEpisode": 3,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/297/743140.jpg",
+      "source": "https://www.tvmaze.com/characters/671787/for-all-mankind-molly-cobb",
+      "kind": "character",
+      "file": "assets/for-all-mankind/characters/molly.jpg"
+    },
+    {
+      "id": "dani",
+      "fromEpisode": 3,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/297/743141.jpg",
+      "source": "https://www.tvmaze.com/characters/671788/for-all-mankind-danielle-poole",
+      "kind": "character",
+      "file": "assets/for-all-mankind/characters/dani.jpg"
+    },
+    {
+      "id": "ellen",
+      "fromEpisode": 3,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/220/551913.jpg",
+      "source": "https://www.tvmaze.com/characters/610723/for-all-mankind-ellen-waverly",
+      "kind": "character",
+      "file": "assets/for-all-mankind/characters/ellen.jpg"
+    },
+    {
+      "id": "patty",
+      "fromEpisode": 3,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/220/552323.jpg",
+      "source": "https://www.tvmaze.com/characters/671789/for-all-mankind-patty-doyle",
+      "kind": "character",
+      "file": "assets/for-all-mankind/characters/patty.jpg"
+    },
+    {
+      "id": "pam",
+      "fromEpisode": 3,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/218/546434.jpg",
+      "source": "https://www.tvmaze.com/characters/671539/for-all-mankind-pam-horton",
+      "kind": "character",
+      "file": "assets/for-all-mankind/characters/pam.jpg"
+    },
+    {
+      "id": "larry",
+      "fromEpisode": 3,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/220/551892.jpg",
+      "source": "https://www.tvmaze.com/characters/671790/for-all-mankind-larry-wilson",
+      "kind": "character",
+      "file": "assets/for-all-mankind/characters/larry.jpg"
+    },
+    {
+      "id": "kelly",
+      "fromEpisode": 11,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/297/743142.jpg",
+      "source": "https://www.tvmaze.com/characters/808344/for-all-mankind-kelly-baldwin",
+      "kind": "character",
+      "file": "assets/for-all-mankind/characters/kelly.jpg"
+    },
+    {
+      "id": "sally",
+      "fromEpisode": 14,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/299/749127.jpg",
+      "source": "https://www.tvmaze.com/characters/849324/for-all-mankind-sally-ride",
+      "kind": "character",
+      "file": "assets/for-all-mankind/characters/sally.jpg"
+    },
+    {
+      "id": "bill",
+      "fromEpisode": 15,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/227/568406.jpg",
+      "source": "https://www.tvmaze.com/characters/671543/for-all-mankind-bill-strausser",
+      "kind": "character",
+      "file": "assets/for-all-mankind/characters/bill.jpg"
+    },
+    {
+      "id": "sergei",
+      "fromEpisode": 16,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/302/755101.jpg",
+      "source": "https://www.tvmaze.com/characters/854235/for-all-mankind-sergei-orestovich-nikulov",
+      "kind": "character",
+      "file": "assets/for-all-mankind/characters/sergei.jpg"
+    },
+    {
+      "id": "sam",
+      "fromEpisode": 11,
+      "file": "assets/for-all-mankind/characters/sam.jpg",
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/310/775542.jpg",
+      "source": "https://www.tvmaze.com/characters/854234/for-all-mankind-sam-cleveland",
+      "kind": "character"
+    },
+    {
+      "id": "rolan",
+      "fromEpisode": 24,
+      "file": "assets/for-all-mankind/characters/rolan.jpg",
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/310/775537.jpg",
+      "source": "https://www.tvmaze.com/characters/858600/for-all-mankind-rolan-efimovitch-baranov",
+      "kind": "character"
+    },
+    {
+      "id": "dimitri",
+      "fromEpisode": 24,
+      "file": "assets/for-all-mankind/characters/dimitri.jpg",
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/309/774512.jpg",
+      "source": "https://www.tvmaze.com/characters/860643/for-all-mankind-dr-dimitri-mayakovsky",
+      "kind": "character"
+    }
+  ],
+  "episodes": [
+    {
+      "season": 1,
+      "episode": 1,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/218/545490.jpg",
+      "source": "https://www.tvmaze.com/episodes/1627015/for-all-mankind-1x01-red-moon"
+    },
+    {
+      "season": 1,
+      "episode": 2,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/218/545491.jpg",
+      "source": "https://www.tvmaze.com/episodes/1727898/for-all-mankind-1x02-he-built-the-saturn-v"
+    },
+    {
+      "season": 1,
+      "episode": 3,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/218/545492.jpg",
+      "source": "https://www.tvmaze.com/episodes/1727899/for-all-mankind-1x03-nixons-women"
+    },
+    {
+      "season": 1,
+      "episode": 4,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/219/549953.jpg",
+      "source": "https://www.tvmaze.com/episodes/1727900/for-all-mankind-1x04-prime-crew"
+    },
+    {
+      "season": 1,
+      "episode": 5,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/223/559990.jpg",
+      "source": "https://www.tvmaze.com/episodes/1727901/for-all-mankind-1x05-into-the-abyss"
+    },
+    {
+      "season": 1,
+      "episode": 6,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/227/568421.jpg",
+      "source": "https://www.tvmaze.com/episodes/1727902/for-all-mankind-1x06-home-again"
+    },
+    {
+      "season": 1,
+      "episode": 7,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/228/571051.jpg",
+      "source": "https://www.tvmaze.com/episodes/1727903/for-all-mankind-1x07-hi-bob"
+    },
+    {
+      "season": 1,
+      "episode": 8,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/229/574765.jpg",
+      "source": "https://www.tvmaze.com/episodes/1727904/for-all-mankind-1x08-rupture"
+    },
+    {
+      "season": 1,
+      "episode": 9,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/231/577792.jpg",
+      "source": "https://www.tvmaze.com/episodes/1727905/for-all-mankind-1x09-bent-bird"
+    },
+    {
+      "season": 1,
+      "episode": 10,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/232/580499.jpg",
+      "source": "https://www.tvmaze.com/episodes/1727906/for-all-mankind-1x10-a-city-upon-a-hill"
+    },
+    {
+      "season": 2,
+      "episode": 1,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/284/710545.jpg",
+      "source": "https://www.tvmaze.com/episodes/1972621/for-all-mankind-2x01-every-little-thing"
+    },
+    {
+      "season": 2,
+      "episode": 2,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/297/743119.jpg",
+      "source": "https://www.tvmaze.com/episodes/1973850/for-all-mankind-2x02-the-bleeding-edge"
+    },
+    {
+      "season": 2,
+      "episode": 3,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/297/744984.jpg",
+      "source": "https://www.tvmaze.com/episodes/1973851/for-all-mankind-2x03-rules-of-engagement"
+    },
+    {
+      "season": 2,
+      "episode": 4,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/298/747118.jpg",
+      "source": "https://www.tvmaze.com/episodes/1973852/for-all-mankind-2x04-pathfinder"
+    },
+    {
+      "season": 2,
+      "episode": 5,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/299/748988.jpg",
+      "source": "https://www.tvmaze.com/episodes/1973853/for-all-mankind-2x05-the-weight"
+    },
+    {
+      "season": 2,
+      "episode": 6,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/300/750720.jpg",
+      "source": "https://www.tvmaze.com/episodes/1973854/for-all-mankind-2x06-best-laid-plans"
+    },
+    {
+      "season": 2,
+      "episode": 7,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/300/752419.jpg",
+      "source": "https://www.tvmaze.com/episodes/1973855/for-all-mankind-2x07-dont-be-cruel"
+    },
+    {
+      "season": 2,
+      "episode": 8,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/301/754385.jpg",
+      "source": "https://www.tvmaze.com/episodes/1973856/for-all-mankind-2x08-and-heres-to-you"
+    },
+    {
+      "season": 2,
+      "episode": 9,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/305/763542.jpg",
+      "source": "https://www.tvmaze.com/episodes/1973857/for-all-mankind-2x09-triage"
+    },
+    {
+      "season": 2,
+      "episode": 10,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/308/771636.jpg",
+      "source": "https://www.tvmaze.com/episodes/1973858/for-all-mankind-2x10-the-grey"
+    },
+    {
+      "season": 3,
+      "episode": 1,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/412/1031485.jpg",
+      "source": "https://www.tvmaze.com/episodes/2311005/for-all-mankind-3x01-polaris"
+    },
+    {
+      "season": 3,
+      "episode": 2,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/412/1031486.jpg",
+      "source": "https://www.tvmaze.com/episodes/2311265/for-all-mankind-3x02-game-changer"
+    },
+    {
+      "season": 3,
+      "episode": 3,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/413/1034438.jpg",
+      "source": "https://www.tvmaze.com/episodes/2311266/for-all-mankind-3x03-all-in"
+    },
+    {
+      "season": 3,
+      "episode": 4,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/413/1034439.jpg",
+      "source": "https://www.tvmaze.com/episodes/2311267/for-all-mankind-3x04-happy-valley"
+    },
+    {
+      "season": 3,
+      "episode": 5,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/415/1037891.jpg",
+      "source": "https://www.tvmaze.com/episodes/2311268/for-all-mankind-3x05-seven-minutes-of-terror"
+    },
+    {
+      "season": 3,
+      "episode": 6,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/415/1037892.jpg",
+      "source": "https://www.tvmaze.com/episodes/2311269/for-all-mankind-3x06-new-eden"
+    },
+    {
+      "season": 3,
+      "episode": 7,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/416/1040090.jpg",
+      "source": "https://www.tvmaze.com/episodes/2311270/for-all-mankind-3x07-bring-it-down"
+    },
+    {
+      "season": 3,
+      "episode": 8,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/417/1043371.jpg",
+      "source": "https://www.tvmaze.com/episodes/2311271/for-all-mankind-3x08-the-sands-of-ares"
+    },
+    {
+      "season": 3,
+      "episode": 9,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/418/1045095.jpg",
+      "source": "https://www.tvmaze.com/episodes/2311272/for-all-mankind-3x09-coming-home"
+    },
+    {
+      "season": 3,
+      "episode": 10,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/418/1045096.jpg",
+      "source": "https://www.tvmaze.com/episodes/2311273/for-all-mankind-3x10-stranger-in-a-strange-land"
+    },
+    {
+      "season": 4,
+      "episode": 1,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/485/1213848.jpg",
+      "source": "https://www.tvmaze.com/episodes/2644720/for-all-mankind-4x01-glasnost"
+    },
+    {
+      "season": 4,
+      "episode": 2,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/485/1213849.jpg",
+      "source": "https://www.tvmaze.com/episodes/2644721/for-all-mankind-4x02-have-a-nice-sol"
+    },
+    {
+      "season": 4,
+      "episode": 3,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/485/1213851.jpg",
+      "source": "https://www.tvmaze.com/episodes/2644722/for-all-mankind-4x03-the-bear-hug"
+    },
+    {
+      "season": 4,
+      "episode": 4,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/489/1224711.jpg",
+      "source": "https://www.tvmaze.com/episodes/2644723/for-all-mankind-4x04-house-divided"
+    },
+    {
+      "season": 4,
+      "episode": 5,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/485/1213853.jpg",
+      "source": "https://www.tvmaze.com/episodes/2644724/for-all-mankind-4x05-goldilocks"
+    },
+    {
+      "season": 4,
+      "episode": 6,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/491/1229447.jpg",
+      "source": "https://www.tvmaze.com/episodes/2644725/for-all-mankind-4x06-leningrad"
+    },
+    {
+      "season": 4,
+      "episode": 7,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/493/1234990.jpg",
+      "source": "https://www.tvmaze.com/episodes/2644726/for-all-mankind-4x07-crossing-the-line"
+    },
+    {
+      "season": 4,
+      "episode": 8,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/495/1238184.jpg",
+      "source": "https://www.tvmaze.com/episodes/2644727/for-all-mankind-4x08-legacy"
+    },
+    {
+      "season": 4,
+      "episode": 9,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/498/1245005.jpg",
+      "source": "https://www.tvmaze.com/episodes/2644728/for-all-mankind-4x09-brazil"
+    },
+    {
+      "season": 4,
+      "episode": 10,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/498/1246564.jpg",
+      "source": "https://www.tvmaze.com/episodes/2644729/for-all-mankind-4x10-perestroika"
+    },
+    {
+      "season": 5,
+      "episode": 1,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/619/1548810.jpg",
+      "source": "https://www.tvmaze.com/episodes/3530712/for-all-mankind-5x01-first-light"
+    },
+    {
+      "season": 5,
+      "episode": 2,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/619/1548811.jpg",
+      "source": "https://www.tvmaze.com/episodes/3530912/for-all-mankind-5x02-the-hard-six"
+    },
+    {
+      "season": 5,
+      "episode": 3,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/621/1552756.jpg",
+      "source": "https://www.tvmaze.com/episodes/3530914/for-all-mankind-5x03-home"
+    },
+    {
+      "season": 5,
+      "episode": 4,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/621/1554680.jpg",
+      "source": "https://www.tvmaze.com/episodes/3530915/for-all-mankind-5x04-open-source"
+    },
+    {
+      "season": 5,
+      "episode": 5,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/621/1554681.jpg",
+      "source": "https://www.tvmaze.com/episodes/3530916/for-all-mankind-5x05-svoboda"
+    },
+    {
+      "season": 5,
+      "episode": 6,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/622/1556759.jpg",
+      "source": "https://www.tvmaze.com/episodes/3530917/for-all-mankind-5x06-no-sudden-moves"
+    },
+    {
+      "season": 5,
+      "episode": 7,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/623/1558888.jpg",
+      "source": "https://www.tvmaze.com/episodes/3530918/for-all-mankind-5x07-the-sirens-of-titan"
+    },
+    {
+      "season": 5,
+      "episode": 8,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/625/1563083.jpg",
+      "source": "https://www.tvmaze.com/episodes/3530919/for-all-mankind-5x08-brave-new-world"
+    },
+    {
+      "season": 5,
+      "episode": 9,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/625/1563084.jpg",
+      "source": "https://www.tvmaze.com/episodes/3530920/for-all-mankind-5x09-sons-and-daughters"
+    },
+    {
+      "season": 5,
+      "episode": 10,
+      "url": "https://static.tvmaze.com/uploads/images/original_untouched/626/1565248.jpg",
+      "source": "https://www.tvmaze.com/episodes/3530921/for-all-mankind-5x10-this-land-is-our-land"
+    }
+  ]
+}

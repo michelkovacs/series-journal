@@ -1,8 +1,8 @@
 'use strict';
-(() => {
+window.renderSeasonNewspaper = (data) => {
   const host = document.getElementById('season-summary');
-  const data = SEASON_NEWSPAPERS[document.body.dataset.series];
   if (!host || !data) return;
+  host.replaceChildren();
   function el(tag, cls, text) { const n = document.createElement(tag); if (cls) n.className = cls; if (text !== undefined) n.textContent = text; return n; }
   function masthead(number) {
     const top = el('div', 'paper-masthead');
@@ -45,4 +45,5 @@
   const questions = el('section', 'paper-questions'); questions.append(el('h3', 'paper-section-title', 'As perguntas que ficam'));
   const list = el('ol'); data.questions.forEach(q => list.append(el('li', '', q))); questions.append(list); second.append(questions);
   spread.append(second); host.append(spread);
-})();
+};
+renderSeasonNewspaper(SEASON_NEWSPAPERS[document.body.dataset.series]);

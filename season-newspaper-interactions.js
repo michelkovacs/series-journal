@@ -1,14 +1,17 @@
 'use strict';
-(() => {
+let newspaperInteractionsController;
+window.mountNewspaperInteractions = (options = {}) => {
   const host = document.getElementById('season-summary');
   const series = document.body.dataset.series;
-  const data = SEASON_NEWSPAPERS[series];
+  const data = options.data || SEASON_NEWSPAPERS[series];
   if (!host || !data) return;
-  const records = series === 'dragon' ? DRAGON_DATA.characters : series === 'three-body' ? THREE_BODY_DATA.characters : chars;
+  newspaperInteractionsController?.abort();newspaperInteractionsController=new AbortController();const listenerOptions={signal:newspaperInteractionsController.signal};document.getElementById('paper-character-dialog')?.remove();
+  const records = options.records || (series === 'dragon' ? DRAGON_DATA.characters : series === 'three-body' ? THREE_BODY_DATA.characters : chars);
   const local = series === 'dragon' ? DRAGON_LOCAL_PHOTOS : series === 'three-body' ? THREE_BODY_LOCAL_PHOTOS : {};
-  const finalEpisode = series === 'dragon' ? 10 : series === 'three-body' ? 8 : 1;
+  const finalEpisode = options.finalEpisode || (series === 'dragon' ? 10 : series === 'three-body' ? 8 : 1);
   function el(tag, cls, text) { const n = document.createElement(tag); if (cls) n.className = cls; if (text !== undefined) n.textContent = text; return n; }
   function source(id) {
+    if (options.source) return options.source(id);
     if (series === 'noturno') return photos[id] || null;
     return portraits[id] || local[id]?.filter(([,src])=>src).at(-1)?.[1] || null;
   }
@@ -49,7 +52,7 @@
   records.forEach(c=>{addAlias(c.name,c.id);if(!['joffrey','joffrey-son','ye-father','wife','daughter','sophon'].includes(c.id))addAlias(c.name.split(' ')[0],c.id)});
   if (series === 'three-body') { addAlias('Ye','ye');addAlias('Evans','mike');addAlias('Shi','shi');addAlias('Clarence Shi','shi');addAlias('Da Shi','shi');addAlias('Sophon','sophon'); }
   if (series === 'noturno') { addAlias('Quinn','alex');addAlias('Nathan','nathan'); }
-  const escape = text=>[...text].map(c=>/[\p{L}\p{N}\s]/u.test(c)?c:String.fromCharCode(92)+c).join('');
+  const escape = text=>text.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
   const pattern = [...aliases.keys()].sort((a,b)=>b.length-a.length).map(escape).join('|');
   // Unicode boundaries avoid linking fragments of other words or names.
   const matcher = new RegExp(String.raw`(?<![\p{L}\p{N}_])(${pattern})(?![\p{L}\p{N}_])`,'giu');
@@ -76,13 +79,14 @@
     const name=el('h2','',c.name);name.id='paper-preview-name';
     const profile=el('a','paper-profile-link','Ver ficha do personagem →');profile.href='#graphview';
     profile.href=CharacterPages.url(id,finalEpisode);
-    dialog.append(close,previewImage(c,'paper-preview-photo'),name,el('p','photo-note',`Ficha com informações até o episódio ${finalEpisode}.`),profile);
+    dialog.append(close,previewImage(c,'paper-preview-photo'),name,el('p','photo-note',`Ficha com informações até ${options.scopeLabel || "o episódio "+finalEpisode}.`),profile);
     if(series==='dragon'&&DRAGON_IMAGE_INFO[id]?.kind==='illustration')dialog.append(el('p','photo-note',DRAGON_IMAGE_INFO[id].caption));
   }
-  host.addEventListener('click',e=>{const link=e.target.closest('[data-paper-character]');if(!link)return;e.preventDefault();renderPreview(link.dataset.paperCharacter);dialog.showModal();});
+  host.addEventListener('click',e=>{const link=e.target.closest('[data-paper-character]');if(!link)return;e.preventDefault();renderPreview(link.dataset.paperCharacter);dialog.showModal();},listenerOptions);
   dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});
   function updateImages(){renderIllustrations();if(dialog.open&&current)renderPreview(current)}
-  window.addEventListener('noturno-portraits-updated',updateImages);
-  window.addEventListener('paper-portraits-updated',updateImages);
-  window.addEventListener('beforeprint',()=>{if(dialog.open)dialog.close()});
-})();
+  window.addEventListener('noturno-portraits-updated',updateImages,listenerOptions);
+  window.addEventListener('paper-portraits-updated',updateImages,listenerOptions);
+  window.addEventListener('beforeprint',()=>{if(dialog.open)dialog.close()},listenerOptions);
+};
+mountNewspaperInteractions();

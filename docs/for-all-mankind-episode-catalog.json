@@ -1,0 +1,356 @@
+{
+  "researchedOn": "2026-11-01",
+  "source": "https://api.tvmaze.com/singlesearch/shows?q=For%20All%20Mankind&embed[]=episodes&embed[]=cast",
+  "episodes": [
+    {
+      "season": 1,
+      "seasonEpisode": 1,
+      "title": "Red Moon",
+      "date": "2019-11-01",
+      "url": "https://www.tvmaze.com/episodes/1627015/for-all-mankind-1x01-red-moon"
+    },
+    {
+      "season": 1,
+      "seasonEpisode": 2,
+      "title": "He Built the Saturn V",
+      "date": "2019-11-01",
+      "url": "https://www.tvmaze.com/episodes/1727898/for-all-mankind-1x02-he-built-the-saturn-v"
+    },
+    {
+      "season": 1,
+      "seasonEpisode": 3,
+      "title": "Nixon's Women",
+      "date": "2019-11-01",
+      "url": "https://www.tvmaze.com/episodes/1727899/for-all-mankind-1x03-nixons-women"
+    },
+    {
+      "season": 1,
+      "seasonEpisode": 4,
+      "title": "Prime Crew",
+      "date": "2019-11-08",
+      "url": "https://www.tvmaze.com/episodes/1727900/for-all-mankind-1x04-prime-crew"
+    },
+    {
+      "season": 1,
+      "seasonEpisode": 5,
+      "title": "Into the Abyss",
+      "date": "2019-11-15",
+      "url": "https://www.tvmaze.com/episodes/1727901/for-all-mankind-1x05-into-the-abyss"
+    },
+    {
+      "season": 1,
+      "seasonEpisode": 6,
+      "title": "Home Again",
+      "date": "2019-11-22",
+      "url": "https://www.tvmaze.com/episodes/1727902/for-all-mankind-1x06-home-again"
+    },
+    {
+      "season": 1,
+      "seasonEpisode": 7,
+      "title": "Hi Bob",
+      "date": "2019-11-29",
+      "url": "https://www.tvmaze.com/episodes/1727903/for-all-mankind-1x07-hi-bob"
+    },
+    {
+      "season": 1,
+      "seasonEpisode": 8,
+      "title": "Rupture",
+      "date": "2019-12-06",
+      "url": "https://www.tvmaze.com/episodes/1727904/for-all-mankind-1x08-rupture"
+    },
+    {
+      "season": 1,
+      "seasonEpisode": 9,
+      "title": "Bent Bird",
+      "date": "2019-12-13",
+      "url": "https://www.tvmaze.com/episodes/1727905/for-all-mankind-1x09-bent-bird"
+    },
+    {
+      "season": 1,
+      "seasonEpisode": 10,
+      "title": "A City Upon a Hill",
+      "date": "2019-12-20",
+      "url": "https://www.tvmaze.com/episodes/1727906/for-all-mankind-1x10-a-city-upon-a-hill"
+    },
+    {
+      "season": 2,
+      "seasonEpisode": 1,
+      "title": "Every Little Thing",
+      "date": "2021-02-19",
+      "url": "https://www.tvmaze.com/episodes/1972621/for-all-mankind-2x01-every-little-thing"
+    },
+    {
+      "season": 2,
+      "seasonEpisode": 2,
+      "title": "The Bleeding Edge",
+      "date": "2021-02-26",
+      "url": "https://www.tvmaze.com/episodes/1973850/for-all-mankind-2x02-the-bleeding-edge"
+    },
+    {
+      "season": 2,
+      "seasonEpisode": 3,
+      "title": "Rules of Engagement",
+      "date": "2021-03-05",
+      "url": "https://www.tvmaze.com/episodes/1973851/for-all-mankind-2x03-rules-of-engagement"
+    },
+    {
+      "season": 2,
+      "seasonEpisode": 4,
+      "title": "Pathfinder",
+      "date": "2021-03-12",
+      "url": "https://www.tvmaze.com/episodes/1973852/for-all-mankind-2x04-pathfinder"
+    },
+    {
+      "season": 2,
+      "seasonEpisode": 5,
+      "title": "The Weight",
+      "date": "2021-03-19",
+      "url": "https://www.tvmaze.com/episodes/1973853/for-all-mankind-2x05-the-weight"
+    },
+    {
+      "season": 2,
+      "seasonEpisode": 6,
+      "title": "Best Laid Plans",
+      "date": "2021-03-26",
+      "url": "https://www.tvmaze.com/episodes/1973854/for-all-mankind-2x06-best-laid-plans"
+    },
+    {
+      "season": 2,
+      "seasonEpisode": 7,
+      "title": "Don't Be Cruel",
+      "date": "2021-04-02",
+      "url": "https://www.tvmaze.com/episodes/1973855/for-all-mankind-2x07-dont-be-cruel"
+    },
+    {
+      "season": 2,
+      "seasonEpisode": 8,
+      "title": "And Here's to You",
+      "date": "2021-04-09",
+      "url": "https://www.tvmaze.com/episodes/1973856/for-all-mankind-2x08-and-heres-to-you"
+    },
+    {
+      "season": 2,
+      "seasonEpisode": 9,
+      "title": "Triage",
+      "date": "2021-04-16",
+      "url": "https://www.tvmaze.com/episodes/1973857/for-all-mankind-2x09-triage"
+    },
+    {
+      "season": 2,
+      "seasonEpisode": 10,
+      "title": "The Grey",
+      "date": "2021-04-23",
+      "url": "https://www.tvmaze.com/episodes/1973858/for-all-mankind-2x10-the-grey"
+    },
+    {
+      "season": 3,
+      "seasonEpisode": 1,
+      "title": "Polaris",
+      "date": "2022-06-10",
+      "url": "https://www.tvmaze.com/episodes/2311005/for-all-mankind-3x01-polaris"
+    },
+    {
+      "season": 3,
+      "seasonEpisode": 2,
+      "title": "Game Changer",
+      "date": "2022-06-17",
+      "url": "https://www.tvmaze.com/episodes/2311265/for-all-mankind-3x02-game-changer"
+    },
+    {
+      "season": 3,
+      "seasonEpisode": 3,
+      "title": "All In",
+      "date": "2022-06-24",
+      "url": "https://www.tvmaze.com/episodes/2311266/for-all-mankind-3x03-all-in"
+    },
+    {
+      "season": 3,
+      "seasonEpisode": 4,
+      "title": "Happy Valley",
+      "date": "2022-07-01",
+      "url": "https://www.tvmaze.com/episodes/2311267/for-all-mankind-3x04-happy-valley"
+    },
+    {
+      "season": 3,
+      "seasonEpisode": 5,
+      "title": "Seven Minutes of Terror",
+      "date": "2022-07-08",
+      "url": "https://www.tvmaze.com/episodes/2311268/for-all-mankind-3x05-seven-minutes-of-terror"
+    },
+    {
+      "season": 3,
+      "seasonEpisode": 6,
+      "title": "New Eden",
+      "date": "2022-07-15",
+      "url": "https://www.tvmaze.com/episodes/2311269/for-all-mankind-3x06-new-eden"
+    },
+    {
+      "season": 3,
+      "seasonEpisode": 7,
+      "title": "Bring It Down",
+      "date": "2022-07-22",
+      "url": "https://www.tvmaze.com/episodes/2311270/for-all-mankind-3x07-bring-it-down"
+    },
+    {
+      "season": 3,
+      "seasonEpisode": 8,
+      "title": "The Sands of Ares",
+      "date": "2022-07-29",
+      "url": "https://www.tvmaze.com/episodes/2311271/for-all-mankind-3x08-the-sands-of-ares"
+    },
+    {
+      "season": 3,
+      "seasonEpisode": 9,
+      "title": "Coming Home",
+      "date": "2022-08-05",
+      "url": "https://www.tvmaze.com/episodes/2311272/for-all-mankind-3x09-coming-home"
+    },
+    {
+      "season": 3,
+      "seasonEpisode": 10,
+      "title": "Stranger in a Strange Land",
+      "date": "2022-08-12",
+      "url": "https://www.tvmaze.com/episodes/2311273/for-all-mankind-3x10-stranger-in-a-strange-land"
+    },
+    {
+      "season": 4,
+      "seasonEpisode": 1,
+      "title": "Glasnost",
+      "date": "2023-11-10",
+      "url": "https://www.tvmaze.com/episodes/2644720/for-all-mankind-4x01-glasnost"
+    },
+    {
+      "season": 4,
+      "seasonEpisode": 2,
+      "title": "Have a Nice Sol",
+      "date": "2023-11-17",
+      "url": "https://www.tvmaze.com/episodes/2644721/for-all-mankind-4x02-have-a-nice-sol"
+    },
+    {
+      "season": 4,
+      "seasonEpisode": 3,
+      "title": "The Bear Hug",
+      "date": "2023-11-22",
+      "url": "https://www.tvmaze.com/episodes/2644722/for-all-mankind-4x03-the-bear-hug"
+    },
+    {
+      "season": 4,
+      "seasonEpisode": 4,
+      "title": "House Divided",
+      "date": "2023-12-01",
+      "url": "https://www.tvmaze.com/episodes/2644723/for-all-mankind-4x04-house-divided"
+    },
+    {
+      "season": 4,
+      "seasonEpisode": 5,
+      "title": "Goldilocks",
+      "date": "2023-12-08",
+      "url": "https://www.tvmaze.com/episodes/2644724/for-all-mankind-4x05-goldilocks"
+    },
+    {
+      "season": 4,
+      "seasonEpisode": 6,
+      "title": "Leningrad",
+      "date": "2023-12-15",
+      "url": "https://www.tvmaze.com/episodes/2644725/for-all-mankind-4x06-leningrad"
+    },
+    {
+      "season": 4,
+      "seasonEpisode": 7,
+      "title": "Crossing the Line",
+      "date": "2023-12-22",
+      "url": "https://www.tvmaze.com/episodes/2644726/for-all-mankind-4x07-crossing-the-line"
+    },
+    {
+      "season": 4,
+      "seasonEpisode": 8,
+      "title": "Legacy",
+      "date": "2023-12-29",
+      "url": "https://www.tvmaze.com/episodes/2644727/for-all-mankind-4x08-legacy"
+    },
+    {
+      "season": 4,
+      "seasonEpisode": 9,
+      "title": "Brazil",
+      "date": "2024-01-05",
+      "url": "https://www.tvmaze.com/episodes/2644728/for-all-mankind-4x09-brazil"
+    },
+    {
+      "season": 4,
+      "seasonEpisode": 10,
+      "title": "Perestroika",
+      "date": "2024-01-12",
+      "url": "https://www.tvmaze.com/episodes/2644729/for-all-mankind-4x10-perestroika"
+    },
+    {
+      "season": 5,
+      "seasonEpisode": 1,
+      "title": "First Light",
+      "date": "2026-03-27",
+      "url": "https://www.tvmaze.com/episodes/3530712/for-all-mankind-5x01-first-light"
+    },
+    {
+      "season": 5,
+      "seasonEpisode": 2,
+      "title": "The Hard Six",
+      "date": "2026-04-03",
+      "url": "https://www.tvmaze.com/episodes/3530912/for-all-mankind-5x02-the-hard-six"
+    },
+    {
+      "season": 5,
+      "seasonEpisode": 3,
+      "title": "Home",
+      "date": "2026-04-10",
+      "url": "https://www.tvmaze.com/episodes/3530914/for-all-mankind-5x03-home"
+    },
+    {
+      "season": 5,
+      "seasonEpisode": 4,
+      "title": "Open Source",
+      "date": "2026-04-17",
+      "url": "https://www.tvmaze.com/episodes/3530915/for-all-mankind-5x04-open-source"
+    },
+    {
+      "season": 5,
+      "seasonEpisode": 5,
+      "title": "Svoboda",
+      "date": "2026-04-24",
+      "url": "https://www.tvmaze.com/episodes/3530916/for-all-mankind-5x05-svoboda"
+    },
+    {
+      "season": 5,
+      "seasonEpisode": 6,
+      "title": "No Sudden Moves",
+      "date": "2026-05-01",
+      "url": "https://www.tvmaze.com/episodes/3530917/for-all-mankind-5x06-no-sudden-moves"
+    },
+    {
+      "season": 5,
+      "seasonEpisode": 7,
+      "title": "The Sirens of Titan",
+      "date": "2026-05-08",
+      "url": "https://www.tvmaze.com/episodes/3530918/for-all-mankind-5x07-the-sirens-of-titan"
+    },
+    {
+      "season": 5,
+      "seasonEpisode": 8,
+      "title": "Brave New World",
+      "date": "2026-05-15",
+      "url": "https://www.tvmaze.com/episodes/3530919/for-all-mankind-5x08-brave-new-world"
+    },
+    {
+      "season": 5,
+      "seasonEpisode": 9,
+      "title": "Sons and Daughters",
+      "date": "2026-05-22",
+      "url": "https://www.tvmaze.com/episodes/3530920/for-all-mankind-5x09-sons-and-daughters"
+    },
+    {
+      "season": 5,
+      "seasonEpisode": 10,
+      "title": "This Land Is Our Land",
+      "date": "2026-05-29",
+      "url": "https://www.tvmaze.com/episodes/3530921/for-all-mankind-5x10-this-land-is-our-land"
+    }
+  ]
+}

@@ -898,5 +898,761 @@ const CHARACTER_DIRECTORY = {
         "photos": []
       }
     }
+  },
+  "for-all-mankind": {
+    "title": "For All Mankind",
+    "page": "for-all-mankind.html",
+    "maxEpisode": 50,
+    "knownUntil": 50,
+    "episodes": [
+      {
+        "number": 1,
+        "season": 1,
+        "seasonEpisode": 1,
+        "title": "Red Moon"
+      },
+      {
+        "number": 2,
+        "season": 1,
+        "seasonEpisode": 2,
+        "title": "He Built the Saturn V"
+      },
+      {
+        "number": 3,
+        "season": 1,
+        "seasonEpisode": 3,
+        "title": "Nixon's Women"
+      },
+      {
+        "number": 4,
+        "season": 1,
+        "seasonEpisode": 4,
+        "title": "Prime Crew"
+      },
+      {
+        "number": 5,
+        "season": 1,
+        "seasonEpisode": 5,
+        "title": "Into the Abyss"
+      },
+      {
+        "number": 6,
+        "season": 1,
+        "seasonEpisode": 6,
+        "title": "Home Again"
+      },
+      {
+        "number": 7,
+        "season": 1,
+        "seasonEpisode": 7,
+        "title": "Hi Bob"
+      },
+      {
+        "number": 8,
+        "season": 1,
+        "seasonEpisode": 8,
+        "title": "Rupture"
+      },
+      {
+        "number": 9,
+        "season": 1,
+        "seasonEpisode": 9,
+        "title": "Bent Bird"
+      },
+      {
+        "number": 10,
+        "season": 1,
+        "seasonEpisode": 10,
+        "title": "A City Upon a Hill"
+      },
+      {
+        "number": 11,
+        "season": 2,
+        "seasonEpisode": 1,
+        "title": "Every Little Thing"
+      },
+      {
+        "number": 12,
+        "season": 2,
+        "seasonEpisode": 2,
+        "title": "The Bleeding Edge"
+      },
+      {
+        "number": 13,
+        "season": 2,
+        "seasonEpisode": 3,
+        "title": "Rules of Engagement"
+      },
+      {
+        "number": 14,
+        "season": 2,
+        "seasonEpisode": 4,
+        "title": "Pathfinder"
+      },
+      {
+        "number": 15,
+        "season": 2,
+        "seasonEpisode": 5,
+        "title": "The Weight"
+      },
+      {
+        "number": 16,
+        "season": 2,
+        "seasonEpisode": 6,
+        "title": "Best Laid Plans"
+      },
+      {
+        "number": 17,
+        "season": 2,
+        "seasonEpisode": 7,
+        "title": "Don't Be Cruel"
+      },
+      {
+        "number": 18,
+        "season": 2,
+        "seasonEpisode": 8,
+        "title": "And Here's to You"
+      },
+      {
+        "number": 19,
+        "season": 2,
+        "seasonEpisode": 9,
+        "title": "Triage"
+      },
+      {
+        "number": 20,
+        "season": 2,
+        "seasonEpisode": 10,
+        "title": "The Grey"
+      },
+      {
+        "number": 21,
+        "season": 3,
+        "seasonEpisode": 1,
+        "title": "Polaris"
+      },
+      {
+        "number": 22,
+        "season": 3,
+        "seasonEpisode": 2,
+        "title": "Game Changer"
+      },
+      {
+        "number": 23,
+        "season": 3,
+        "seasonEpisode": 3,
+        "title": "All In"
+      },
+      {
+        "number": 24,
+        "season": 3,
+        "seasonEpisode": 4,
+        "title": "Happy Valley"
+      },
+      {
+        "number": 25,
+        "season": 3,
+        "seasonEpisode": 5,
+        "title": "Seven Minutes of Terror"
+      },
+      {
+        "number": 26,
+        "season": 3,
+        "seasonEpisode": 6,
+        "title": "New Eden"
+      },
+      {
+        "number": 27,
+        "season": 3,
+        "seasonEpisode": 7,
+        "title": "Bring It Down"
+      },
+      {
+        "number": 28,
+        "season": 3,
+        "seasonEpisode": 8,
+        "title": "The Sands of Ares"
+      },
+      {
+        "number": 29,
+        "season": 3,
+        "seasonEpisode": 9,
+        "title": "Coming Home"
+      },
+      {
+        "number": 30,
+        "season": 3,
+        "seasonEpisode": 10,
+        "title": "Stranger in a Strange Land"
+      },
+      {
+        "number": 31,
+        "season": 4,
+        "seasonEpisode": 1,
+        "title": "Glasnost"
+      },
+      {
+        "number": 32,
+        "season": 4,
+        "seasonEpisode": 2,
+        "title": "Have a Nice Sol"
+      },
+      {
+        "number": 33,
+        "season": 4,
+        "seasonEpisode": 3,
+        "title": "The Bear Hug"
+      },
+      {
+        "number": 34,
+        "season": 4,
+        "seasonEpisode": 4,
+        "title": "House Divided"
+      },
+      {
+        "number": 35,
+        "season": 4,
+        "seasonEpisode": 5,
+        "title": "Goldilocks"
+      },
+      {
+        "number": 36,
+        "season": 4,
+        "seasonEpisode": 6,
+        "title": "Leningrad"
+      },
+      {
+        "number": 37,
+        "season": 4,
+        "seasonEpisode": 7,
+        "title": "Crossing the Line"
+      },
+      {
+        "number": 38,
+        "season": 4,
+        "seasonEpisode": 8,
+        "title": "Legacy"
+      },
+      {
+        "number": 39,
+        "season": 4,
+        "seasonEpisode": 9,
+        "title": "Brazil"
+      },
+      {
+        "number": 40,
+        "season": 4,
+        "seasonEpisode": 10,
+        "title": "Perestroika"
+      },
+      {
+        "number": 41,
+        "season": 5,
+        "seasonEpisode": 1,
+        "title": "First Light"
+      },
+      {
+        "number": 42,
+        "season": 5,
+        "seasonEpisode": 2,
+        "title": "The Hard Six"
+      },
+      {
+        "number": 43,
+        "season": 5,
+        "seasonEpisode": 3,
+        "title": "Home"
+      },
+      {
+        "number": 44,
+        "season": 5,
+        "seasonEpisode": 4,
+        "title": "Open Source"
+      },
+      {
+        "number": 45,
+        "season": 5,
+        "seasonEpisode": 5,
+        "title": "Svoboda"
+      },
+      {
+        "number": 46,
+        "season": 5,
+        "seasonEpisode": 6,
+        "title": "No Sudden Moves"
+      },
+      {
+        "number": 47,
+        "season": 5,
+        "seasonEpisode": 7,
+        "title": "The Sirens of Titan"
+      },
+      {
+        "number": 48,
+        "season": 5,
+        "seasonEpisode": 8,
+        "title": "Brave New World"
+      },
+      {
+        "number": 49,
+        "season": 5,
+        "seasonEpisode": 9,
+        "title": "Sons and Daughters"
+      },
+      {
+        "number": 50,
+        "season": 5,
+        "seasonEpisode": 10,
+        "title": "This Land Is Our Land"
+      }
+    ],
+    "characters": {
+      "ed": {
+        "name": "Ed Baldwin",
+        "path": "personagens/for-all-mankind/ed-baldwin/",
+        "fromEpisode": 1,
+        "photos": [
+          [
+            1,
+            "assets/for-all-mankind/characters/ed.jpg"
+          ]
+        ]
+      },
+      "karen": {
+        "name": "Karen Baldwin",
+        "path": "personagens/for-all-mankind/karen-baldwin/",
+        "fromEpisode": 1,
+        "photos": [
+          [
+            1,
+            "assets/for-all-mankind/characters/karen.jpg"
+          ]
+        ]
+      },
+      "shane": {
+        "name": "Shane Baldwin",
+        "path": "personagens/for-all-mankind/shane-baldwin/",
+        "fromEpisode": 1,
+        "photos": [
+          [
+            1,
+            "assets/for-all-mankind/characters/shane.jpg"
+          ]
+        ]
+      },
+      "gordo": {
+        "name": "Gordo Stevens",
+        "path": "personagens/for-all-mankind/gordo-stevens/",
+        "fromEpisode": 1,
+        "photos": [
+          [
+            1,
+            "assets/for-all-mankind/characters/gordo.jpg"
+          ]
+        ]
+      },
+      "tracy": {
+        "name": "Tracy Stevens",
+        "path": "personagens/for-all-mankind/tracy-stevens/",
+        "fromEpisode": 1,
+        "photos": [
+          [
+            1,
+            "assets/for-all-mankind/characters/tracy.jpg"
+          ]
+        ]
+      },
+      "danny": {
+        "name": "Danny Stevens",
+        "path": "personagens/for-all-mankind/danny-stevens/",
+        "fromEpisode": 1,
+        "photos": [
+          [
+            12,
+            "assets/for-all-mankind/characters/danny.jpg"
+          ]
+        ]
+      },
+      "jimmy": {
+        "name": "Jimmy Stevens",
+        "path": "personagens/for-all-mankind/jimmy-stevens/",
+        "fromEpisode": 1,
+        "photos": []
+      },
+      "aleida": {
+        "name": "Aleida Rosales",
+        "path": "personagens/for-all-mankind/aleida-rosales/",
+        "fromEpisode": 1,
+        "photos": [
+          [
+            13,
+            "assets/for-all-mankind/characters/aleida.jpg"
+          ]
+        ]
+      },
+      "octavio": {
+        "name": "Octavio Rosales",
+        "path": "personagens/for-all-mankind/octavio-rosales/",
+        "fromEpisode": 1,
+        "photos": [
+          [
+            1,
+            "assets/for-all-mankind/characters/octavio.jpg"
+          ]
+        ]
+      },
+      "margo": {
+        "name": "Margo Madison",
+        "path": "personagens/for-all-mankind/margo-madison/",
+        "fromEpisode": 1,
+        "photos": [
+          [
+            1,
+            "assets/for-all-mankind/characters/margo.jpg"
+          ]
+        ]
+      },
+      "gene": {
+        "name": "Gene Kranz",
+        "path": "personagens/for-all-mankind/gene-kranz/",
+        "fromEpisode": 1,
+        "photos": [
+          [
+            1,
+            "assets/for-all-mankind/characters/gene.jpg"
+          ]
+        ]
+      },
+      "deke": {
+        "name": "Deke Slayton",
+        "path": "personagens/for-all-mankind/deke-slayton/",
+        "fromEpisode": 1,
+        "photos": [
+          [
+            1,
+            "assets/for-all-mankind/characters/deke.jpg"
+          ]
+        ]
+      },
+      "von-braun": {
+        "name": "Wernher von Braun",
+        "path": "personagens/for-all-mankind/wernher-von-braun/",
+        "fromEpisode": 1,
+        "photos": [
+          [
+            1,
+            "assets/for-all-mankind/characters/von-braun.jpg"
+          ]
+        ]
+      },
+      "neil": {
+        "name": "Neil Armstrong",
+        "path": "personagens/for-all-mankind/neil-armstrong/",
+        "fromEpisode": 1,
+        "photos": [
+          [
+            1,
+            "assets/for-all-mankind/characters/neil.jpg"
+          ]
+        ]
+      },
+      "buzz": {
+        "name": "Buzz Aldrin",
+        "path": "personagens/for-all-mankind/buzz-aldrin/",
+        "fromEpisode": 1,
+        "photos": [
+          [
+            1,
+            "assets/for-all-mankind/characters/buzz.jpg"
+          ]
+        ]
+      },
+      "paine": {
+        "name": "Thomas Paine",
+        "path": "personagens/for-all-mankind/thomas-paine/",
+        "fromEpisode": 2,
+        "photos": [
+          [
+            2,
+            "assets/for-all-mankind/characters/paine.jpg"
+          ]
+        ]
+      },
+      "molly": {
+        "name": "Molly Cobb",
+        "path": "personagens/for-all-mankind/molly-cobb/",
+        "fromEpisode": 3,
+        "photos": [
+          [
+            3,
+            "assets/for-all-mankind/characters/molly.jpg"
+          ]
+        ]
+      },
+      "dani": {
+        "name": "Danielle Poole",
+        "path": "personagens/for-all-mankind/danielle-poole/",
+        "fromEpisode": 3,
+        "photos": [
+          [
+            3,
+            "assets/for-all-mankind/characters/dani.jpg"
+          ]
+        ]
+      },
+      "ellen": {
+        "name": "Ellen Waverly",
+        "path": "personagens/for-all-mankind/ellen-waverly/",
+        "fromEpisode": 3,
+        "photos": [
+          [
+            3,
+            "assets/for-all-mankind/characters/ellen.jpg"
+          ]
+        ]
+      },
+      "patty": {
+        "name": "Patty Doyle",
+        "path": "personagens/for-all-mankind/patty-doyle/",
+        "fromEpisode": 3,
+        "photos": [
+          [
+            3,
+            "assets/for-all-mankind/characters/patty.jpg"
+          ]
+        ]
+      },
+      "wayne": {
+        "name": "Wayne Cobb",
+        "path": "personagens/for-all-mankind/wayne-cobb/",
+        "fromEpisode": 3,
+        "photos": []
+      },
+      "pam": {
+        "name": "Pam Horton",
+        "path": "personagens/for-all-mankind/pam-horton/",
+        "fromEpisode": 3,
+        "photos": [
+          [
+            3,
+            "assets/for-all-mankind/characters/pam.jpg"
+          ]
+        ]
+      },
+      "larry": {
+        "name": "Larry Wilson",
+        "path": "personagens/for-all-mankind/larry-wilson/",
+        "fromEpisode": 3,
+        "photos": [
+          [
+            3,
+            "assets/for-all-mankind/characters/larry.jpg"
+          ]
+        ]
+      },
+      "kelly": {
+        "name": "Kelly Baldwin",
+        "path": "personagens/for-all-mankind/kelly-baldwin/",
+        "fromEpisode": 11,
+        "photos": [
+          [
+            11,
+            "assets/for-all-mankind/characters/kelly.jpg"
+          ]
+        ]
+      },
+      "sally": {
+        "name": "Sally Ride",
+        "path": "personagens/for-all-mankind/sally-ride/",
+        "fromEpisode": 14,
+        "photos": [
+          [
+            14,
+            "assets/for-all-mankind/characters/sally.jpg"
+          ]
+        ]
+      },
+      "bill": {
+        "name": "Bill Strausser",
+        "path": "personagens/for-all-mankind/bill-strausser/",
+        "fromEpisode": 15,
+        "photos": [
+          [
+            15,
+            "assets/for-all-mankind/characters/bill.jpg"
+          ]
+        ]
+      },
+      "sergei": {
+        "name": "Sergei Nikulov",
+        "path": "personagens/for-all-mankind/sergei-nikulov/",
+        "fromEpisode": 16,
+        "photos": [
+          [
+            16,
+            "assets/for-all-mankind/characters/sergei.jpg"
+          ]
+        ]
+      },
+      "dev": {
+        "name": "Dev Ayesa",
+        "path": "personagens/for-all-mankind/dev-ayesa/",
+        "fromEpisode": 22,
+        "photos": []
+      },
+      "will": {
+        "name": "Will Tyler",
+        "path": "personagens/for-all-mankind/will-tyler/",
+        "fromEpisode": 23,
+        "photos": []
+      },
+      "alexei": {
+        "name": "Alexei Poletov",
+        "path": "personagens/for-all-mankind/alexei-poletov/",
+        "fromEpisode": 24,
+        "photos": []
+      },
+      "grigory": {
+        "name": "Grigory Kuznetsov",
+        "path": "personagens/for-all-mankind/grigory-kuznetsov/",
+        "fromEpisode": 24,
+        "photos": []
+      },
+      "lee": {
+        "name": "Lee Jung-Gil",
+        "path": "personagens/for-all-mankind/lee-jung-gil/",
+        "fromEpisode": 29,
+        "photos": []
+      },
+      "alex": {
+        "name": "Alex Poletov Baldwin",
+        "path": "personagens/for-all-mankind/alex-poletov-baldwin/",
+        "fromEpisode": 30,
+        "photos": []
+      },
+      "miles": {
+        "name": "Miles Dale",
+        "path": "personagens/for-all-mankind/miles-dale/",
+        "fromEpisode": 31,
+        "photos": []
+      },
+      "samantha": {
+        "name": "Samantha Massey",
+        "path": "personagens/for-all-mankind/samantha-massey/",
+        "fromEpisode": 32,
+        "photos": []
+      },
+      "eli": {
+        "name": "Eli Hobson",
+        "path": "personagens/for-all-mankind/eli-hobson/",
+        "fromEpisode": 31,
+        "photos": []
+      },
+      "ilya": {
+        "name": "Ilya Breshov",
+        "path": "personagens/for-all-mankind/ilya-breshov/",
+        "fromEpisode": 32,
+        "photos": []
+      },
+      "irina": {
+        "name": "Irina Morozova",
+        "path": "personagens/for-all-mankind/irina-morozova/",
+        "fromEpisode": 33,
+        "photos": []
+      },
+      "svetlana": {
+        "name": "Svetlana Zakharova",
+        "path": "personagens/for-all-mankind/svetlana-zakharova/",
+        "fromEpisode": 33,
+        "photos": []
+      },
+      "lily": {
+        "name": "Lily Dale",
+        "path": "personagens/for-all-mankind/lily-dale/",
+        "fromEpisode": 41,
+        "photos": []
+      },
+      "celia": {
+        "name": "Celia Boyd",
+        "path": "personagens/for-all-mankind/celia-boyd/",
+        "fromEpisode": 41,
+        "photos": []
+      },
+      "leonid": {
+        "name": "Leonid Polivanov",
+        "path": "personagens/for-all-mankind/leonid-polivanov/",
+        "fromEpisode": 41,
+        "photos": []
+      },
+      "fred": {
+        "name": "Fred",
+        "path": "personagens/for-all-mankind/fred/",
+        "fromEpisode": 42,
+        "photos": []
+      },
+      "avery": {
+        "name": "Avery Jarrett",
+        "path": "personagens/for-all-mankind/avery-jarrett/",
+        "fromEpisode": 44,
+        "photos": []
+      },
+      "gerardo": {
+        "name": "Gerardo",
+        "path": "personagens/for-all-mankind/gerardo/",
+        "fromEpisode": 46,
+        "photos": []
+      },
+      "marcus": {
+        "name": "Marcus",
+        "path": "personagens/for-all-mankind/marcus/",
+        "fromEpisode": 46,
+        "photos": []
+      },
+      "elena": {
+        "name": "Elena",
+        "path": "personagens/for-all-mankind/elena/",
+        "fromEpisode": 49,
+        "photos": []
+      },
+      "sam": {
+        "name": "Sam Cleveland",
+        "path": "personagens/for-all-mankind/sam-cleveland/",
+        "fromEpisode": 11,
+        "photos": [
+          [
+            11,
+            "assets/for-all-mankind/characters/sam.jpg"
+          ]
+        ]
+      },
+      "rolan": {
+        "name": "Rolan Baranov",
+        "path": "personagens/for-all-mankind/rolan-baranov/",
+        "fromEpisode": 24,
+        "photos": [
+          [
+            24,
+            "assets/for-all-mankind/characters/rolan.jpg"
+          ]
+        ]
+      },
+      "dimitri": {
+        "name": "Dimitri Mayakovsky",
+        "path": "personagens/for-all-mankind/dimitri-mayakovsky/",
+        "fromEpisode": 24,
+        "photos": [
+          [
+            24,
+            "assets/for-all-mankind/characters/dimitri.jpg"
+          ]
+        ]
+      },
+      "amber": {
+        "name": "Amber Stevens",
+        "path": "personagens/for-all-mankind/amber-stevens/",
+        "fromEpisode": 21,
+        "photos": []
+      }
+    }
   }
 };
