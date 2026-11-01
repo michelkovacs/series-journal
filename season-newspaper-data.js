@@ -235,9 +235,9 @@ const SEASON_NEWSPAPERS = {
     "title": "Noturno",
     "edition": "TEMPORADA 1 · EDIÇÃO PARCIAL",
     "coverage": "Edição parcial: material narrativo disponível apenas até o episódio 1. O episódio 2 já foi lançado, mas seu resumo ainda está em apuração.",
-    "image": "assets/series/noturno-mark.svg",
-    "imageAlt": "Identidade visual do dossiê Noturno",
-    "imageCaption": "Identidade visual do dossiê; fotografia da série não disponível.",
+    "image": "https://m.media-amazon.com/images/S/pv-target-images/ef9425e1792b320dd0da4498623cbc24d749ee7081701b64263515291f6bcb41.jpg",
+    "imageAlt": "Capa de Noturno fornecida pelo usuário",
+    "imageCaption": "Imagem representativa de Noturno · capa indicada pelo usuário.",
     "headline": "O retorno de Michael reabre o caso Frost",
     "deck": "Um adolescente desaparecido volta à cena e coloca uma antiga investigação em movimento. Esta edição cobre somente o material disponível do primeiro episódio.",
     "lead": [

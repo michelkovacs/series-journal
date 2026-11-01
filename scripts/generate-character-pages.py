@@ -48,6 +48,7 @@ categories={
 }
 tones=['rose','green','blue','violet','amber']
 for series_id,art in {'dragon':'house-of-the-dragon.webp','three-body':'three-body.webp','noturno':'noturno-mark.svg'}.items():series[series_id]['art']='assets/series/'+art
+series['noturno']['art']="https://m.media-amazon.com/images/S/pv-target-images/ef9425e1792b320dd0da4498623cbc24d749ee7081701b64263515291f6bcb41.jpg"
 manifest={};count=0;urls=[]
 for key,s in series.items():
     d=s['data'];maxep=len(d['episodes']);characters={c['id']:c for c in d['characters']}
@@ -78,6 +79,7 @@ for key,s in series.items():
                 other=l['b'] if l['a']==c['id'] else l['a'];o=characters[other]
                 relations.append(dict(id=other,name=o['name'],label=l['label'],start=max(l['start'],o['from']),end=l['end'],path=manifest[key]['characters'][other]['path']))
         record=dict(imageCaption=dragon_image_info.get(c['id'],{}).get('caption','Foto do personagem na série') if key=='dragon' else 'Foto do personagem na série',kind=c.get('kind','person'),photoCandidates=noturno_photos.get(c['id'],{}).get('sources',[]) if key=='noturno' else [],category=category,house=house,series=key,seriesTitle=s['title'],seriesPage=s['page'],id=c['id'],name=c['name'],baseDescription=c['desc'],fromEpisode=c['from'],maxEpisode=maxep,knownUntil=s['knownUntil'],photos=info['photos'],history=history,relations=relations,episodes=[dict(number=e['number'],title=e['title']) for e in d['episodes']])
+        header_art=s['art'] if s['art'].startswith('https://') else '../../../'+s['art']
         meta=f"{c['name']} em {s['title']}: perfil, conexões e histórico da temporada 1 por episódio. Escolha até onde deseja acompanhar a história."
         media_caption=dragon_image_info.get(c['id'],{}).get('caption','Foto do personagem na série') if key=='dragon' else 'Foto do personagem na série'
         photo_src=photo if photo and photo.startswith('https://') else '../../../'+photo if photo else None
@@ -87,16 +89,17 @@ for key,s in series.items():
         options=''.join(f'<option value="{e["number"]}"'+(' selected' if e['number']==maxep else '')+f'>{e["number"]:02d} — {esc(e["title"])}</option>' for e in record['episodes'])
         schema={'@context':'https://schema.org','@type':'ProfilePage','url':canonical,'name':c['name']+' — '+s['title'],'mainEntity':{'@type':'Thing' if c.get('kind')=='dragon' else 'Person','name':c['name'],'description':c['desc'],'url':canonical}}
         if photo:schema['mainEntity']['image']=photo if photo.startswith('https://') else SITE+photo
+        asset_version='noturno-cover-1' if key=='noturno' else 'multi-categories-1'
         document=f'''<!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(c['name'])} — {esc(s['title'])} | Series Journal</title><meta name="description" content="{esc(meta)}"><link rel="canonical" href="{canonical}">
 <meta property="og:type" content="article"><meta property="og:title" content="{esc(c['name'])} — {esc(s['title'])}"><meta property="og:description" content="{esc(meta)}"><meta property="og:url" content="{canonical}">
 {f'<meta property="og:image" content="{photo if photo.startswith('https://') else SITE+photo}">' if photo else ''}
-<link rel="stylesheet" href="../../../style.css?v=multi-categories-1"><script>document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="../../../style.css?v={asset_version}"><script>document.documentElement.classList.add('js')</script>
 <script type="application/ld+json">{encoded(schema)}</script>
 <script type="application/json" id="characterRecord">{encoded(record)}</script>
 <script src="../../../character-families.js?v=multi-categories-1" defer></script><script src="../../../character-profile.js?v=multi-categories-1" defer></script></head>
-<body data-series="{key}" class="character-document"><header><div class="series-brand"><img class="series-art" src="../../../{s['art']}" alt="Imagem representativa de {esc(s['title'])}" width="288" height="180"><div class="series-brand-copy"><div class="character-series-name">{esc(s['title'])} <span>/ PERSONAGENS</span></div><small>Ficha individual · Temporada 1</small></div></div><nav aria-label="Navegação da ficha"><a id="allCharactersLink" href="../../../{s['page']}?episodio={mapep}&amp;tab=characters">Todos os personagens</a><a id="headerMapLink" href="../../../{s['page']}?episodio={mapep}&amp;personagem={c['id']}&amp;tab=graphview">Ver Mapa de Conexões</a></nav></header>
+<body data-series="{key}" class="character-document"><header><div class="series-brand"><img class="series-art" src="{header_art}" alt="Imagem representativa de {esc(s['title'])}" width="288" height="180"><div class="series-brand-copy"><div class="character-series-name">{esc(s['title'])} <span>/ PERSONAGENS</span></div><small>Ficha individual · Temporada 1</small></div></div><nav aria-label="Navegação da ficha"><a id="allCharactersLink" href="../../../{s['page']}?episodio={mapep}&amp;tab=characters">Todos os personagens</a><a id="headerMapLink" href="../../../{s['page']}?episodio={mapep}&amp;personagem={c['id']}&amp;tab=graphview">Ver Mapa de Conexões</a></nav></header>
 <main><nav class="character-breadcrumbs" aria-label="Localização"><a href="../../../{s['page']}">{esc(s['title'])}</a><span aria-hidden="true">/</span><span>{esc(c['name'])}</span></nav>
 <article class="character-profile" id="characterProfile"><div class="character-profile-hero"><div class="character-profile-photo" id="photoFrame">{photo_html}{crest}</div><div class="character-profile-copy"><span class="tag category-tag" id="profileCategory" data-tone="{category["tone"]}">{esc(category["label"])}</span><h1>{esc(c['name'])}</h1><p id="characterDescription">{esc(desc)}</p><p id="characterScope" class="character-scope">Conteúdo até a temporada 1, episódio {maxep}.</p><a class="character-map-link" id="mapLink" href="../../../{s['page']}?episodio={mapep}&amp;personagem={c['id']}&amp;tab=graphview">Ver Mapa de Conexões →</a></div></div>
 <section class="character-history"><div class="character-history-heading"><div><span class="tag">HISTÓRICO DO PERSONAGEM</span><h2>Temporada 1</h2></div><form id="characterFilter"><label>Temporada<select id="profileSeason" name="temporada"><option value="1">Temporada 1</option></select></label><label>Até o episódio<select id="profileEpisode" name="episodio">{options}</select></label><noscript><p>Sem JavaScript, esta página mostra todo o histórico disponível da temporada 1.</p></noscript></form></div><p class="character-history-note" id="historyNote">Acompanhe os acontecimentos registrados até o episódio escolhido.</p><ol class="character-history-list" id="characterHistory">{entries}</ol></section>

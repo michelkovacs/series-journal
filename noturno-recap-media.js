@@ -4,7 +4,7 @@
     ['jurek'], ['karl','jurek'], ['michael','felicia'],
     ['jonah','nathan','alex','saga'], ['jonah','nathan'], ['jurek','jonah','alex']
   ];
-  const seriesArt = 'https://www.apple.com/tv-pr/shows-and-films/n/nocturne/images/season-01/show-home-graphic-header/key-art-01/16x9/Apple_TV_Nocturne_key_art_graphic_header_16_9_show_home.jpg.large_2x.jpg';
+  const seriesArt = "https://m.media-amazon.com/images/S/pv-target-images/ef9425e1792b320dd0da4498623cbc24d749ee7081701b64263515291f6bcb41.jpg";
   function people(ids) {
     return ids.map(id => chars.find(c => c.id === id)).filter(Boolean).map(c => ({
       id:c.id,name:c.name,src:photos[c.id] || null

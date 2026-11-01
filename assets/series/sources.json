@@ -12,5 +12,12 @@
   {
     "file": "noturno-mark.svg",
     "description": "Identidade tipográfica do dossiê Noturno, sem foto de ator e sem alegação de ser uma imagem oficial da série."
+  },
+  {
+    "file": null,
+    "description": "Capa de Noturno indicada pelo usuário; usada diretamente no cabeçalho, no resumo, no jornal e nas fichas.",
+    "source": "https://m.media-amazon.com/images/S/pv-target-images/ef9425e1792b320dd0da4498623cbc24d749ee7081701b64263515291f6bcb41.jpg",
+    "delivery": "external-url",
+    "note": "Download local bloqueado pela política de rede do ambiente; URL preservada sem substituir a imagem."
   }
 ]
