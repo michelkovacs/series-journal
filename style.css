@@ -126,3 +126,24 @@ nav{padding:8px 0 16px}nav button{border-radius:8px;font-weight:600;color:var(--
 .episode-pagination .next-episode:hover:not(:disabled){background:#066649;border-color:#066649}
 .episode-pagination .next-episode:disabled{background:var(--color-pebble);border-color:var(--color-hairline);color:var(--color-slate-gray);opacity:.6;box-shadow:none}
 @media(max-width:760px){.recap-event-media.recap-adaptive-media{height:240px;min-height:240px;max-height:240px}}
+
+/* Series identity: local artwork and a colored, high-contrast header. */
+body{--header-accent:#9de4eb;--header-end:#155a74}
+body[data-series="dragon"]{--header-accent:#ffd4a2;--header-end:#643d58}
+body[data-series="three-body"]{--header-accent:#a4e4ff;--header-end:#1a567e}
+header{position:sticky;top:8px;width:calc(100% - 32px);max-width:1200px;margin:16px auto 0;padding:24px 24px 0;border-radius:24px;overflow:hidden;background:linear-gradient(115deg,#0b3558 10%,#16496d 60%,var(--header-end));box-shadow:0 8px 24px rgba(71,103,136,.15);color:white;gap:24px}
+header:before{content:'';position:absolute;inset:0 0 auto;height:4px;background:linear-gradient(90deg,#5bc9f5,var(--header-accent),#b8abfa);pointer-events:none}
+header .series-brand{display:flex;align-items:center;gap:24px;min-width:0}
+header .series-art{display:block;flex:0 0 136px;width:136px;height:96px;object-fit:cover;object-position:center;border-radius:16px;border:2px solid #ffffff80;box-shadow:0 4px 12px #052c4933}
+header .series-brand-copy{min-width:0}header .series-brand h1{color:white;font-size:22px;line-height:1.35;gap:8px}
+header .series-brand h1 span{color:var(--header-accent)!important;font-size:12px}
+header small{color:#d3e5f4;font-size:13px;margin-top:8px}
+header .series-switch{color:#d3e5f4;font-size:12px;gap:8px}header .series-switch select{background:#fff;color:#0b3558;border-color:#fff;font-size:14px}
+header nav{border-top:1px solid #ffffff29;border-bottom:0;padding:16px 0;margin:0;gap:8px}
+header nav button{color:#e2eef8;background:transparent;border:1px solid transparent;font-size:14px;padding:10px 16px}
+header nav button:hover{background:#ffffff1a;border-color:#ffffff33;color:white}
+header nav button.active{background:var(--header-accent);border-color:var(--header-accent);color:#0b3558;box-shadow:0 2px 8px #052c4933}
+header button:focus-visible,header select:focus-visible{outline-color:white;outline-offset:4px}
+@media(max-width:1000px){header .series-brand{gap:16px}header .series-art{flex-basis:112px;width:112px;height:88px}header .series-brand h1{font-size:20px}}
+@media(max-width:760px){header{position:relative;top:auto;width:calc(100% - 32px);padding:24px 20px 0;gap:16px}header .series-brand{gap:12px}header .series-art{flex-basis:88px;width:88px;height:88px;border-radius:12px}header .series-brand h1{font-size:18px}header small{font-size:12px}header nav{padding:16px 0;gap:8px}header nav button{font-size:12px;padding:8px 12px}}
+@media(max-width:520px){header{grid-template-columns:1fr}header .series-art{flex-basis:80px;width:80px;height:80px}header .series-brand h1{font-size:17px}header .series-brand h1 span{font-size:11px}header .series-switch{width:100%}header nav{gap:4px}header nav button{font-size:12px;padding:8px 10px}}

@@ -113,3 +113,7 @@ Fontes de referência:
 Inclua na publicação `three-body.html`, `three-body.js`, `three-body-data.js`, `three-body-photos.js`, `three-body-local-photos.js`, `assets/series/three-body.webp` e `assets/three-body-characters/`, além dos recursos compartilhados. Sem novas dependências ou build.
 
 Validação no Chromium: oito episódios, 34 trechos, limites de aparição, grafo e atalhos, busca e categorias, teclado, notas persistentes isoladas por série/episódio, próximo/anterior com limite no episódio 8, fotos locais com rede externa bloqueada, contadores só no grafo, altura fixa das imagens, cinco abas em 390/1280 px e retorno aos dois dossiês existentes sem erros de JavaScript.
+
+### Identidade do cabeçalho
+
+Os três dossiês mostram uma imagem local representativa ao lado do título no topo. O cabeçalho usa azul-marinho com detalhes coloridos por série: ciano para Noturno, tons quentes para A Casa do Dragão e azul-claro para O Problema dos 3 Corpos. A imagem de Noturno é identificada no texto alternativo como retrato de Stephen Graham, do elenco, e não como pôster oficial. A aba de navegação passa a se chamar **Mapa de Conexões**. A seleção de série e as demais funcionalidades permanecem disponíveis no cabeçalho responsivo.
