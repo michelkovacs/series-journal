@@ -15,7 +15,7 @@ A abertura é `index.html`; os outros dossiês estão em `dragon.html` e `three-
 
 ## Páginas dos personagens
 
-Há 69 fichas individuais em `personagens/`, com HTML real e endereços próprios, por exemplo:
+Há 91 fichas individuais em `personagens/`, com HTML real e endereços próprios, por exemplo:
 
 - `personagens/casa-do-dragao/rhaenyra-targaryen/`
 - `personagens/o-problema-dos-3-corpos/jin-cheng/`
@@ -25,7 +25,7 @@ As fichas são separadas do mapa e contêm apresentação do personagem, histór
 
 As listas de personagens e o índice têm filtro por categoria. As categorias usam cinco cores consistentes; as fichas individuais também identificam a categoria. Em A Casa do Dragão, emblemas vetoriais simplificados aparecem ao lado dos retratos e nas fichas, seguindo a casa do personagem, independentemente do núcleo narrativo.
 
-Cada HTML tem título e descrição próprios, URL canônica e dados estruturados ProfilePage/Person. O índice `personagens/index.html` oferece links estáticos para todas as fichas; `sitemap.xml` lista 73 URLs. A configuração de URLs usa o endereço público atual `https://michelkovacs.github.io/series-journal/`.
+Cada HTML tem título e descrição próprios, URL canônica e dados estruturados ProfilePage/Person. O índice `personagens/index.html` oferece links estáticos para todas as fichas; `sitemap.xml` lista 95 URLs. A configuração de URLs usa o endereço público atual `https://michelkovacs.github.io/series-journal/`.
 
 ## Regenerar as fichas
 
@@ -39,7 +39,7 @@ O gerador usa Python 3 e Node.js para ler os dados locais e grava as fichas, o �
 
 ## Conteúdo e imagens
 
-- **A Casa do Dragão:** dez episódios, 40 personagens (26 pessoas e 14 dragões) e histórico da primeira temporada.
+- **A Casa do Dragão:** dez episódios, 62 personagens (48 pessoas e 14 dragões) e histórico da primeira temporada.
 - **O Problema dos 3 Corpos:** oito episódios da adaptação Netflix de 2024, 15 personagens e histórico da primeira temporada.
 - **Noturno:** 14 personagens e material narrativo apurado até o episódio 1. O episódio 2, *For Such a Time as This*, consta como lançado, mas o seu resumo ainda não foi confirmado. As fichas deixam essa limitação explícita.
 
@@ -54,6 +54,10 @@ O estilo compartilhado segue a referência Calendly de `DESIGN.md`, com Manrope 
 O Resumo da Temporada mantém a diagramação de jornal em duas páginas A4 e aviso de spoilers. As matérias têm nomes clicáveis e prévias de personagens; o link de ficha abre a página individual. A edição de Noturno é parcial. O jornal não inclui rodapé.
 
 O Mapa de Conexões dos três dossiês permite combinar várias categorias em um menu de botões com estado selecionado (sem checkboxes). A seleção combina os personagens das categorias escolhidas, funciona junto com a busca e permanece ao trocar de episódio; Centralizar ou Todas as categorias restaura a visualização completa.
+
+## Revisão do elenco de A Casa do Dragão
+
+Aemond já integra o elenco desde o episódio 6. A foto adulta só é liberada no episódio 8, evitando antecipar sua aparência após o episódio 7. A lista e o mapa respeitam também os filtros escolhidos. A revisão acrescentou 22 pessoas da primeira temporada, completou o histórico de Aemond no episódio 8 e antecipou a entrada de Lyonel Strong para o episódio 1 e Vaemond Velaryon para o episódio 3, mantendo suas revelações posteriores nos capítulos corretos. O mapa usa duas colunas dentro de cada núcleo para acomodar o elenco ampliado. A lista de inclusões e seus limites está em `docs/hotd-season-1-cast-audit.md`.
 
 ## Dragões de A Casa do Dragão
 

@@ -95,7 +95,7 @@ const DRAGON_DATA = {
       "id": "lyonel",
       "name": "Lyonel Strong",
       "cat": "corte",
-      "from": 3,
+      "from": 1,
       "desc": "Conselheiro de Viserys, conhecido por recomendações pragmáticas sobre a sucessão e as alianças."
     },
     {
@@ -172,8 +172,8 @@ const DRAGON_DATA = {
       "id": "vaemond",
       "name": "Vaemond Velaryon",
       "cat": "velaryon",
-      "from": 8,
-      "desc": "Irmão de Corlys. Contesta o direito de Lucerys à sucessão de Derivamarca."
+      "from": 3,
+      "desc": "Irmão de Corlys Velaryon. Participa da campanha dos Degraus e expressa preocupação com a condução da guerra."
     },
     {
       "id": "borros",
@@ -292,6 +292,160 @@ const DRAGON_DATA = {
       "cat": "dragoes",
       "kind": "dragon",
       "desc": "Conhecido como o Terror Negro, foi o dragão de Aegon, o Conquistador, e mais tarde de Viserys. Já morreu antes da história atual; seu crânio é preservado em Porto Real.",
+      "from": 1
+    },
+    {
+      "id": "harrold",
+      "name": "Harrold Westerling",
+      "cat": "corte",
+      "desc": "Lorde comandante da Guarda Real de Viserys. Acompanha a corte e protege a princesa Rhaenyra.",
+      "from": 1
+    },
+    {
+      "id": "erryk",
+      "name": "Erryk Cargyll",
+      "cat": "corte",
+      "desc": "Cavaleiro da Guarda Real e irmão gêmeo de Arryk. Participa da busca por Aegon em Porto Real após a morte de Viserys.",
+      "from": 9
+    },
+    {
+      "id": "arryk",
+      "name": "Arryk Cargyll",
+      "cat": "corte",
+      "desc": "Cavaleiro da Guarda Real e irmão gêmeo de Erryk. Procura Aegon nas ruas de Porto Real por ordem de Otto Hightower.",
+      "from": 9
+    },
+    {
+      "id": "beesbury",
+      "name": "Lyman Beesbury",
+      "cat": "corte",
+      "desc": "Mestre da moeda e integrante do Pequeno Conselho de Viserys. Participa das discussões sobre a administração e a sucessão do reino.",
+      "from": 1
+    },
+    {
+      "id": "mellos",
+      "name": "Grande Meistre Mellos",
+      "cat": "corte",
+      "desc": "Grande Meistre de Viserys, conselheiro da Coroa e responsável por cuidados médicos na corte. Participa do atendimento de Aemma durante o parto.",
+      "from": 1
+    },
+    {
+      "id": "orwyle",
+      "name": "Orwyle",
+      "cat": "corte",
+      "desc": "Meistre que auxilia Mellos no tratamento de Viserys e propõe uma alternativa aos cuidados com sanguessugas.",
+      "from": 5
+    },
+    {
+      "id": "jasper",
+      "name": "Jasper Wylde",
+      "cat": "corte",
+      "desc": "Mestre das leis no Pequeno Conselho de Viserys, conhecido como Vara de Ferro.",
+      "from": 6
+    },
+    {
+      "id": "rhea",
+      "name": "Rhea Royce",
+      "cat": "corte",
+      "desc": "Senhora de Pedrarruna, no Vale, e esposa de Daemon Targaryen. O casamento é marcado pela distância e pela hostilidade do príncipe.",
+      "from": 5
+    },
+    {
+      "id": "gerold",
+      "name": "Gerold Royce",
+      "cat": "corte",
+      "desc": "Primo de Rhea Royce. Questiona Daemon sobre a morte dela e defende os interesses da família Royce.",
+      "from": 5
+    },
+    {
+      "id": "qarl",
+      "name": "Qarl Correy",
+      "cat": "velaryon",
+      "desc": "Cavaleiro e companheiro de Laenor Velaryon. Convive com ele durante o período em que a família de Rhaenyra vive em Porto Real.",
+      "from": 6
+    },
+    {
+      "id": "craghas",
+      "name": "Craghas Drahar",
+      "cat": "corte",
+      "desc": "Comandante da Triarquia conhecido como Alimentador de Caranguejos. Controla posições nos Degraus e ameaça as rotas marítimas dos Velaryon.",
+      "from": 2
+    },
+    {
+      "id": "talya",
+      "name": "Talya",
+      "cat": "corte",
+      "desc": "Criada a serviço da rainha Alicent em Porto Real. Tem acesso aos aposentos e à rotina da família real.",
+      "from": 6
+    },
+    {
+      "id": "dyana",
+      "name": "Dyana",
+      "cat": "corte",
+      "desc": "Jovem criada que relata a Alicent uma agressão cometida por Aegon. A rainha a ouve, entrega dinheiro e a afasta do serviço.",
+      "from": 8
+    },
+    {
+      "id": "aegon-younger",
+      "name": "Aegon Targaryen (filho de Rhaenyra)",
+      "cat": "coroa",
+      "desc": "Filho pequeno de Rhaenyra e Daemon. É apresentado a Viserys na visita da família à Fortaleza Vermelha; não deve ser confundido com o filho de Alicent.",
+      "from": 8
+    },
+    {
+      "id": "viserys-younger",
+      "name": "Viserys Targaryen (filho de Rhaenyra)",
+      "cat": "coroa",
+      "desc": "Filho pequeno de Rhaenyra e Daemon, irmão de Aegon. Recebe o nome do avô e é apresentado a ele na Fortaleza Vermelha.",
+      "from": 8
+    },
+    {
+      "id": "visenya",
+      "name": "Visenya Targaryen",
+      "cat": "coroa",
+      "desc": "Filha de Rhaenyra e Daemon que nasce morta em Pedra do Dragão, após Rhaenyra receber notícias da morte de Viserys e da coroação de Aegon.",
+      "from": 10
+    },
+    {
+      "id": "baelon",
+      "name": "Baelon Targaryen",
+      "cat": "coroa",
+      "desc": "Filho de Viserys e Aemma, nascido durante o parto que causa a morte da rainha. O bebê também morre, deixando novamente em aberto a sucessão.",
+      "from": 1
+    },
+    {
+      "id": "jaehaerys-younger",
+      "name": "Jaehaerys Targaryen (filho de Aegon)",
+      "cat": "hightower",
+      "desc": "Filho pequeno de Aegon e Helaena Targaryen, irmão gêmeo de Jaehaera. Faz parte da família real em Porto Real.",
+      "from": 9
+    },
+    {
+      "id": "jaehaera",
+      "name": "Jaehaera Targaryen",
+      "cat": "hightower",
+      "desc": "Filha pequena de Aegon e Helaena Targaryen, irmã gêmea de Jaehaerys. Vive com a família em Porto Real.",
+      "from": 9
+    },
+    {
+      "id": "hobert",
+      "name": "Hobert Hightower",
+      "cat": "hightower",
+      "desc": "Senhor da Casa Hightower e irmão mais velho de Otto. Durante a caçada real, estimula o irmão a defender as pretensões sucessórias de Aegon.",
+      "from": 3
+    },
+    {
+      "id": "boremund",
+      "name": "Boremund Baratheon",
+      "cat": "corte",
+      "desc": "Senhor de Ponta Tempestade e tio de Rhaenys. Recebe Rhaenyra durante a viagem em que a princesa escuta propostas de casamento.",
+      "from": 4
+    },
+    {
+      "id": "jaehaerys-elder",
+      "name": "Jaehaerys I Targaryen",
+      "cat": "coroa",
+      "desc": "Rei que convoca o Grande Conselho de Harrenhal para resolver a sucessão. É o antecessor de Viserys e integra o prólogo da temporada.",
       "from": 1
     }
   ],
@@ -715,6 +869,405 @@ const DRAGON_DATA = {
       "start": 1,
       "end": 10,
       "label": "Último cavaleiro, no passado"
+    },
+    {
+      "a": "harrold",
+      "b": "viserys",
+      "label": "Comandante da Guarda Real / rei",
+      "start": 1,
+      "end": 8
+    },
+    {
+      "a": "harrold",
+      "b": "rhaenyra",
+      "label": "Proteção da princesa",
+      "start": 1,
+      "end": 8
+    },
+    {
+      "a": "harrold",
+      "b": "criston",
+      "label": "Comandante / cavaleiro",
+      "start": 2,
+      "end": 8
+    },
+    {
+      "a": "erryk",
+      "b": "arryk",
+      "label": "Irmãos gêmeos",
+      "start": 9,
+      "end": 10
+    },
+    {
+      "a": "erryk",
+      "b": "rhaenys",
+      "label": "Ajuda na fuga de Porto Real",
+      "start": 9,
+      "end": 10
+    },
+    {
+      "a": "erryk",
+      "b": "rhaenyra",
+      "label": "Juramento de lealdade",
+      "start": 10,
+      "end": 10
+    },
+    {
+      "a": "arryk",
+      "b": "aegon",
+      "label": "Guarda Real / rei",
+      "start": 9,
+      "end": 10
+    },
+    {
+      "a": "arryk",
+      "b": "otto",
+      "label": "Busca por Aegon",
+      "start": 9,
+      "end": 9
+    },
+    {
+      "a": "beesbury",
+      "b": "viserys",
+      "label": "Mestre da moeda / rei",
+      "start": 1,
+      "end": 8
+    },
+    {
+      "a": "beesbury",
+      "b": "rhaenyra",
+      "label": "Defesa da sucessão",
+      "start": 9,
+      "end": 10
+    },
+    {
+      "a": "beesbury",
+      "b": "criston",
+      "label": "Confronto fatal no conselho",
+      "start": 9,
+      "end": 10
+    },
+    {
+      "a": "mellos",
+      "b": "viserys",
+      "label": "Grande Meistre / rei",
+      "start": 1,
+      "end": 5
+    },
+    {
+      "a": "mellos",
+      "b": "aemma",
+      "label": "Atendimento durante o parto",
+      "start": 1,
+      "end": 1
+    },
+    {
+      "a": "mellos",
+      "b": "orwyle",
+      "label": "Meistres da corte",
+      "start": 5,
+      "end": 5
+    },
+    {
+      "a": "orwyle",
+      "b": "viserys",
+      "label": "Grande Meistre / rei",
+      "start": 6,
+      "end": 8
+    },
+    {
+      "a": "orwyle",
+      "b": "aegon",
+      "label": "Conselho da coroação",
+      "start": 9,
+      "end": 10
+    },
+    {
+      "a": "jasper",
+      "b": "viserys",
+      "label": "Mestre das leis / rei",
+      "start": 6,
+      "end": 8
+    },
+    {
+      "a": "jasper",
+      "b": "otto",
+      "label": "Pequeno Conselho",
+      "start": 6,
+      "end": 10
+    },
+    {
+      "a": "rhea",
+      "b": "daemon",
+      "label": "Casamento",
+      "start": 5,
+      "end": 5
+    },
+    {
+      "a": "rhea",
+      "b": "gerold",
+      "label": "Primos",
+      "start": 5,
+      "end": 10
+    },
+    {
+      "a": "gerold",
+      "b": "daemon",
+      "label": "Acusação pela morte de Rhea",
+      "start": 5,
+      "end": 10
+    },
+    {
+      "a": "qarl",
+      "b": "laenor",
+      "label": "Companheiros",
+      "start": 6,
+      "end": 10
+    },
+    {
+      "a": "qarl",
+      "b": "daemon",
+      "label": "Encenação da morte de Laenor",
+      "start": 7,
+      "end": 10
+    },
+    {
+      "a": "craghas",
+      "b": "corlys",
+      "label": "Adversários nos Degraus",
+      "start": 2,
+      "end": 3
+    },
+    {
+      "a": "craghas",
+      "b": "daemon",
+      "label": "Adversários nos Degraus",
+      "start": 2,
+      "end": 3
+    },
+    {
+      "a": "talya",
+      "b": "alicent",
+      "label": "Criada / rainha",
+      "start": 6,
+      "end": 9
+    },
+    {
+      "a": "talya",
+      "b": "mysaria",
+      "label": "Rede de informações",
+      "start": 9,
+      "end": 10
+    },
+    {
+      "a": "dyana",
+      "b": "alicent",
+      "label": "Relato da agressão",
+      "start": 8,
+      "end": 10
+    },
+    {
+      "a": "dyana",
+      "b": "aegon",
+      "label": "Denúncia de agressão",
+      "start": 8,
+      "end": 10
+    },
+    {
+      "a": "aegon-younger",
+      "b": "rhaenyra",
+      "label": "Filho / mãe",
+      "start": 8,
+      "end": 10
+    },
+    {
+      "a": "aegon-younger",
+      "b": "daemon",
+      "label": "Filho / pai",
+      "start": 8,
+      "end": 10
+    },
+    {
+      "a": "viserys-younger",
+      "b": "rhaenyra",
+      "label": "Filho / mãe",
+      "start": 8,
+      "end": 10
+    },
+    {
+      "a": "viserys-younger",
+      "b": "daemon",
+      "label": "Filho / pai",
+      "start": 8,
+      "end": 10
+    },
+    {
+      "a": "aegon-younger",
+      "b": "viserys-younger",
+      "label": "Irmãos",
+      "start": 8,
+      "end": 10
+    },
+    {
+      "a": "visenya",
+      "b": "rhaenyra",
+      "label": "Filha / mãe",
+      "start": 10,
+      "end": 10
+    },
+    {
+      "a": "visenya",
+      "b": "daemon",
+      "label": "Filha / pai",
+      "start": 10,
+      "end": 10
+    },
+    {
+      "a": "baelon",
+      "b": "viserys",
+      "label": "Filho / pai",
+      "start": 1,
+      "end": 10
+    },
+    {
+      "a": "baelon",
+      "b": "aemma",
+      "label": "Filho / mãe",
+      "start": 1,
+      "end": 10
+    },
+    {
+      "a": "baelon",
+      "b": "rhaenyra",
+      "label": "Irmãos",
+      "start": 1,
+      "end": 10
+    },
+    {
+      "a": "jaehaerys-younger",
+      "b": "aegon",
+      "label": "Filho / pai",
+      "start": 9,
+      "end": 10
+    },
+    {
+      "a": "jaehaerys-younger",
+      "b": "helaena",
+      "label": "Filho / mãe",
+      "start": 9,
+      "end": 10
+    },
+    {
+      "a": "jaehaera",
+      "b": "aegon",
+      "label": "Filha / pai",
+      "start": 9,
+      "end": 10
+    },
+    {
+      "a": "jaehaera",
+      "b": "helaena",
+      "label": "Filha / mãe",
+      "start": 9,
+      "end": 10
+    },
+    {
+      "a": "jaehaera",
+      "b": "jaehaerys-younger",
+      "label": "Irmãos gêmeos",
+      "start": 9,
+      "end": 10
+    },
+    {
+      "a": "hobert",
+      "b": "otto",
+      "label": "Irmãos",
+      "start": 3,
+      "end": 10
+    },
+    {
+      "a": "hobert",
+      "b": "alicent",
+      "label": "Tio / sobrinha",
+      "start": 3,
+      "end": 10
+    },
+    {
+      "a": "boremund",
+      "b": "rhaenys",
+      "label": "Tio / sobrinha",
+      "start": 4,
+      "end": 10
+    },
+    {
+      "a": "boremund",
+      "b": "borros",
+      "label": "Pai / filho",
+      "start": 10,
+      "end": 10
+    },
+    {
+      "a": "boremund",
+      "b": "rhaenyra",
+      "label": "Recepção em Ponta Tempestade",
+      "start": 4,
+      "end": 4
+    },
+    {
+      "a": "jaehaerys-elder",
+      "b": "viserys",
+      "label": "Antecessor e avô",
+      "start": 1,
+      "end": 10
+    },
+    {
+      "a": "jaehaerys-elder",
+      "b": "rhaenys",
+      "label": "Avô / neta",
+      "start": 1,
+      "end": 10
+    },
+    {
+      "a": "aemond",
+      "b": "aegon",
+      "label": "Irmãos",
+      "start": 6,
+      "end": 10
+    },
+    {
+      "a": "aemond",
+      "b": "helaena",
+      "label": "Irmãos",
+      "start": 6,
+      "end": 10
+    },
+    {
+      "a": "aemond",
+      "b": "criston",
+      "label": "Treinamento com armas",
+      "start": 8,
+      "end": 10
+    },
+    {
+      "a": "baela",
+      "b": "jacaerys",
+      "label": "Noivado",
+      "start": 8,
+      "end": 10
+    },
+    {
+      "a": "rhaena",
+      "b": "lucerys",
+      "label": "Noivado",
+      "start": 8,
+      "end": 10
+    },
+    {
+      "a": "baela",
+      "b": "rhaena",
+      "label": "Irmãs gêmeas",
+      "start": 6,
+      "end": 10
     }
   ],
   "episodes": [
@@ -1252,7 +1805,8 @@ const DRAGON_DATA = {
       "daemon": "Vence a campanha dos Degraus ao lado de Corlys e Laenor, matando o Alimentador de Caranguejos.",
       "alicent": "Rainha e mãe de Aegon, vê crescer a pressão para que o filho seja declarado herdeiro.",
       "caraxes": "Participa da guerra nos Degraus ao lado de Daemon, enfrentando as posições da Triarquia.",
-      "seasmoke": "Laenor monta Seasmoke durante o ataque decisivo nos Degraus, apoiando Daemon e as tropas Velaryon."
+      "seasmoke": "Laenor monta Seasmoke durante o ataque decisivo nos Degraus, apoiando Daemon e as tropas Velaryon.",
+      "craghas": "Enfrenta a campanha de Corlys e Daemon nos Degraus. É morto por Daemon ao fim do ataque às posições da Triarquia."
     },
     "4": {
       "otto": "É destituído do cargo de Mão após a denúncia sobre Rhaenyra e Daemon.",
@@ -1263,7 +1817,9 @@ const DRAGON_DATA = {
       "rhaenyra": "Casa-se com Laenor Velaryon após negociar com ele um acordo sobre suas vidas privadas.",
       "criston": "Após ser rejeitado por Rhaenyra, confessa a Alicent e mata Joffrey Lonmouth na celebração.",
       "laenor": "Casa-se com Rhaenyra e perde seu companheiro Joffrey, morto por Criston.",
-      "alicent": "Adota o verde dos Hightower na celebração do casamento e se distancia politicamente de Rhaenyra."
+      "alicent": "Adota o verde dos Hightower na celebração do casamento e se distancia politicamente de Rhaenyra.",
+      "rhea": "É derrubada do cavalo durante o encontro com Daemon, que se aproxima com uma pedra. Sua morte permite que o príncipe reivindique a herança de Pedrarruna.",
+      "gerold": "Confronta Daemon na celebração do casamento de Rhaenyra e Laenor e o acusa de envolvimento na morte de Rhea."
     },
     "6": {
       "rhaenyra": "Mãe de Jacaerys, Lucerys e Joffrey. Deixa Porto Real rumo a Pedra do Dragão diante da hostilidade da corte.",
@@ -1273,7 +1829,9 @@ const DRAGON_DATA = {
       "larys": "Organiza a morte do pai e do irmão e apresenta o crime a Alicent como um favor.",
       "aegon": "Adolescente, participa das provocações a Aemond. Alicent insiste que ele representa um desafio à sucessão de Rhaenyra.",
       "otto": "Retorna ao cargo de Mão do Rei após a morte de Lyonel.",
-      "vhagar": "É a montaria de Laena Velaryon em Pentos. Durante o parto fatal de Laena, ela atende ao pedido de sua cavaleira e a queima."
+      "vhagar": "É a montaria de Laena Velaryon em Pentos. Durante o parto fatal de Laena, ela atende ao pedido de sua cavaleira e a queima.",
+      "orwyle": "Ocupa o posto de Grande Meistre no Pequeno Conselho durante os últimos anos do reinado de Viserys.",
+      "mellos": "O posto de Grande Meistre aparece agora ocupado por Orwyle, em lugar de Mellos."
     },
     "7": {
       "aemond": "Reivindica Vhagar e perde um olho na luta com os sobrinhos. Sua força militar cresce junto com o ressentimento.",
@@ -1281,20 +1839,29 @@ const DRAGON_DATA = {
       "rhaenyra": "Casa-se com Daemon depois da fuga secreta de Laenor.",
       "daemon": "Casa-se com Rhaenyra após ajudá-la a encenar a morte de Laenor.",
       "lucerys": "Fere Aemond na luta em Derivamarca, causando a perda do olho do tio.",
-      "vhagar": "Após a morte de Laena, Aemond reivindica Vhagar em Derivamarca e realiza seu primeiro voo com ela."
+      "vhagar": "Após a morte de Laena, Aemond reivindica Vhagar em Derivamarca e realiza seu primeiro voo com ela.",
+      "qarl": "Participa da encenação da morte de Laenor em Derivamarca. Os dois deixam Westeros juntos em segredo."
     },
     "8": {
       "viserys": "Defende Lucerys no salão e tenta reunir a família no jantar. Morre naquela noite.",
-      "vaemond": "Contesta a sucessão de Lucerys e é morto por Daemon após insultar a princesa e seus filhos.",
+      "vaemond": "Contesta a sucessão de Lucerys em Derivamarca diante do trono. Insulta Rhaenyra e seus filhos e é morto por Daemon.",
       "alicent": "Interpreta as palavras finais de Viserys como um desejo de coroar seu filho Aegon.",
       "rhaenys": "Apoia Lucerys na disputa por Derivamarca e aceita a aproximação entre suas netas e os filhos de Rhaenyra.",
-      "helaena": "Casada com Aegon, participa do último jantar de Viserys."
+      "helaena": "Casada com Aegon, participa do último jantar de Viserys.",
+      "aemond": "Já adulto, treina com Criston Cole e participa do jantar familiar. Provoca os sobrinhos com um brinde aos rapazes Strong."
     },
     "9": {
       "aegon": "É coroado Aegon II no Fosso dos Dragões, com a coroa de Aegon, o Conquistador.",
       "rhaenys": "Escapa de Porto Real montada em Meleys após confrontar os verdes durante a coroação.",
       "mysaria": "Conhecida como Verme Branco, negocia informações sobre Aegon e exige proteção para crianças exploradas na cidade.",
-      "meleys": "Rhaenys escapa no dorso de Meleys durante a coroação de Aegon no Fosso dos Dragões e deixa Porto Real."
+      "meleys": "Rhaenys escapa no dorso de Meleys durante a coroação de Aegon no Fosso dos Dragões e deixa Porto Real.",
+      "harrold": "Recusa-se a cumprir a ordem de atacar Rhaenyra e seus filhos. Retira o manto branco e abandona a reunião do conselho.",
+      "erryk": "Ajuda Rhaenys a deixar o confinamento na Fortaleza Vermelha e rompe com os planos dos verdes.",
+      "arryk": "Permanece em Porto Real enquanto Aegon é levado para a coroação. Sua trajetória se separa da do irmão Erryk.",
+      "beesbury": "Contesta os planos de coroar Aegon no Pequeno Conselho. Criston Cole o mata durante a discussão.",
+      "orwyle": "Participa da reunião do Pequeno Conselho após a morte de Viserys, na qual se prepara a coroação de Aegon.",
+      "jasper": "Participa do conselho que prepara a ascensão de Aegon e discute o que fazer com a família de Rhaenyra.",
+      "talya": "É identificada como uma das fontes de informação de Mysaria dentro da corte e é levada sob custódia."
     },
     "10": {
       "rhaenyra": "Perde a filha Visenya, é coroada em Pedra do Dragão e recebe a notícia da morte de Lucerys.",
@@ -1304,7 +1871,9 @@ const DRAGON_DATA = {
       "jacaerys": "É enviado como emissário ao Vale e ao Norte para buscar alianças para Rhaenyra.",
       "arrax": "Leva Lucerys a Ponta Tempestade. Na fuga, ataca Vhagar com fogo apesar das ordens do cavaleiro e é morto por ela durante a perseguição.",
       "vhagar": "Persegue Arrax e Lucerys nos céus de Ponta Tempestade. Após ser atingida pelo fogo de Arrax, ignora as ordens de Aemond e mata o jovem dragão e seu cavaleiro.",
-      "vermithor": "Daemon entra nas cavernas de Pedra do Dragão, canta em alto valiriano e se aproxima de Vermithor, que permanece sem cavaleiro."
+      "vermithor": "Daemon entra nas cavernas de Pedra do Dragão, canta em alto valiriano e se aproxima de Vermithor, que permanece sem cavaleiro.",
+      "erryk": "Chega a Pedra do Dragão com a coroa de Viserys, jura lealdade a Rhaenyra e a entrega para a coroação.",
+      "boremund": "Borros é agora o senhor de Ponta Tempestade, sucedendo o pai. A missão de Lucerys encontra um novo interlocutor na Casa Baratheon."
     }
   },
   "places": [

@@ -273,7 +273,7 @@ const CHARACTER_DIRECTORY = {
       "lyonel": {
         "name": "Lyonel Strong",
         "path": "personagens/casa-do-dragao/lyonel-strong/",
-        "fromEpisode": 3,
+        "fromEpisode": 1,
         "photos": [
           [
             3,
@@ -374,7 +374,7 @@ const CHARACTER_DIRECTORY = {
       "vaemond": {
         "name": "Vaemond Velaryon",
         "path": "personagens/casa-do-dragao/vaemond-velaryon/",
-        "fromEpisode": 8,
+        "fromEpisode": 3,
         "photos": []
       },
       "borros": {
@@ -539,6 +539,158 @@ const CHARACTER_DIRECTORY = {
           [
             1,
             "assets/dragons/balerion.jpg"
+          ]
+        ]
+      },
+      "harrold": {
+        "name": "Harrold Westerling",
+        "path": "personagens/casa-do-dragao/harrold-westerling/",
+        "fromEpisode": 1,
+        "photos": [
+          [
+            1,
+            "assets/characters/harrold-1.jpg"
+          ]
+        ]
+      },
+      "erryk": {
+        "name": "Erryk Cargyll",
+        "path": "personagens/casa-do-dragao/erryk-cargyll/",
+        "fromEpisode": 9,
+        "photos": []
+      },
+      "arryk": {
+        "name": "Arryk Cargyll",
+        "path": "personagens/casa-do-dragao/arryk-cargyll/",
+        "fromEpisode": 9,
+        "photos": []
+      },
+      "beesbury": {
+        "name": "Lyman Beesbury",
+        "path": "personagens/casa-do-dragao/lyman-beesbury/",
+        "fromEpisode": 1,
+        "photos": []
+      },
+      "mellos": {
+        "name": "Grande Meistre Mellos",
+        "path": "personagens/casa-do-dragao/grande-meistre-mellos/",
+        "fromEpisode": 1,
+        "photos": [
+          [
+            1,
+            "assets/characters/mellos-1.jpg"
+          ]
+        ]
+      },
+      "orwyle": {
+        "name": "Orwyle",
+        "path": "personagens/casa-do-dragao/orwyle/",
+        "fromEpisode": 5,
+        "photos": []
+      },
+      "jasper": {
+        "name": "Jasper Wylde",
+        "path": "personagens/casa-do-dragao/jasper-wylde/",
+        "fromEpisode": 6,
+        "photos": []
+      },
+      "rhea": {
+        "name": "Rhea Royce",
+        "path": "personagens/casa-do-dragao/rhea-royce/",
+        "fromEpisode": 5,
+        "photos": []
+      },
+      "gerold": {
+        "name": "Gerold Royce",
+        "path": "personagens/casa-do-dragao/gerold-royce/",
+        "fromEpisode": 5,
+        "photos": []
+      },
+      "qarl": {
+        "name": "Qarl Correy",
+        "path": "personagens/casa-do-dragao/qarl-correy/",
+        "fromEpisode": 6,
+        "photos": []
+      },
+      "craghas": {
+        "name": "Craghas Drahar",
+        "path": "personagens/casa-do-dragao/craghas-drahar/",
+        "fromEpisode": 2,
+        "photos": []
+      },
+      "talya": {
+        "name": "Talya",
+        "path": "personagens/casa-do-dragao/talya/",
+        "fromEpisode": 6,
+        "photos": []
+      },
+      "dyana": {
+        "name": "Dyana",
+        "path": "personagens/casa-do-dragao/dyana/",
+        "fromEpisode": 8,
+        "photos": []
+      },
+      "aegon-younger": {
+        "name": "Aegon Targaryen (filho de Rhaenyra)",
+        "path": "personagens/casa-do-dragao/aegon-targaryen-filho-de-rhaenyra/",
+        "fromEpisode": 8,
+        "photos": []
+      },
+      "viserys-younger": {
+        "name": "Viserys Targaryen (filho de Rhaenyra)",
+        "path": "personagens/casa-do-dragao/viserys-targaryen-filho-de-rhaenyra/",
+        "fromEpisode": 8,
+        "photos": []
+      },
+      "visenya": {
+        "name": "Visenya Targaryen",
+        "path": "personagens/casa-do-dragao/visenya-targaryen/",
+        "fromEpisode": 10,
+        "photos": []
+      },
+      "baelon": {
+        "name": "Baelon Targaryen",
+        "path": "personagens/casa-do-dragao/baelon-targaryen/",
+        "fromEpisode": 1,
+        "photos": []
+      },
+      "jaehaerys-younger": {
+        "name": "Jaehaerys Targaryen (filho de Aegon)",
+        "path": "personagens/casa-do-dragao/jaehaerys-targaryen-filho-de-aegon/",
+        "fromEpisode": 9,
+        "photos": []
+      },
+      "jaehaera": {
+        "name": "Jaehaera Targaryen",
+        "path": "personagens/casa-do-dragao/jaehaera-targaryen/",
+        "fromEpisode": 9,
+        "photos": []
+      },
+      "hobert": {
+        "name": "Hobert Hightower",
+        "path": "personagens/casa-do-dragao/hobert-hightower/",
+        "fromEpisode": 3,
+        "photos": [
+          [
+            3,
+            "assets/characters/hobert-3.jpg"
+          ]
+        ]
+      },
+      "boremund": {
+        "name": "Boremund Baratheon",
+        "path": "personagens/casa-do-dragao/boremund-baratheon/",
+        "fromEpisode": 4,
+        "photos": []
+      },
+      "jaehaerys-elder": {
+        "name": "Jaehaerys I Targaryen",
+        "path": "personagens/casa-do-dragao/jaehaerys-i-targaryen/",
+        "fromEpisode": 1,
+        "photos": [
+          [
+            1,
+            "assets/characters/jaehaerys-elder-1.png"
           ]
         ]
       }

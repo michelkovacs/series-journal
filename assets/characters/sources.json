@@ -142,5 +142,29 @@
     "source": "https://github.com/fljamie/hotd/blob/HEAD/images/joffrey.jpg",
     "character": "joffrey-son",
     "fromEpisode": 8
+  },
+  {
+    "character": "harrold",
+    "file": "harrold-1.jpg",
+    "fromEpisode": 1,
+    "source": "https://github.com/camilagx/HouseOfThe-Dragons/blob/HEAD/media/icons/harrold.jpg"
+  },
+  {
+    "character": "mellos",
+    "file": "mellos-1.jpg",
+    "fromEpisode": 1,
+    "source": "https://github.com/camilagx/HouseOfThe-Dragons/blob/HEAD/media/icons/mellos.jpg"
+  },
+  {
+    "character": "hobert",
+    "file": "hobert-3.jpg",
+    "fromEpisode": 3,
+    "source": "https://github.com/Abims18/house_of_the_dragon_fan_app/blob/HEAD/assets/characters/hobert.jpg"
+  },
+  {
+    "character": "jaehaerys-elder",
+    "file": "jaehaerys-elder-1.png",
+    "fromEpisode": 1,
+    "source": "https://github.com/Abims18/house_of_the_dragon_fan_app/blob/HEAD/assets/characters/jaehaerys.png"
   }
 ]

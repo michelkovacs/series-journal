@@ -1,7 +1,7 @@
 'use strict';
 const HOUSE_DATA={
  houses:{targaryen:'Targaryen',hightower:'Hightower',velaryon:'Velaryon',arryn:'Arryn',strong:'Strong',baratheon:'Baratheon',cole:'Cole',lonmouth:'Lonmouth'},
- characters:{viserys:'targaryen',rhaenyra:'targaryen',daemon:'targaryen',alicent:'hightower',otto:'hightower',corlys:'velaryon',rhaenys:'targaryen',criston:'cole',aemma:'arryn',laena:'velaryon',laenor:'velaryon',aegon:'targaryen',lyonel:'strong',harwin:'strong',larys:'strong',joffrey:'lonmouth',jacaerys:'velaryon',lucerys:'velaryon','joffrey-son':'velaryon',aemond:'targaryen',helaena:'targaryen',baela:'targaryen',rhaena:'targaryen',vaemond:'velaryon',borros:'baratheon'}
+ characters:{viserys:'targaryen',rhaenyra:'targaryen',daemon:'targaryen',alicent:'hightower',otto:'hightower',corlys:'velaryon',rhaenys:'targaryen',criston:'cole',aemma:'arryn',laena:'velaryon',laenor:'velaryon',aegon:'targaryen',lyonel:'strong',harwin:'strong',larys:'strong',joffrey:'lonmouth',jacaerys:'velaryon',lucerys:'velaryon','joffrey-son':'velaryon',aemond:'targaryen',helaena:'targaryen',baela:'targaryen',rhaena:'targaryen',vaemond:'velaryon',borros:'baratheon',hobert:'hightower',boremund:'baratheon','jaehaerys-elder':'targaryen','aegon-younger':'targaryen','viserys-younger':'targaryen',visenya:'targaryen',baelon:'targaryen','jaehaerys-younger':'targaryen',jaehaera:'targaryen'}
 };
 if(typeof document!=='undefined'){
  const familyRoot=new URL('./',document.currentScript.src);

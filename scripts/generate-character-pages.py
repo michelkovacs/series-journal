@@ -89,7 +89,7 @@ for key,s in series.items():
         options=''.join(f'<option value="{e["number"]}"'+(' selected' if e['number']==maxep else '')+f'>{e["number"]:02d} — {esc(e["title"])}</option>' for e in record['episodes'])
         schema={'@context':'https://schema.org','@type':'ProfilePage','url':canonical,'name':c['name']+' — '+s['title'],'mainEntity':{'@type':'Thing' if c.get('kind')=='dragon' else 'Person','name':c['name'],'description':c['desc'],'url':canonical}}
         if photo:schema['mainEntity']['image']=photo if photo.startswith('https://') else SITE+photo
-        asset_version='noturno-cover-1' if key=='noturno' else 'multi-categories-1'
+        asset_version='noturno-cover-1' if key=='noturno' else 'cast-audit-1' if key=='dragon' else 'multi-categories-1'
         document=f'''<!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(c['name'])} — {esc(s['title'])} | Series Journal</title><meta name="description" content="{esc(meta)}"><link rel="canonical" href="{canonical}">
@@ -98,7 +98,7 @@ for key,s in series.items():
 <link rel="stylesheet" href="../../../style.css?v={asset_version}"><script>document.documentElement.classList.add('js')</script>
 <script type="application/ld+json">{encoded(schema)}</script>
 <script type="application/json" id="characterRecord">{encoded(record)}</script>
-<script src="../../../character-families.js?v=multi-categories-1" defer></script><script src="../../../character-profile.js?v=multi-categories-1" defer></script></head>
+<script src="../../../character-families.js?v={asset_version}" defer></script><script src="../../../character-profile.js?v={asset_version}" defer></script></head>
 <body data-series="{key}" class="character-document"><header><div class="series-brand"><img class="series-art" src="{header_art}" alt="Imagem representativa de {esc(s['title'])}" width="288" height="180"><div class="series-brand-copy"><div class="character-series-name">{esc(s['title'])} <span>/ PERSONAGENS</span></div><small>Ficha individual · Temporada 1</small></div></div><nav aria-label="Navegação da ficha"><a id="allCharactersLink" href="../../../{s['page']}?episodio={mapep}&amp;tab=characters">Todos os personagens</a><a id="headerMapLink" href="../../../{s['page']}?episodio={mapep}&amp;personagem={c['id']}&amp;tab=graphview">Ver Mapa de Conexões</a></nav></header>
 <main><nav class="character-breadcrumbs" aria-label="Localização"><a href="../../../{s['page']}">{esc(s['title'])}</a><span aria-hidden="true">/</span><span>{esc(c['name'])}</span></nav>
 <article class="character-profile" id="characterProfile"><div class="character-profile-hero"><div class="character-profile-photo" id="photoFrame">{photo_html}{crest}</div><div class="character-profile-copy"><span class="tag category-tag" id="profileCategory" data-tone="{category["tone"]}">{esc(category["label"])}</span><h1>{esc(c['name'])}</h1><p id="characterDescription">{esc(desc)}</p><p id="characterScope" class="character-scope">Conteúdo até a temporada 1, episódio {maxep}.</p><a class="character-map-link" id="mapLink" href="../../../{s['page']}?episodio={mapep}&amp;personagem={c['id']}&amp;tab=graphview">Ver Mapa de Conexões →</a></div></div>

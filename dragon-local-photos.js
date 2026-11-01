@@ -222,6 +222,30 @@ const DRAGON_LOCAL_PHOTOS = {
       10,
       "assets/dragons/silverwing.jpg"
     ]
+  ],
+  "harrold": [
+    [
+      1,
+      "assets/characters/harrold-1.jpg"
+    ]
+  ],
+  "mellos": [
+    [
+      1,
+      "assets/characters/mellos-1.jpg"
+    ]
+  ],
+  "hobert": [
+    [
+      3,
+      "assets/characters/hobert-3.jpg"
+    ]
+  ],
+  "jaehaerys-elder": [
+    [
+      1,
+      "assets/characters/jaehaerys-elder-1.png"
+    ]
   ]
 };
 const DRAGON_IMAGE_INFO = {
