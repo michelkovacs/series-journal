@@ -51,6 +51,10 @@ O estilo compartilhado segue a referência Calendly de `DESIGN.md`, com Manrope 
 
 O Resumo da Temporada mantém a diagramação de jornal em duas páginas A4 e aviso de spoilers. As matérias têm nomes clicáveis e prévias de personagens; o link de ficha abre a página individual. A edição de Noturno é parcial. O jornal não inclui rodapé.
 
+## Mapa de Westeros
+
+A aba Locais de A Casa do Dragão usa `westeros-map.js` e o mapa vetorial original `assets/maps/westeros.svg`. É uma representação esquemática de posições aproximadas, incluindo o Mar Estreito e Pentos. Os 11 locais são liberados por `from_` em `dragon-data.js`; os acontecimentos do painel são filtrados pelo episódio. Ao voltar para um capítulo anterior, pins, nomes e detalhes posteriores são removidos. O seletor da tela cheia acompanha o seletor principal. Há navegação por teclado e modo ampliado alternativo quando a API Fullscreen não está disponível.
+
 ## Publicação
 
 Sirva todos os arquivos estáticos e a pasta `personagens/`. As branches `main` e `gh-pages` são mantidas em conjunto. Para o GitHub Pages, use **Deploy from a branch → gh-pages → /(root)** em Settings → Pages.
