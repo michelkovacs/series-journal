@@ -78,8 +78,8 @@ Título **For Such a Time as This** e lançamento informados pelo usuário. O ep
 
 ## Sistema visual
 
-Os dois dossiês seguem o `DESIGN.md` fornecido: canvas branco, superfícies cinza neutro, botões em pílula, ações principais em #202020 e violeta #6647f0 reservado à identidade e metadados. A largura máxima é 1200 px, com tipografia Plus Jakarta Sans para títulos, Inter para texto e Sometype Mono para rótulos. Fontes e licenças estão em `assets/fonts/` e devem acompanhar a publicação.
+Os dois dossiês seguem a referência Calendly do `DESIGN.md` mais recente: canvas #f8f9fb, cartões brancos, texto azul-marinho #0b3558 e ações em #006bff. Painéis usam cantos de 24 px; cartões de produto, 16 px; botões e campos, 8 px. As sombras são azuladas e os detalhes ciano/magenta ficam atrás dos painéis do grafo, sem função de status ou ação.
 
-O seletor de episódio tem uma única borda cônica animada por página; a preferência de movimento reduzido desativa a animação e as transições. Fotos, conteúdo, grafo, filtros e anotações foram preservados. A referência de uma landing page foi adaptada ao painel funcional, sem acrescentar publicidade, números promocionais ou marcas de terceiros.
+Manrope é a substituta aberta de Gilroy indicada pela referência. Ela é servida localmente, com Inter como fallback; arquivos e licenças ficam em `assets/fonts/`. Gilroy não é incluída. O tema anterior e sua borda animada foram substituídos. O cabeçalho permanece fixo em desktop e estático em telas menores para não obstruir os controles.
 
-Validação em Chromium: fontes locais carregadas sem rede externa, tokens de cor e tipografia, navegação nos dois dossiês, notas por episódio, filtros, zoom, controle de spoilers, imagens locais e ausência de transbordamento horizontal nas abas em desktop e celular.
+Fotos e conteúdo dos dossiês foram preservados. Validação em Chromium: carregamento das fontes locais, navegação nos dois dossiês, dez episódios de cada seletor, notas por episódio, filtros, zoom, controle de spoilers, fotos reais locais e responsividade nas abas em 390 e 1280 px.

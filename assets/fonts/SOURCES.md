@@ -1,9 +1,8 @@
 # Fontes locais
 
-Fontes de código aberto distribuídas pelo Fontsource, versão 5.3.0:
+Fontes abertas distribuídas pelo Fontsource, versão 5.3.0:
 
-- Plus Jakarta Sans: https://www.npmjs.com/package/@fontsource-variable/plus-jakarta-sans
-- Inter: https://www.npmjs.com/package/@fontsource-variable/inter
-- Sometype Mono: https://www.npmjs.com/package/@fontsource-variable/sometype-mono
+- Manrope: https://www.npmjs.com/package/@fontsource-variable/manrope
+- Inter (fallback): https://www.npmjs.com/package/@fontsource-variable/inter
 
-A integridade SHA-512 de cada pacote foi conferida antes da extração. As licenças SIL Open Font License correspondentes estão nos arquivos `*-LICENSE.txt`. Os arquivos WOFF2 são servidos localmente; o site não depende do Google Fonts.
+A integridade SHA-512 dos pacotes foi conferida antes da extração. As licenças SIL Open Font License estão em `*-LICENSE.txt`. Os arquivos WOFF2 são servidos localmente, sem Google Fonts. Manrope é a substituta de Gilroy indicada pelo DESIGN.md; não há fonte proprietária neste pacote.
