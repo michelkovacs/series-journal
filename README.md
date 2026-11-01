@@ -75,3 +75,11 @@ Validação no Chromium: dez opções e dez cartões, preservação do grafo e r
 ### Atualização do episódio 2
 
 Título **For Such a Time as This** e lançamento informados pelo usuário. O episódio aparece no seletor, no calendário e no painel como já lançado; o resumo e as atualizações narrativas continuam pendentes de confirmação. As anotações existentes foram preservadas.
+
+## Sistema visual
+
+Os dois dossiês seguem o `DESIGN.md` fornecido: canvas branco, superfícies cinza neutro, botões em pílula, ações principais em #202020 e violeta #6647f0 reservado à identidade e metadados. A largura máxima é 1200 px, com tipografia Plus Jakarta Sans para títulos, Inter para texto e Sometype Mono para rótulos. Fontes e licenças estão em `assets/fonts/` e devem acompanhar a publicação.
+
+O seletor de episódio tem uma única borda cônica animada por página; a preferência de movimento reduzido desativa a animação e as transições. Fotos, conteúdo, grafo, filtros e anotações foram preservados. A referência de uma landing page foi adaptada ao painel funcional, sem acrescentar publicidade, números promocionais ou marcas de terceiros.
+
+Validação em Chromium: fontes locais carregadas sem rede externa, tokens de cor e tipografia, navegação nos dois dossiês, notas por episódio, filtros, zoom, controle de spoilers, imagens locais e ausência de transbordamento horizontal nas abas em desktop e celular.
