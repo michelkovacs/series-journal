@@ -8,10 +8,17 @@ for page in pages:
  prefix='../'*(len(page.relative_to(ROOT).parts)-1)
  block=f'''<!-- pwa:start --><link rel="manifest" href="{prefix}manifest.webmanifest"><meta name="theme-color" content="#0b3558"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Series Journal"><link rel="apple-touch-icon" href="{prefix}assets/pwa/icon-180.png"><link rel="icon" type="image/png" href="{prefix}assets/pwa/icon-192.png"><link rel="stylesheet" href="{prefix}pwa.css?v=pwa-1"><script src="{prefix}pwa.js?v=pwa-1" defer></script><!-- pwa:end -->'''
  text=re.sub(r'<!-- pwa:start -->.*?<!-- pwa:end -->','',page.read_text(),flags=re.S)
+ text=re.sub(r'(href="(?:\.\./)*style\.css)\?v=[^"\s]+',r'\1?v=footer-mysteries-1',text)
+ text=re.sub(r'<!-- site-footer:start -->.*?<!-- site-footer:end -->','',text,flags=re.S)
+ if 'id="page-top"' not in text:
+  text=text.replace('<body','<body id="page-top"',1)
+ footer='<!-- site-footer:start --><footer class="site-footer"><a class="back-to-top" href="#page-top"><span aria-hidden="true">↑</span> Voltar ao topo</a></footer><!-- site-footer:end -->'
+ text=text.replace('</body>',footer+'</body>',1)
  page.write_text(text.replace('</head>',block+'</head>',1))
 core=['index.html','dragon.html','three-body.html','for-all-mankind.html','offline.html','style.css','pwa.css','manifest.webmanifest','assets/fonts/manrope-latin-wght-normal.woff2','assets/for-all-mankind/cover-blue.jpg','assets/series/house-of-the-dragon.webp','assets/series/three-body.webp']
 core+=['assets/pwa/'+name for name in ['icon-180.png','icon-192.png','icon-512.png','icon-maskable-512.png']]
 core+=sorted(p.name for p in ROOT.glob('*.js') if p.name not in ['sw.js','pwa-assets.js'])
+core+=sorted(str(p.relative_to(ROOT)) for p in (ROOT/'assets/noturno-characters').glob('*.jpg'))
 assert len(core)==len(set(core))
 version=hashlib.sha256()
 for name in core+[str(p.relative_to(ROOT)) for p in pages if p.exists()]+['sw.js']:

@@ -104,6 +104,9 @@ for key,s in series.items():
         media_caption=dragon_image_info.get(c['id'],{}).get('caption','Foto do personagem na série') if key=='dragon' else 'Foto do personagem na série'
         photo_src=photo if photo and photo.startswith('https://') else '../../../'+photo if photo else None
         photo_html=f'<img id="characterPhoto" src="{esc(photo_src)}" alt="{esc(c["name"])} — {esc(media_caption)}" width="320" height="400">' if photo else f'<div id="characterPhoto" class="character-photo-missing" role="img" aria-label="Foto do personagem ainda não disponível">{esc("".join(part[0] for part in c["name"].split()[:2]))}</div>'
+        if key=='noturno' and c['id'] in ['michael','felicia']:
+            record['imageCaption']='Retrato no cartaz de desaparecidos mostrado na série'
+            photo_html=photo_html.replace('Foto do personagem na série',record['imageCaption'])
         entries=''.join(f'<li class="character-history-entry" data-episode="{h["episode"]}"><h3>Episódio {h["episode"]:02d} — {esc(h["title"])}</h3><p>{esc(h["text"])}</p></li>' for h in history)
         related=''.join(f'<li data-from="{r["start"]}" data-to="{r["end"]}"><a href="../../../{esc(r["path"])}">{esc(r["name"])}</a><span>{esc(r["label"])}</span></li>' for r in relations)
         options=''.join(f'<option value="{e["number"]}"'+(' selected' if e['number']==maxep else '')+f'>{e["number"]:02d} — {esc(e["title"])}</option>' for e in record['episodes'])

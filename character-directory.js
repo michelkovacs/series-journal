@@ -12,7 +12,7 @@ const CHARACTER_DIRECTORY = {
         "photos": [
           [
             1,
-            "https://www.apple.com/tv-pr/shows-and-films/n/nocturne/images/season-01/video-posters/poster-0102/Nocturne_Poster_0101.jpg"
+            "assets/noturno-characters/jonah.jpg"
           ]
         ]
       },
@@ -23,7 +23,7 @@ const CHARACTER_DIRECTORY = {
         "photos": [
           [
             1,
-            "https://www.iclarified.com/images/news/101401/101401/101401-1280.jpg"
+            "assets/noturno-characters/saga.jpg"
           ]
         ]
       },
@@ -31,19 +31,34 @@ const CHARACTER_DIRECTORY = {
         "name": "Dave Ellison",
         "path": "personagens/noturno/dave-ellison/",
         "fromEpisode": 1,
-        "photos": []
+        "photos": [
+          [
+            1,
+            "assets/noturno-characters/dave.jpg"
+          ]
+        ]
       },
       "nathan": {
         "name": "Nathan Pollock",
         "path": "personagens/noturno/nathan-pollock/",
         "fromEpisode": 1,
-        "photos": []
+        "photos": [
+          [
+            1,
+            "assets/noturno-characters/nathan.jpg"
+          ]
+        ]
       },
       "alex": {
         "name": "Alexandra Quinn",
         "path": "personagens/noturno/alexandra-quinn/",
         "fromEpisode": 1,
-        "photos": []
+        "photos": [
+          [
+            1,
+            "assets/noturno-characters/alex.jpg"
+          ]
+        ]
       },
       "jurek": {
         "name": "Jurek Walter",
@@ -52,7 +67,7 @@ const CHARACTER_DIRECTORY = {
         "photos": [
           [
             1,
-            "https://d2a0gza273xfgz.cloudfront.net/818655/assets/07db4109-5a6d-40cb-aa63-dc7a80cb797f.jpg"
+            "assets/noturno-characters/jurek.jpg"
           ]
         ]
       },
@@ -60,25 +75,45 @@ const CHARACTER_DIRECTORY = {
         "name": "Karl Anders",
         "path": "personagens/noturno/karl-anders/",
         "fromEpisode": 1,
-        "photos": []
+        "photos": [
+          [
+            1,
+            "assets/noturno-characters/karl.jpg"
+          ]
+        ]
       },
       "michael": {
         "name": "Michael Frost",
         "path": "personagens/noturno/michael-frost/",
         "fromEpisode": 1,
-        "photos": []
+        "photos": [
+          [
+            1,
+            "assets/noturno-characters/michael.jpg"
+          ]
+        ]
       },
       "felicia": {
         "name": "Felicia Frost",
         "path": "personagens/noturno/felicia-frost/",
         "fromEpisode": 1,
-        "photos": []
+        "photos": [
+          [
+            1,
+            "assets/noturno-characters/felicia.jpg"
+          ]
+        ]
       },
       "ida": {
         "name": "Ida Frost",
         "path": "personagens/noturno/ida-frost/",
         "fromEpisode": 1,
-        "photos": []
+        "photos": [
+          [
+            1,
+            "assets/noturno-characters/ida.jpg"
+          ]
+        ]
       },
       "sam": {
         "name": "Sam Mendel",

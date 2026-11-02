@@ -8,10 +8,13 @@ characters={c['id']:c for c in d['characters']};assert len(characters)==len(d['c
 assert len(d['episodes'])==len(catalog['episodes'])==50
 assert len(d['seasons'])==len(papers)==5
 assert set(characters)==set(manifest['characters'])==set(presence['characters'])
+questions=[q for ep in d['episodes'] for q in ep['questions']]
+assert len(questions)==len(set(questions))==100, 'Episode questions must be unique, without repeated seasonal lists'
 for index,(ep,source) in enumerate(zip(d['episodes'],catalog['episodes']),1):
  assert ep['number']==index
  for key in ['season','seasonEpisode','title','date']:assert ep[key]==source[key],(index,key)
  assert len(ep['events'])==3
+ assert len(ep['questions'])==2 and all(isinstance(q,str) and q.endswith('?') for q in ep['questions'])
  for event in ep['events']:
   assert 1<=len(event['paragraphs'])<=2
   for cid in event['characters']:

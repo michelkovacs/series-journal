@@ -1,0 +1,92 @@
+[
+  {
+    "id": "jonah",
+    "name": "Jonah Lynn",
+    "file": "assets/noturno-characters/jonah.jpg",
+    "source": "https://www.apple.com/tv-pr/shows-and-films/n/nocturne/images/season-01/unit-photos/episode-01/photo-010109/Nocturne_Photo_010109.jpg",
+    "credit": "Apple TV · foto de cena de Noturno",
+    "processing": "Recorte do personagem, sem geração ou alteração do rosto.",
+    "fromEpisode": 1
+  },
+  {
+    "id": "saga",
+    "name": "Saga Bauer",
+    "file": "assets/noturno-characters/saga.jpg",
+    "source": "https://www.apple.com/tv-pr/shows-and-films/n/nocturne/images/season-01/unit-photos/episode-01/photo-010101/Nocturne_Photo_010101.jpg",
+    "credit": "Apple TV · foto de cena de Noturno",
+    "processing": "Recorte do personagem, sem geração ou alteração do rosto.",
+    "fromEpisode": 1
+  },
+  {
+    "id": "jurek",
+    "name": "Jurek Walter",
+    "file": "assets/noturno-characters/jurek.jpg",
+    "source": "https://tv.apple.com/us/clip/missing-season-1/umc.cmc.1oxyizybi8br585p8nb7d1dod?targetId=umc.cmc.4cfsq1juke72zutv5xp0pw3rj&targetType=Show",
+    "credit": "Apple TV · captura do trailer promocional público de Noturno",
+    "processing": "Recorte de uma captura real do trailer público; sem alteração do rosto.",
+    "fromEpisode": 1
+  },
+  {
+    "id": "dave",
+    "name": "Dave Ellison",
+    "file": "assets/noturno-characters/dave.jpg",
+    "source": "https://www.apple.com/tv-pr/shows-and-films/n/nocturne/images/season-01/unit-photos/episode-01/photo-010104/Nocturne_Photo_010104.jpg",
+    "credit": "Apple TV · foto de cena de Noturno",
+    "processing": "Recorte do personagem, sem geração ou alteração do rosto.",
+    "fromEpisode": 1
+  },
+  {
+    "id": "nathan",
+    "name": "Nathan Pollock",
+    "file": "assets/noturno-characters/nathan.jpg",
+    "source": "https://www.apple.com/tv-pr/shows-and-films/n/nocturne/images/season-01/unit-photos/episode-01/photo-010106/Nocturne_Photo_010106.jpg",
+    "credit": "Apple TV · foto de cena de Noturno",
+    "processing": "Recorte do personagem, sem geração ou alteração do rosto.",
+    "fromEpisode": 1
+  },
+  {
+    "id": "alex",
+    "name": "Alexandra Quinn",
+    "file": "assets/noturno-characters/alex.jpg",
+    "source": "https://www.apple.com/tv-pr/shows-and-films/n/nocturne/images/season-01/unit-photos/episode-01/photo-010108/Nocturne_Photo_010108.jpg",
+    "credit": "Apple TV · foto de cena de Noturno",
+    "processing": "Recorte do personagem, sem geração ou alteração do rosto.",
+    "fromEpisode": 1
+  },
+  {
+    "id": "karl",
+    "name": "Karl Anders",
+    "file": "assets/noturno-characters/karl.jpg",
+    "source": "https://www.apple.com/tv-pr/shows-and-films/n/nocturne/images/season-01/unit-photos/episode-01/photo-010107/Nocturne_Photo_010107.jpg",
+    "credit": "Apple TV · foto de cena de Noturno",
+    "processing": "Recorte do personagem, sem geração ou alteração do rosto.",
+    "fromEpisode": 1
+  },
+  {
+    "id": "ida",
+    "name": "Ida Frost",
+    "file": "assets/noturno-characters/ida.jpg",
+    "source": "https://www.apple.com/tv-pr/shows-and-films/n/nocturne/images/season-01/unit-photos/episode-02/photo-010202/Nocturne_Photo_010202.jpg",
+    "credit": "Apple TV · foto de cena de Noturno",
+    "processing": "Recorte do personagem, sem geração ou alteração do rosto.",
+    "fromEpisode": 1
+  },
+  {
+    "id": "felicia",
+    "name": "Felicia Frost",
+    "file": "assets/noturno-characters/felicia.jpg",
+    "source": "https://www.apple.com/tv-pr/shows-and-films/n/nocturne/images/season-01/unit-photos/episode-01/photo-010101/Nocturne_Photo_010101.zip",
+    "credit": "Apple TV · retrato no cartaz de desaparecidos em cena",
+    "processing": "Recorte da fotografia identificada pelo nome no cartaz; retrato da época do desaparecimento.",
+    "fromEpisode": 1
+  },
+  {
+    "id": "michael",
+    "name": "Michael Frost",
+    "file": "assets/noturno-characters/michael.jpg",
+    "source": "https://www.apple.com/tv-pr/shows-and-films/n/nocturne/images/season-01/unit-photos/episode-01/photo-010101/Nocturne_Photo_010101.zip",
+    "credit": "Apple TV · retrato no cartaz de desaparecidos em cena",
+    "processing": "Recorte da fotografia identificada pelo nome no cartaz; retrato da época do desaparecimento.",
+    "fromEpisode": 1
+  }
+]

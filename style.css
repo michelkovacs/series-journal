@@ -329,3 +329,9 @@ body[data-series=for-all-mankind]{--series-header-art:url('assets/for-all-mankin
 .recap-characters-toggle input[type=checkbox]{appearance:auto;flex:0 0 18px;width:18px;height:18px;min-width:18px;margin:0;padding:0;accent-color:#176e86;cursor:pointer}
 #recap:not(.recap-show-characters) .recap-event-media[data-media-kind=characters]{display:none}
 #recap:not(.recap-show-characters) .recap-event-card:has(>.recap-event-media[data-media-kind=characters]){grid-template-columns:minmax(0,1fr);min-height:0}
+
+.site-footer{display:flex;justify-content:center;margin-top:32px;padding:20px 16px 28px;border-top:1px solid #dce4ed;background:#f2f5f9}
+.back-to-top{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;padding:8px 18px;border:1px solid #c5d4e5;border-radius:999px;background:#fff;color:var(--color-ink-navy);font-weight:700;text-decoration:none}
+.back-to-top:hover{background:#e7eff8;border-color:#6090ba}
+.back-to-top:focus-visible{outline:3px solid #176e86;outline-offset:4px}
+@media print{.site-footer{display:none}}

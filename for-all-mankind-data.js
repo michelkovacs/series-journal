@@ -787,8 +787,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "Que decisões a derrota lunar mudará na NASA?",
-        "Como sustentar a presença humana sem ignorar seus custos pessoais?"
+        "Como a NASA responderá ao pouso soviético depois de perder a liderança da corrida lunar?",
+        "Ed conseguirá voltar a voar após criticar publicamente a decisão tomada na Apollo 10?"
       ],
       "image": "assets/for-all-mankind/episodes/s1-e01.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 1, episódio 1"
@@ -839,8 +839,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "Que decisões a derrota lunar mudará na NASA?",
-        "Como sustentar a presença humana sem ignorar seus custos pessoais?"
+        "Como a saída de von Braun afetará o projeto de uma presença permanente na Lua?",
+        "O pouso de uma cosmonauta soviética abrirá espaço para mulheres no programa americano?"
       ],
       "image": "assets/for-all-mankind/episodes/s1-e02.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 1, episódio 2"
@@ -896,8 +896,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "Que decisões a derrota lunar mudará na NASA?",
-        "Como sustentar a presença humana sem ignorar seus custos pessoais?"
+        "Como a morte de Patty afetará a continuidade do treinamento das candidatas?",
+        "Quais das finalistas conseguirão transformar a seleção em uma vaga de voo?"
       ],
       "image": "assets/for-all-mankind/episodes/s1-e03.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 1, episódio 3"
@@ -950,8 +950,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "Que decisões a derrota lunar mudará na NASA?",
-        "Como sustentar a presença humana sem ignorar seus custos pessoais?"
+        "Ed e Molly conseguirão trabalhar juntos na Apollo 15 apesar da resistência à mudança da tripulação?",
+        "Os indícios de gelo serão suficientes para justificar o risco de uma base lunar?"
       ],
       "image": "assets/for-all-mankind/episodes/s1-e04.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 1, episódio 4"
@@ -1004,8 +1004,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "Que decisões a derrota lunar mudará na NASA?",
-        "Como sustentar a presença humana sem ignorar seus custos pessoais?"
+        "Como a descoberta de gelo será transformada em recursos para manter Jamestown?",
+        "De que maneira as famílias lidarão com missões que agora permitem uma permanência prolongada na Lua?"
       ],
       "image": "assets/for-all-mankind/episodes/s1-e05.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 1, episódio 5"
@@ -1059,8 +1059,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "Que decisões a derrota lunar mudará na NASA?",
-        "Como sustentar a presença humana sem ignorar seus custos pessoais?"
+        "Quando Ed, Gordo e Danielle poderão ser substituídos depois da explosão da Apollo 23?",
+        "Como Ellen e Larry protegerão suas vidas privadas durante a investigação do FBI?"
       ],
       "image": "assets/for-all-mankind/episodes/s1-e06.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 1, episódio 6"
@@ -1114,8 +1114,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "Que decisões a derrota lunar mudará na NASA?",
-        "Como sustentar a presença humana sem ignorar seus custos pessoais?"
+        "Até quando Danielle conseguirá manter em segredo o motivo da própria lesão?",
+        "Como a família informará Ed sobre o atropelamento de Shane enquanto ele está sozinho na Lua?"
       ],
       "image": "assets/for-all-mankind/episodes/s1-e07.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 1, episódio 7"
@@ -1167,8 +1167,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "Que decisões a derrota lunar mudará na NASA?",
-        "Como sustentar a presença humana sem ignorar seus custos pessoais?"
+        "Como Ed continuará operando Jamestown depois de receber a notícia da morte de Shane?",
+        "A destruição da câmera soviética agravará a disputa ao redor da base?"
       ],
       "image": "assets/for-all-mankind/episodes/s1-e08.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 1, episódio 8"
@@ -1222,8 +1222,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "Que decisões a derrota lunar mudará na NASA?",
-        "Como sustentar a presença humana sem ignorar seus custos pessoais?"
+        "Como a Apollo 24 poderá ser recuperada depois da ignição prematura e da perda de combustível?",
+        "O que Ed fará com o cosmonauta que pediu abrigo em Jamestown?"
       ],
       "image": "assets/for-all-mankind/episodes/s1-e09.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 1, episódio 9"
@@ -1278,8 +1278,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "Que decisões a derrota lunar mudará na NASA?",
-        "Como sustentar a presença humana sem ignorar seus custos pessoais?"
+        "Que efeitos a morte de Deke deixará na equipe que decidiu permanecer na Lua?",
+        "Como a carga nuclear do Sea Dragon mudará a escala e os riscos da expansão de Jamestown?"
       ],
       "image": "assets/for-all-mankind/episodes/s1-e10.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 1, episódio 10"
@@ -1333,8 +1333,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "A cooperação conseguirá conter a militarização do espaço?",
-        "Quem paga o preço das informações mantidas em segredo?"
+        "Quais serão as consequências da radiação recebida por Molly durante o resgate de Wubbo?",
+        "Como Gordo lidará com a nova vida de Tracy e com seu próprio afastamento dos voos?"
       ],
       "image": "assets/for-all-mankind/episodes/s2-e01.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 2, episódio 1"
@@ -1389,8 +1389,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "A cooperação conseguirá conter a militarização do espaço?",
-        "Quem paga o preço das informações mantidas em segredo?"
+        "Gordo conseguirá se preparar para voltar à Lua depois de admitir que ainda não se recuperou?",
+        "Ellen conseguirá preservar o projeto de Marte em sua nova função na direção da NASA?"
       ],
       "image": "assets/for-all-mankind/episodes/s2-e02.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 2, episódio 2"
@@ -1442,8 +1442,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "A cooperação conseguirá conter a militarização do espaço?",
-        "Quem paga o preço das informações mantidas em segredo?"
+        "Que limites serão impostos ao uso de armas na disputa pelas áreas de mineração lunar?",
+        "Aleida conseguirá reconstruir uma relação profissional com Margo apesar do ressentimento entre elas?"
       ],
       "image": "assets/for-all-mankind/episodes/s2-e03.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 2, episódio 3"
@@ -1495,8 +1495,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "A cooperação conseguirá conter a militarização do espaço?",
-        "Quem paga o preço das informações mantidas em segredo?"
+        "Como Gordo enfrentará a claustrofobia antes de sua próxima missão?",
+        "Danielle conseguirá conduzir a Apollo–Soyuz enquanto a tensão diplomática aumenta?"
       ],
       "image": "assets/for-all-mankind/episodes/s2-e04.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 2, episódio 4"
@@ -1551,8 +1551,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "A cooperação conseguirá conter a militarização do espaço?",
-        "Quem paga o preço das informações mantidas em segredo?"
+        "O que está causando as alterações na visão de Molly?",
+        "Tracy conseguirá se adaptar à rotina de Jamestown sem o tratamento especial que esperava?"
       ],
       "image": "assets/for-all-mankind/episodes/s2-e05.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 2, episódio 5"
@@ -1609,8 +1609,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "A cooperação conseguirá conter a militarização do espaço?",
-        "Quem paga o preço das informações mantidas em segredo?"
+        "O adaptador proposto por Margo e Sergei vencerá as divergências técnicas entre as duas agências?",
+        "Ellen conseguirá reorganizar a vida com Pam depois de pedir o divórcio a Larry?"
       ],
       "image": "assets/for-all-mankind/episodes/s2-e06.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 2, episódio 6"
@@ -1663,8 +1663,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "A cooperação conseguirá conter a militarização do espaço?",
-        "Quem paga o preço das informações mantidas em segredo?"
+        "A morte de Thomas Paine permitirá conter ou intensificará a escalada entre americanos e soviéticos?",
+        "Que consequências Margo enfrentará por enviar um aviso técnico a Sergei fora dos canais oficiais?"
       ],
       "image": "assets/for-all-mankind/episodes/s2-e07.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 2, episódio 7"
@@ -1718,8 +1718,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "A cooperação conseguirá conter a militarização do espaço?",
-        "Quem paga o preço das informações mantidas em segredo?"
+        "Como os soviéticos reagirão à morte de um cosmonauta e ao ferimento do outro na mineração?",
+        "Como Molly reorganizará sua carreira diante do diagnóstico de perda irreversível da visão?"
       ],
       "image": "assets/for-all-mankind/episodes/s2-e08.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 2, episódio 8"
@@ -1775,8 +1775,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "A cooperação conseguirá conter a militarização do espaço?",
-        "Quem paga o preço das informações mantidas em segredo?"
+        "Os ocupantes de Jamestown e a equipe americana conseguirão evitar novas mortes dentro da base?",
+        "O Pathfinder encontrará uma saída para o confronto com o Buran sem abandonar suas ordens?"
       ],
       "image": "assets/for-all-mankind/episodes/s2-e09.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 2, episódio 9"
@@ -1829,8 +1829,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "A cooperação conseguirá conter a militarização do espaço?",
-        "Quem paga o preço das informações mantidas em segredo?"
+        "A cooperação mostrada pela Apollo–Soyuz sobreviverá ao encerramento da crise lunar?",
+        "Como a pressão soviética sobre Sergei afetará a confiança que Margo deposita nele?"
       ],
       "image": "assets/for-all-mankind/episodes/s2-e10.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 2, episódio 10"
@@ -1889,8 +1889,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "A competição permite agir em conjunto diante de uma emergência?",
-        "Quem controla os recursos necessários ao retorno?"
+        "Karen conseguirá manter o projeto Polaris depois do acidente e da morte de Sam?",
+        "Quem Molly escolherá para comandar a primeira missão americana a Marte?"
       ],
       "image": "assets/for-all-mankind/episodes/s3-e01.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 3, episódio 1"
@@ -1946,8 +1946,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "A competição permite agir em conjunto diante de uma emergência?",
-        "Quem controla os recursos necessários ao retorno?"
+        "A Helios conseguirá converter o Polaris em uma nave capaz de competir pela chegada a Marte?",
+        "Como Ed e Danielle trabalharão em lados diferentes depois da ruptura na escolha do comando?"
       ],
       "image": "assets/for-all-mankind/episodes/s3-e02.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 3, episódio 2"
@@ -2004,8 +2004,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "A competição permite agir em conjunto diante de uma emergência?",
-        "Quem controla os recursos necessários ao retorno?"
+        "Como Margo responderá à ameaça contra Sergei sem comprometer ainda mais o projeto dos motores?",
+        "Danny estará em condições de cumprir sua função na Phoenix depois dos problemas que o afastaram da NASA?"
       ],
       "image": "assets/for-all-mankind/episodes/s3-e03.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 3, episódio 3"
@@ -2060,8 +2060,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "A competição permite agir em conjunto diante de uma emergência?",
-        "Quem controla os recursos necessários ao retorno?"
+        "O que a recusa de Dev em autorizar o resgate significará para a autoridade de Ed na Phoenix?",
+        "Como a Sojourner acomodará a equipe soviética depois da falha da Mars-94?"
       ],
       "image": "assets/for-all-mankind/episodes/s3-e04.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 3, episódio 4"
@@ -2117,8 +2117,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "A competição permite agir em conjunto diante de uma emergência?",
-        "Quem controla os recursos necessários ao retorno?"
+        "As equipes conseguirão estabelecer operações seguras depois dos riscos assumidos no pouso marciano?",
+        "Como a disputa sobre quem chegou primeiro afetará a cooperação necessária na superfície?"
       ],
       "image": "assets/for-all-mankind/episodes/s3-e05.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 3, episódio 5"
@@ -2173,8 +2173,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "A competição permite agir em conjunto diante de uma emergência?",
-        "Quem controla os recursos necessários ao retorno?"
+        "Como as equipes retornarão à órbita se a Sojourner está danificada e todas dependem da Phoenix?",
+        "O uso crescente de medicamentos por Danny comprometerá suas responsabilidades na missão?"
       ],
       "image": "assets/for-all-mankind/episodes/s3-e06.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 3, episódio 6"
@@ -2228,8 +2228,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "A competição permite agir em conjunto diante de uma emergência?",
-        "Quem controla os recursos necessários ao retorno?"
+        "Quem sobreviveu ao desabamento provocado durante a perfuração?",
+        "Até onde vai o plano do grupo que Jimmy ajudou a obter acesso à NASA?"
       ],
       "image": "assets/for-all-mankind/episodes/s3-e07.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 3, episódio 7"
@@ -2285,8 +2285,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "A competição permite agir em conjunto diante de uma emergência?",
-        "Quem controla os recursos necessários ao retorno?"
+        "Como a gravidez de Kelly mudará os planos de atendimento e retorno dos sobreviventes?",
+        "Danny revelará aos demais sua responsabilidade na falha de comunicação que antecedeu o desastre?"
       ],
       "image": "assets/for-all-mankind/episodes/s3-e08.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 3, episódio 8"
@@ -2343,8 +2343,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "A competição permite agir em conjunto diante de uma emergência?",
-        "Quem controla os recursos necessários ao retorno?"
+        "Quem é o cosmonauta encontrado vivo junto da sonda norte-coreana?",
+        "Como retirar Kelly com urgência se o combustível não permite levar toda a tripulação até a Phoenix?"
       ],
       "image": "assets/for-all-mankind/episodes/s3-e09.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 3, episódio 9"
@@ -2400,8 +2400,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "A competição permite agir em conjunto diante de uma emergência?",
-        "Quem controla os recursos necessários ao retorno?"
+        "Como os astronautas que permaneceram em Marte serão sustentados até outra oportunidade de retorno?",
+        "O que explica Margo reaparecer na União Soviética anos depois do atentado em Houston?"
       ],
       "image": "assets/for-all-mankind/episodes/s3-e10.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 3, episódio 10"
@@ -2453,8 +2453,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "Quem deve decidir como explorar os recursos próximos de Marte?",
-        "Como os trabalhadores participam das decisões sobre a base?"
+        "O que causou a ruptura que matou Kuznetsov durante a captura do asteroide?",
+        "A remuneração prometida a Miles corresponderá à vida que ele encontrará em Marte?"
       ],
       "image": "assets/for-all-mankind/episodes/s4-e01.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 4, episódio 1"
@@ -2509,8 +2509,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "Quem deve decidir como explorar os recursos próximos de Marte?",
-        "Como os trabalhadores participam das decisões sobre a base?"
+        "Miles conseguirá enviar dinheiro à família depois dos descontos e da mudança de função?",
+        "Por que as autoridades soviéticas prenderam Margo em meio às mudanças observadas em Moscou?"
       ],
       "image": "assets/for-all-mankind/episodes/s4-e02.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 4, episódio 2"
@@ -2565,8 +2565,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "Quem deve decidir como explorar os recursos próximos de Marte?",
-        "Como os trabalhadores participam das decisões sobre a base?"
+        "Que condições a nova direção da Roscosmos imporá para usar a experiência de Margo?",
+        "Miles conseguirá atender ao pedido de Lee para trazer a esposa a Marte?"
       ],
       "image": "assets/for-all-mankind/episodes/s4-e03.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 4, episódio 3"
@@ -2618,8 +2618,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "Quem deve decidir como explorar os recursos próximos de Marte?",
-        "Como os trabalhadores participam das decisões sobre a base?"
+        "Quem autorizou o uso de parafusos fora da especificação e por que a falha foi omitida?",
+        "A exportação informal de rochas marcianas permitirá a Miles sustentar a família sem se expor na base?"
       ],
       "image": "assets/for-all-mankind/episodes/s4-e04.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 4, episódio 4"
@@ -2673,8 +2673,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "Quem deve decidir o destino dos recursos encontrados perto de Marte?",
-        "Como os trabalhadores participam das decisões sobre a base?"
+        "Será possível capturar Goldilocks sem repetir o desastre da primeira tentativa de mineração?",
+        "Como o afastamento de Ed dos voos mudará sua relação com Danielle e sua vida em Marte?"
       ],
       "image": "assets/for-all-mankind/episodes/s4-e05.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 4, episódio 5"
@@ -2730,8 +2730,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "Quem deve decidir o destino dos recursos encontrados perto de Marte?",
-        "Como os trabalhadores participam das decisões sobre a base?"
+        "O projeto de enviar Goldilocks à Terra deixará algum futuro para a expansão de Happy Valley?",
+        "Como Aleida reagirá profissionalmente ao confirmar que Margo trabalha para os soviéticos?"
       ],
       "image": "assets/for-all-mankind/episodes/s4-e06.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 4, episódio 6"
@@ -2786,8 +2786,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "Quem deve decidir o destino dos recursos encontrados perto de Marte?",
-        "Como os trabalhadores participam das decisões sobre a base?"
+        "Como Dev e Ed pretendem manter Goldilocks em Marte sem revelar a operação aos governos?",
+        "As concessões de Dev resolverão as condições que levaram os trabalhadores à greve?"
       ],
       "image": "assets/for-all-mankind/episodes/s4-e07.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 4, episódio 7"
@@ -2841,8 +2841,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "Quem deve decidir o destino dos recursos encontrados perto de Marte?",
-        "Como os trabalhadores participam das decisões sobre a base?"
+        "Samantha conseguirá substituir o componente de comunicação sem denunciar a central clandestina?",
+        "Margo conseguirá escapar da influência de Irina depois de conhecer a origem da chantagem contra Sergei?"
       ],
       "image": "assets/for-all-mankind/episodes/s4-e08.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 4, episódio 8"
@@ -2898,8 +2898,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "Quem deve decidir o destino dos recursos encontrados perto de Marte?",
-        "Como os trabalhadores participam das decisões sobre a base?"
+        "O interrogatório de Miles permitirá às autoridades localizar a operação de desvio?",
+        "Como Margo reagirá quando descobrir o destino de Sergei e a encenação de seu suicídio?"
       ],
       "image": "assets/for-all-mankind/episodes/s4-e09.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 4, episódio 9"
@@ -2955,8 +2955,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "Quem deve decidir o destino dos recursos encontrados perto de Marte?",
-        "Como os trabalhadores participam das decisões sobre a base?"
+        "Como os responsáveis pelo desvio de Goldilocks responderão às consequências políticas da operação?",
+        "A estação de mineração mostrada em 2012 mudará as condições de vida de quem permaneceu em Marte?"
       ],
       "image": "assets/for-all-mankind/episodes/s4-e10.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 4, episódio 10"
@@ -3011,8 +3011,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "Quem pode representar politicamente quem vive em Marte?",
-        "Como conciliar a busca por vida com os limites de sobrevivência?"
+        "As evidências de DNA explicam a morte de Yoon Tae-Min ou deixam lacunas na acusação contra Lee?",
+        "Como Ed e Dev conciliarão o crescimento de Happy Valley com o projeto de uma cidade autossuficiente?"
       ],
       "image": "assets/for-all-mankind/episodes/s5-e01.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 5, episódio 1"
@@ -3069,8 +3069,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "Quem pode representar politicamente quem vive em Marte?",
-        "Como conciliar a busca por vida com os limites de sobrevivência?"
+        "O asilo procurado para Lee impedirá que ele seja enviado à Terra?",
+        "Quem está dificultando a investigação de Celia sobre os negócios ligados a Tae-Min?"
       ],
       "image": "assets/for-all-mankind/episodes/s5-e02.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 5, episódio 2"
@@ -3128,8 +3128,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "Quem pode representar politicamente quem vive em Marte?",
-        "Como conciliar a busca por vida com os limites de sobrevivência?"
+        "Quem ordenou o ataque que deixou Celia hospitalizada?",
+        "A Sojourner 1 poderá ser reativada a tempo de disputar a chegada a Titã com a Kuragin?"
       ],
       "image": "assets/for-all-mankind/episodes/s5-e03.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 5, episódio 3"
@@ -3183,8 +3183,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "Quem pode representar politicamente quem vive em Marte?",
-        "Como conciliar a busca por vida com os limites de sobrevivência?"
+        "Quem autorizou o plano de automatizar Happy Valley e remover seus moradores?",
+        "Como a divulgação do arquivo por Alex e Lily mudará a relação da população com as autoridades?"
       ],
       "image": "assets/for-all-mankind/episodes/s5-e04.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 5, episódio 4"
@@ -3238,8 +3238,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "Quem pode representar politicamente quem vive em Marte?",
-        "Como conciliar a busca por vida com os limites de sobrevivência?"
+        "Quem controlará Happy Valley depois que os manifestantes alcançaram o centro de comando?",
+        "A investigação sobre Fred conseguirá esclarecer os crimes e responsabilizar os envolvidos?"
       ],
       "image": "assets/for-all-mankind/episodes/s5-e05.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 5, episódio 5"
@@ -3295,8 +3295,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "Quem pode representar politicamente quem vive em Marte?",
-        "Como conciliar a busca por vida com os limites de sobrevivência?"
+        "Como Marte manterá alimentos, medicamentos e funcionamento básico sob embargo?",
+        "A negociação dos ocupantes permitirá preservar o contato e o apoio à missão a Titã?"
       ],
       "image": "assets/for-all-mankind/episodes/s5-e06.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 5, episódio 6"
@@ -3349,8 +3349,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "Quem pode representar politicamente quem vive em Marte?",
-        "Como conciliar a busca por vida com os limites de sobrevivência?"
+        "Como a população sobreviverá à perda das estufas durante o embargo?",
+        "A tripulação da Sojourner conseguirá investigar Titã depois do pouso manual de Kelly?"
       ],
       "image": "assets/for-all-mankind/episodes/s5-e07.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 5, episódio 7"
@@ -3405,8 +3405,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "Quem pode representar politicamente quem vive em Marte?",
-        "Como conciliar a busca por vida com os limites de sobrevivência?"
+        "Que consequências a destruição da plataforma de Goldilocks terá para a chegada das forças da Terra?",
+        "A equipe de Kelly conseguirá alcançar a sonda caída e recuperar seu material de pesquisa?"
       ],
       "image": "assets/for-all-mankind/episodes/s5-e08.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 5, episódio 8"
@@ -3460,8 +3460,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "Quem pode representar politicamente quem vive em Marte?",
-        "Como conciliar a busca por vida com os limites de sobrevivência?"
+        "Alex e Avery conseguirão salvar Marcus depois do ferimento nos túneis?",
+        "Como a tripulação de Titã responderá à emergência provocada pelo traje perfurado de Elena?"
       ],
       "image": "assets/for-all-mankind/episodes/s5-e09.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 5, episódio 9"
@@ -3517,8 +3517,8 @@ const FOR_ALL_MANKIND_DATA = {
         }
       ],
       "questions": [
-        "Quem pode representar politicamente quem vive em Marte?",
-        "Como conciliar a busca por vida com os limites de sobrevivência?"
+        "A independência de Marte será suficiente para construir uma relação estável com os governos da Terra?",
+        "O que significa o computador da Mars-94 voltar a funcionar em 2020?"
       ],
       "image": "assets/for-all-mankind/episodes/s5-e10.jpg",
       "imageAlt": "Imagem de For All Mankind, temporada 5, episódio 10"

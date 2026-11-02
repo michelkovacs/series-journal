@@ -1,8 +1,74 @@
 'use strict';
-// Scene/promotion URLs identified in the original HTML supplied by the user.
-// Actor portraits outside the role are intentionally excluded.
-const NOTURNO_PHOTOS={
- jonah:{from:1,sources:['https://www.apple.com/tv-pr/shows-and-films/n/nocturne/images/season-01/video-posters/poster-0102/Nocturne_Poster_0101.jpg','https://d2a0gza273xfgz.cloudfront.net/818655/uploads/035b6850-bc25-11f1-ba3b-05f54fce9422_1200_630.jpeg','https://m.media-amazon.com/images/S/pv-target-images/ef9425e1792b320dd0da4498623cbc24d749ee7081701b64263515291f6bcb41.jpg'],credit:'Jonah Lynn · cena ou divulgação da série'},
- jurek:{from:1,sources:['https://d2a0gza273xfgz.cloudfront.net/818655/assets/07db4109-5a6d-40cb-aa63-dc7a80cb797f.jpg','https://m.media-amazon.com/images/S/pv-target-images/ef9425e1792b320dd0da4498623cbc24d749ee7081701b64263515291f6bcb41.jpg'],credit:'Jurek Walter · cena ou divulgação da série'},
- saga:{from:1,sources:['https://www.iclarified.com/images/news/101401/101401/101401-1280.jpg','https://m.media-amazon.com/images/S/pv-target-images/ef9425e1792b320dd0da4498623cbc24d749ee7081701b64263515291f6bcb41.jpg'],credit:'Saga Bauer · divulgação da série'}
+// Local crops of identified scene photographs; attribution: assets/noturno-characters/sources.json.
+const NOTURNO_PHOTOS = {
+  "jonah": {
+    "sources": [
+      "assets/noturno-characters/jonah.jpg"
+    ],
+    "credit": "Apple TV · foto de cena de Noturno",
+    "from": 1
+  },
+  "saga": {
+    "sources": [
+      "assets/noturno-characters/saga.jpg"
+    ],
+    "credit": "Apple TV · foto de cena de Noturno",
+    "from": 1
+  },
+  "jurek": {
+    "sources": [
+      "assets/noturno-characters/jurek.jpg"
+    ],
+    "credit": "Apple TV · captura do trailer promocional público de Noturno",
+    "from": 1
+  },
+  "dave": {
+    "sources": [
+      "assets/noturno-characters/dave.jpg"
+    ],
+    "credit": "Apple TV · foto de cena de Noturno",
+    "from": 1
+  },
+  "nathan": {
+    "sources": [
+      "assets/noturno-characters/nathan.jpg"
+    ],
+    "credit": "Apple TV · foto de cena de Noturno",
+    "from": 1
+  },
+  "alex": {
+    "sources": [
+      "assets/noturno-characters/alex.jpg"
+    ],
+    "credit": "Apple TV · foto de cena de Noturno",
+    "from": 1
+  },
+  "karl": {
+    "sources": [
+      "assets/noturno-characters/karl.jpg"
+    ],
+    "credit": "Apple TV · foto de cena de Noturno",
+    "from": 1
+  },
+  "ida": {
+    "sources": [
+      "assets/noturno-characters/ida.jpg"
+    ],
+    "credit": "Apple TV · foto de cena de Noturno",
+    "from": 1
+  },
+  "felicia": {
+    "sources": [
+      "assets/noturno-characters/felicia.jpg"
+    ],
+    "credit": "Apple TV · retrato no cartaz de desaparecidos em cena",
+    "from": 1
+  },
+  "michael": {
+    "sources": [
+      "assets/noturno-characters/michael.jpg"
+    ],
+    "credit": "Apple TV · retrato no cartaz de desaparecidos em cena",
+    "from": 1
+  }
 };

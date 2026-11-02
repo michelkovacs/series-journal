@@ -1,5 +1,5 @@
 const PWA_ASSETS = {
-  "version": "7586d86f2846ef37",
+  "version": "8645ec1d97138073",
   "files": [
     "index.html",
     "dragon.html",
@@ -46,6 +46,16 @@ const PWA_ASSETS = {
     "three-body-local-photos.js",
     "three-body-photos.js",
     "three-body.js",
-    "westeros-map.js"
+    "westeros-map.js",
+    "assets/noturno-characters/alex.jpg",
+    "assets/noturno-characters/dave.jpg",
+    "assets/noturno-characters/felicia.jpg",
+    "assets/noturno-characters/ida.jpg",
+    "assets/noturno-characters/jonah.jpg",
+    "assets/noturno-characters/jurek.jpg",
+    "assets/noturno-characters/karl.jpg",
+    "assets/noturno-characters/michael.jpg",
+    "assets/noturno-characters/nathan.jpg",
+    "assets/noturno-characters/saga.jpg"
   ]
 };

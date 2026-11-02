@@ -125,8 +125,8 @@ const FOR_ALL_MANKIND_NEWSPAPERS = {
       ]
     ],
     "questions": [
-      "Que decisões a derrota lunar mudará na NASA?",
-      "Como sustentar a presença humana sem ignorar seus custos pessoais?"
+      "Que efeitos a morte de Deke deixará na equipe que decidiu permanecer na Lua?",
+      "Como a carga nuclear do Sea Dragon mudará a escala e os riscos da expansão de Jamestown?"
     ]
   },
   "2": {
@@ -255,8 +255,8 @@ const FOR_ALL_MANKIND_NEWSPAPERS = {
       ]
     ],
     "questions": [
-      "A cooperação conseguirá conter a militarização do espaço?",
-      "Quem paga o preço das informações mantidas em segredo?"
+      "A cooperação mostrada pela Apollo–Soyuz sobreviverá ao encerramento da crise lunar?",
+      "Como a pressão soviética sobre Sergei afetará a confiança que Margo deposita nele?"
     ]
   },
   "3": {
@@ -385,8 +385,8 @@ const FOR_ALL_MANKIND_NEWSPAPERS = {
       ]
     ],
     "questions": [
-      "A competição permite agir em conjunto diante de uma emergência?",
-      "Quem controla os recursos necessários ao retorno?"
+      "Como os astronautas que permaneceram em Marte serão sustentados até outra oportunidade de retorno?",
+      "O que explica Margo reaparecer na União Soviética anos depois do atentado em Houston?"
     ]
   },
   "4": {
@@ -515,8 +515,8 @@ const FOR_ALL_MANKIND_NEWSPAPERS = {
       ]
     ],
     "questions": [
-      "Quem deve decidir o destino dos recursos encontrados perto de Marte?",
-      "Como os trabalhadores participam das decisões sobre a base?"
+      "Como os responsáveis pelo desvio de Goldilocks responderão às consequências políticas da operação?",
+      "A estação de mineração mostrada em 2012 mudará as condições de vida de quem permaneceu em Marte?"
     ]
   },
   "5": {
@@ -645,8 +645,8 @@ const FOR_ALL_MANKIND_NEWSPAPERS = {
       ]
     ],
     "questions": [
-      "Quem pode representar politicamente quem vive em Marte?",
-      "Como conciliar a busca por vida com os limites de sobrevivência?"
+      "A independência de Marte será suficiente para construir uma relação estável com os governos da Terra?",
+      "O que significa o computador da Mars-94 voltar a funcionar em 2020?"
     ]
   }
 };

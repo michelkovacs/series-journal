@@ -95,49 +95,8 @@
   },
   "noturno": {
     "total": 14,
-    "externalSourcesNotVerified": [
-      {
-        "id": "jonah",
-        "name": "Jonah Lynn"
-      },
-      {
-        "id": "saga",
-        "name": "Saga Bauer"
-      },
-      {
-        "id": "jurek",
-        "name": "Jurek Walter"
-      }
-    ],
+    "externalSourcesNotVerified": [],
     "missing": [
-      {
-        "id": "dave",
-        "name": "Dave Ellison"
-      },
-      {
-        "id": "nathan",
-        "name": "Nathan Pollock"
-      },
-      {
-        "id": "alex",
-        "name": "Alexandra Quinn"
-      },
-      {
-        "id": "karl",
-        "name": "Karl Anders"
-      },
-      {
-        "id": "michael",
-        "name": "Michael Frost"
-      },
-      {
-        "id": "felicia",
-        "name": "Felicia Frost"
-      },
-      {
-        "id": "ida",
-        "name": "Ida Frost"
-      },
       {
         "id": "sam",
         "name": "Sam Mendel"
@@ -154,6 +113,20 @@
         "id": "daughter",
         "name": "Filha de Jonah"
       }
-    ]
+    ],
+    "localPhotosVerified": [
+      "jonah",
+      "saga",
+      "dave",
+      "nathan",
+      "alex",
+      "jurek",
+      "karl",
+      "michael",
+      "felicia",
+      "ida"
+    ],
+    "checkedOn": "2026-11-02",
+    "note": "Somente fotos reais dos personagens, conforme escolha do usuário. Galeria oficial e cartazes de desaparecidos em cena conferidos; quatro familiares permanecem sem foto pública identificada. Não usar fotos de atores fora do papel nem ilustrações."
   }
 }

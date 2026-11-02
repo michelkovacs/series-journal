@@ -18,3 +18,5 @@ Foram conferidos visualmente os retratos cadastrados e a capa. A capa usa a comp
 As imagens promocionais/de cena continuam sujeitas aos direitos dos titulares. A origem está registrada para atribuição e substituição. A documentação da API TVmaze e seus termos de atribuição estão em https://www.tvmaze.com/api .
 
 A ampliação editorial mantém os 150 acontecimentos em dois parágrafos por trecho. Os complementos detalham contexto e consequências dos fatos do próprio episódio, sem incorporar acontecimentos posteriores. Os nomes citados nos complementos integram o índice de participação; os jornais usam os textos condensados.
+
+A revisão de 2 de novembro de 2026 substituiu as perguntas genéricas das temporadas por cem questões, duas por episódio. Cada par trata de fatos ou dúvidas apresentados até aquele capítulo; as listas são substituídas ao trocar o episódio. As edições do jornal usam as questões do último capítulo da temporada.
