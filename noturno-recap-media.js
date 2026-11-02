@@ -22,6 +22,7 @@
       const old = card.querySelector('.recap-event-media');
       if (old) old.replaceWith(RecapMedia.create({seriesTitle:'Noturno',characters:people(involved[index] || [])}));
     });
+    RecapMedia.mountCharacterToggle(document.getElementById('recap'));
   }
   window.addEventListener('noturno-portraits-updated',refresh);
   refresh();

@@ -1,10 +1,35 @@
 'use strict';
 window.RecapMedia = (() => {
+  let showCharacters = false;
   function element(tag, className, text) {
     const n = document.createElement(tag);
     if (className) n.className = className;
     if (text !== undefined) n.textContent = text;
     return n;
+  }
+  function mountCharacterToggle(host) {
+    host.classList.toggle('recap-show-characters', showCharacters);
+    const existing = host.querySelector('.recap-display-controls');
+    if (existing) {
+      existing.querySelector('input').checked = showCharacters;
+      return;
+    }
+    const details = host.querySelector('#recapDetails');
+    if (!details || !details.querySelector('.recap-event')) return;
+    const controls = element('div', 'recap-display-controls');
+    const label = element('label', 'recap-characters-toggle');
+    const checkbox = element('input');
+    checkbox.type = 'checkbox';
+    checkbox.id = 'recapShowCharacters';
+    checkbox.checked = showCharacters;
+    checkbox.setAttribute('aria-controls', details.id);
+    checkbox.addEventListener('change', () => {
+      showCharacters = checkbox.checked;
+      host.classList.toggle('recap-show-characters', showCharacters);
+    });
+    label.append(checkbox, document.createTextNode('Exibir personagens'));
+    controls.append(label);
+    details.before(controls);
   }
   function create(options) {
     const host = element('div', options.hero ? 'recap-hero-visual recap-adaptive-media' : 'recap-event-media recap-adaptive-media');
@@ -63,5 +88,5 @@ window.RecapMedia = (() => {
     else portraits();
     return host;
   }
-  return { create };
+  return { create, mountCharacterToggle };
 })();

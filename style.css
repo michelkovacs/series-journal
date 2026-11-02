@@ -322,3 +322,10 @@ body[data-series=for-all-mankind]{--series-header-art:url('assets/for-all-mankin
 .house-emblem{width:56px;height:62px;object-fit:contain}
 .character-profile-photo img.house-emblem{width:76px;height:84px}
 .westeros-detail .house-emblem{width:72px;height:80px}
+
+/* Episode portraits are optional; the text uses the space when they are hidden. */
+.recap-display-controls{display:flex;justify-content:flex-end;align-items:center;margin:20px 0 12px}
+.recap-characters-toggle{display:inline-flex;align-items:center;gap:9px;min-height:40px;font-size:13px;font-weight:600;color:var(--color-ink-navy);cursor:pointer}
+.recap-characters-toggle input[type=checkbox]{appearance:auto;flex:0 0 18px;width:18px;height:18px;min-width:18px;margin:0;padding:0;accent-color:#176e86;cursor:pointer}
+#recap:not(.recap-show-characters) .recap-event-media[data-media-kind=characters]{display:none}
+#recap:not(.recap-show-characters) .recap-event-card:has(>.recap-event-media[data-media-kind=characters]){grid-template-columns:minmax(0,1fr);min-height:0}
