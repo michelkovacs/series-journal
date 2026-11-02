@@ -1,5 +1,5 @@
 const PWA_ASSETS = {
-  "version": "8645ec1d97138073",
+  "version": "3a3e7b48153cde7a",
   "files": [
     "index.html",
     "dragon.html",
