@@ -2,3 +2,22 @@
 
 .viewer-actions{display:flex;gap:6px;align-items:center}.topline>.eyebrow{max-width:90px}.viewer-actions .pill{padding:10px;font-size:10px}
 body.character-fullscreen{overflow:hidden}body.character-fullscreen .viewer{position:fixed;inset:0;z-index:1000;width:100%;max-width:none;height:100dvh;margin:0;border:0;border-radius:0;overflow-y:auto;overscroll-behavior:contain;background:#fff;padding-bottom:env(safe-area-inset-bottom)}body.character-fullscreen .portrait-area{height:clamp(390px,65dvh,760px)}body.character-fullscreen .topline{top:calc(16px + env(safe-area-inset-top))}body.character-fullscreen .portrait{object-fit:contain;background:#e0e8ec}body.character-fullscreen .description,body.character-fullscreen .navigation,body.character-fullscreen .related-section{max-width:650px;margin-left:auto;margin-right:auto}body.character-fullscreen .description{padding:0 24px}body.character-fullscreen .related-section{padding:17px 20px 0}body.character-fullscreen .topline{max-width:900px;margin:auto}
+/* Fullscreen reserves room for the related rail; the portrait uses remaining space. */
+body.character-fullscreen .viewer{display:flex;flex-direction:column;overflow:hidden;padding-bottom:max(8px,env(safe-area-inset-bottom))}
+body.character-fullscreen .portrait-area{height:auto;min-height:0;flex:1 1 0}
+body.character-fullscreen .portrait{object-fit:cover}
+body.character-fullscreen .description{flex:none;width:100%;margin-top:6px;font-size:12px;line-height:1.5}
+body.character-fullscreen .navigation{flex:none;width:100%;padding:8px 22px}
+body.character-fullscreen .related-section{flex:none;width:100%;padding:10px 20px 0}
+body.character-fullscreen .section-title h3{font-size:15px}
+body.character-fullscreen .section-title p{margin:3px 0 9px;font-size:10px}
+body.character-fullscreen .rail{padding-bottom:3px;align-items:flex-start}
+body.character-fullscreen .rail .character{flex-basis:72px;font-size:10px;line-height:1.35}
+body.character-fullscreen .rail .character img,body.character-fullscreen .rail .missing-thumb{width:72px;height:76px;margin-bottom:4px;border-radius:10px}
+body.character-fullscreen .rail .character small{display:none}
+body.character-fullscreen .identity h2{font-size:clamp(21px,3.5vh,29px);margin-bottom:7px}
+body.character-fullscreen .house{margin-top:6px;min-height:32px;font-size:12px}
+body.character-fullscreen .house img{height:32px;width:28px}
+body.character-fullscreen .category{padding:5px 12px;font-size:11px}
+@media(max-height:700px){body.character-fullscreen .navigation span{display:none}body.character-fullscreen .navigation p{margin:0}body.character-fullscreen .topline>.eyebrow{display:none}body.character-fullscreen .topline{justify-content:flex-end;top:max(8px,env(safe-area-inset-top))}body.character-fullscreen .description{font-size:11px}body.character-fullscreen .rail .character img,body.character-fullscreen .rail .missing-thumb{height:60px}}
+@media(orientation:landscape) and (max-height:600px){body.character-fullscreen .viewer{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto minmax(0,1fr);padding:0 0 max(6px,env(safe-area-inset-bottom));column-gap:8px}body.character-fullscreen .portrait-area{grid-column:1;grid-row:1/4;height:100%;min-width:0}body.character-fullscreen .description{grid-column:2;grid-row:1;margin-top:12px;padding:0 12px}body.character-fullscreen .navigation{grid-column:2;grid-row:2;padding:6px 12px}body.character-fullscreen .related-section{grid-column:2;grid-row:3;min-width:0;padding:8px 12px 0}body.character-fullscreen .topline{left:8px;right:8px}body.character-fullscreen .viewer-actions{gap:3px}body.character-fullscreen .viewer-actions .pill{font-size:9px;padding:7px;min-height:36px}body.character-fullscreen .identity{left:8px;right:8px}body.character-fullscreen .identity h2{font-size:21px}}
