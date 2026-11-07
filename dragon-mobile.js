@@ -11,3 +11,13 @@ for(let ep=1;ep<=DRAGON_DATA.episodes.length;ep++){const option=document.createE
 function load(){episode=Number($('episode').value);characters=DRAGON_DATA.characters.filter(c=>c.from<=episode);$('cast').replaceChildren(...characters.map(c=>tile(c)));select(characters.some(c=>c.id===current)?current:characters[0].id)}
 $('episode').onchange=load;$('previous').onclick=()=>move(-1);$('next').onclick=()=>move(1);$('browse').onclick=()=>$('castDialog').showModal();$('closeCast').onclick=()=>$('castDialog').close();$('swipeArea').onkeydown=e=>{if(e.target!==$('swipeArea'))return;if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();move(e.key==='ArrowLeft'?-1:1)}};
 let touch=null;$('swipeArea').addEventListener('touchstart',e=>{if(e.target.closest('button'))return;touch=[e.changedTouches[0].clientX,e.changedTouches[0].clientY]},{passive:true});$('swipeArea').addEventListener('touchend',e=>{if(!touch)return;const dx=e.changedTouches[0].clientX-touch[0],dy=e.changedTouches[0].clientY-touch[1];if(Math.abs(dx)>45&&Math.abs(dx)>Math.abs(dy)*1.3)move(dx<0?1:-1);touch=null},{passive:true});$('swipeArea').addEventListener('touchcancel',()=>touch=null,{passive:true});$('portrait').onerror=()=>{$('portrait').hidden=true;$('noPhoto').hidden=false};load();
+
+const fullscreenButton=$('fullscreen');
+function setFullscreen(active){document.body.classList.toggle('character-fullscreen',active);fullscreenButton.textContent=active?'⤢ Sair da tela cheia':'⛶ Tela cheia';fullscreenButton.setAttribute('aria-pressed',String(active));}
+fullscreenButton.onclick=async()=>{
+ if(document.body.classList.contains('character-fullscreen')){if(document.fullscreenElement){try{await document.exitFullscreen()}catch{}}setFullscreen(false);return;}
+ setFullscreen(true);
+ if(document.documentElement.requestFullscreen){try{await document.documentElement.requestFullscreen()}catch{/* Keep the expanded view when browser fullscreen is unavailable. */}}
+};
+document.addEventListener('fullscreenchange',()=>setFullscreen(!!document.fullscreenElement));
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!document.fullscreenElement&&!$('castDialog').open)setFullscreen(false)});
